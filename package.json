@@ -1,0 +1,19 @@
+{
+  "name": "hazelweakly.me",
+  "version": "0.0.1",
+  "description": "my website",
+  "main": "index.html",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hazelweakly/hazelweakly.me.git"
+  },
+  "author": "hazelweakly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hazelweakly/hazelweakly.me/issues"
+  }
+}
