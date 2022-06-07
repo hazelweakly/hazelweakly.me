@@ -1,0 +1,8 @@
+---
+permalink: theme.css
+---
+
+{% set css %}
+  {% include './css/index.css' %}
+{% endset %}
+{{css | postcss | safe}}

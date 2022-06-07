@@ -1,0 +1,13 @@
+@import "global.css";
+
+/* Compositions */
+@import-glob 'compositions/*.css';
+
+/* Blocks */
+@import-glob 'blocks/*.css';
+
+/* Utilities */
+@import-glob 'utilities/*.css';
+
+/* Tailwind utilities */
+@tailwind utilities;

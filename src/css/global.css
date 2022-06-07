@@ -1,0 +1,80 @@
+@import "custom-props.css";
+@import "reset.css";
+
+/* Global styles */
+body {
+  @apply bg-light text-dark text-size-1 font-sans;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+h1 {
+  @apply text-size-4;
+}
+
+h2 {
+  @apply text-size-3;
+}
+
+h3 {
+  @apply text-size-2;
+}
+
+p,
+li {
+  max-width: 70ch;
+}
+
+h1 {
+  max-width: 15ch;
+}
+
+h2,
+h3 {
+  max-width: 30ch;
+}
+
+a {
+  color: currentcolor;
+  text-decoration-color: var(--color-primary);
+}
+
+a:hover:not(.header-anchor) {
+  text-decoration: none;
+}
+
+/* Prose */
+h2,
+h3 {
+  --flow-space: var(--space-size-3);
+}
+
+h2 + *,
+h3 + * {
+  --flow-space: var(--space-base);
+}
+
+/* So text scale renders nicely */
+div[class*="text-"] {
+  --flow-space: 1rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+nav > ul {
+  padding: 0;
+}
+
+.header-anchor:is(:hover, :focus, :active)::after {
+  content: "#";
+  font-size: 0.75em;
+  padding-left: 0.5em;
+}
+.header-anchor:not(:hover, :focus, :active) {
+  text-decoration: none;
+}

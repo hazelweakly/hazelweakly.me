@@ -1,0 +1,38 @@
+{% set currentUrl %}{{ page.url }}{% endset %}
+
+<div>
+  <a class="[ skip-link ]" href="#main-content">Skip to content</a>
+  <header role="banner">
+    <div class="wrapper">
+      <div>
+        <nav aria-label="primary" id="primary-navigation" tabindex="-1">
+          <ul role="list" class="cluster">
+            <li>
+              <a {% if currentUrl==='/' %}aria-current="page" {% endif %} href="/">Home</a>
+            </li>
+
+            <span class="skip"></span>
+            {% for page in collections.pages %}
+            <li>
+              <a {% if currentUrl===page.url %}aria-current="page" {% endif %} href="{{ page.url }}">
+                {{ page.data.title }}
+              </a>
+            </li>
+            {%- endfor %}
+
+            <li>
+              <a href="https://brain.hazelweakly.com">Brain</a>
+            </li>
+
+
+            {% for social in socialMedia %}
+            <li>
+              <a class="icon" href="{{ social.url }}">{{ social.icon | safe }}</a>
+            </li>
+            {%- endfor %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+</div>

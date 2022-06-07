@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "start:prod": "ELEVENTY_ENV=prod eleventy --serve",
+    "build": "ELEVENTY_ENV=prod eleventy"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,26 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hazelweakly/hazelweakly.me/issues"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy-plugin-rss": "^1.1.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "@minify-html/js": "^0.8.0",
+    "@types/markdown-it": "^12.2.3",
+    "eslint": "^8.17.0",
+    "luxon": "^2.4.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.4",
+    "markdown-it-attrs": "^4.1.4",
+    "markdown-it-deflist": "^2.1.0",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.1.0",
+    "postcss-import-ext-glob": "^2.0.1",
+    "prettier": "^2.6.2",
+    "slugify": "^1.6.5",
+    "tailwindcss": "^3.0.24"
   }
 }
