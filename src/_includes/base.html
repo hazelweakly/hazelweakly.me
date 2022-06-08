@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-{% include "head.njk" %}
+{% include "head.html" %}
 
 <body>
   <div class="cover">
-    {% include "nav.njk" %}
+    {% include "nav.html" %}
 
     <main tabindex="-1" id="main-content" class="wrapper">
-      <article class="flow center">
-        {{ content | safe }}
-      </article>
+      {{ content | safe }}
     </main>
 
     <footer class="center">
       <p class="text-center">&copy; {% year %} {{ meta.siteName }}</p>
     </footer>
   </div>
-
 </body>
 
 </html>
