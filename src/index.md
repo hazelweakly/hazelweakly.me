@@ -1,6 +1,6 @@
 ---
 title: Hazel Weakly
-layout: home.njk
+layout: home.html
 ---
 
 # Hazel Weakly

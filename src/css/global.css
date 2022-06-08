@@ -1,16 +1,11 @@
-@import "custom-props.css";
-@import "reset.css";
-
-/* Global styles */
 body {
-  @apply bg-light text-dark text-size-1 font-sans;
+  @apply bg-light text-dark text-size-1 font-sans leading-normal;
 }
 
 h1,
 h2,
 h3 {
-  line-height: 1.1;
-  font-weight: 900;
+  @apply leading-tight font-black;
 }
 
 h1 {
@@ -27,7 +22,7 @@ h3 {
 
 p,
 li {
-  max-width: 70ch;
+  @apply max-w-prose;
 }
 
 h1 {
@@ -48,6 +43,19 @@ a:hover:not(.header-anchor) {
   text-decoration: none;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+:focus {
+  outline: 2px dotted;
+  outline-offset: 0.25rem;
+}
+
 /* Prose */
 h2,
 h3 {
@@ -62,8 +70,7 @@ h3 + * {
 /* So text scale renders nicely */
 div[class*="text-"] {
   --flow-space: 1rem;
-  line-height: 1;
-  font-weight: 700;
+  @apply leading-none font-bold;
 }
 
 nav > ul {

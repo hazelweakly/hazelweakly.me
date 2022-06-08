@@ -1,6 +1,6 @@
 module.exports = {
   mode: "jit",
-  content: ["./src/**/*.{html,njk,js}"],
+  content: ["./src/**/*.{html,njk,js,md}"],
   theme: {
     screens: {
       sm: "640px",
@@ -9,11 +9,12 @@ module.exports = {
       xl: "1280px",
       "2xl": "1536px",
     },
+    // soft summer color palette
     colors: {
-      primary: "#ff5400",
-      secondary: "#86c7f0",
-      light: "#f3f3f3",
-      dark: "#252525",
+      primary: "#8996c6",
+      secondary: "#aa4064",
+      light: "#f9f9f9",
+      dark: "#43464c",
     },
     backgroundColor: ({ theme }) => theme("colors"),
     textColor: ({ theme }) => theme("colors"),
@@ -53,9 +54,7 @@ module.exports = {
       auto: "auto",
       ...theme("spacing"),
     }),
-    scrollMargin: ({ theme }) => ({
-      ...theme("spacing"),
-    }),
+    scrollMargin: ({ theme }) => ({ ...theme("spacing") }),
     textColor: ({ theme }) => theme("colors"),
     zIndex: {
       auto: "auto",

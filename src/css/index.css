@@ -1,3 +1,6 @@
+@import "custom-props.css";
+@import "modern-css-reset";
+
 @import "global.css";
 
 /* Compositions */
