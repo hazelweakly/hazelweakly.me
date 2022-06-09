@@ -13,16 +13,16 @@ Be sure to checkout the [Reddit discussion](https://www.reddit.com/r/haskell/com
 I had a lot of these; mostly due to my inexperience, but also GHC is a pretty old project and has a lot of small warts and niggles here and there that people just end up "learning" over time.
 Unfortunately it’s not really something where comprehensive documentation can easily be written down other than a general "best practices" approach (which I think I’ll write up).
 
-* GHC has a lot of submodules. Before working you should not only pull the master but you should also run `git submodule update`; I had quite a few issues early on with extraneous files in git status before I learned to do that.
-* Git notes is really not that ergonomic at all. If you have any namespaces used in your git notes (which this project does) you’ll need –ref=perf for damn near every command you use. It’s a small thing, but it can sometimes take a while to realize what you missed.
-* Running the ./validate script is the only way to guarantee a clean anything. Switch a branch and something weird breaks? ./validate; Not quite sure why tests started failing after a git pull and a small innocuous code changes? ./validate. The real bummer here is that ./validate wipes everything and rebuilds the entire damn compiler and all that stuff from scratch and then runs the most extensive version of the testsuite. The exhaustive version of the testsuite alone can take nearly 2 hours on my computer if it’s not run threaded, so it’s definitely a huge time sink if you don’t have this thing optimized.
-    * Related pain-point; there’s a lot of things you can do to tweak and fix your setup so that you can build and validate quicker. Unfortunately, this is all something that you just have to kind of learn over time and there’s no real way to intelligently "auto-configure" this nicely. You’ll have to suffer super long build times for GHC and long runtimes for the testsuite or sink quite a few hours into configuring the "quicker options" for your specific usecase.
-    * Update: Thanks to a few helpful Reddit comments, I’m now aware that `dist/maintainer clean` instead of ./validate will help you out quite a bit. Unfortunately, this still doesn’t clean out everything.
-    * To thoroughly clean out the ghc repo, you’ll need to copy mk/build.mk (and everything else you don’t want to lose) somewhere else and then run git clean -ffdx && git submodule foreach git clean -ffdx.
-    * Alternatively, a gentle clean can be done by deleting `compiler/stage2` without messing up a stage 1 or library build, which can save a lot of time depending on your use cases.
-* GHC uses Arcanist and Phabricator for its code diffs. I’ve never seen any other project use these things, so that’s not super helpful for knowing how to use them. With arcanist (the CLI tool for phabricator), you really want to explicitly name every single commit you push to phabricator; otherwise it guesses and it’s terrible at guessing.
-* Ironically enough, the testsuite has no tests. There’s no way to know whether or not you broke something in the testsuite without running it on every single test and making sure nothing broke that wasn’t supposed to (of course, this doesn’t catch false positives...). ./validate helps, but it’s painful.
-* The testsuite was pretty confusing to understand at first. There was no high level documentation really detailing how the codebase works from the perspective of on-boarding someone to work on it. While there’s enough documentation on how to _use_ it, there’s very little in the way of why it’s designed the way it is and how things fit together. A lot of my earlier weeks were wasted just screwing around and reading the code and being super unproductive in general due to that.
+- GHC has a lot of submodules. Before working you should not only pull the master but you should also run `git submodule update`; I had quite a few issues early on with extraneous files in git status before I learned to do that.
+- Git notes is really not that ergonomic at all. If you have any namespaces used in your git notes (which this project does) you’ll need –ref=perf for damn near every command you use. It’s a small thing, but it can sometimes take a while to realize what you missed.
+- Running the ./validate script is the only way to guarantee a clean anything. Switch a branch and something weird breaks? ./validate; Not quite sure why tests started failing after a git pull and a small innocuous code changes? ./validate. The real bummer here is that ./validate wipes everything and rebuilds the entire damn compiler and all that stuff from scratch and then runs the most extensive version of the testsuite. The exhaustive version of the testsuite alone can take nearly 2 hours on my computer if it’s not run threaded, so it’s definitely a huge time sink if you don’t have this thing optimized.
+  - Related pain-point; there’s a lot of things you can do to tweak and fix your setup so that you can build and validate quicker. Unfortunately, this is all something that you just have to kind of learn over time and there’s no real way to intelligently "auto-configure" this nicely. You’ll have to suffer super long build times for GHC and long runtimes for the testsuite or sink quite a few hours into configuring the "quicker options" for your specific usecase.
+  - Update: Thanks to a few helpful Reddit comments, I’m now aware that `dist/maintainer clean` instead of ./validate will help you out quite a bit. Unfortunately, this still doesn’t clean out everything.
+  - To thoroughly clean out the ghc repo, you’ll need to copy mk/build.mk (and everything else you don’t want to lose) somewhere else and then run git clean -ffdx && git submodule foreach git clean -ffdx.
+  - Alternatively, a gentle clean can be done by deleting `compiler/stage2` without messing up a stage 1 or library build, which can save a lot of time depending on your use cases.
+- GHC uses Arcanist and Phabricator for its code diffs. I’ve never seen any other project use these things, so that’s not super helpful for knowing how to use them. With arcanist (the CLI tool for phabricator), you really want to explicitly name every single commit you push to phabricator; otherwise it guesses and it’s terrible at guessing.
+- Ironically enough, the testsuite has no tests. There’s no way to know whether or not you broke something in the testsuite without running it on every single test and making sure nothing broke that wasn’t supposed to (of course, this doesn’t catch false positives...). ./validate helps, but it’s painful.
+- The testsuite was pretty confusing to understand at first. There was no high level documentation really detailing how the codebase works from the perspective of on-boarding someone to work on it. While there’s enough documentation on how to _use_ it, there’s very little in the way of why it’s designed the way it is and how things fit together. A lot of my earlier weeks were wasted just screwing around and reading the code and being super unproductive in general due to that.
 
 ## Git related mistakes
 
@@ -31,11 +31,11 @@ It turns out that for basic usage all you need to know is "push, pull, commit, a
 It’s a bit trickier.
 Things I really needed and had to learn:
 
-* Really basic, but it’s not really something I see mentioned a lot. With git, it’s totally okay to not add every file when you commit things; I committed some files I didn’t need to before I learned that.
-* cherry picking (and the fact that you really want to cherry pick with only one commit, so there was some squashing involved using temporary branches)
-* Merging. Every time you think you know how to merge things cleanly enough, you’re wrong.
-* Related to that is rebasing. Ohhh, man, I have a section of my git log where you literally see the same commits 3-4 times because of how screwy and non-linear my history got before I cleaned it up some. Luckily for me I got much better at git hygiene after that and my issues were much less.
-* Messing around with branches was another one. Sometimes you’ll have something you’re working on and then you need to start working on something else. You /could/ just put that thing in the same branch, or you could do the SMART thing and make a new branch. But oh no, what if you have tons of ADHD and you work on both branches at the same time and need to merge them together again? What do you do? You weep silently, my child, as to not disturb your sleeping girlfriend.
+- Really basic, but it’s not really something I see mentioned a lot. With git, it’s totally okay to not add every file when you commit things; I committed some files I didn’t need to before I learned that.
+- cherry picking (and the fact that you really want to cherry pick with only one commit, so there was some squashing involved using temporary branches)
+- Merging. Every time you think you know how to merge things cleanly enough, you’re wrong.
+- Related to that is rebasing. Ohhh, man, I have a section of my git log where you literally see the same commits 3-4 times because of how screwy and non-linear my history got before I cleaned it up some. Luckily for me I got much better at git hygiene after that and my issues were much less.
+- Messing around with branches was another one. Sometimes you’ll have something you’re working on and then you need to start working on something else. You /could/ just put that thing in the same branch, or you could do the SMART thing and make a new branch. But oh no, what if you have tons of ADHD and you work on both branches at the same time and need to merge them together again? What do you do? You weep silently, my child, as to not disturb your sleeping girlfriend.
 
 ## Sanity checks
 
@@ -46,8 +46,8 @@ Sanity checks don’t just involve the code, they also involve your environment 
 I’ve accidentally ran tests on the wrong commit, used the wrong flags, accidentally wasted 2 hours building the wrong version of a program...
 Small things like that sneak up on you and the only way to really solve them is to approach things in a certain way.
 
-* Be deliberate: Make sure that you’re doing what you want to do with the right version of what you want to do it with.
-* Hold nothing in your head. Be explicit about every assumption.
+- Be deliberate: Make sure that you’re doing what you want to do with the right version of what you want to do it with.
+- Hold nothing in your head. Be explicit about every assumption.
 
 Are you assuming that everything a performance test?
 Write that in a comment somewhere.
@@ -100,11 +100,11 @@ This applies to everything in my life and it’s why making breakfast takes me a
 
 So these are just some of the things I’ve learned and struggled with while working on this project. I’d probably summarize this into a few key points:
 
-* Abstraction is the process of communicating more precisely about something. Use it whenever possible and helpful to make code more robust.
-* Be explicit about your assumptions and use implicit behavior as little as possible; ideally document that implicit behavior in a comment whenever you can.
-* Be deliberate and methodical about your sanity checks; write them down so you can verify things consistently and thoroughly.
-* Do _one_ thing at a time, learn your git hygiene, and use it.
-* Write down your thought processes somewhere whenever you’re doing something more intensive than fixing an immediate, small issue.
-* Take care of yourself, set hours, take breaks, etc.
+- Abstraction is the process of communicating more precisely about something. Use it whenever possible and helpful to make code more robust.
+- Be explicit about your assumptions and use implicit behavior as little as possible; ideally document that implicit behavior in a comment whenever you can.
+- Be deliberate and methodical about your sanity checks; write them down so you can verify things consistently and thoroughly.
+- Do _one_ thing at a time, learn your git hygiene, and use it.
+- Write down your thought processes somewhere whenever you’re doing something more intensive than fixing an immediate, small issue.
+- Take care of yourself, set hours, take breaks, etc.
 
 As always, feel free to comment on the [Reddit](https://www.reddit.com/r/haskell/comments/6wt11z/beginner_mistakes_and_oddities_i_encountered/) discussion in r/haskell.

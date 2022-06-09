@@ -77,7 +77,7 @@ const generateCSS = async ({ dir, runMode, outputMode } = {}) => {
   // Push this file into the CSS dir, ready to go
   fs.writeFileSync(
     path.join(dir?.input ?? ".", "css", "custom-props.css"),
-    result
+    result,
   );
 };
 

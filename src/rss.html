@@ -10,8 +10,10 @@ permalink: "/feed.xml"
   <subtitle>{{ summary }}</subtitle>
   <link href="{{ meta.url }}{{ permalink }}" rel="self" />
   <link href="{{ meta.url }}/" />
-  <updated>{{ collections.blog | getNewestCollectionItemDate | dateToRfc3339
-    }}</updated>
+  <updated
+    >{{ collections.blog | getNewestCollectionItemDate | dateToRfc3339
+    }}</updated
+  >
   <id>{{ meta.url }}</id>
   <author>
     <name>{{ meta.authorName }}</name>
