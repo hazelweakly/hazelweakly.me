@@ -12,5 +12,8 @@
 /* Utilities */
 @import-glob 'utilities/*.css';
 
+/* Exceptions */
+@import-glob 'exceptions/*.css';
+
 /* Tailwind utilities */
 @tailwind utilities;

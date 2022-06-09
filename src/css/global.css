@@ -1,41 +1,46 @@
 body {
-  @apply bg-light text-dark text-size-1 font-sans leading-normal;
+  background-color: theme("backgroundColor.light");
+  color: theme("textColor.dark");
+  font-size: theme("fontSize.1");
+  font-family: theme("fontFamily.sans");
+  line-height: theme("lineHeight.normal");
 }
 
 h1,
 h2,
 h3 {
-  @apply leading-tight font-black;
+  line-height: theme("lineHeight.tight");
+  font-weight: theme("fontWeight.black");
 }
 
 h1 {
-  @apply text-size-4;
+  font-size: theme("fontSize.5");
 }
 
 h2 {
-  @apply text-size-3;
+  font-size: theme("fontSize.4");
 }
 
 h3 {
-  @apply text-size-2;
+  font-size: theme("fontSize.3");
 }
 
 p,
 li {
-  @apply max-w-prose;
+  max-width: theme("maxWidth.prose");
 }
 
 h1 {
-  max-width: 15ch;
+  max-width: calc(theme("maxWidth.prose") / 4);
 }
 
 h2,
 h3 {
-  max-width: 30ch;
+  max-width: calc(theme("maxWidth.prose") / 2);
 }
 
 a {
-  color: currentcolor;
+  color: theme("textColor.currentColor");
   text-decoration-color: var(--color-primary);
 }
 
@@ -52,14 +57,14 @@ th {
 }
 
 :focus {
-  outline: 2px dotted;
-  outline-offset: 0.25rem;
+  outline: theme("spacing.px") dotted;
+  outline-offset: theme("spacing.0");
 }
 
 /* Prose */
 h2,
 h3 {
-  --flow-space: var(--space-size-3);
+  --flow-space: var(--space-3);
 }
 
 h2 + *,
@@ -69,12 +74,13 @@ h3 + * {
 
 /* So text scale renders nicely */
 div[class*="text-"] {
-  --flow-space: 1rem;
-  @apply leading-none font-bold;
+  --flow-space: var(--space-base);
+  line-height: theme("lineHeight.none");
+  font-weight: theme("fontWeight.bold");
 }
 
 nav > ul {
-  padding: 0;
+  padding: theme("spacing.0");
 }
 
 .header-anchor:is(:hover, :focus, :active)::after {

@@ -30,11 +30,14 @@ const minifyHtml = (content, outputPath) => {
 const generateCSS = async ({ dir, runMode, outputMode } = {}) => {
   const fs = require("fs");
   const prettier = require("prettier");
-  const config = require("../../tailwind.config.js");
+
+  const resolveConfig = require("tailwindcss/resolveConfig");
+  const initialConfig = require("../../tailwind.config.js");
+  const config = resolveConfig(initialConfig);
 
   let result = "";
 
-  const groups = [
+  const aliasedGroups = [
     { key: "colors", prefix: "color" },
     { key: "spacing", prefix: "space" },
     { key: "fontSize", prefix: "size" },
@@ -43,22 +46,23 @@ const generateCSS = async ({ dir, runMode, outputMode } = {}) => {
   // Add a note that this is auto generated
   result += `
     /* VARIABLES GENERATED WITH TAILWIND CONFIG ON ${new Date().toLocaleDateString()}.
-    Tokens location: ./tailwind.config.js */
+    Tokens location: ../../tailwind.config.js */
 
     :root {
   `;
 
   // Loop each group's keys, use that and the associated
   // property to define a :root custom prop
-  groups.forEach(({ key, prefix }) => {
+  result += ` /* Aliased groups for convenience */ `;
+  aliasedGroups.forEach(({ key, prefix }) => {
     const group = config.theme[key];
 
-    if (!group) {
-      return;
-    }
+    if (!group) return;
 
     Object.keys(group).forEach((key) => {
-      result += `--${prefix}-${key}: ${group[key]};`;
+      result += `--${prefix}-${key === "DEFAULT" ? "base" : key}: ${
+        group[key]
+      };`;
     });
   });
 
@@ -72,7 +76,7 @@ const generateCSS = async ({ dir, runMode, outputMode } = {}) => {
 
   // Push this file into the CSS dir, ready to go
   fs.writeFileSync(
-    path.join(dir?.input ?? ".", "src", "css", "custom-props.css"),
+    path.join(dir?.input ?? ".", "css", "custom-props.css"),
     result
   );
 };

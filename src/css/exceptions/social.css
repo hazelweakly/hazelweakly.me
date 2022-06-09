@@ -1,0 +1,4 @@
+.icon > svg[role="img"] {
+  height: 1em;
+  width: auto;
+}
