@@ -1,28 +1,36 @@
 body {
   background-color: theme("backgroundColor.light");
   color: theme("textColor.dark");
-  font-size: theme("fontSize.1");
-  font-family: theme("fontFamily.sans");
+  font-size: theme("fontSize.2");
+  font-family: theme("fontFamily.body");
   line-height: theme("lineHeight.normal");
+}
+
+code,
+pre {
+  font-family: theme("fontFamily.mono");
+  font-variant-ligatures: contextual;
 }
 
 h1,
 h2,
 h3 {
   line-height: theme("lineHeight.tight");
-  font-weight: theme("fontWeight.black");
+  font-family: theme("fontFamily.heading");
+  font-weight: normal;
 }
 
 h1 {
-  font-size: theme("fontSize.5");
+  font-size: theme("fontSize.6");
+  font-family: theme("fontFamily.display");
 }
 
 h2 {
-  font-size: theme("fontSize.4");
+  font-size: theme("fontSize.5");
 }
 
 h3 {
-  font-size: theme("fontSize.3");
+  font-size: theme("fontSize.4");
 }
 
 p,
@@ -61,7 +69,6 @@ th {
   outline-offset: theme("spacing.0");
 }
 
-/* Prose */
 h2,
 h3 {
   --flow-space: var(--space-3);
@@ -70,13 +77,6 @@ h3 {
 h2 + *,
 h3 + * {
   --flow-space: var(--space-base);
-}
-
-/* So text scale renders nicely */
-div[class*="text-"] {
-  --flow-space: var(--space-base);
-  line-height: theme("lineHeight.none");
-  font-weight: theme("fontWeight.bold");
 }
 
 nav > ul {

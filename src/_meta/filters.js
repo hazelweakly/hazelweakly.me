@@ -24,4 +24,11 @@ const slug = (str) =>
 
 const toAbsoluteUrl = (url) => new URL(url, require("../_data/meta").url).href;
 
-module.exports = { postcss, postDate, slug, toAbsoluteUrl };
+module.exports = {
+  postcss,
+  postDate,
+  slug,
+  toAbsoluteUrl,
+  filters: { postDate, slug, toAbsoluteUrl },
+  asyncFilters: { postcss },
+};

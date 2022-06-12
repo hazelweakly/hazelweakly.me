@@ -5,5 +5,35 @@
   <title>
     {{ title }}{% if page.url != '/' %} | {{ meta.siteName }}{% endif %}
   </title>
+
+  <meta name="author" content="{{ meta.authorName}}" />
+  {% if noindex %}
+  <meta name="robots" content="noindex" />
+  {% endif %}
+
+  <meta name="description" content="{{ meta.siteDescription }}" />
+  <meta property="og:description" content="{{ meta.siteDescription }}" />
+  <meta name="twitter:description" content="{{ meta.siteDescription }}" />
+
+  <meta property="og:title" content="{{ title }}{% if page.url != '/' %} | {{ meta.siteName }}{% endif %}" />
+  <meta name="twitter:title" content="{{ title }}{% if page.url != '/' %} | {{ meta.siteName }}{% endif %}" />
+
+  {% if thumbnail %}
+  <meta property="og:image" content="{{ thumbnail }}" />
+  <meta name="twitter:image" content="{{ thumbnail }}" />
+  {% endif %}
+
+  <meta property="og:url" content="{{ page.url | toAbsoluteUrl }}" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="preload" href="/fonts/italiana-v16-latin-regular.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous" />
+  <link rel="preload" href="/fonts/zilla-slab-v11-latin-500.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous" />
+  <link rel="preload" href="/fonts/VictorMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="/fonts/VictorMono-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
   <link rel="stylesheet" href="/theme.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 </head>

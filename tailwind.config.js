@@ -1,6 +1,11 @@
 module.exports = {
-  mode: "jit",
-  content: ["./src/**/*.{html,njk,js,md}"],
+  // mode: "jit",
+  content: [
+    "./src/**/*.html",
+    "./src/**/*.njk",
+    "./src/**/*.js",
+    "./src/**/*.md",
+  ],
   theme: {
     // soft summer color palette
     colors: {
@@ -24,23 +29,25 @@ module.exports = {
       4: "clamp(1.76rem, 1.43rem + 1.65vw, 3.66rem)",
       5: "clamp(2.20rem, 1.63rem + 2.86vw, 5.48rem)",
       6: "clamp(2.75rem, 1.79rem + 4.77vw, 8.23rem)",
+      7: "clamp(3.43rem, 1.88rem + 7.75vw, 12.34rem)",
+      8: "clamp(4.29rem, 1.82rem + 12.36vw, 18.51rem)",
     },
     fontSize: ({ theme }) => theme("spacing"),
     textColor: ({ theme }) => ({
       ...Object.fromEntries(
-        Object.entries(theme("colors")).filter(([k, _]) => k !== "current")
+        Object.entries(theme("colors")).filter(([k, _]) => k !== "current"),
       ),
       currentColor: "currentColor",
     }),
     fontFamily: {
-      sans: [
-        '"Inter"',
-        '"Segoe UI"',
-        "Roboto",
-        '"Helvetica Neue"',
-        "Arial",
-        "sans-serif",
-      ],
+      display: ["Italiana", "ui-serif", "serif"],
+      heading: ["Italiana", "ui-serif", "serif"],
+      body: ['"Zilla Slab"', "ui-sans-serif", "sans-serif"],
+      mono: ['"Victor Mono"', "ui-mono", "mono"],
+    },
+    fontWeight: {
+      bold: 700,
+      normal: 400,
     },
   },
 };

@@ -1,0 +1,4 @@
+.home h1 {
+  font-size: theme("fontSize.8");
+  text-align: center;
+}

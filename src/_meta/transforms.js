@@ -114,10 +114,45 @@ async function imageShortcode(src, alt, sizes) {
 
 yearShortcode = () => `${new Date().getFullYear()}`;
 
+const criticalCSS = async (content, outputPath) => {
+  if (outputPath && outputPath.endsWith(".html")) {
+    const outputDir = require("./cfg").dir.output;
+
+    // Generate HTML with critical CSS
+    const { html } = await require("critical").generate({
+      assetPaths: [path.dirname(outputPath)],
+      base: outputDir,
+      html: content,
+      inline: true,
+      rebase: ({ originalUrl }) => originalUrl,
+    });
+
+    return html;
+  }
+  return content;
+};
+
 module.exports = {
   minifyHtml,
   generateCSS,
+  criticalCSS,
   markdownLibrary,
   imageShortcode,
   yearShortcode,
+  before: { generateCSS },
+  plugins: {
+    "@11ty/eleventy-plugin-syntaxhighlight": {},
+    "@11ty/eleventy-plugin-rss": {},
+    "eleventy-plugin-helmet": {},
+  },
+  transforms: {
+    criticalCSS,
+    minifyHtml,
+  },
+  asyncShortcodes: {
+    image: imageShortcode,
+  },
+  shortcodes: {
+    year: yearShortcode,
+  },
 };

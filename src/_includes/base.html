@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include "head.html" %}
+{% include "head.html" %}
 
-  <body>
-    <div class="cover">
-      {% include "nav.html" %}
+<body>
+  <div class="cover">
+    {% include "nav.html" %}
 
-      <main tabindex="-1" id="main-content" class="wrapper">
-        {{ content | safe }}
-      </main>
+    <main tabindex="-1" id="main-content" class="wrapper">
+      {{ content | safe }}
+    </main>
 
-      <footer class="center">
-        <p class="text-center">&copy; {% year %} {{ meta.siteName }}</p>
-      </footer>
-    </div>
-  </body>
+    <footer class="center">
+      <p class="text-center italic text-1">
+        &copy; {% year %} {{ meta.siteName }}
+      </p>
+    </footer>
+  </div>
+</body>
+
 </html>
