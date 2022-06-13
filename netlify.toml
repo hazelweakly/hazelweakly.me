@@ -2,4 +2,4 @@
 NPM_FLAGS = "--version"
 [build]
 publish = "public"
-command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build >/dev/null 2>&1 ; npx pnpm run build"
+command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
