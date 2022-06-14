@@ -2,4 +2,5 @@
   max-width: calc(var(--space-0-5) * 100);
   margin-inline: auto;
   padding-inline: var(--space-1);
+  position: relative;
 }

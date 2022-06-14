@@ -2,6 +2,7 @@ const { DateTime } = require("luxon");
 const p = require("postcss");
 const postcssLoadConfig = require("postcss-load-config");
 const slugify = require("slugify");
+const meta = require("../_data/meta");
 
 const postcss = async (cssCode, done) =>
   postcssLoadConfig({ env: process.env.ELEVENTY_ENV }).then(
@@ -22,13 +23,9 @@ const slug = (str) =>
     ? slugify(str, { lower: true, strict: true, remove: /["]/g })
     : undefined;
 
-const toAbsoluteUrl = (url) => new URL(url, require("../_data/meta").url).href;
+const toAbsoluteUrl = (url) => new URL(url, meta.url).href;
 
 module.exports = {
-  postcss,
-  postDate,
-  slug,
-  toAbsoluteUrl,
   filters: { postDate, slug, toAbsoluteUrl },
   asyncFilters: { postcss },
 };

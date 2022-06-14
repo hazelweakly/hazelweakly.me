@@ -8,9 +8,9 @@ const UserConfig = require("@11ty/eleventy/src/UserConfig");
 
 /** @param {UserConfig} cfg */
 module.exports = function (cfg) {
-  const isProd = process.env.ELEVENTY_ENV === "prod";
-
-  Object.entries(transforms.before).forEach(([k, fn]) => cfg.on(k, fn));
+  Object.entries(transforms.before).forEach(([k, fn]) =>
+    cfg.on("eleventy.before", fn),
+  );
 
   foreach(transforms.plugins, (p, opts) => cfg.addPlugin(require(p), opts));
 

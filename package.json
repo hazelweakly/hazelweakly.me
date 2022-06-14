@@ -6,7 +6,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "start:prod": "ELEVENTY_ENV=prod eleventy --serve",
-    "build": "eleventy"
+    "build": "ELEVENTY_ENV=prod eleventy"
   },
   "repository": {
     "type": "git",

@@ -6,13 +6,13 @@
     <div class="wrapper">
       <nav aria-label="primary" id="primary-navigation" tabindex="-1">
         <ul role="list" class="cluster">
-          <li>
+          <li class="flex">
             <a {% if currentUrl==='/' %}aria-current="page" {% endif %} href="/">Home</a>
           </li>
 
           <span class="skip"></span>
           {% for page in collections.pages %}
-          <li>
+          <li class="flex">
             <a {% if currentUrl===page.url %}aria-current="page" {% endif %} href="{{ page.url }}">
               {{ page.data.title }}
             </a>
@@ -25,10 +25,20 @@
 
 
           {% for social in socialMedia %}
-          <li>
-            <a class="icon" href="{{ social.url }}">{% include "partials/" + social.title | lower + ".html" %}</a>
+          <li class="flex">
+            <a class="icon inline-flex" href="{{ social.url }}">{% include "partials/" + social.title | lower + ".html"
+              %}</a>
           </li>
           {%- endfor %}
+
+          <li class="flex">
+            <div class="user-toggle inline-flex">
+              <div role="status" class="visually-hidden"></div>
+              <button aria-label="Toggle Theme">
+                <span class="icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </li>
         </ul>
       </nav>
     </div>

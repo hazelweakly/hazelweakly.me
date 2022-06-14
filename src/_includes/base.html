@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 {% include "head.html" %}
 
 <body>
@@ -16,6 +16,13 @@
       </p>
     </footer>
   </div>
+
+  <script>
+    document.documentElement.classList.remove("no-js");
+  </script>
+  <script>
+    {% include "theme.js" %}
+  </script>
 </body>
 
 </html>

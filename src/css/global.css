@@ -1,6 +1,6 @@
 body {
-  background-color: theme("backgroundColor.light");
-  color: theme("textColor.dark");
+  background-color: theme("backgroundColor.bg");
+  color: theme("textColor.fg");
   font-size: theme("fontSize.2");
   font-family: theme("fontFamily.body");
   line-height: theme("lineHeight.normal");
@@ -66,7 +66,11 @@ th {
 
 :focus {
   outline: theme("spacing.px") dotted;
-  outline-offset: theme("spacing.0");
+  outline-offset: calc(theme("spacing.0-5") / 2);
+}
+
+main:focus {
+  outline: 0;
 }
 
 h2,
@@ -77,6 +81,10 @@ h3 {
 h2 + *,
 h3 + * {
   --flow-space: var(--space-base);
+}
+
+[id] {
+  scroll-margin-top: 1.5ex;
 }
 
 nav > ul {
@@ -90,4 +98,8 @@ nav > ul {
 }
 .header-anchor:not(:hover, :focus, :active) {
   text-decoration: none;
+}
+
+::selection {
+  background-color: theme("colors.secondary" / 50%);
 }

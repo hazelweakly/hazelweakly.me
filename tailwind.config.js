@@ -1,5 +1,7 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  // mode: "jit",
+  darkMode: "class",
+  mode: "jit",
   content: [
     "./src/**/*.html",
     "./src/**/*.njk",
@@ -12,10 +14,10 @@ module.exports = {
       inherit: "inherit",
       current: "current",
       transparent: "transparent",
-      primary: "#8996c6",
-      secondary: "#aa4064",
-      light: "#f9f9f9",
-      dark: "#43464c",
+      primary: "hsl(var(--color-primary))",
+      secondary: "hsl(var(--color-secondary))",
+      bg: "hsl(var(--color-bg))",
+      fg: "hsl(var(--color-fg))",
     },
     /* @link https://utopia.fyi/type/calculator?c=320,18,1.25,2160,26,1.5,6,4,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
     spacing: {
@@ -49,5 +51,8 @@ module.exports = {
       bold: 700,
       normal: 400,
     },
+  },
+  corePlugins: {
+    preflight: false,
   },
 };
