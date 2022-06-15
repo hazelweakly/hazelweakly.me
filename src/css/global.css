@@ -3,7 +3,7 @@ body {
   color: theme("textColor.fg");
   font-size: theme("fontSize.2");
   font-family: theme("fontFamily.body");
-  line-height: theme("lineHeight.normal");
+  line-height: 1.75;
 }
 
 code,
@@ -15,7 +15,7 @@ pre {
 h1,
 h2,
 h3 {
-  line-height: theme("lineHeight.tight");
+  line-height: 1.25;
   font-family: theme("fontFamily.heading");
   font-weight: normal;
 }

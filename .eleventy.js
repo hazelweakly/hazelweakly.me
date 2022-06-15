@@ -19,7 +19,8 @@ module.exports = function (cfg) {
   cfg.addWatchTarget("./src/css/");
   cfg.addWatchTarget("./postcss.config.js");
   cfg.addPassthroughCopy("./src/fonts");
-  cfg.addPassthroughCopy({ "./src/images/favicons": "." });
+  cfg.addPassthroughCopy({ "./src/favicons": "." });
+  cfg.addPassthroughCopy("./src/images");
 
   cfg.setLibrary("md", transforms.markdownLibrary);
 

@@ -22,22 +22,20 @@
 
 @layer base {
   :root {
-    --hue-primary: 227;
-    --hue-secondary: 340;
+    --hue-primary: 340;
+    --hue-secondary: 227;
     --color-primary: var(--hue-primary) 35% 66%;
     --color-secondary: var(--hue-secondary) 35% 66%;
-    --color-bg: var(--hue-primary) 35% 98%;
-    --color-fg: var(--hue-primary) 35% 10%;
+    --color-bg: var(--hue-primary) 35% 87%;
+    --color-fg: var(--hue-primary) 35% 13%;
     --color-fg: var(--color-dark);
     --color-bg: var(--color-light);
   }
   html.dark {
-    --hue-primary: 227;
-    --hue-secondary: 340;
     --color-primary: var(--hue-primary) 35% 66%;
     --color-secondary: var(--hue-secondary) 35% 66%;
-    --color-light: var(--hue-primary) 35% 98%;
-    --color-dark: var(--hue-primary) 35% 10%;
+    --color-light: var(--hue-primary) 35% 87%;
+    --color-dark: var(--hue-primary) 35% 13%;
     --color-fg: var(--color-light);
     --color-bg: var(--color-dark);
   }

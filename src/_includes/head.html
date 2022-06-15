@@ -6,14 +6,21 @@
     {{ title }}{% if page.url != '/' %} | {{ meta.siteName }}{% endif %}
   </title>
 
+  {% set description = meta.siteDescription if page.url == '/' else content |
+  excerpt %}
   <meta name="author" content="{{ meta.authorName}}" />
   {% if noindex %}
   <meta name="robots" content="noindex" />
   {% endif %}
 
-  <meta name="description" content="{{ meta.siteDescription }}" />
-  <meta property="og:description" content="{{ meta.siteDescription }}" />
-  <meta name="twitter:description" content="{{ meta.siteDescription }}" />
+  <meta name="description" content="{{ description }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <meta name="twitter:description" content="{{ description }}" />
+
+  <meta name="twitter:site" content="{{ meta.twitter }}" />
+  <meta name="og:site_name" content="{{ meta.siteName }}" />
+  <meta property="og:locale" content="en-us" />
+  <meta property="og:type" content="article" />
 
   <meta
     property="og:title"
@@ -27,6 +34,13 @@
   {% if thumbnail %}
   <meta property="og:image" content="{{ thumbnail }}" />
   <meta name="twitter:image" content="{{ thumbnail }}" />
+  {% else %}
+  <meta property="og:image" content="{{ '/images/og.jpg' | toAbsoluteUrl }}" />
+  <meta name="twitter:image" content="{{ '/images/og.jpg' | toAbsoluteUrl }}" />
+  <meta
+    name="twitter:image:alt"
+    content="Hazel looks at the camera and smiles while brushing her hair aside, she's wearing a red dress."
+  />
   {% endif %}
 
   <meta property="og:url" content="{{ page.url | toAbsoluteUrl }}" />
@@ -41,12 +55,15 @@
   />
   <link
     rel="preload"
-    href="/fonts/zilla-slab-v11-latin-500.woff2"
+    href="/fonts/zilla-slab-v11-latin-400.woff2"
     as="font"
     type="font/woff2"
     crossorigin="anonymous"
   />
+
+  <link rel="preload" as="style" href="/theme.css" />
   <link rel="stylesheet" href="/theme.css" />
+
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />

@@ -11,6 +11,8 @@
     </main>
 
     <footer class="center">
+      <link rel="preload" href="/fonts/zilla-subset-footer.woff2" as="font" type="font/woff2" crossorigin="anonymous"
+        data-helmet="zilla-slab-v11-latin-400italic" />
       <p class="text-center italic text-1">
         &copy; {% year %} {{ meta.siteName }}
       </p>
@@ -20,9 +22,8 @@
   <script>
     document.documentElement.classList.remove("no-js");
   </script>
-  <script>
+  <script async defer>
     {% include "theme.js" %}
   </script>
-</body>
 
 </html>

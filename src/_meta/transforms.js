@@ -111,10 +111,10 @@ const markdownLibrary = markdownIt({
  * { "zilla-italic": "/fonts/...", } => `<link rel= ...`
  */
 const prefixLink = (links, fn) => {
-  const prefix = Object.entries(links)
+  const prefix = links
     .map(
-      ([helmet, url]) =>
-        `<link rel="preload" href="/fonts/${url}.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-helmet="${helmet}" />`,
+      (url) =>
+        `<link rel="preload" href="/fonts/${url}.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-helmet="${url}" />`,
     )
     .join("");
   return (tokens, idx, options, env, self) =>
@@ -127,42 +127,25 @@ const prefixLink = (links, fn) => {
 const rules = markdownLibrary.renderer.rules;
 
 const em_open = rules.em_open;
-rules.em_open = prefixLink(
-  { "zilla-italic": "/zilla-slab-v11-latin-500italic" },
-  em_open,
-);
+rules.em_open = prefixLink(["zilla-slab-v11-latin-400italic"], em_open);
 
 const strong_open = rules.strong_open;
-rules.strong_open = prefixLink(
-  { "zilla-strong": "zilla-slab-v11-latin-700" },
-  strong_open,
-);
+rules.strong_open = prefixLink(["zilla-slab-v11-latin-700"], strong_open);
 
 const code_block = rules.code_block;
 rules.code_block = prefixLink(
-  {
-    "victor-regular": "VictorMono-v1.5.3-Regular",
-    "victor-italic": "VictorMono-v1.5.3-Italic",
-  },
+  ["VictorMono-v1.5.3-Regular", "VictorMono-v1.5.3-Italic"],
   code_block,
 );
 
 const fence = rules.fence;
 rules.fence = prefixLink(
-  {
-    "victor-regular": "VictorMono-v1.5.3-Regular",
-    "victor-italic": "VictorMono-v1.5.3-Italic",
-  },
+  ["VictorMono-v1.5.3-Regular", "VictorMono-v1.5.3-Italic"],
   fence,
 );
 
 const code_inline = rules.code_inline;
-rules.code_inline = prefixLink(
-  {
-    "victor-regular": "VictorMono-v1.5.3-Regular",
-  },
-  code_inline,
-);
+rules.code_inline = prefixLink(["VictorMono-v1.5.3-Regular"], code_inline);
 
 async function imageShortcode(src, alt, sizes) {
   const metadata = await Image(src, {

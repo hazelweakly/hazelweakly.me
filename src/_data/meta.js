@@ -3,6 +3,8 @@ module.exports = {
   env: process.env.ELEVENTY_ENV || "development",
   authorName: "Hazel Weakly",
   authorEmail: "hazel@theweaklys.com",
+  twitter: "@hazelweakly",
   siteName: "Hazel Weakly",
-  siteDescription: "Hazel's Website",
+  siteDescription:
+    "I have thoughts, lots of thoughts. They never stop thinking. Never stop thunking.",
 };

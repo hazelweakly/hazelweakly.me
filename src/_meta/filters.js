@@ -25,7 +25,16 @@ const slug = (str) =>
 
 const toAbsoluteUrl = (url) => new URL(url, meta.url).href;
 
+const excerpt = (post) => {
+  const content = post
+    .replace(/(<([^>]+)>)/gi, "")
+    .split(/([\r\n ])+/)
+    .filter((x) => x)
+    .join("");
+  return content.trim().substr(0, content.lastIndexOf(" ", 200)) + "...";
+};
+
 module.exports = {
-  filters: { postDate, slug, toAbsoluteUrl },
+  filters: { postDate, slug, toAbsoluteUrl, excerpt },
   asyncFilters: { postcss },
 };

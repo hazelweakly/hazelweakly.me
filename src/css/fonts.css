@@ -9,15 +9,15 @@
   font-family: "Zilla Slab";
   font-style: normal;
   font-display: swap;
-  font-weight: 500;
-  src: url("/fonts/zilla-slab-v11-latin-500.woff2") format("woff2");
+  font-weight: 400;
+  src: url("/fonts/zilla-slab-v11-latin-400.woff2") format("woff2");
 }
 @font-face {
   font-family: "Zilla Slab";
   font-style: italic;
   font-display: swap;
-  font-weight: 500;
-  src: url("/fonts/zilla-slab-v11-latin-500italic.woff2") format("woff2");
+  font-weight: 400;
+  src: url("/fonts/zilla-slab-v11-latin-400italic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Zilla Slab";
@@ -46,4 +46,11 @@
   font-display: swap;
   font-weight: 400;
   src: url("/fonts/VictorMono-v1.5.3-Italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Zilla Slab";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/zilla-subset-footer.woff2") format("woff2");
 }
