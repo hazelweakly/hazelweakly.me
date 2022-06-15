@@ -2,11 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggleEl = document.querySelector(".user-toggle button");
   const statusEl = document.querySelector('.user-toggle [role="status"]');
   const getTheme = () =>
-    localStorage.getItem("theme") ??
-    getComputedStyle(document.documentElement)
-      .getPropertyValue("--color-mode")
-      .replace(/\'|"/g, "")
-      .trim();
+    (localStorage.getItem("theme") ??
+      getComputedStyle(document.documentElement)
+        .getPropertyValue("--color-mode")
+        .replace(/\'|"/g, "")
+        .trim()) ||
+    (window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light");
 
   const setTheme = (setting) => (
     localStorage.setItem("theme", setting), setting
