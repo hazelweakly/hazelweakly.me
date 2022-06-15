@@ -12,10 +12,14 @@
   {% if noindex %}
   <meta name="robots" content="noindex" />
   {% endif %}
+  <meta name="theme-color" content="#2d161d" />
 
   <meta name="description" content="{{ description }}" />
   <meta property="og:description" content="{{ description }}" />
   <meta name="twitter:description" content="{{ description }}" />
+  <link rel="alternate" type="application/atom+xml" title="Atom Feed for {{ meta.siteName }}" href="/atom.xml" />
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ meta.siteName }}" href="/rss.xml" />
+  <link rel="alternate" type="application/feed+json" title="JSON Feed for {{ meta.siteName }}" href="/feed.json" />
 
   <meta name="twitter:site" content="{{ meta.twitter }}" />
   <meta name="og:site_name" content="{{ meta.siteName }}" />

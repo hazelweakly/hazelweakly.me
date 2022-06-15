@@ -1,34 +1,26 @@
 ---
 title: "Hazel Weakly"
 summary: "A feed of the latest blog posts"
-permalink: "/feed.xml"
+permalink: "/rss.xml"
+eleventyExcludeFromCollections: true
 ---
-
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ title }}</title>
-  <subtitle>{{ summary }}</subtitle>
-  <link href="{{ meta.url }}{{ permalink }}" rel="self" />
-  <link href="{{ meta.url }}/" />
-  <updated
-    >{{ collections.blog | getNewestCollectionItemDate | dateToRfc3339
-    }}</updated
-  >
-  <id>{{ meta.url }}</id>
-  <author>
-    <name>{{ meta.authorName }}</name>
-    <email>{{ meta.authorEmail }}</email>
-  </author>
-  {% for post in collections.blog %} {% set absolutePostUrl %}{{ meta.url }}{{
-  post.url | url }}{% endset %}
-  <entry>
-    <title>{{ post.data.title }}</title>
-    <link href="{{ absolutePostUrl }}" />
-    <updated>{{ post.date | rssDate }}</updated>
-    <id>{{ absolutePostUrl }}</id>
-    <content type="html">
-      <![CDATA[ {{ post.templateContent | safe }} ]]>
-    </content>
-  </entry>
-  {% endfor %}
-</feed>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="{{ meta.url }}">
+  <channel>
+    <title>{{ title }}</title>
+    <link>{{ meta.url }}</link>
+    <description>{{ summary }}</description>
+    <language>en</language>
+    {%- for post in collections.blog | reverse %}
+    {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(meta.url) }}{% endset %}
+    <item>
+      <title>{{ post.data.title }}</title>
+      <link>{{ absolutePostUrl }}</link>
+      <description>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
+      <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+      <dc:creator>{{ meta.authorName }}</dc:creator>
+      <guid>{{ absolutePostUrl }}</guid>
+    </item>
+    {%- endfor %}
+  </channel>
+</rss>
