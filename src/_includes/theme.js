@@ -11,9 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
       ? "dark"
       : "light");
 
-  const setTheme = (setting) => (
-    localStorage.setItem("theme", setting), setting
-  );
+  const setTheme = (setting) => {
+    localStorage.setItem("date", Date.now());
+    localStorage.setItem("theme", setting);
+    return setting;
+  };
 
   const invert = (theme) => (theme === "dark" ? "light" : "dark");
 
@@ -28,5 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
     (evt) => void (evt.preventDefault(), apply(setTheme(invert(getTheme())))),
   );
 
+  const date = new Date(+(localStorage.getItem("date") ?? Date.now()));
+  const now = new Date(Date.now());
+  if ((now - date) / 1000 > 24 * 60 * 60) {
+    localStorage.removeItem("theme");
+    localStorage.removeItem("date");
+  }
   apply();
 });
