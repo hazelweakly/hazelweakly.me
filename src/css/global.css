@@ -49,7 +49,7 @@ h3 {
 
 a {
   color: theme("textColor.currentColor");
-  text-decoration-color: var(--color-primary);
+  text-decoration-color: theme("textColor.currentColor");
 }
 
 a:hover:not(.header-anchor) {
@@ -93,9 +93,10 @@ nav > ul {
 
 .header-anchor:is(:hover, :focus, :active)::after {
   content: "#";
-  font-size: 0.75em;
-  padding-left: 0.5em;
+  padding-left: 0.25em;
+  position: absolute;
 }
+
 .header-anchor:not(:hover, :focus, :active) {
   text-decoration: none;
 }
