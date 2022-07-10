@@ -26,8 +26,8 @@
     --hue-secondary: 227;
     --color-primary: var(--hue-primary) 35% 66%;
     --color-secondary: var(--hue-secondary) 35% 66%;
-    --color-bg: var(--hue-primary) 35% 87%;
-    --color-fg: var(--hue-primary) 35% 13%;
+    --color-light: var(--hue-primary) 35% 93%;
+    --color-dark: var(--hue-primary) 35% 13%;
     --color-fg: var(--color-dark);
     --color-bg: var(--color-light);
   }
