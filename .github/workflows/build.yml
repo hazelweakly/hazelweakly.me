@@ -29,6 +29,9 @@ jobs:
 
       - run: nix develop -c pnpm install --frozen-lockfile
       - run: nix develop -c pnpm build
+        env:
+          URL: https://hazelweakly.me
+          ELEVENTY_ENV: prod
       - run: nix develop -c netlify deploy --prod
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
