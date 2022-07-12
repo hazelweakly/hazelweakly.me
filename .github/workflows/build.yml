@@ -12,6 +12,22 @@ jobs:
         with:
           extra_nix_config: |
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+
+      - name: Cache pnpm store
+        uses: actions/cache@v2
+        env:
+          cache-version: v1 # increment as needed to manually reset cache
+        with:
+          path: |
+            ~/.pnpm-store/v3
+          key:
+            ${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('pnpm-lock.yaml')
+            }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('pnpm-lock.yaml') }}-
+            ${{ runner.os }}-${{ env.cache-version }}-
+
+      - run: nix develop -c pnpm install --frozen-lockfile
       - run: nix develop -c pnpm build
       - run: nix develop -c netlify deploy --prod
         env:
