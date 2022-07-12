@@ -4,6 +4,44 @@ const postcssLoadConfig = require("postcss-load-config");
 const slugify = require("slugify");
 const meta = require("../_data/meta");
 
+const generateResume = async (_, done) => {
+  const fs = require("fs");
+  const exec = require("node:util").promisify(require("child_process").exec);
+
+  // pandoc -s --to=latex --pdf-engine=tectonic --pdf-engine-opt=-Zsearch-path=$FONT_DIR --lua-filter filter.lua --template mcdowell.tex cv.md -o -
+  const pandoc = (format) =>
+    [
+      "pandoc",
+      format === "pdf" ? "-s" : "",
+      "--pdf-engine=tectonic",
+      `--to=${format}`,
+      `--pdf-engine-opt=-Zsearch-path=${process.env.FONT_DIR ?? ""}`,
+      "--lua-filter filter.lua",
+      format === "pdf" ? "--template mcdowell.tex" : "",
+      "cv.md",
+      format === "pdf"
+        ? `-o ${require("path").join(
+            __dirname,
+            "..",
+            "..",
+            "public",
+            "resume.pdf",
+          )}`
+        : "-o -",
+    ].join(" ");
+
+  const html = await exec(pandoc("html"), {
+    cwd: require("path").join(__dirname, "..", "resume"),
+  }).then((x) => x.stdout);
+
+  // lmao hax n crimes
+  await exec(pandoc("pdf"), {
+    cwd: require("path").join(__dirname, "..", "resume"),
+  });
+
+  return done(null, html);
+};
+
 const postcss = async (cssCode, done) =>
   postcssLoadConfig({ env: process.env.ELEVENTY_ENV }).then(
     ({ plugins, options }) =>
@@ -36,5 +74,5 @@ const excerpt = (post) => {
 
 module.exports = {
   filters: { postDate, slug, toAbsoluteUrl, excerpt },
-  asyncFilters: { postcss },
+  asyncFilters: { postcss, generateResume },
 };

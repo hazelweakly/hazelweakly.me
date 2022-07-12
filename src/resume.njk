@@ -1,0 +1,32 @@
+---
+title: Hazel Weakly's Resume
+layout: base
+permalink: /resume.html
+---
+
+<article>
+  <section class="flow">
+  <h1>Hazel Weakly's Resume</h1>
+  {{ "html" | generateResume | safe }}
+  </section>
+</article>
+
+<style data-helmet="resume">
+  h2[id] {
+    margin-top: 7rem;
+  }
+
+  hr {
+    margin-block: 5rem;
+  }
+  dt {
+    font-size: 1.5em;
+    display: block;
+    padding-top: 1.5rem;
+  }
+
+  dd {
+    padding-left: 1em;
+    border-left: 0.25ex solid hsl(var(--color-primary));
+  }
+</style>

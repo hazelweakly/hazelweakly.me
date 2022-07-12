@@ -104,3 +104,7 @@ nav > ul {
 ::selection {
   background-color: theme("colors.secondary" / 50%);
 }
+
+::marker {
+  color: theme("colors.primary");
+}

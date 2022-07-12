@@ -13,13 +13,18 @@
       };
     in
     {
-      devShell = pkgs.mkShell {
-        nativeBuildInputs = with pkgs; [
-          just
-          netlify-cli
-          nodePackages.pnpm
-          nodejs
-        ];
-      };
+      devShell = pkgs.mkShell
+        {
+          nativeBuildInputs = with pkgs; [
+            eb-garamond
+            just
+            netlify-cli
+            nodePackages.pnpm
+            nodejs
+            pandoc
+            tectonic
+          ];
+          FONT_DIR = "${pkgs.eb-garamond}/share/fonts/opentype";
+        };
     });
 }
