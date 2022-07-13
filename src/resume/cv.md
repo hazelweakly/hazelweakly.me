@@ -3,7 +3,7 @@ title: Resume
 author: Hazel Weakly
 contact:
   address: |
-    Portland, OR, 97217
+    Vancouver, WA, 98660
   phone: "[(503) 369--8931](tel:5033698931)"
   email: "[hazel@theweaklys.com](mailto:hazel@theweaklys.com)"
 ---
@@ -34,7 +34,7 @@ Another part of that work resulted in the creation of a design system code repo 
 - Built a design system for front-end development to facilitate integration and cooperation between design and engineering.
 - Implemented authoring, consuming, and publishing infrastructure for using private package registries, enabling consumption of internal libraries in a secure and ergonomic manner.
 - Building upon the previous developer environments, I developed a build environment DSL in Nix to generate complex and reusable environments using a consistent and centralized framework. This centralized and codified domain knowledge, and allowed for rapid iteration across N repos.
-- Assisted with multiple critical vendor procurements, carefully selecting vendors to meet business needs with an eye towards saving money and increasing developer efficiency. The vendor procurements are expected to be finalized in Q3 2022 and achieve breakeven cost savings by EOY 2022.
+- Assisted with multiple critical vendor procurements, carefully selecting vendors to meet business needs with an eye towards saving money and increasing developer efficiency. The vendor procurements are expected to be finalized in Q3 2022 and achieve break-even cost savings by EOY 2022.
 - Assisted with adaption of modern observability infrastructure in the front-end, including creating and developing a javascript helper library and full Open Telemetry demo, and delivering an internal talk on the subject.
 
 :::
@@ -125,7 +125,7 @@ In addition, I rewrote websites or tools in modern technologies as needed, speed
 | Open Source | |
 
 - Created and maintain the Haskell setup action for GitHub Actions to make using Haskell in GitHub's CI easier.
-- Have contributed in small ways to various OSS projects, eg: [direnv](https://github.com/direnv/direnv), [neovim](https://github.com/neovim/neovim), [mach-nix](https://github.com/DavHau/mach-nix/), and various neovim plugins.
+- Have contributed in small ways to various OSS projects, e.g.: [direnv](https://github.com/direnv/direnv), [neovim](https://github.com/neovim/neovim), [mach-nix](https://github.com/DavHau/mach-nix/), [nixpkgs](https://github.com/NixOS/nixpkgs), and various neovim plugins.
 
 :::
 
@@ -139,7 +139,7 @@ Portland State University
 : B.S. in Computer Science. 2016--2018.
 
 Walla Walla University
-: Prograss towards B.S. in Computer Engineering. 2013--2016.
+: Progress towards B.S. in Computer Engineering. 2013--2016.
 
 :::
 

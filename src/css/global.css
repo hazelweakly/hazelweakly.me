@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light dark;
+}
+
 body {
   background-color: theme("backgroundColor.bg");
   color: theme("textColor.fg");
