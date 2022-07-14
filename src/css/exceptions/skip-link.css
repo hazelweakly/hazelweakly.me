@@ -1,0 +1,22 @@
+.skip-link {
+  top: var(--space-1);
+  left: var(--space-1);
+  position: absolute;
+  z-index: 1;
+  background: theme("colors.bg");
+}
+
+/* when I have buttons, these will be button styles */
+.skip-link:active,
+.skip-link:focus,
+.skip-link:hover {
+  transition: box-shadow 150ms ease-in-out,
+    transform 250ms theme("transitionTimingFunction.out"), background 50ms,
+    color 50ms;
+}
+
+.skip-link:focus,
+.skip-link:hover {
+  box-shadow: theme("boxShadow.md");
+  transform: scale(theme("scale.105"));
+}

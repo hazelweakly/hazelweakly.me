@@ -8,13 +8,17 @@ const UserConfig = require("@11ty/eleventy/src/UserConfig");
 
 /** @param {UserConfig} cfg */
 module.exports = function (cfg) {
-  Object.entries(transforms.before).forEach(([k, fn]) =>
+  Object.entries(transforms.before).forEach(([_, fn]) =>
     cfg.on("eleventy.before", fn),
+  );
+  Object.entries(transforms.after).forEach(([_, fn]) =>
+    cfg.on("eleventy.after", fn),
   );
 
   foreach(transforms.plugins, (p, opts) => cfg.addPlugin(require(p), opts));
 
   cfg.setServerOptions({ port: 8080, portReassignmentRetryCount: 0 });
+  cfg.setQuietMode(true);
 
   cfg.addWatchTarget("./src/css/");
   cfg.addWatchTarget("./postcss.config.js");
@@ -30,5 +34,6 @@ module.exports = function (cfg) {
   foreach(filters.asyncFilters, (k, fn) => cfg.addNunjucksAsyncFilter(k, fn));
   foreach(transforms.transforms, (k, fn) => cfg.addTransform(k, fn));
 
-  return require("./src/_meta/cfg");
+  const c = require("./src/_meta/cfg");
+  return { ...c, dir: { input: c.dir.input, output: c.dir.output } };
 };

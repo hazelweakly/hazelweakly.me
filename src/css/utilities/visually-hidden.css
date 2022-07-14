@@ -14,9 +14,3 @@ Info: https://piccalil.li/quick-tip/visually-hidden/
   width: 1px;
   white-space: nowrap;
 }
-
-.skip-link {
-  top: var(--space-1);
-  left: var(--space-1);
-  position: absolute;
-}

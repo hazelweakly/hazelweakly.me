@@ -85,6 +85,15 @@ const generateCSS = async ({ dir, runMode, outputMode } = {}) => {
   );
 };
 
+const generateResumePDF = async ({ dir, runMode, outputMode } = {}) => {
+  if (runMode !== "build") return;
+  const pandoc = require("./utils").pandoc;
+  return await pandoc({
+    format: "pdf",
+    output: path.join(__dirname, "..", "..", dir.output, "resume.pdf"),
+  });
+};
+
 const markdownLibrary = markdownIt({
   html: true,
   typographer: true,
@@ -163,7 +172,7 @@ async function imageShortcode(src, alt, sizes) {
 yearShortcode = () => `${new Date().getFullYear()}`;
 
 const criticalCSS = async (content, outputPath) => {
-  if (outputPath && outputPath.endsWith(".html")) {
+  if (isProd && outputPath && outputPath.endsWith(".html")) {
     const outputDir = require("./cfg").dir.output;
 
     // Generate HTML with critical CSS
@@ -187,8 +196,10 @@ const criticalCSS = async (content, outputPath) => {
 module.exports = {
   markdownLibrary,
   before: { generateCSS },
+  after: { generateResumePDF },
   plugins: {
     "@11ty/eleventy-plugin-syntaxhighlight": {},
+    "@11ty/eleventy-plugin-directory-output": {},
     "@11ty/eleventy-plugin-rss": {},
     "eleventy-plugin-helmet": {},
   },
