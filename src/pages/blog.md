@@ -1,5 +1,6 @@
 ---
 title: Posts
+order: 2
 ---
 
 {% for post in collections.blog %}

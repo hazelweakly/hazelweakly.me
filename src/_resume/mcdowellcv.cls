@@ -22,7 +22,7 @@
 \ProvidesClass{mcdowellcv}[2017/06/18 v1.2.0 McDowell CV class]
 
 % Set up the fonts according to options
-\def\mainfontsize{12pt}
+\def\mainfontsize{11pt}
 % \def\mainfontface{EB Garamond}
 
 \DeclareOption{calibri}{%
@@ -35,7 +35,7 @@
 \LoadClass[letterpaper,\mainfontsize]{article}
 
 % Set document margins
-\usepackage[left=1in,top=0.75in,right=1in,bottom=0.75in]{geometry}
+\usepackage[left=0.5in,top=0.25in,right=0.5in,bottom=0.25in]{geometry}
 
 % Set font face
 \usepackage{fontspec}

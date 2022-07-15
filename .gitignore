@@ -2,6 +2,7 @@ node_modules
 public
 .env
 src/css/custom-props.css
+src/_resume/cv.pdf
 
 # Local Netlify folder
 .netlify

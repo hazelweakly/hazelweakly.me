@@ -1,5 +1,6 @@
 ---
 title: About Me
+order: 1
 ---
 
 Currently, I spend my days working on building out infrastructure, systems, automation, and tooling to make life easier and better for others (and myself).

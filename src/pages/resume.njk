@@ -1,26 +1,22 @@
 ---
-title: Resume
+title: Résumé
+order: 3
 ---
 
 {{ "html" | generateResume | safe }}
 
 <style data-helmet="resume">
-  h2[id] {
-    margin-top: 7rem;
-  }
-
-  hr {
-    margin-block: 5rem;
+  dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: var(--space-0) var(--space-3);
+    align-items: center;
   }
 
   dt {
-    font-size: 1.5em;
-    display: block;
-    padding-top: 1.5rem;
-  }
-
-  dd {
-    padding-left: 1em;
-    border-left: 0.25ex solid hsl(var(--color-primary));
+    font-size: calc(var(--size-3) * 0.80);
+    justify-self: self-end;
+    align-self: start;
+    font-variant: small-caps;
   }
 </style>

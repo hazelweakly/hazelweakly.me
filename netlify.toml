@@ -1,2 +1,6 @@
 [build]
 publish = "public"
+[dev]
+command = "pnpm start:prod"
+publish = "public"
+targetPort = 8080

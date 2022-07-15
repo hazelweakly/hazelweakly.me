@@ -1,4 +1,5 @@
 const filters = require("./src/_meta/filters");
+const meta = require("./src/_data/meta");
 const transforms = require("./src/_meta/transforms");
 const foreach = (o, f) => Object.entries(o).forEach(([k, fn]) => f(k, fn));
 
@@ -22,6 +23,10 @@ module.exports = function (cfg) {
 
   cfg.addWatchTarget("./src/css/");
   cfg.addWatchTarget("./postcss.config.js");
+  if (meta.env === "prod") {
+    cfg.ignores.add("src/_resume");
+  }
+  cfg.addWatchTarget("./src/_resume/cv.md");
   cfg.addPassthroughCopy("./src/fonts");
   cfg.addPassthroughCopy({ "./src/favicons": "." });
   cfg.addPassthroughCopy("./src/images");
@@ -33,6 +38,7 @@ module.exports = function (cfg) {
   foreach(filters.filters, (k, fn) => cfg.addFilter(k, fn));
   foreach(filters.asyncFilters, (k, fn) => cfg.addNunjucksAsyncFilter(k, fn));
   foreach(transforms.transforms, (k, fn) => cfg.addTransform(k, fn));
+  foreach(transforms.collections, (k, fn) => cfg.addCollection(k, fn));
 
   const c = require("./src/_meta/cfg");
   return { ...c, dir: { input: c.dir.input, output: c.dir.output } };

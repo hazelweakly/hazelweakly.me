@@ -45,7 +45,7 @@ module.exports = {
     }),
     fontFamily: {
       display: ["Italiana", "ui-serif", "serif"],
-      heading: ["Italiana", "ui-serif", "serif"],
+      heading: ['"Zilla Slab"', "ui-serif", "serif"],
       body: ['"Zilla Slab"', "ui-sans-serif", "sans-serif"],
       mono: ['"Victor Mono"', "ui-mono", "mono"],
     },

@@ -8,12 +8,30 @@ contact:
   email: "[hazel@theweaklys.com](mailto:hazel@theweaklys.com)"
 ---
 
+# ~~Buzzword Bingo~~ Technical Skills
+
+::: cv
+
+Languages
+: TypeScript, JavaScript, Bash, Nix, Haskell, Rust, Python, C, Bash, JSON, YAML, Sass, CSS, Go
+
+OS/Virtualization
+: Linux (Debian, RHEL, CentOS, Ubuntu, NixOS, Amazon Linux), Kubernetes, Nomad, Docker, Terraform, Ansible, AWS, Packer
+
+Technologies
+: GitLab CI/CD, GitHub Actions, Varnish, Git, React, NoSQL, Helm, ArgoCD, Tailscale, Atlantis, Okta, honeycomb.io, Open Telemetry
+
+Soft Skills
+: Strong and attentive listener, empathetic, works well with others, leads by example, eye for detail, advocates fiercely for equitable treatment for all
+
+:::
+
 # Employment and Professional Experience
 
 ::: cv
 
-Experienced in improving feedback loops, developer experience and productivity, reliability, and build systems.
-Specializing in delivering a holistic approach to cross-cutting concerns that blend theory with pragmatism and embraces empathy.
+Experienced engineer specialized in feedback loops, developer experience, reliability, and build systems,
+with a focus on blending theory with pragmatism and embracing empathy.
 
 :::
 
@@ -22,20 +40,27 @@ Specializing in delivering a holistic approach to cross-cutting concerns that bl
 | Staff SRE | Eden Health | Sept. 2021--Present
 
 Eden Health is a healthtech startup focused on providing Concierge Health for every employee.
-As the first Security-focused Systems Reliability Engineer, I helped scope and prioritize security related initiatives that balanced current business needs while keeping future opportunities open.
-Additionally, as part of embracing the Staff engineering role of soft leadership, I dedicated time to working on developer experience from a holistic approach.
-Part of that work resulted in redesigning how Eden Health thinks of developer environments, getting buy-in across the engineering and product organizations, and shepherding adaption of the chosen solution.
-Another part of that work resulted in the creation of a design system code repo that worked across React, React Native, and allowed for seamless collaboration between design, product, and engineering teams.
 
-- Helped build out the developer environments using Nix shells to create reproducible and ephemeral environments that were fully consistent between developers and CI; virtually eliminating rework and toil caused by environment mismatches.
-- Revamped documentation regarding on-boarding for developers and integrated a discoverable bootstrapping mechanism into projects to create cross-team consistency, reducing on-boarding time significantly and creating ample automation opportunities.
-- Prioritized and built out the infrastructure required to adopt a mesh VPN solution as part of implementing zero trust networking.
-- Worked with the Director of Security to help mitigate critical vulnerabilities as they came up.
-- Built a design system for front-end development to facilitate integration and cooperation between design and engineering.
-- Implemented authoring, consuming, and publishing infrastructure for using private package registries, enabling consumption of internal libraries in a secure and ergonomic manner.
-- Building upon the previous developer environments, I developed a build environment DSL in Nix to generate complex and reusable environments using a consistent and centralized framework. This centralized and codified domain knowledge, and allowed for rapid iteration across N repos.
-- Assisted with multiple critical vendor procurements, carefully selecting vendors to meet business needs with an eye towards saving money and increasing developer efficiency. The vendor procurements are expected to be finalized in Q3 2022 and achieve break-even cost savings by EOY 2022.
-- Assisted with adaption of modern observability infrastructure in the front-end, including creating and developing a javascript helper library and full Open Telemetry demo, and delivering an internal talk on the subject.
+As the first Security-focused Systems Reliability Engineer, I helped scope and prioritize security related initiatives that balanced current business needs while keeping future opportunities open.
+This being a startup, I also utilized my other skillsets and contributed in efforts spanning developer experience, design systems, and architecture.
+
+#### Soft Engineering Leadership
+
+- Revamped developer on-boarding documentation and integrated a discoverable bootstrapping mechanism into projects, reducing on-boarding time by over 80% and enabling future automation opportunities.
+- Redesigned the approach to developer environments, getting buy-in across the engineering and product organizations, and shepherding adaption of the chosen solution.
+- Shepherded and initiated vendor procurements to enable higher security, cost savings, and developer efficiency.
+- Assisted with adaption of `open-telemetry` in the front-end by bringing awareness of benefits, improving knowledge sharing, and delivering an internal talk on the results.
+
+#### Developer Experience
+
+- Developed an environment specification DSL in Nix in order to centralize and codify domain knowledge, automate basic local environment checking, and allow for rapid iteration across all codebases.
+- Architected and built modular environments using the Nix environment DSL, eliminating developer re-work and toil caused by environment and tooling mismatches.
+- Created a cross-platform codebase for a design system that worked across React and React Native, allowing for seamless collaboration between design, product, and engineering teams.
+
+#### Security
+
+- Built out the infrastructure required to adopt a mesh VPN solution as part of implementing Zero Trust Networking.
+- Rolled out and fully integrated self-hosted package registries, enabling SBOM auditing, reducing CI failures, and increasing CI install speeds by 2x.
 
 :::
 
@@ -44,17 +69,15 @@ Another part of that work resulted in the creation of a design system code repo 
 | Build/Release Engineer | Galois, Inc\. | Dec. 2019--Sept. 2021
 
 Galois, Inc., is a formal verification consulting company that specializes in high assurance software and cryptography.
-As the first Ops employee, I helped shape the career ladder and scope of responsibilities for DevOps, taking care to match existing concerns with evolving needs when possible.
-Part of that work resulted in advising on a coherent plan to address the recent growing desire inside the Department of Defence for transitionable research.
-I also built out an internal platform and front-facing developer portal, enabling infrastructure and tooling knowledge to be shared and utilized effectively and paving the way for future growth in infrastructure competencies.
 
-- Helped build out and design the career ladder for DevOps and worked with the engineering council to envision what Ops at Galois looks like.
-- Architected and implemented an internal platform on top of Kubernetes, using GitOps and NixOS for a fully auditable, reproducible, and automatic system.
-- Raised cultural awareness within the company for the importance of infrastructure and engineering work within research projects.
-- Reduced CI/CD pipeline times from 2 days to 10 minutes and reduced complexity by consolidating from 4 CI systems to 1 CI system.
+As the first Ops employee, I helped shape the career ladder and scope of responsibilities for DevOps, taking care to match existing concerns with evolving needs.
+Part of that work resulted in advising on a coherent plan to address the recent growing desire inside the Department of Defence for transitionable R&D initiatives.
+
+- Built out an internal platform, enabling infrastructure and tooling knowledge sharing and reuse.
+- Architected and implemented an internal platform on top of Kubernetes, using GitOps and NixOS for a fully auditable, reproducible, and maintainable system.
+- Reduced CI/CD pipeline times from days to minutes, and reduced complexity by consolidating from 4+ CI systems to 1 CI system.
 - Shortened FPGA development loop by days, and enabled automated testing of FPGA machines by designing and deploying a CI system, testsuite, and cross-project CI coordination.
-- Created development environments, CI and CD pipelines, and optimized releases for projects across a wide range of environments, from secure enclaves, to FPGAs, to cloud deployments.
-- Reduced PR merge times from weeks/months to days by championing automation tooling to make collaboration across and within teams smoother.
+- Created development environments, CI/CD pipelines, and optimized releases for projects across a wide range of environments, from secure enclaves, to FPGAs, to cloud deployments.
 - Enabled the shipping of modern development tooling into a highly isolated system by creating a fully self-bootstrapping environment suitable for non-privileged HPC-like systems.
 
 :::
@@ -64,15 +87,15 @@ I also built out an internal platform and front-facing developer portal, enablin
 | Sr. Web Developer | 503 Collective | March 2019--Nov. 2019
 
 503 Collective was a web design agency startup that focused on providing content personalization as a service.
-The website built also included a microservice backend to handle and eventually subsume a lot of the legacy infrastructure of the client.
-While there, I rapidly accelerated the implementation time for design changes and increased the Percent Complete and Accurate fulfillment of design tickets to nearly 100% by translating traditional print design into a dynamic and coherent language across desktop, mobile, and apps.
-On the infrastructure side, I sped up development lifecycles on the order of weeks by implementing infrastructure as code automation, reliable CI, and reproducible developer environments.
 
-- Rebuilt the code layout as a full monorepo to increase code sharing, reduce build times by over 50%, and eliminate phantom code transpilation errors.
-- Built a design system and provided training as design lead, saving weeks of developer time.
+As part of a small startup, I took part in shaping and leading initiatives related to improving every aspect of client and internal focused efforts and communication.
+
+- Built and maintained a comprehensive design system, saving weeks of developer time.
+- Fully restructured the codebase into a true monorepo, reducing build times by over 50%, and eliminating phantom code transpilation errors.
+- Built a backend capable of self-healing ingestion of data from a slow internal API, increasing site responsiveness by over 90%.
+- Implemented CI and reproducible developer environments, including for mobile development.
+- Optimized server caching and improved peak traffic load capabilities by over 20x.
 - Reduced average page load over 50%.
-- Optimized server infrastructure to handle traffic beyond 5,000 concurrent active users.
-- Built a backend capable of self healing ingestion of data from a slow internal API, increasing site responsiveness by over 90%.
 
 :::
 
@@ -80,18 +103,17 @@ On the infrastructure side, I sped up development lifecycles on the order of wee
 
 | Web Developer/DevOps | WFG National Title Company | Fall 2017--March 2019
 
-WFG National Title Company is a title insurance agency; my time there was spent as a web developer as well as implementing infrastructure.
-I transitioned all of the company websites from a fragile server setup to a containerized setup, significantly reducing deployment risk.
-In addition, I rewrote websites or tools in modern technologies as needed, speeding them up and securing them in the process.
+WFG National Title Company is a title insurance agency.
 
-- Created and managed on-prem container/automation based infrastructure.
-- Enabled consistent handling of design and security fixes by containerizing and standardizing all wordpress websites.
+As a web developer on a small team, I maintained and developed websites and later developed infrastructure to support them.
+
+- Transitioned all of the company websites from a fragile server setup to a containerized setup, significantly reducing deployment risk.
+- Modernized websites and internal tools as needed, improving speed, security, and maintainability.
 - Reduced developer setup time from weeks to hours and made local environments fully consistent with staging and production.
-- Implemented SPAs in React, created microservices, maintained WordPress codebases, and reduced technical debt.
 
 :::
 
-::: cv
+::: {.cv .hidden}
 
 | Full-stack Web Developer | Freelance | Dec. 2018--Feb. 2019
 
@@ -102,7 +124,7 @@ In addition, I rewrote websites or tools in modern technologies as needed, speed
 
 :::
 
-::: cv
+::: {.cv .hidden}
 
 | Team Lead | University Capstone | Spring 2018--Fall 2018
 
@@ -111,7 +133,7 @@ In addition, I rewrote websites or tools in modern technologies as needed, speed
 
 :::
 
-::: cv
+::: {.cv .hidden}
 
 | Remote Intern | Haskell Summer of Code | Summer 2017
 
@@ -124,8 +146,8 @@ In addition, I rewrote websites or tools in modern technologies as needed, speed
 
 | Open Source | |
 
-- Created and maintain the Haskell setup action for GitHub Actions to make using Haskell in GitHub's CI easier.
-- Have contributed in small ways to various OSS projects, e.g.: [direnv](https://github.com/direnv/direnv), [neovim](https://github.com/neovim/neovim), [mach-nix](https://github.com/DavHau/mach-nix/), [nixpkgs](https://github.com/NixOS/nixpkgs), and various neovim plugins.
+- I Created and maintain the official Haskell setup action for GitHub Actions to make using Haskell in GitHub's CI easier.
+- Ongoing contributions to several OSS projects, e.g.: [direnv](https://github.com/direnv/direnv), [neovim](https://github.com/neovim/neovim), [mach-nix](https://github.com/DavHau/mach-nix/), [nixpkgs](https://github.com/NixOS/nixpkgs), and various neovim plugins.
 
 :::
 
@@ -140,23 +162,5 @@ Portland State University
 
 Walla Walla University
 : Progress towards B.S. in Computer Engineering. 2013--2016.
-
-:::
-
-# ~~Buzzword Bingo~~ Technical Skills
-
-::: cv
-
-Languages
-: TypeScript, JavaScript, Bash, Nix, Haskell, Rust, Python, C, Bash, JSON, YAML, Sass, CSS
-
-OS/Virtualization
-: Linux (Debian, RHEL, CentOS, Ubuntu, NixOS, Amazon Linux), Kubernetes, Nomad, Docker, Terraform, Ansible, AWS, Packer
-
-Technologies
-: GitLab CI/CD, GitHub Actions, Varnish, Git, React, NoSQL, Helm, ArgoCD, Tailscale, Atlantis, Okta, honeycomb.io, Open Telemetry
-
-Soft Skills
-: Strong and attentive listener, empathetic, works well with others, leads by example, eye for detail, advocates fiercely for equitable treatment for all
 
 :::

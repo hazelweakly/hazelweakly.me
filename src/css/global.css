@@ -1,5 +1,6 @@
 :root {
   color-scheme: light dark;
+  scrollbar-gutter: stable both-edges;
 }
 
 body {
@@ -18,7 +19,8 @@ pre {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   line-height: 1.25;
   font-family: theme("fontFamily.heading");
   font-weight: normal;
@@ -31,10 +33,15 @@ h1 {
 
 h2 {
   font-size: theme("fontSize.5");
+  font-family: theme("fontFamily.display");
 }
 
 h3 {
   font-size: theme("fontSize.4");
+}
+
+h4 {
+  font-size: theme("fontSize.3");
 }
 
 p,
@@ -47,7 +54,8 @@ h1 {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   max-width: calc(theme("maxWidth.prose") / 2);
 }
 
@@ -78,12 +86,14 @@ main:focus {
 }
 
 h2,
-h3 {
-  --flow-space: var(--space-3);
+h3,
+h4 {
+  --flow-space: var(--space-4);
 }
 
 h2 + *,
-h3 + * {
+h3 + *,
+h4 + * {
   --flow-space: var(--space-base);
 }
 

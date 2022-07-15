@@ -1,11 +1,11 @@
 pandoc = require("pandoc")
 
 local function parse_attributes(attrs)
-	return "{" .. (attrs.title or "") .. "}" .. "{" .. (attrs.company or "") .. "}" .. "{" .. (attrs.time or "") .. "}"
+	return "{" .. (attrs.Title or "") .. "}" .. "{" .. (attrs.Company or "") .. "}" .. "{" .. (attrs.Date or "") .. "}"
 end
 
 local function is_plain_section(attrs)
-	return attrs.title == nil and attrs.company == nil and attrs.time == nil
+	return attrs.Title == nil and attrs.Company == nil and attrs.Date == nil
 end
 
 function Pandoc(doc)
@@ -14,11 +14,11 @@ function Pandoc(doc)
 end
 
 function parse_sentence(strs)
-	local attrs = { title = "", company = "", time = "" }
-	local attr_idx = { "title", "company", "time" }
+	local attrs = { Title = "", Company = "", Date = "" }
+	local attr_idx = { "Title", "Company", "Date" }
 	local idx = 1
 
-	for i, el in pairs(strs) do
+	for _, el in ipairs(strs) do
 		if el.text == "|" then
 			idx = idx + 1
 		else
@@ -34,7 +34,9 @@ function parse_sentence(strs)
 end
 
 function process_div(div)
-	if div.content[1].t == "LineBlock" then
+	if div.classes:includes("hidden") then
+		div = pandoc.Null()
+	elseif div.content[1].t == "LineBlock" then
 		local attrs = parse_sentence(div.content[1].content[1])
 		attrs.class = div.classes[1]
 		div.attr = attrs
@@ -50,28 +52,40 @@ function subsection_transform(div)
 		if FORMAT:match("latex") then
 			div.content:insert(1, pandoc.RawBlock("latex", "\\begin{cvsubsection}" .. parse_attributes(div.attributes)))
 			div.content:insert(pandoc.RawBlock("latex", "\\end{cvsubsection}"))
-		elseif FORMAT:match("html") and not is_plain_section(div.attributes) then
-			local attrs = div.attributes
+		elseif (FORMAT:match("native") or FORMAT:match("html")) and not is_plain_section(div.attributes) then
 			local lst = {}
-			local tbl = {
-				{
-					key = attrs.company,
-					value = { pandoc.Str("Company"), pandoc.Plain({ pandoc.Str(attrs.company) }) },
-				},
-				{ key = attrs.time, value = { pandoc.Str("Date"), pandoc.Plain({ pandoc.Str(attrs.time) }) } },
-				{ key = div.content[1], value = { pandoc.Str("Overview"), div.content[1] } },
-				{ key = div.content[2], value = { pandoc.Str("Accomplishments"), div.content[2] } },
-			}
-			for i, x in pairs(tbl) do
-				if x.key ~= nil and x.key ~= "" then
-					table.insert(lst, x.value)
+			for _, a in ipairs({ "Company", "Date" }) do
+				if div.attributes[a] ~= nil and div.attributes[a] ~= "" then
+					table.insert(lst, { pandoc.Str(a), pandoc.Plain({ pandoc.Str(div.attributes[a]) }) })
 				end
 			end
-			div = pandoc.Div({
-				pandoc.HorizontalRule(),
-				pandoc.Header(3, { pandoc.Str(attrs.title) }),
-				pandoc.DefinitionList(lst),
-			})
+
+			local first = {}
+			local second = {}
+			local div_contents = pandoc.List:new()
+			local split = false
+			for i = 1, #div.content do
+				if div.content[i].t == "Para" and not split then
+					table.insert(first, div.content[i])
+				else
+					split = true
+					table.insert(second, div.content[i])
+				end
+			end
+			if #div.content > 1 then
+				table.insert(lst, { pandoc.Str("Overview"), { first } })
+			end
+
+			div_contents:insert(pandoc.Header(3, { pandoc.Str(div.attributes.Title) }))
+			div_contents:insert(pandoc.DefinitionList(lst))
+			if #div.content == 1 then
+				div_contents:extend(first)
+			end
+			div_contents:extend(second)
+
+			div = {
+				pandoc.Div(div_contents),
+			}
 		end
 	end
 	return div
@@ -79,14 +93,15 @@ end
 
 local function slugify(str)
 	str = string.lower(str)
-	str = string.gsub(str, " ", "-")
+  str = string.gsub(str, "[\192-\255][\128-\191]*", "-")
+	str = string.gsub(str, "[%s]+", "-")
 	str = string.gsub(str, "[^%w-_]+", "")
 	return str
 end
 
 local function linkify_headers(header)
 	if FORMAT:match("latex") then
-		return header
+    return header.level == 2 and pandoc.Null() or header
 	end
 
 	local text = header.content
@@ -97,9 +112,20 @@ local function linkify_headers(header)
 	return header
 end
 
+local function remove_comments(blocks)
+	for i = #blocks - 1, 1, -1 do
+		local b = blocks[i]
+		if b.t == "RawBlock" and b.format == "html" and pandoc.text.sub(b.text, 1, 4) == "<!--" then
+			blocks:remove(i)
+		end
+	end
+	return blocks
+end
+
 return {
-	{ Pandoc = Pandoc },
+	{ Blocks = remove_comments },
 	{ Div = process_div },
 	{ Div = subsection_transform },
+	{ Pandoc = Pandoc },
 	{ Header = linkify_headers },
 }

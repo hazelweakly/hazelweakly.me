@@ -49,8 +49,7 @@ const generateCSS = async ({ dir, runMode, outputMode } = {}) => {
 
   // Add a note that this is auto generated
   result += `
-    /* VARIABLES GENERATED WITH TAILWIND CONFIG ON ${new Date().toLocaleDateString()}.
-    Tokens location: ../../tailwind.config.js */
+    /* VARIABLES GENERATED WITH TAILWIND CONFIG. */
 
     :root {
   `;
@@ -86,7 +85,7 @@ const generateCSS = async ({ dir, runMode, outputMode } = {}) => {
 };
 
 const generateResumePDF = async ({ dir, runMode, outputMode } = {}) => {
-  if (runMode !== "build") return;
+  if (!isProd) return;
   const pandoc = require("./utils").pandoc;
   return await pandoc({
     format: "pdf",
@@ -176,7 +175,7 @@ const criticalCSS = async (content, outputPath) => {
     const outputDir = require("./cfg").dir.output;
 
     // Generate HTML with critical CSS
-    const { html } = await require("critical").generate({
+    const { html, css } = await require("critical").generate({
       assetPaths: [path.dirname(outputPath)],
       base: outputDir,
       html: content,
@@ -188,10 +187,16 @@ const criticalCSS = async (content, outputPath) => {
       rebase: ({ originalUrl }) => originalUrl,
     });
 
+    // compute sha256 here.
+    // somehow CSP header something. Dump shit into a netlify file or smth
+
     return html;
   }
   return content;
 };
+
+const pages = (api) =>
+  api.getFilteredByTag("_pages").sort((a, b) => a.order - b.order);
 
 module.exports = {
   markdownLibrary,
@@ -212,5 +217,8 @@ module.exports = {
   },
   shortcodes: {
     year: yearShortcode,
+  },
+  collections: {
+    pages,
   },
 };

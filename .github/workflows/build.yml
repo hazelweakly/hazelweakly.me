@@ -2,6 +2,8 @@ name: Build
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: ["preview/**"]
 
 jobs:
   build:
@@ -32,7 +34,12 @@ jobs:
         env:
           URL: https://hazelweakly.me
           ELEVENTY_ENV: prod
-      - run: nix develop -c netlify deploy --prod
+      - run: |
+          cmd=''
+          if ${{ github.event_name == 'push' }}; then
+            cmd='--prod'
+          fi
+          nix develop -c netlify deploy $cmd
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
