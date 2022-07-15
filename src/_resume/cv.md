@@ -1,5 +1,5 @@
 ---
-title: Resume
+title: Résumé
 author: Hazel Weakly
 contact:
   address: |
