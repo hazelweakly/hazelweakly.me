@@ -155,12 +155,12 @@ As a web developer on a small team, I maintained and developed websites and late
 
 ::: cv
 
-| University | | 2013--2018
+| University | |
 
 Portland State University
-: B.S. in Computer Science. 2016--2018.
+: B.S. in Computer Science.
 
 Walla Walla University
-: Progress towards B.S. in Computer Engineering. 2013--2016.
+: Progress towards B.S. in Computer Engineering.
 
 :::
