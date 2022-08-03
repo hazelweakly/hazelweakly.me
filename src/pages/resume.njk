@@ -10,8 +10,13 @@ description: Experienced engineer specialized in feedback loops, developer exper
   dl {
     display: grid;
     grid-template-columns: max-content 1fr;
-    grid-gap: var(--space-0) var(--space-3);
+    grid-gap: var(--space-0-5) var(--space-3);
     align-items: center;
+  }
+
+  dd > * + *,
+  article ul > * + * {
+    margin-top: var(--flow-space, var(--space-2));
   }
 
   dt {
@@ -20,4 +25,5 @@ description: Experienced engineer specialized in feedback loops, developer exper
     align-self: start;
     font-variant: small-caps;
   }
+
 </style>

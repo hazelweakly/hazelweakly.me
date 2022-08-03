@@ -3,7 +3,7 @@ title: Résumé
 author: Hazel Weakly
 contact:
   address: |
-    Vancouver, WA, 98660
+    Vancouver, WA, 98660, USA
   phone: "[(503) 369--8931](tel:5033698931)"
   email: "[hazel@theweaklys.com](mailto:hazel@theweaklys.com)"
 ---
@@ -30,37 +30,30 @@ Soft Skills
 
 ::: cv
 
-Experienced engineer specialized in feedback loops, developer experience, reliability, and build systems,
-with a focus on blending theory with pragmatism and embracing empathy.
+Experienced engineer specialized in feedback loops, developer experience, distributed systems,
+with a focus on blending theory with pragmatism while embracing empathy.
 
 :::
 
 ::: cv
 
-| Staff SRE | Eden Health | Sept. 2021--Present
+| Staff SRE | Eden Health | Sept. 2021--Aug. 2022
 
-Eden Health is a healthtech startup focused on providing Concierge Health for every employee.
+Eden Health provides concierge healthcare services for employees as an employment benefit.
 
-As the first Security-focused Systems Reliability Engineer, I helped scope and prioritize security related initiatives that balanced current business needs while keeping future opportunities open.
-This being a startup, I also utilized my other skillsets and contributed in efforts spanning developer experience, design systems, and architecture.
-
-#### Soft Engineering Leadership
+As the first Security-focused Systems Reliability Engineer, I assisted in prioritizing security related initiatives that balanced current business needs while keeping future opportunities open.
+I also coordinated and spearheaded projects focused on improving the developer experience, design systems, and architecture.
 
 - Revamped developer on-boarding documentation and integrated a discoverable bootstrapping mechanism into projects, reducing on-boarding time by over 80% and enabling future automation opportunities.
-- Redesigned the approach to developer environments, getting buy-in across the engineering and product organizations, and shepherding adaption of the chosen solution.
-- Shepherded and initiated vendor procurements to enable higher security, cost savings, and developer efficiency.
-- Assisted with adaption of `open-telemetry` in the front-end by bringing awareness of benefits, improving knowledge sharing, and delivering an internal talk on the results.
+- Designed the approach to developer environments, cultivating buy-in across the engineering and product organizations, and shepherding adaption of the chosen solution.
+- Initiated and supervised vendor procurements to enable higher security, cost savings, and developer efficiency.
+- Assisted with adaption of `open-telemetry` in the front-end by demonstrating benefits, improving knowledge sharing, and delivering an internal talk on the results.
 
-#### Developer Experience
-
-- Developed an environment specification DSL in Nix in order to centralize and codify domain knowledge, automate basic local environment checking, and allow for rapid iteration across all codebases.
-- Architected and built modular environments using the Nix environment DSL, eliminating developer re-work and toil caused by environment and tooling mismatches.
+- Developed an environment specification DSL in Nix in order to centralize and codify domain knowledge, automate basic local configuration checking, and allow for rapid iteration across all codebases while eliminating re-work and toil caused by environment drift and tooling mismatches.
 - Created a cross-platform codebase for a design system that worked across React and React Native, allowing for seamless collaboration between design, product, and engineering teams.
 
-#### Security
-
 - Built out the infrastructure required to adopt a mesh VPN solution as part of implementing Zero Trust Networking.
-- Rolled out and fully integrated self-hosted package registries, enabling SBOM auditing, reducing CI failures, and increasing CI install speeds by 2x.
+- Implemented and deployed self-hosted package registries, enabling SBOM auditing, reducing CI failures, and doubling CI install speeds.
 
 :::
 
@@ -70,7 +63,7 @@ This being a startup, I also utilized my other skillsets and contributed in effo
 
 Galois, Inc., is a formal verification consulting company that specializes in high assurance software and cryptography.
 
-As the first Ops employee, I helped shape the career ladder and scope of responsibilities for DevOps, taking care to match existing concerns with evolving needs.
+As the first Ops employee, I assisted in shaping the career ladder and scope of responsibilities for DevOps, taking care to match existing concerns with evolving needs.
 Part of that work resulted in advising on a coherent plan to address the recent growing desire inside the Department of Defence for transitionable R&D initiatives.
 
 - Built out an internal platform, enabling infrastructure and tooling knowledge sharing and reuse.
@@ -105,7 +98,7 @@ As part of a small startup, I took part in shaping and leading initiatives relat
 
 WFG National Title Company is a title insurance agency.
 
-As a web developer on a small team, I maintained and developed websites and later developed infrastructure to support them.
+As a web developer, I maintained and developed websites and the infrastructure to support them.
 
 - Transitioned all of the company websites from a fragile server setup to a containerized setup, significantly reducing deployment risk.
 - Modernized websites and internal tools as needed, improving speed, security, and maintainability.
@@ -146,7 +139,7 @@ As a web developer on a small team, I maintained and developed websites and late
 
 | Open Source | |
 
-- I Created and maintain the official Haskell setup action for GitHub Actions to make using Haskell in GitHub's CI easier.
+- I created and maintain the official Haskell setup action for GitHub Actions to make using Haskell in GitHub's CI easier.
 - Ongoing contributions to several OSS projects, e.g.: [direnv](https://github.com/direnv/direnv), [neovim](https://github.com/neovim/neovim), [mach-nix](https://github.com/DavHau/mach-nix/), [nixpkgs](https://github.com/NixOS/nixpkgs), and various neovim plugins.
 
 :::
