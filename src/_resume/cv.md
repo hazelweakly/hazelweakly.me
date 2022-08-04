@@ -42,14 +42,14 @@ with a focus on blending theory with pragmatism while embracing empathy.
 Eden Health provides concierge healthcare services for employees as an employment benefit.
 
 As the first Security-focused Systems Reliability Engineer, I assisted in prioritizing security related initiatives that balanced current business needs while keeping future opportunities open.
-I also coordinated and spearheaded projects focused on improving the developer experience, design systems, and architecture.
+I also spearheaded projects focused on improving the developer experience, design systems, and architecture.
 
 - Revamped developer on-boarding documentation and integrated a discoverable bootstrapping mechanism into projects, reducing on-boarding time by over 80% and enabling future automation opportunities.
 - Designed the approach to developer environments, cultivating buy-in across the engineering and product organizations, and shepherding adaption of the chosen solution.
 - Initiated and supervised vendor procurements to enable higher security, cost savings, and developer efficiency.
 - Assisted with adaption of `open-telemetry` in the front-end by demonstrating benefits, improving knowledge sharing, and delivering an internal talk on the results.
 
-- Developed an environment specification DSL in Nix in order to centralize and codify domain knowledge, automate basic local configuration checking, and allow for rapid iteration across all codebases while eliminating re-work and toil caused by environment drift and tooling mismatches.
+- Developed an environment specification DSL in Nix in order to allow for rapid iteration and eliminate re-work and toil caused by environment drift.
 - Created a cross-platform codebase for a design system that worked across React and React Native, allowing for seamless collaboration between design, product, and engineering teams.
 
 - Built out the infrastructure required to adopt a mesh VPN solution as part of implementing Zero Trust Networking.
@@ -66,7 +66,6 @@ Galois, Inc., is a formal verification consulting company that specializes in hi
 As the first Ops employee, I assisted in shaping the career ladder and scope of responsibilities for DevOps, taking care to match existing concerns with evolving needs.
 Part of that work resulted in advising on a coherent plan to address the recent growing desire inside the Department of Defence for transitionable R&D initiatives.
 
-- Built out an internal platform, enabling infrastructure and tooling knowledge sharing and reuse.
 - Architected and implemented an internal platform on top of Kubernetes, using GitOps and NixOS for a fully auditable, reproducible, and maintainable system.
 - Reduced CI/CD pipeline times from days to minutes, and reduced complexity by consolidating from 4+ CI systems to 1 CI system.
 - Shortened FPGA development loop by days, and enabled automated testing of FPGA machines by designing and deploying a CI system, testsuite, and cross-project CI coordination.
