@@ -13,7 +13,7 @@ contact:
 ::: cv
 
 Languages
-: TypeScript, JavaScript, Bash, Nix, Haskell, Rust, Python, C, Bash, JSON, YAML, Sass, CSS, Go
+: TypeScript, JavaScript, Bash, Nix, Haskell, Rust, Python, C, JSON, YAML, Sass, CSS, Go
 
 OS/Virtualization
 : Linux (Debian, RHEL, CentOS, Ubuntu, NixOS, Amazon Linux), Kubernetes, Nomad, Docker, Terraform, Ansible, AWS, Packer
