@@ -64,7 +64,7 @@ I also spearheaded projects focused on improving the developer experience, desig
 Galois, Inc., is a formal verification consulting company that specializes in high assurance software and cryptography.
 
 As the first Ops employee, I assisted in shaping the career ladder and scope of responsibilities for DevOps, taking care to match existing concerns with evolving needs.
-Part of that work resulted in advising on a coherent plan to address the recent growing desire inside the Department of Defence for transitionable R&D initiatives.
+Part of that work resulted in advising on a coherent plan to address the recent growing desire inside the Department of Defense for transitionable R&D initiatives.
 
 - Architected and implemented an internal platform on top of Kubernetes, using GitOps and NixOS for a fully auditable, reproducible, and maintainable system.
 - Reduced CI/CD pipeline times from days to minutes, and reduced complexity by consolidating from 4+ CI systems to 1 CI system.
