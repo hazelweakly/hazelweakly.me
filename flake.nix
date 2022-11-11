@@ -18,13 +18,15 @@
           nativeBuildInputs = with pkgs; [
             eb-garamond
             just
-            netlify-cli
             nodePackages.pnpm
             nodejs
             pandoc
             tectonic
           ];
           FONT_DIR = "${pkgs.eb-garamond}/share/fonts/opentype";
+          shellHook = ''
+            export PATH="$PWD/node_modules/.bin:$PATH"
+          '';
         };
     });
 }

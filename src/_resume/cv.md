@@ -8,63 +8,54 @@ contact:
   email: "[hazel@theweaklys.com](mailto:hazel@theweaklys.com)"
 ---
 
+::: cv
+
+Experienced engineer specialized in developer experience, distributed systems, and security,
+with a focus on blending theory with pragmatism while embracing empathy.
+
+:::
+
+
 # ~~Buzzword Bingo~~ Technical Skills
 
 ::: cv
 
 Languages
-: TypeScript, JavaScript, Bash, Nix, Haskell, Rust, Python, C, JSON, YAML, Sass, CSS, Go
+: TypeScript, JavaScript, Bash, Nix, Haskell, Rust, Python, JSON, YAML, Sass, CSS, SQL, Go, C
 
 OS/Virtualization
 : Linux (Debian, RHEL, CentOS, Ubuntu, NixOS, Amazon Linux), Kubernetes, Nomad, Docker, Terraform, Ansible, AWS, Packer
 
 Technologies
-: GitLab CI/CD, GitHub Actions, Varnish, Git, React, NoSQL, Helm, ArgoCD, Tailscale, Atlantis, Okta, honeycomb.io, Open Telemetry
+: GitLab CI/CD, GitHub Actions, Varnish, Git, React, NoSQL, PostgreSQL, Helm, ArgoCD, Tailscale, Atlantis, Okta, honeycomb.io, Open Telemetry
 
-Soft Skills
-: Strong and attentive listener, empathetic, works well with others, leads by example, eye for detail, advocates fiercely for equitable treatment for all
-
-:::
-
-# Employment and Professional Experience
-
-::: cv
-
-Experienced engineer specialized in feedback loops, developer experience, distributed systems,
-with a focus on blending theory with pragmatism while embracing empathy.
+Attributes
+: Strong and attentive listener, empathetic, leads by example, strong attention to detail, strong equity advocate
 
 :::
 
-::: cv
+# Experience
 
-| Staff SRE | Eden Health | Sept. 2021--Aug. 2022
+::: {.cv Title="Staff SRE" Company="[Eden Health](https://edenhealth.com)" Date="Sept. 2021--Aug. 2022"}
 
-Eden Health provides concierge healthcare services for employees as an employment benefit.
+Took a leading role in prioritizing security related initiatives.
+Strong focus on improving the developer experience, design systems, and architecture.
 
-As the first Security-focused Systems Reliability Engineer, I assisted in prioritizing security related initiatives that balanced current business needs while keeping future opportunities open.
-I also spearheaded projects focused on improving the developer experience, design systems, and architecture.
-
-- Revamped developer on-boarding documentation and integrated a discoverable bootstrapping mechanism into projects, reducing on-boarding time by over 80% and enabling future automation opportunities.
-- Designed the approach to developer environments, cultivating buy-in across the engineering and product organizations, and shepherding adaption of the chosen solution.
-- Initiated and supervised vendor procurements to enable higher security, cost savings, and developer efficiency.
-- Assisted with adaption of `open-telemetry` in the front-end by demonstrating benefits, improving knowledge sharing, and delivering an internal talk on the results.
-
-- Developed an environment specification DSL in Nix in order to allow for rapid iteration and eliminate re-work and toil caused by environment drift.
+- Developed an environment specification DSL in Nix in order to allow for rapid iteration and increased efficiency.
 - Created a cross-platform codebase for a design system that worked across React and React Native, allowing for seamless collaboration between design, product, and engineering teams.
-
 - Built out the infrastructure required to adopt a mesh VPN solution as part of implementing Zero Trust Networking.
 - Implemented and deployed self-hosted package registries, enabling SBOM auditing, reducing CI failures, and doubling CI install speeds.
+- Revamped developer on-boarding documentation and integrated a discoverable bootstrapping mechanism into projects, reduced on-boarding time by over 80% created future automation opportunities.
+- Designed the approach to developer environments, and implemented change management across the engineering and product teams.
+- Initiated and supervised vendor procurements to enable higher security, cost savings, and developer efficiency.
+- Lead adaption of `open-telemetry` in the front-end by demonstrating benefits, improving knowledge sharing, and delivering an internal talk on the results.
 
 :::
 
-::: cv
+::: {.cv Title="Build/Release Engineer" Company="[Galois, Inc.](https://galois.com)" Date="Dec. 2019--Sept. 2021"}
 
-| Build/Release Engineer | Galois, Inc\. | Dec. 2019--Sept. 2021
-
-Galois, Inc., is a formal verification consulting company that specializes in high assurance software and cryptography.
-
-As the first Ops employee, I assisted in shaping the career ladder and scope of responsibilities for DevOps, taking care to match existing concerns with evolving needs.
-Part of that work resulted in advising on a coherent plan to address the recent growing desire inside the Department of Defense for transitionable R&D initiatives.
+Took a leading role in the build out of the DevOps team as its first member.
+Participated in contracts for the Department of Defense for transitionable R&D initiatives.
 
 - Architected and implemented an internal platform on top of Kubernetes, using GitOps and NixOS for a fully auditable, reproducible, and maintainable system.
 - Reduced CI/CD pipeline times from days to minutes, and reduced complexity by consolidating from 4+ CI systems to 1 CI system.
@@ -74,13 +65,9 @@ Part of that work resulted in advising on a coherent plan to address the recent 
 
 :::
 
-::: cv
+::: {.cv Title="Sr. Web Developer" Company="[503 Collective](https://www.linkedin.com/company/503-collective-inc/)" Date="March 2019--Nov. 2019"}
 
-| Sr. Web Developer | 503 Collective | March 2019--Nov. 2019
-
-503 Collective was a web design agency startup that focused on providing content personalization as a service.
-
-As part of a small startup, I took part in shaping and leading initiatives related to improving every aspect of client and internal focused efforts and communication.
+Working in a startup environment, I lead initiatives related to improving every aspect of client and internal focused efforts and communication.
 
 - Built and maintained a comprehensive design system, saving weeks of developer time.
 - Fully restructured the codebase into a true monorepo, reducing build times by over 50%, and eliminating phantom code transpilation errors.
@@ -91,9 +78,7 @@ As part of a small startup, I took part in shaping and leading initiatives relat
 
 :::
 
-::: cv
-
-| Web Developer/DevOps | WFG National Title Company | Fall 2017--March 2019
+::: {.cv Title="Web Developer/DevOps" Company="[WFG National Title Company](https://wfgtitle.com/)" Date="Fall 2017--March 2019"}
 
 WFG National Title Company is a title insurance agency.
 

@@ -1,7 +1,11 @@
 pandoc = require("pandoc")
 
+local function parse_attr(a)
+ return pandoc.read(a, "markdown").blocks[1] and pandoc.read(a, "markdown").blocks[1].content or pandoc.Null()
+end
+
 local function parse_attributes(attrs)
-	return "{" .. (attrs.Title or "") .. "}" .. "{" .. (attrs.Company or "") .. "}" .. "{" .. (attrs.Date or "") .. "}"
+	return "{" .. (attrs.Title and pandoc.utils.stringify(parse_attr(attrs.Title)) or "") .. "}" .. "{" .. (attrs.Company and pandoc.utils.stringify(parse_attr(attrs.Company)) or "") .. "}" .. "{" .. (attrs.Date and pandoc.utils.stringify(parse_attr(attrs.Date)) or "") .. "}"
 end
 
 local function is_plain_section(attrs)
@@ -56,7 +60,7 @@ function subsection_transform(div)
 			local lst = {}
 			for _, a in ipairs({ "Company", "Date" }) do
 				if div.attributes[a] ~= nil and div.attributes[a] ~= "" then
-					table.insert(lst, { pandoc.Str(a), pandoc.Plain({ pandoc.Str(div.attributes[a]) }) })
+					table.insert(lst, { pandoc.Str(a), pandoc.Plain(parse_attr(div.attributes[a])) })
 				end
 			end
 
