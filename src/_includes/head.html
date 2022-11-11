@@ -6,8 +6,8 @@
     {{ title }}{% if page.url != '/' %} | {{ meta.siteName }}{% endif %}
   </title>
 
-  {% set description = meta.siteDescription if page.url == '/' else
-  (description if description else (content | excerpt) ) %}
+  {% set description = meta.siteDescription if page.url == '/' else (description
+  if description else (content | excerpt) ) %}
   <meta name="author" content="{{ meta.authorName}}" />
   {% if noindex %}
   <meta name="robots" content="noindex" />
@@ -28,6 +28,7 @@
   <meta name="og:site_name" content="{{ meta.siteName }}" />
   <meta property="og:locale" content="en-us" />
   <meta property="og:type" content="{{ 'website' if page.url == '/' else 'article' }}" />
+  <link rel="me" href="{{ socialMedia.mastodon.url }}" />
 
   <meta property="og:title" content="{{ title }}{% if page.url != '/' %} | {{ meta.siteName }}{% endif %}" />
   <meta name="twitter:title" content="{{ title }}{% if page.url != '/' %} | {{ meta.siteName }}{% endif %}" />
