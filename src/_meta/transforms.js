@@ -196,7 +196,9 @@ const criticalCSS = async (content, outputPath) => {
 };
 
 const pages = (api) =>
-  api.getFilteredByTag("_pages").sort((a, b) => a.order - b.order);
+  api
+    .getFilteredByTag("_pages")
+    .sort((a, b) => +a?.data?.order - +b?.data?.order);
 
 module.exports = {
   markdownLibrary,

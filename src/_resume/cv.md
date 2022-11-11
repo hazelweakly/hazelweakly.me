@@ -15,7 +15,6 @@ with a focus on blending theory with pragmatism while embracing empathy.
 
 :::
 
-
 # ~~Buzzword Bingo~~ Technical Skills
 
 ::: cv
@@ -27,14 +26,28 @@ OS/Virtualization
 : Linux (Debian, RHEL, CentOS, Ubuntu, NixOS, Amazon Linux), Kubernetes, Nomad, Docker, Terraform, Ansible, AWS, Packer
 
 Technologies
-: GitLab CI/CD, GitHub Actions, Varnish, Git, React, NoSQL, PostgreSQL, Helm, ArgoCD, Tailscale, Atlantis, Okta, honeycomb.io, Open Telemetry
+: GitLab CI/CD, GitHub Actions, Varnish, Git, React, NoSQL, PostgreSQL, Helm, ArgoCD, Tailscale, Atlantis, Okta, Open Telemetry
 
 Attributes
-: Strong and attentive listener, empathetic, leads by example, strong attention to detail, strong equity advocate
+: Strong and attentive listener, empathetic, leads by example, attention to detail, passionate equity advocate
 
 :::
 
 # Experience
+
+::: {.cv Title="Team Lead" Company="[Seaplane.io](https://seaplane.io)" Date="Aug. 2022"}
+
+Took on technical leadership of the infrastructure team.
+Strong focus on guiding the infrastructure of Seaplane, paying down tech debt, and securing critical competencies while maintaining flexibility as an early stage startup.
+
+- Broke down communication silos within teams
+- Mentoring reports in personal growth, sociotechnical growth, and professional goals
+- Stabilized roadmap for critical novel infrastructure capabilities
+- Rescoped infrastructure team to focus on core competencies and more effectively leverage existing industry practices
+- Implemented plan for paying down existing tech debt and focusing on resilience engineering
+- Built out and scaffolded multi environment GitOps terraform structure according to best practices
+
+:::
 
 ::: {.cv Title="Staff SRE" Company="[Eden Health](https://edenhealth.com)" Date="Sept. 2021--Aug. 2022"}
 
@@ -78,7 +91,7 @@ Working in a startup environment, I lead initiatives related to improving every 
 
 :::
 
-::: {.cv Title="Web Developer/DevOps" Company="[WFG National Title Company](https://wfgtitle.com/)" Date="Fall 2017--March 2019"}
+::: {.cv .hidden Title="Web Developer/DevOps" Company="[WFG National Title Company](https://wfgtitle.com/)" Date="Fall 2017--March 2019"}
 
 WFG National Title Company is a title insurance agency.
 
@@ -124,7 +137,8 @@ As a web developer, I maintained and developed websites and the infrastructure t
 | Open Source | |
 
 - I created and maintain the official Haskell setup action for GitHub Actions to make using Haskell in GitHub's CI easier.
-- Ongoing contributions to several OSS projects, e.g.: [direnv](https://github.com/direnv/direnv), [neovim](https://github.com/neovim/neovim), [mach-nix](https://github.com/DavHau/mach-nix/), [nixpkgs](https://github.com/NixOS/nixpkgs), and various neovim plugins.
+- Occasional contributions to several OSS projects, e.g.: [direnv](https://github.com/direnv/direnv), [neovim](https://github.com/neovim/neovim), [mach-nix](https://github.com/DavHau/mach-nix/), [nixpkgs](https://github.com/NixOS/nixpkgs), and various neovim plugins.
+- Ongoing contributions to the [aurae.io](https://aurae.io) project.
 
 :::
 
@@ -136,8 +150,5 @@ As a web developer, I maintained and developed websites and the infrastructure t
 
 Portland State University
 : B.S. in Computer Science.
-
-Walla Walla University
-: Progress towards B.S. in Computer Engineering.
 
 :::
