@@ -13,8 +13,8 @@ eleventyExcludeFromCollections: true
     Color swatches with various values that you can copy.
   </p>
   <ul class="swatches">
-    <!-- text-inherit text-current text-transparent text-primary text-secondary text-bg text-fg -->
     {% for color in styleguide.colors() %}
+    <!-- text-inherit text-current text-transparent text-primary text-secondary text-bg text-fg -->
     <li class="flow">
       <h3>{{ color.key }}</h3>
       <dl class="props">

@@ -19,12 +19,7 @@
           </li>
           {%- endfor %}
 
-          <!-- <li> -->
-          <!--   <a href="https://brain.hazelweakly.com">Brain</a> -->
-          <!-- </li> -->
-
-
-          {% for social in socialMedia %}
+          {% for social in socialMedia.socials %}
           <li class="flex">
             <a class="icon inline-flex" href="{{ social.url }}">{% include "partials/" + social.title | lower + ".html"
               %}</a>

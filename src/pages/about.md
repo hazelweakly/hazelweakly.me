@@ -11,6 +11,6 @@ Any sufficiently complex system is a sociotechnical one, and so any sufficiently
 > Aretê is, to me, the pursuit of learning, trust, and raw excellence for its own sake.
 > To strive ever towards perfection: not because it's possible, but precisely because it is not.
 
-When I'm not working or programming, you can find me swing dancing, doing gymnastics, playing board games, nerding out about keyboards, drinking coffee, sampling scotch, playing with my dogs, or snuggling my cat.
+When I'm not working or programming, you can find me swing dancing, doing gymnastics, playing board games, nerding out about keyboards, drinking coffee, sampling scotch, or playing with my dogs.
 Research interest wise, I tend to get most into build systems, programming language theory, type systems, category theory, formal verification, information geometry, and distributed systems.
-I also read quite a bit, and frequently write about my findings on [twitter]({{socialMedia[1].url}}).
+I also read quite a bit, and frequently write about my findings on [mastodon]({{socialMedia.mastodon.url}}).

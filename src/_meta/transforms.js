@@ -1,6 +1,6 @@
 // https://github.com/GoogleChrome/web.dev/blob/main/src/site/_transforms/minify-html.js
 
-const htmlMinifier = require("@minify-html/js");
+const htmlMinifier = require("@minify-html/node");
 const path = require("path");
 const markdownIt = require("markdown-it");
 const Image = require("@11ty/eleventy-img");
