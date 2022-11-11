@@ -11,19 +11,16 @@ const isProd = process.env.ELEVENTY_ENV === "prod";
 const minifyHtml = (content, outputPath) => {
   if (isProd && outputPath && outputPath.endsWith(".html")) {
     try {
-      content = htmlMinifier.minify(
-        content,
-        htmlMinifier.createConfiguration({
-          // See https://docs.rs/minify-html/latest/minify_html/struct.Cfg.html
-          do_not_minify_doctype: true,
-          ensure_spec_compliant_unquoted_attribute_values: true,
-          keep_html_and_head_opening_tags: true,
-          minify_css: true,
-          minify_js: true,
-          remove_processing_instructions: true,
-          keep_closing_tags: true,
-        }),
-      );
+      content = htmlMinifier.minify(Buffer.from(content), {
+        // See https://docs.rs/minify-html/latest/minify_html/struct.Cfg.html
+        do_not_minify_doctype: true,
+        ensure_spec_compliant_unquoted_attribute_values: true,
+        keep_html_and_head_opening_tags: true,
+        minify_css: true,
+        minify_js: true,
+        remove_processing_instructions: true,
+        keep_closing_tags: true,
+      });
     } catch (err) {
       console.warn(err, "while minifying", outputPath);
     }
@@ -175,17 +172,19 @@ const criticalCSS = async (content, outputPath) => {
     const outputDir = require("./cfg").dir.output;
 
     // Generate HTML with critical CSS
-    const { html, css } = await require("critical").generate({
-      assetPaths: [path.dirname(outputPath)],
-      base: outputDir,
-      html: content,
-      inline: true,
-      ignore: {
-        atrule: ["@font-face"],
-        decl: (node, value) => /url\(/.test(value),
-      },
-      rebase: ({ originalUrl }) => originalUrl,
-    });
+    const { html, css } = await import("critical").then((critical) =>
+      critical.generate({
+        assetPaths: [path.dirname(outputPath)],
+        base: outputDir,
+        html: content,
+        inline: true,
+        ignore: {
+          atrule: ["@font-face"],
+          decl: (_, value) => /url\(/.test(value),
+        },
+        rebase: ({ originalUrl }) => originalUrl,
+      }),
+    );
 
     // compute sha256 here.
     // somehow CSP header something. Dump shit into a netlify file or smth
