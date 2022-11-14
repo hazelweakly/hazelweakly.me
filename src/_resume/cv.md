@@ -38,7 +38,7 @@ Attributes
 ::: {.cv Title="Team Lead" Company="[Seaplane.io](https://seaplane.io)" Date="Aug. 2022"}
 
 Took on technical leadership of the infrastructure team.
-Strong focus on guiding the infrastructure of Seaplane, paying down tech debt, and securing critical competencies while maintaining flexibility as an early stage startup.
+Focused on guiding the infrastructure of Seaplane, leveraging and monitoring tech choices and their implications, enabling other teams to execute on building out critical competencies for the platform, and maintaining and balancing flexibility as an early stage startup.
 
 - Broke down communication silos within teams
 - Mentoring reports in personal growth, sociotechnical growth, and professional goals

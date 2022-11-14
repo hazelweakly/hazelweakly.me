@@ -152,6 +152,14 @@ rules.fence = prefixLink(
 const code_inline = rules.code_inline;
 rules.code_inline = prefixLink(["VictorMono-v1.5.3-Regular"], code_inline);
 
+const hr = rules.hr;
+rules.hr = (tokens, idx, options, env, self) =>
+  `<div class="py-4">` +
+  (hr
+    ? hr(tokens, idx, options, env, self)
+    : self.renderToken(tokens, idx, options)) +
+  `</div>`;
+
 async function imageShortcode(src, alt, sizes) {
   const metadata = await Image(src, {
     widths: [300, 600],

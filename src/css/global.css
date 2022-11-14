@@ -11,6 +11,11 @@ body {
   line-height: 1.75;
 }
 
+hr {
+  max-width: 65ch;
+  margin-left: 0;
+}
+
 main {
   flex: auto;
 }

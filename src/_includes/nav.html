@@ -11,20 +11,16 @@
           </li>
 
           <span class="skip"></span>
-          {% for page in collections.pages %}
-          <li class="flex">
-            <a {% if currentUrl===page.url %}aria-current="page" {% endif %} href="{{ page.url }}">
-              {{ page.data.title }}
-            </a>
-          </li>
-          {%- endfor %}
 
-          {% for social in socialMedia.socials %}
-          <li class="flex">
-            <a class="icon inline-flex" href="{{ social.url }}">{% include "partials/" + social.title | lower + ".html"
-              %}</a>
-          </li>
-          {%- endfor %}
+          <div class="cluster">
+            {% for page in collections.pages %}
+            <li class="flex">
+              <a {% if currentUrl===page.url %}aria-current="page" {% endif %} href="{{ page.url }}">
+                {{ page.data.title }}
+              </a>
+            </li>
+            {%- endfor %}
+          </div>
 
           <li class="flex">
             <div class="user-toggle inline-flex">

@@ -2,8 +2,10 @@
 layout: base.html
 ---
 
-<h1 id="{{ title | slugify }}" tabindex="-1">
-  <a href="#{{ title | slugify }}" class="header-anchor"><span>{{ title }}</span></a>
-</h1>
-<article class="flow">{{ content | safe }}</article>
+<article class="flow">
+  <h1 id="{{ title | slugify }}" tabindex="-1">
+    <a href="#{{ title | slugify }}" class="header-anchor"><span>{{ title }}</span></a>
+  </h1>
+  {{ content | safe }}
+</article>
 <meta property="og:type" content="article" data-helmet="og:type" />
