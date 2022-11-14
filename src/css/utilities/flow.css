@@ -1,6 +1,6 @@
 /* 
 FLOW UTILITY
-Info: https://piccalil.li/quick-tip/flow-utility/ 
+Info: https://piccalil.li/quick-tip/flow-utility/
 */
 .flow > * + * {
   margin-top: var(--flow-space, var(--space-2));

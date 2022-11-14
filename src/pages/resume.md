@@ -25,5 +25,4 @@ description: Experienced engineer specialized in feedback loops, developer exper
     align-self: start;
     font-variant: small-caps;
   }
-
 </style>

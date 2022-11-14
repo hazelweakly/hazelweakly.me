@@ -11,6 +11,10 @@ body {
   line-height: 1.75;
 }
 
+main {
+  flex: auto;
+}
+
 code,
 pre {
   font-family: theme("fontFamily.mono");

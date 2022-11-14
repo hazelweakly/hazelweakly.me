@@ -2,22 +2,20 @@
 <html lang="en" class="no-js">
 {% include "head.html" %}
 
-<body>
-  <div class="cover">
-    {% include "nav.html" %}
+<body class="flex flex-col flow">
+  {% include "nav.html" %}
 
-    <main tabindex="-1" id="main-content" class="wrapper">
-      {{ content | safe }}
-    </main>
+  <main tabindex="-1" id="main-content" class="wrapper {% if page.url == '/' %} flex {% endif %}">
+    {{ content | safe }}
+  </main>
 
-    <footer class="center min-h-[10ex]">
-      <link rel="preload" href="/fonts/zilla-subset-footer.woff2" as="font" type="font/woff2" crossorigin="anonymous"
-        data-helmet="zilla-slab-v11-latin-400italic" />
-      <p class="text-center italic text-1">
-        &copy; {% year %} {{ meta.siteName }}
-      </p>
-    </footer>
-  </div>
+  <footer class="center min-h-[10ex]">
+    <link rel="preload" href="/fonts/zilla-subset-footer.woff2" as="font" type="font/woff2" crossorigin="anonymous"
+      data-helmet="zilla-slab-v11-latin-400italic" />
+    <p class="text-center italic text-1">
+      &copy; {% year %} {{ meta.siteName }}
+    </p>
+  </footer>
 
   <script>
     document.documentElement.classList.remove("no-js");

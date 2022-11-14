@@ -3,6 +3,7 @@ public
 .env
 src/css/custom-props.css
 src/_resume/cv.pdf
+.pnpm-debug.log
 
 # Local Netlify folder
 .netlify

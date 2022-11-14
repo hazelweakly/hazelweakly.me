@@ -1,6 +1,7 @@
 ---
 title: Beginner Mistakes and Oddities I Encountered
 date: 2017-08-29
+eleventyExcludeFromCollections: true
 ---
 
 Time sure does fly don’t it?

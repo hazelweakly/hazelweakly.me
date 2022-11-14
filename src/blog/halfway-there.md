@@ -1,6 +1,7 @@
 ---
 title: Halfway There, or "I want to say I know what I’m doing, but it’s a dangerous thing to say"
 date: 2017-07-20
+eleventyExcludeFromCollections: true
 ---
 
 Greetings and salutations! If you’re reading this, it means I haven’t died yet, which is pretty great.
