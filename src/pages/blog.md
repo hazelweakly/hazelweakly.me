@@ -1,6 +1,7 @@
 ---
 title: Posts
 order: 2
+eleventyExcludeFromCollections: true
 ---
 
 {% for post in collections.blog %}
