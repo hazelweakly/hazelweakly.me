@@ -138,7 +138,7 @@ As a web developer, I maintained and developed websites and the infrastructure t
 
 - I created and maintain the official Haskell setup action for GitHub Actions to make using Haskell in GitHub's CI easier.
 - Occasional contributions to several OSS projects, e.g.: [direnv](https://github.com/direnv/direnv), [neovim](https://github.com/neovim/neovim), [mach-nix](https://github.com/DavHau/mach-nix/), [nixpkgs](https://github.com/NixOS/nixpkgs), and various neovim plugins.
-- I help run the <hachyderm.io> mastodon instance and contribute to the [aurae](https://aurae.io) project.
+- I help run the [hachyderm](https://hachyderm.io) mastodon instance and contribute to the [aurae](https://aurae.io) project.
 
 :::
 

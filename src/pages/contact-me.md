@@ -10,6 +10,3 @@ order: 4
   %}</a> [{{ social.title }}]({{ social.url }})</span>
 
 {%- endfor %}
-
-- [My email](/resume.pdf)
-- [My phone number](/resume.pdf)
