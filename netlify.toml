@@ -4,3 +4,7 @@ publish = "public"
 command = "pnpm start:prod"
 publish = "public"
 targetPort = 8080
+
+[[redirects]]
+from = "/contact-me"
+to = "/contact"

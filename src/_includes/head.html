@@ -24,7 +24,6 @@
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ meta.siteName }}" href="/rss.xml" />
   <link rel="alternate" type="application/feed+json" title="JSON Feed for {{ meta.siteName }}" href="/feed.json" />
 
-  <meta name="twitter:site" content="{{ meta.twitter }}" />
   <meta name="og:site_name" content="{{ meta.siteName }}" />
   <meta property="og:locale" content="en-us" />
   <meta property="og:type" content="{{ 'website' if page.url == '/' else 'article' }}" />
@@ -46,7 +45,7 @@
   {% endif %}
 
   <meta property="og:url" content="{{ page.url | toAbsoluteUrl }}" />
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="preload" href="/fonts/italiana-v16-latin-regular.woff2" as="font" type="font/woff2"
     crossorigin="anonymous" />

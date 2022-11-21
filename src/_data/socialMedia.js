@@ -2,10 +2,6 @@ const github = {
   title: "GitHub",
   url: "https://github.com/hazelweakly",
 };
-const twitter = {
-  title: "Twitter",
-  url: "https://twitter.com/hazelweakly",
-};
 const mastodon = {
   title: "Mastodon",
   url: "https://hachyderm.io/@hazelweakly",
@@ -29,12 +25,11 @@ const reddit = {
 
 module.exports = {
   github,
-  twitter,
   mastodon,
   cohost,
   linkedIn,
   discord,
   reddit,
-  all_socials: [github, twitter, mastodon, cohost, linkedIn, discord, reddit],
-  socials: [github, twitter, mastodon, linkedIn],
+  all_socials: [github, mastodon, cohost, linkedIn, discord, reddit],
+  socials: [github, mastodon, linkedIn],
 };
