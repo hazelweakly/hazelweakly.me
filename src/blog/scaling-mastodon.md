@@ -142,6 +142,31 @@ note: This is written as if using a separate redis for cache and persistent data
 
 [read and weep][redis_wiki].
 
+> [...] it's important that Sidekiq be run against a Redis instance that is not
+> configured as a cache but as a persistent store. [...] I recommend using two
+> separate Redis instances, each configured appropriately, if you wish to use
+> Redis for caching and Sidekiq. Redis namespaces do not allow for this
+> configuration and come with [many other problems][storing_data_with_redis], so using discrete Redis
+> instances is always preferred.
+
+Speaking of which, the blog post that was linked from the redis wiki is very nice.
+You should read it: [storing data with redis][storing_data_with_redis].
+
+---
+
+## How to redis correctly
+
+So, from the [storing data with redis][storing_data_with_redis] post:
+
+> There are several questions to answer when determining how to use Redis for different datasets:
+>
+> - Can I flush the dataset without affecting other datasets?
+> - Can I tune the persistence strategy per dataset? For transactional data, you want real-time persistence with AOF. For cache, you want infrequent RDB snapshots or no persistence at all.
+> - Can I scale Redis per dataset? Redis is single-threaded [...] Datasets in the same Redis instance will share that budget. What happens when your traffic spikes and the cache data uses the entire budget? Now your job queue slows to a crawl.
+
+The conclusions are that, for mastodon's two needs (cache + storage), you _must_ use two separate redis instances or you're not going to be able to actually change your persistence strategy.
+Everything else is practically irrelevant; if you can't change the persistence strategy, there's no point in using redis for both usecases.
+
 ---
 
 ## Sidekiq memory fragmentation
@@ -252,3 +277,4 @@ In fact, if this number is more than 90% of `max_connections`, you're probably m
 [scaling_docs]: https://docs.joinmastodon.org/admin/scaling/#redis
 [redis_wiki]: https://github.com/mperham/sidekiq/wiki/Using-Redis#multiple-redis-instances
 [email]: https://us11.campaign-archive.com/?u=1aa0f43522f6d9ef96d1c5d6f&id=997fbd1c2c
+[storing_data_with_redis]: https://www.mikeperham.com/2015/09/24/storing-data-with-redis
