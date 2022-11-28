@@ -16,6 +16,7 @@ module.exports = (ctx) => ({
             variables: false,
             safelist: [
               "body",
+              "blockquote",
               "h1",
               "h2",
               "h3",
