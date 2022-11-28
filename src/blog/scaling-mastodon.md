@@ -118,6 +118,92 @@ read and weep: <https://github.com/mperham/sidekiq/wiki/Using-Redis#multiple-red
 
 ---
 
+> One of the most important things we've learned over the years about Sidekiq is that a bad interaction between the C-Ruby runtime and the malloc memory allocator included in Linux's glibc can cause extremely high memory usage. I'll talk about what causes this bad interaction in a later email, but for now, let's just concentrate on the effects.
+>
+> Sidekiq with high concurrency settings, when running on Linux, can have what looks like a "memory leak". A single Sidekiq process can slowly grow from 256MB of memory usage to 1GB in less than 24 hours. However, rather than a leak, this is actually memory fragmentation.
+>
+> -- <https://us11.campaign-archive.com/?u=1aa0f43522f6d9ef96d1c5d6f&id=997fbd1c2c>
+
+## Debugging Notes
+
+sidekiq workers being way up will crash nfs and slow it to a crawl.
+
+---
+
+## Summaries
+
+```
+WEB_CONCURRENCY controls the number of worker processes
+MAX_THREADS controls the number of threads per process
+```
+
+Those above environment variables apply to mastodon-web and _only_ mastodon-web.
+The sidekiq queue has two knobs: processes and threads.
+Each `mastodon-sidekiq-${queue}@N` creates 1 new process. Each process can allocate `X` threads according to the `-c X` setting in the ExecStart of the systemd service.
+
+As a further annoyance, `DB_POOL` is the third hidden and extremely fucked up knob you have for the sidekiq services.
+`DB_POOL` can be different from the concurrency but it should always be `DB_POOL >= X` (where `X` is the concurrency in `sidekiq -c X -q ...`).
+As a simplification, I don't really ever see anyone ever set `DB_POOL` to anything other than exactly `X`.
+
+So, `DB_POOL` is local to sidekiq and also applies only to sidekiq (and also mastodon-streaming because surprise! Chuckles, that's why).
+However, you have two notions of pool here. One that's local to that particular sidekiq queue, and one that's relevant to postgres.
+Postgres has a setting `max_connections` that is the global `max_connections`.
+
+Thou shalt not _ever_ fuck up and manage to get more DB connections going than we have in `max_connections` for postgres.
+However, thou shalt _also_ keep max_connections as low as fucking possible because absolutely everything in postgres falls over and shits the bed if you start getting hard contention due to trying to have more connections than is allowed.
+
+### Postgres Calculator Math
+
+Here's the calculator math.
+
+Let's assume the following systemd services (annotated with every setting that causes a connection to postgres).
+The `@Nx` here denotes a systemd unit template file where `N` is the number of units you've started that correspond to this sidekiq queue.
+There are also several `DB_POOL` variables. Since they are _all_ different yet called the same environment variable, I am changing them to be unique here so that it makes sense in a calculation formula.
+
+So, here's the list of services:
+
+- `mastodon-web`
+  - `WEB_CONCURRENCY`
+  - `MAX_THREADS`
+- `mastodon-streaming`
+  - `STREAMING_CLUSTER_NUM`
+  - `DB_POOL_streaming`
+- `mastodon-sidekiq-push@N1`
+  - `DB_POOL_push`
+- `mastodon-sidekiq-pull@N2`
+  - `DB_POOL_pull`
+- `mastodon-sidekiq-scheduler@N3`
+  - `DB_POOL_scheduler`
+  - note: you should _never_ have more than one scheduler running, however you may set `DB_POOL` and concurrency to whatever you want it to be.
+- `mastodon-sidekiq-mailing@N4`
+  - `DB_POOL_mailing`
+- `mastodon-sidekiq-default@N5`
+  - `DB_POOL_default`
+- `mastodon-sidekiq-ingress@N6`
+  - `DB_POOL_ingress`
+
+And, of course, you're running postgres somewhere.
+Postgres has a `max_connections` set in its configuration somewhere.
+
+The formula for total connections is:
+
+```
+total_mastodon_connections =
+  (WEB_CONCURRENCY * MAX_THREADS) +
+  (STREAMING_CLUSTER_NUM * DB_POOL_streaming) +
+  (N1 * DB_POOL_push) +
+  (N2 * DB_POOL_pull) +
+  (N3 * DB_POOL_scheduler) +
+  (N4 * DB_POOL_mailing) +
+  (N5 * DB_POOL_default) +
+  (N6 * DB_POOL_ingress)
+```
+
+Now, if this number is over `max_connections` in your postgres configuration, you lost.
+In fact, if this number is more than 90% of `max_connections`, you're probably much closer to IMPENDING DOOM than you would ever feel comfortable in public.
+
+---
+
 references:
 
 - <https://gist.github.com/Gargron/aa9341a49dc91d5a721019d9e0c9fd11>
@@ -126,3 +212,4 @@ references:
 - <https://gist.github.com/Gargron/40afa9dc37629dfc78d6656f0ca33293>
 - <https://blog.joinmastodon.org/2017/04/scaling-mastodon>
 - <https://github.com/mperham/sidekiq/wiki/Kubernetes>
+- <https://us11.campaign-archive.com/?u=1aa0f43522f6d9ef96d1c5d6f&id=997fbd1c2c>
