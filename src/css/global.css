@@ -131,3 +131,10 @@ nav > ul {
 ::marker {
   color: theme("colors.primary");
 }
+
+blockquote {
+  background-color: theme("backgroundColor.bg");
+  border-left: theme("borderSpacing.1") solid theme("colors.secondary");
+  margin: theme("margin.2") calc(-1 * theme("margin.2"));
+  padding: theme("padding.1") theme("padding.2");
+}

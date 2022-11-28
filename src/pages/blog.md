@@ -1,10 +1,9 @@
 ---
 title: Posts
 order: 2
-eleventyExcludeFromCollections: true
 ---
 
-{% for post in collections.blog %}
+{% for post in collections.blog | reverse %}
 
 - [{{ post.data.title }}]({{ post.url }}) -- <time datetime="{{ post.date.toISOString() }}">{{ post.date | postDate }}</time>
 
