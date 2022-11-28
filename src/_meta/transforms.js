@@ -95,6 +95,7 @@ const markdownLibrary = markdownIt({
   typographer: true,
 })
   .use(require("markdown-it-deflist"))
+  .use(require("markdown-it-footnote"))
   .use(require("markdown-it-attrs"), {
     leftDelimiter: "{",
     rightDelimiter: "}",
