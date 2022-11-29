@@ -1,6 +1,7 @@
 :root {
   color-scheme: light dark;
   scrollbar-gutter: stable both-edges;
+  overflow-wrap: break-word;
 }
 
 body {
@@ -24,6 +25,8 @@ code,
 pre {
   font-family: theme("fontFamily.mono");
   font-variant-ligatures: contextual;
+  overflow-x: scroll;
+  white-space: pre-wrap;
 }
 
 h1,
