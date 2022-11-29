@@ -204,12 +204,72 @@ So, `DB_POOL` is local to sidekiq and also applies only to sidekiq (and also mas
 However, you have two notions of pool here. One that's local to that particular sidekiq queue, and one that's relevant to postgres.
 Postgres has a setting `max_connections` that is the global `max_connections`.
 
-Thou shalt not _ever_ fuck up and manage to get more DB connections going than we have in `max_connections` for postgres.
+Speaking of `max_connections`...
+
+### The Sobbing SysAdmin's Guide to Postgres Tuning
+
+> IF THE MASTODON INSTANCE BANS ME FOR FUCKING UP THE HARD DRIVE I WILL FACE GOD AND WALK BACKWARDS INTO HELL
+>
+> -- postgres
+
+There are a few rules of tuning postgres: The first is that you have to do it. The second is that nobody knows how to do it.
+
+Now that we know the rules, let's go forth and explain how to deal with `max_connections` specifically.
+This section is gonna be written as if I know what I am talking about but please be assured that I most certainly do not.
+
+A rule of thumb for rails and postgres: Thou shalt not _ever_ fuck up and manage to get more DB connections going than we have in `max_connections` for postgres.
 However, thou shalt _also_ keep max_connections as low as fucking possible because absolutely everything in postgres falls over and shits the bed if you start getting hard contention due to trying to have more connections than is allowed.
+
+In this case postgres won't literally shit the bed, but your sidekiq queues will be unable to connect to postgres until you're below `max_connections` again.
+"Oh that's fine" says the clueless person. "I will just set `max_connections` to above 9000" says the fool.
+
+New rule of thumb: If you have to set postgres `max_connections` to above 250, don't.
+
+Why? Well, why do you need that many? You probably don't and adding more will cause latent system instability later on.
+What can be the case for us is that, to the best of my understanding, there's a few things going on.
+
+Here's what I think we keep running into:
+
+1. a mastodon sysadmin says "oh wow the sidekiq queues are slow, we need to add more workers"
+2. this adds more connections to postgres, which [degrades performance slightly][postgres_connections]
+3. postgres starts "doing more IO"
+4. performance counterintuitively goes down because queries start taking longer
+5. `GOTO 10`
+
+At some point you're going to run out of `max_connections`.
+If you raise it to an absurd number like above 1024, the _next_ issue you're probably going to run into is that your storage system probably can't actually handle the IO demands you're placing on it.
+
+Here's what the above sequence looks like from the system's point of view:
+
+1. just _having_ connections will slowly cause more and more slowdown over time
+2. Which means more of those connections will slowly become active as things take longer and longer
+3. More active connections hammers the IO _way_ harder
+4. Which slows things down
+5. \*the server sobbing\* "please please im already dying"
+
+So what number do you actually want to set it to?
+Luckily, [this postgres tuning guide][postgres_tuning] has a "helpful" formula that explains how to find an ideal limit:
+
+```
+max_connections < max(num_cores, parallel_io_limit) /
+                  (session_busy_ratio * avg_parallelism)
+```
+
+So clearly, don't set your postgres `max_connections` to anything more than \*insert magic numbers\*.
+OBVIOUSLY.
+EASY.
+
+Ever tried to figure out the performance characteristics and "average parallelism" of a rails application?
+
+**AN ERRAND FOR FOOLS WHO DRINK THE MILK OF INNOCENCE.**
+
+If you use a db pool like `pgbouncer` you get to conveniently avoid this most of the time by naturally not really needing to set postgresql connections beyond 500-ish.
+However, _why_ you need to do so is never really explained.
+So here's the explanation: because any value of `max_connections` over 999 will cause your children will be devoured by Australian evil spirits.
 
 ### Postgres Calculator Math
 
-Here's the calculator math.
+Here's the calculator math that I've ~~stolen from [nora](https://nora.codes/)~~ come up with.
 
 Let's assume the following systemd services (annotated with every setting that causes a connection to postgres).
 The `@Nx` here denotes a systemd unit template file where `N` is the number of units you've started that correspond to this sidekiq queue.
@@ -278,3 +338,5 @@ In fact, if this number is more than 90% of `max_connections`, you're probably m
 [redis_wiki]: https://github.com/mperham/sidekiq/wiki/Using-Redis#multiple-redis-instances
 [email]: https://us11.campaign-archive.com/?u=1aa0f43522f6d9ef96d1c5d6f&id=997fbd1c2c
 [storing_data_with_redis]: https://www.mikeperham.com/2015/09/24/storing-data-with-redis
+[postgres_connections]: https://brandur.org/postgres-connections
+[postgres_tuning]: https://www.cybertec-postgresql.com/en/tuning-max_connections-in-postgresql/

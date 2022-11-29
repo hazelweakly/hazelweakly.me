@@ -25,15 +25,29 @@ code,
 pre {
   font-family: theme("fontFamily.mono");
   font-variant-ligatures: contextual;
-  overflow-x: scroll;
-  white-space: pre-wrap;
+  max-width: max-content;
+  font-size: 0.9em;
+}
+
+pre {
+  line-height: theme("lineHeight.tight");
+  border: theme("borderSpacing.0-5") solid theme("borderColor.secondary");
+  padding: theme("margin.0-5");
+  box-shadow: theme("margin.0-5") theme("margin.0-5") 0 0
+    theme("borderColor.primary");
+  overflow-x: auto;
+}
+
+code {
+  white-space: pre;
+  position: relative;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  line-height: 1.25;
+  line-height: theme("lineHeight.tight");
   font-family: theme("fontFamily.heading");
   font-weight: normal;
 }
