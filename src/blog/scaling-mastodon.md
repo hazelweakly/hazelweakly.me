@@ -255,8 +255,8 @@ max_connections < max(num_cores, parallel_io_limit) /
                   (session_busy_ratio * avg_parallelism)
 ```
 
-So clearly, don't set your postgres `max_connections` to anything more than \*insert magic numbers\*.
-OBVIOUSLY.
+So clearly, don't set your postgres `max_connections` to anything more than \*insert magic numbers\*.  
+OBVIOUSLY.  
 EASY.
 
 Ever tried to figure out the performance characteristics and "average parallelism" of a rails application?
@@ -266,6 +266,31 @@ Ever tried to figure out the performance characteristics and "average parallelis
 If you use a db pool like `pgbouncer` you get to conveniently avoid this most of the time by naturally not really needing to set postgresql connections beyond 500-ish.
 However, _why_ you need to do so is never really explained.
 So here's the explanation: because any value of `max_connections` over 999 will cause your children will be devoured by Australian evil spirits.
+
+### Locks That Bind and Binds that Lock
+
+Rails effectively does this
+
+1. Start db transaction
+2. Upload image to media storage
+3. INSERT or UPDATE statement
+4. Commit the transaction
+
+Let's walk through the implications of this briefly. But first, go ahead and scream into the void; it'll be helpful.
+
+Now wasn't that refreshing?
+
+Ok, so the implications here:
+
+- If your media storage is the file system, you can hit the file system with the database _and_ the media storage at the same time.
+- If your file system is the _same_ file system you can cause slowdowns on that disk from two separate directions that are both now mutually related.
+- If that file system is NFS, now the network is involved _inside_ that database transaction
+- Oh also this is in sidekiq so it's all parallel and concurrent
+
+The lesson here is use an object storage from day one if you can.
+Preferably one that doesn't live on the same disk as postgres.
+NFS in particular is going to be a _very_ poor choice here.
+It's bad enough that, honestly, mastodon documentation should warn against using it rather than presenting it as an option.
 
 ### Postgres Calculator Math
 
