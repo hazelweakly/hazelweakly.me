@@ -329,7 +329,7 @@ note: tl;dr, single queue for each service. use systemd service templates. ramp 
 
 ---
 
-## Sidekiq memory fragmentation
+### Sidekiq memory fragmentation
 
 > One of the most important things we've learned over the years about Sidekiq is that a bad interaction between the C-Ruby runtime and the malloc memory allocator included in Linux's glibc can cause extremely high memory usage. I'll talk about what causes this bad interaction in a later email, but for now, let's just concentrate on the effects.
 >
