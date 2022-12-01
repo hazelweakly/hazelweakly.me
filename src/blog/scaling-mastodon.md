@@ -220,6 +220,35 @@ group by 1;
 
 If your idle connections is zero pgbouncer is bottlenecked.
 
+---
+
+### SELECT 'bottle' FROM 'neck' WHERE id = unknown
+
+If you want to find some bottlenecks in your database, according to [@AndresFreundTec@mastodon.social](https://mastodon.social/@AndresFreundTec),
+you can run the below query and analyze its output as a starting point.
+
+```sql
+SELECT backend_type, state, wait_event_type, wait_event, count(*) FROM pg_stat_activity WHERE pid <> pg_backend_pid() AND wait_event_type IS DISTINCT FROM 'Activity' GROUP BY 1, 2, 3, 4 ORDER BY count(*) DESC;
+```
+
+If you're write latency bound the query will show a lot of `WALWrite` wait events.
+
+Setting `synchronous_commit = off` can alleviate that (although understand roughly what it's doing first).
+[Here's a nice explainer](https://www.percona.com/blog/2020/08/21/postgresql-synchronous_commit-options-and-synchronous-standby-replication/)
+
+One particular warning, also from @AndresFreundTec, is that setting `synchronous_commit = off` means your transactions aren't immediately guaranteed to be durable.
+That... Should be fine for Mastodon... I think
+
+---
+
+### Memory X Memory the not-anime
+
+> Database tip: if you need to increase `max_connections` on PostgreSQL, make sure
+> to check what `work_mem` is set to. If `max_connections X work_mem` is more than
+> double the RAM you have on the server, maybe lower `work_mem`.
+>
+> -- [@fuzzychef@m6n.io](https://m6n.io/@fuzzychef/109366609465907548)
+
 ## Redis
 
 ### Lies, damned lies, and redis
@@ -492,6 +521,28 @@ The summary here is that there's a hidden component to scaling here:
 - Your server API response should not be shorter than the connection timeout
 - If it is you'll add a bunch of duplication work for yourself and exacerbate the issue
 
+---
+
+### Eating RCE and porridge for breakfast
+
+Are you seeing a lot of `Mastodon::RaceConditionError`s in your logs for sidekiq?
+
+According to [this issue](https://github.com/mastodon/mastodon/issues/15525#issuecomment-898671270) that might be totally expected.
+
+This _particular_ issue has been fixed:
+
+> I am constantly getting this as well, and from what I can tell it's because
+> the retry timeout for RedisLock is set to a default of 10 seconds while the
+> default expiration time for RedisLock is 15 minutes, per #16291
+>
+> When called from ActivityPub::Activity::Announce this causes Sidekiq to retry
+> until its timeout and then throw Mastodon::RaceConditionError which causes
+> another Sidekiq retry.
+
+But only by making the timeout and expiration the same, 15 minutes.
+The issue itself still remains and you will run into it if your sidekiq queue
+times ever go above 15 minutes.
+
 ## references
 
 - <https://gist.github.com/Gargron/aa9341a49dc91d5a721019d9e0c9fd11>
@@ -503,6 +554,7 @@ The summary here is that there's a hidden component to scaling here:
 - <https://us11.campaign-archive.com/?u=1aa0f43522f6d9ef96d1c5d6f&id=997fbd1c2c>
 - <https://github.com/mperham/sidekiq/wiki/Using-Redis#multiple-redis-instances>
 - <https://pgtune.leopard.in.ua/>
+- <https://www.percona.com/blog/2020/08/21/postgresql-synchronous_commit-options-and-synchronous-standby-replication/>
 
 [wasabi]: https://stanislas.blog/2018/05/moving-mastodon-media-files-to-wasabi-object-storage/#setting-up-a-nginx-reverse-proxy-with-cache-for-the-bucket
 [scaling_gist]: https://gist.github.com/Gargron/aa9341a49dc91d5a721019d9e0c9fd11
