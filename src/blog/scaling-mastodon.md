@@ -27,6 +27,8 @@ ok kewl, good to remember I suppose.
 
 You may also need to remediate <https://github.com/mastodon/mastodon/pull/21840> via setting your response timeout to 300s in nginx instead of 30 or even 60s.
 
+Edit: That should hopefully no longer be the case, sweet.
+
 ## Postgres
 
 ### The Sobbing SysAdmin's Guide to Postgres Tuning
@@ -46,7 +48,7 @@ However, thou shalt _also_ keep max_connections as low as fucking possible becau
 In this case postgres won't literally shit the bed, but your sidekiq queues will be unable to connect to postgres until you're below `max_connections` again.
 "Oh that's fine" says the clueless person. "I will just set `max_connections` to above 9000" says the fool.
 
-New rule of thumb: If you have to set postgres `max_connections` to above 250, don't.
+New rule of thumb: If you have to set postgres `max_connections` to above 512, don't.
 
 Why? Well, why do you need that many? You probably don't and adding more will cause latent system instability later on.
 What can be the case for us is that, to the best of my understanding, there's a few things going on.
@@ -60,7 +62,7 @@ Here's what I think we keep running into:
 5. `GOTO 10`
 
 At some point you're going to run out of `max_connections`.
-If you raise it to an absurd number like above 1024, the _next_ issue you're probably going to run into is that your storage system probably can't actually handle the IO demands you're placing on it.
+If you raise it to an absurd number like above 1024, the _next_ issue you're probably going to run into is that your storage system probably can't actually handle the IO demands you're theoretically placing on it.
 
 Here's what the above sequence looks like from the system's point of view:
 
@@ -89,6 +91,8 @@ Ever tried to figure out the performance characteristics and "average parallelis
 If you use a db pool like `pgbouncer` you get to conveniently avoid this most of the time by naturally not really needing to set postgresql connections beyond 500-ish.
 However, _why_ you need to do so is never really explained.
 So here's the explanation: because any value of `max_connections` over 999 will cause your children will be devoured by Australian evil spirits.
+
+(But seriously, you can get as much as a [46% drop in queries per second](https://aws.amazon.com/blogs/database/performance-impact-of-idle-postgresql-connections/) in some cases)
 
 ---
 
@@ -129,6 +133,41 @@ note: this implies that nobody actually tries to run past 100 connections withou
 > -- [scaling a mastodon server][scaling_gist]
 
 note: read replicas are suggested to be unneeded even at 128k active users.
+
+---
+
+### Idle Hands are the Devil's Workshop
+
+A happy postgres is one where the amount of idle transactions is low (but not constantly _zero_).
+Think of the 80 20 rule as a nice rule of thumb; if more than 20% of your connections are idle... That's not great.
+
+If you want to look at this, [stack overflow](https://stackoverflow.com/a/53208173) has an example of a useful SQL query you can run in postgres.
+
+```sql
+select  * from
+    (select state, count(*) from pg_stat_activity  where pid <> pg_backend_pid() group by 1 order by 1) q1,
+    (select setting::int res_for_super from pg_settings where name=$$superuser_reserved_connections$$) q2,
+    (select setting::int max_conn from pg_settings where name=$$max_connections$$) q3;
+```
+
+This will return a table looking something like this:
+
+```
+        state        | count | res_for_super | max_conn
+---------------------+-------+---------------+----------
+ active              |    12 |             3 |     300
+ idle                |   127 |             3 |     300
+ idle in transaction |     6 |             3 |     300
+                     |     6 |             3 |     300
+(4 rows)
+```
+
+The state column shows has a count for each state (active, idle, idle in transaction).
+`res_for_super` is for connections reserved for superuser access, and `max_conn` is the max connections you've specified in your settings.
+They're duplicated since they're their own column but its fine; I'm sure there's a prettier query that can give you this information but this one works.
+
+If you'll notice, there's quite a few idle transactions happening here. That's because the server is in a state of low database usage.
+This is why you want to use something like pgbouncer so that you can keep the amount of idle connections as low as possible in order to prevent overprovisioning your `max_connections`.
 
 ---
 
@@ -209,7 +248,7 @@ When do you need more than one pgbouncer?
 
 Likely causes are pgbouncer can't keep up with number of connections to the database, or the size of result set being returned is too much.
 
-How to test: Run this on the postgres database.
+How to test: Run this SQL query on the postgres database.
 
 ```sql
 select state, count(*)
@@ -218,7 +257,7 @@ where backend_type = 'client backend'
 group by 1;
 ```
 
-If your idle connections is zero pgbouncer is bottlenecked.
+If your idle connections is zero (or very close to zero) pgbouncer is bottlenecked.
 
 ---
 
@@ -228,10 +267,29 @@ If you want to find some bottlenecks in your database, according to [@AndresFreu
 you can run the below query and analyze its output as a starting point.
 
 ```sql
-SELECT backend_type, state, wait_event_type, wait_event, count(*) FROM pg_stat_activity WHERE pid <> pg_backend_pid() AND wait_event_type IS DISTINCT FROM 'Activity' GROUP BY 1, 2, 3, 4 ORDER BY count(*) DESC;
+SELECT backend_type, state, wait_event_type, wait_event, count(*)
+  FROM pg_stat_activity
+    WHERE pid <> pg_backend_pid()
+      AND wait_event_type IS DISTINCT FROM 'Activity'
+  GROUP BY 1, 2, 3, 4
+  ORDER BY count(*) DESC;
 ```
 
-If you're write latency bound the query will show a lot of `WALWrite` wait events.
+Here's an example of what that would look like:
+
+```
+  backend_type  |        state        | wait_event_type |      wait_event      | count
+----------------+---------------------+-----------------+----------------------+-------
+ client backend | idle                | Client          | ClientRead           |    52
+ client backend | active              | Lock            | relation             |    13
+ client backend | idle in transaction | Client          | ClientRead           |    11
+ client backend | active              | Client          | ClientRead           |     2
+ checkpointer   |                     | Timeout         | CheckpointWriteDelay |     1
+ client backend | active              |                 |                      |     1
+(6 rows)
+```
+
+If you're write latency bound, the query will show a lot of `WALWrite` wait events.
 
 Setting `synchronous_commit = off` can alleviate that (although understand roughly what it's doing first).
 [Here's a nice explainer](https://www.percona.com/blog/2020/08/21/postgresql-synchronous_commit-options-and-synchronous-standby-replication/)
@@ -439,8 +497,8 @@ After=network.target
 Type=simple
 User=mastodon
 # ... snip
-Environment="DB_POOL=20"
-ExecStart=/usr/bin/bundle exec sidekiq -c 20 -q pull
+Environment="DB_POOL=10"
+ExecStart=/usr/bin/bundle exec sidekiq -c $DB_POOL -q pull
 # ... snip
 ```
 
@@ -451,7 +509,7 @@ A few numbers:
 
 Here's why.
 
-This starts one process and creates 20 connections to the database.
+This starts one process and creates 10 connections to the database.
 The overhead between this vs 2 systemd units with 10 threads is basically zero.
 There are reasons to do it (concurrency vs parallelism and ruby has a GIL which limits parallelism capabilities), but DB connection number is the same.
 So, realistically, there's almost zero downside to having more systemd services.
@@ -460,6 +518,20 @@ BUT. You get the ability to log out various sidekiq queues and quickly narrow do
 You also get the ability to scale up an individual queue better on demand.
 Keep the `c` number smaller (no more than 25) and make more as needed, it's fine.
 That's why these are systemd templates.
+
+If you want to look a very nice approach in more detail, see this [blog post by Justin Warren](https://www.eigenmagic.com/2022/12/11/better-mastodon-sidekiq-scaling-with-systemd-environmentfile/).
+It does this quite well but lets you reuse the same template and modify paramaters via environment files rather than by editing the systemd templates themselves.
+(I would suggest following the other advice I've given here: one queue per systemd service, don't do weighted queues, etc; keep sidekiq as simple as possible).
+
+Last bits of advice for sidekiq systemd services.
+Here are the magical numbers for the queues to use that have been tested by <hachyderm.io> for you to use.
+
+- For the default, push, and pull sidekiq queues: Set `DB_POOL` to 10 and set `-c` to the value of `$DB_POOL`.
+- For the ingress and scheduler queue: Set `DB_POOL` to 5 and set `-c` to the value of `$DB_POOL`.
+- For the mailer queue: Set `DB_POOL` to 1 and set `-c` to the value of `$DB_POOL`.
+
+Ingress is very very CPU bound and will suck up a whole CPU core with very little threads, so be prepared to spin up multiple processes for the ingress queue.
+I used to say set the `DB_POOL` to 20, but I have changed this to 10 to reflect real world usage; shit just runs nicer at 10.
 
 ---
 
