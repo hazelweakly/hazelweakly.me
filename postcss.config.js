@@ -32,6 +32,7 @@ module.exports = (ctx) => ({
               "header-anchor",
               ":focus",
               ":root",
+              '[role="tab"]',
             ],
           }
         : false,

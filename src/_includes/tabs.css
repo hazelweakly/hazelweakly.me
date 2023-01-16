@@ -1,12 +1,11 @@
 [role="tab"],
 [role="tab"]:focus,
 [role="tab"]:hover {
+  border-width: 0;
   border-style: double;
   border-color: hsl(var(--color-bg));
-  border-width: 0;
   border-bottom-width: var(--space-0-5);
   border-bottom-color: hsl(var(--color-bg));
-  /* padding: calc(var(--size-0-5) / 2) var(--size-0-5); */
 }
 
 [role="tab"][aria-selected="true"] {
