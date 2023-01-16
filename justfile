@@ -1,6 +1,12 @@
 _default:
     @just --list --unsorted
 
+start:
+  pnpm start
+
+start-prod:
+  pnpm start:prod
+
 resume:
   cd src/_resume && \
     pandoc -s \
