@@ -26,6 +26,7 @@
           FONT_DIR = "${pkgs.eb-garamond}/share/fonts/opentype";
           shellHook = ''
             export PATH="$PWD/node_modules/.bin:$PATH"
+            just 2>/dev/null
           '';
         };
     });

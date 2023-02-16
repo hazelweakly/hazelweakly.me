@@ -3,5 +3,12 @@ title: Calendar
 order: 5
 ---
 
-<div class="calendly-inline-widget" data-url="https://calendly.com/hazelweakly/connect?hide_event_type_details=1" style="min-width:320px;height:1100px;"></div>
-<script data-helmet="calendly-widget" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+If you're someone who wants to schedule 30 minutes with me to chat about life, the universe, tech, swing dancing, or anything else, feel free.
+
+I'll make an effort to prioritize availability for marginalized voices.
+
+(Please no unsolicited sales calls and cold pitches)
+
+<div class="bordered-box" style="display: flex; place-content: center;">
+    <iframe src="https://calendly.com/hazelweakly/connect?hide_event_type_details=1" style="min-width: 320px; width: 100%; height: 750px;"></iframe>
+</div>

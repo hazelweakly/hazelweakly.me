@@ -33,3 +33,9 @@ native-resume:
       --lua-filter filter.lua \
       cv.md \
       -o -
+
+update-deps:
+  #!/usr/bin/env bash
+  set -euxo pipefail
+  nix flake update
+  pnpm update --latest

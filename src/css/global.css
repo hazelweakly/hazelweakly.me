@@ -53,6 +53,7 @@ pre {
   font-size: 0.9em;
 }
 
+.bordered-box,
 pre {
   line-height: theme("lineHeight.tight");
   border: theme("borderSpacing.0-5") solid theme("borderColor.secondary");
