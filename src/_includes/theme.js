@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "click",
     (evt) => void (evt.preventDefault(), apply(setTheme(invert(getTheme())))),
   );
+  window.matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', e => apply(e.matches ? "dark" : "light"));
 
   const date = new Date(+(localStorage.getItem("date") ?? Date.now()));
   const now = new Date(Date.now());

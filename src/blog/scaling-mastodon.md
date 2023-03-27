@@ -3,11 +3,8 @@ title: "Scaling Mastodon: The Compendium"
 date: 2022-11-27
 ---
 
-This is honestly a very hastily written selection of various snippets, with text extracted, and notes.
-No real editing thought was put into this, so I hope it's not too confusing.
 This blog post will be kept up to date as I find out more information and publish my findings.
-
-It's currently organized in no particular order with a bunch of micro fragment thoughts split out in a row.
+It's currently organized in no particular order, as a collection of several fragmented thoughts.
 
 ---
 
