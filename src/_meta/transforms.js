@@ -11,25 +11,25 @@ const slugify = require("slugify");
 // This is also pretty fragile and is breaking the watch functionality
 // occasionally.
 // Eventually eleventy will support ESM everywhere and it'll be fine.
-const { sleep } = require('deasync'); // lmao hax
+const { sleep } = require("deasync"); // lmao hax
 let createStarryNight, all, starryNight, toHtml;
 if (!starryNight) {
-  import("@wooorm/starry-night").then(sn => {
+  import("@wooorm/starry-night").then((sn) => {
     createStarryNight = sn.createStarryNight;
     all = sn.all;
-  })
-  import('hast-util-to-html').then(i => toHtml = i.toHtml)
+  });
+  import("hast-util-to-html").then((i) => (toHtml = i.toHtml));
   let count = 10000 / 200;
-  while (!typeof createStarryNight !== 'function' && !all && !toHtml) {
-    sleep(200)
+  while (!typeof createStarryNight !== "function" && !all && !toHtml) {
+    sleep(200);
     count -= 1;
     if (count <= 0) break;
   }
 
-  createStarryNight(all).then(s => starryNight = s)
+  createStarryNight(all).then((s) => (starryNight = s));
   count = 10000 / 200;
   while (!starryNight) {
-    sleep(200)
+    sleep(200);
     count -= 1;
     if (count <= 0) break;
   }
@@ -89,8 +89,9 @@ const generateCSS = async ({ dir, runMode, outputMode } = {}) => {
     if (!group) return;
 
     Object.keys(group).forEach((key) => {
-      result += `--${prefix}-${key === "DEFAULT" ? "base" : key}: ${group[key]
-        };`;
+      result += `--${prefix}-${key === "DEFAULT" ? "base" : key}: ${
+        group[key]
+      };`;
     });
   });
 
@@ -121,25 +122,25 @@ const generateResumePDF = async ({ dir, runMode, outputMode } = {}) => {
 const markdownLibrary = markdownIt({
   html: true,
   typographer: true,
-  highlight: function(value, lang) {
-    const scope = starryNight.flagToScope(lang)
+  highlight: function (value, lang) {
+    const scope = starryNight.flagToScope(lang);
 
     return toHtml({
-      type: 'element',
-      tagName: 'pre',
+      type: "element",
+      tagName: "pre",
       properties: {
         className: scope
           ? [
-            'highlight',
-            'highlight-' + scope.replace(/^source\./, '').replace(/\./g, '-')
-          ]
-          : undefined
+              "highlight",
+              "highlight-" + scope.replace(/^source\./, "").replace(/\./g, "-"),
+            ]
+          : undefined,
       },
       children: scope
         ? starryNight.highlight(value, scope).children
-        : [{ type: 'text', value }]
-    })
-  }
+        : [{ type: "text", value }],
+    });
+  },
 })
   .use(require("markdown-it-deflist"))
   .use(require("markdown-it-footnote"))

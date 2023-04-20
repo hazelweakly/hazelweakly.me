@@ -4,14 +4,17 @@ summary: "A feed of the latest blog posts"
 permalink: "/atom.xml"
 eleventyExcludeFromCollections: true
 ---
+
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ title }}</title>
   <subtitle>{{ summary }}</subtitle>
   <link href="{{ meta.url }}{{ permalink }}" rel="self" />
   <link href="{{ meta.url }}/" />
-  <updated>{{ collections.blog | getNewestCollectionItemDate | dateToRfc3339
-    }}</updated>
+  <updated
+    >{{ collections.blog | getNewestCollectionItemDate | dateToRfc3339
+    }}</updated
+  >
   <id>{{ meta.url }}</id>
   <author>
     <name>{{ meta.authorName }}</name>
