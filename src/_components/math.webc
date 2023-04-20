@@ -1,7 +1,13 @@
-<!--- https://runarberg.github.io/mathup/#options -->
+<!---- https://runarberg.github.io/mathup/#options ---->
 <script webc:type="render">
   const mathup = require('mathup');
+  const he = require('he');
   module.exports = function () {
-    return mathup(`${this.slots.text.default}`).toString().replace("<math>", "").replace("</math>", "");
+    const text = he.decode(`${this.slots.text.default}`)
+      .replace(/[“”]/g, '"')
+    return mathup(text)
+      .toString()
+      .replace("<math>", "")
+      .replace("</math>", "");
   }
 </script>
