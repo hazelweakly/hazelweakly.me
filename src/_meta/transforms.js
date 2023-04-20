@@ -265,7 +265,6 @@ module.exports = {
     "@11ty/eleventy-plugin-rss": {},
     "@11ty/eleventy-plugin-webc": {
       components: "src/_components/**/*.webc",
-      useTransform: true
     },
     "eleventy-plugin-helmet": {},
   },
