@@ -44,11 +44,7 @@ She's worked at a variety of companies, across a wide range of tech, and knows t
 Hazel currently serves as a Director on the board of the Haskell Foundation and is fondly known as the Infrastructure Witch of Hachyderm (a popular Mastodon instance).
 She also created the official Haskell "setup" Github Action and helps maintain it.
 She enjoys traveling to speak at conferences and sharing what she's learned with others.
-One of her favorite things is watching someone light up when they understand something for the first time, and a life goal of hers is to help as many people as possible experience that joy.
-She also loves swing dancing, both as a leader and a follower.
 
-Hazel spends her days working on building out teams of humans as well as infrastructure, systems, automation, and tooling to make life better for others.
-She’s worked at a variety of companies, across a wide range of tech, and knows that the hardest problems to solve are the social ones.
 One of her favorite things is watching someone light up when they understand something for the first time, and a life goal of hers is to help as many people as possible experience that joy.
 She also loves swing dancing, both as a leader and a follower.
 
