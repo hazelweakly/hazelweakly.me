@@ -10,7 +10,7 @@ contact:
 
 ::: cv
 
-Experienced engineer specialized in developer experience, distributed systems, and security,
+Experienced engineer specialized in developer experience and distributed systems,
 with a focus on blending theory with pragmatism while embracing empathy.
 
 :::
@@ -103,50 +103,20 @@ As a web developer, I maintained and developed websites and the infrastructure t
 
 :::
 
-::: {.cv .hidden}
-
-| Full-stack Web Developer | Freelance | Dec. 2018--Feb. 2019
-
-<https://honeydoservicesinc.com>
-
-- Achieved sub-second loading times through best practices and careful optimization.
-- Designed the site to easily adapt to changing requirements.
-
-:::
-
-::: {.cv .hidden}
-
-| Team Lead | University Capstone | Spring 2018--Fall 2018
-
-- Lead, mentored, and trained a team of 6 to renovate the Portland Opera's website.
-- Organized and delivered on project timelines and progress reports.
-
-:::
-
-::: {.cv .hidden}
-
-| Remote Intern | Haskell Summer of Code | Summer 2017
-
-- Implemented performance metrics tracking for the Glasgow Haskell Compiler test-suite.
-- Wrote documentation regarding the test-suite driver; improving existing documentation substantially.
-
-:::
+# Community & Activities
 
 ::: cv
 
-| Open Source | |
-
+- I am a member of the [Haskell Foundation](https://haskell.foundation/who-we-are/)'s Board of Directors. (2023--Present)
 - I created and maintain the official Haskell setup action for GitHub Actions to make using Haskell in GitHub's CI easier.
-- Occasional contributions to several OSS projects, e.g.: [direnv](https://github.com/direnv/direnv), [neovim](https://github.com/neovim/neovim), [mach-nix](https://github.com/DavHau/mach-nix/), [nixpkgs](https://github.com/NixOS/nixpkgs), and various neovim plugins.
-- I help run the [hachyderm](https://hachyderm.io) mastodon instance and contribute to the [aurae](https://aurae.io) project.
+- I help run the [Hachyderm](https://hachyderm.io) Mastodon instance and am fondly known as the Infrastructure Witch of Hachyderm.
+- I have presented several talks which can be found [on my website](https://hazelweakly.me/talks)
 
 :::
 
 # Education
 
 ::: cv
-
-| University | |
 
 Portland State University
 : B.S. in Computer Science.

@@ -1,0 +1,5 @@
+{
+  "layout": "talk.html",
+  "tags": "talk",
+  "permalink": "/talk/{{ page.fileSlug }}/"
+}

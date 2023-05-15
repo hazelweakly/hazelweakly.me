@@ -3,6 +3,7 @@ const p = require("postcss");
 const postcssLoadConfig = require("postcss-load-config");
 const slugify = require("slugify");
 const meta = require("../_data/meta");
+const { markdownLibrary } = require("./transforms");
 
 const generateResume = async (_, done) =>
   done(null, await require("./utils").pandoc({ format: "html", output: "-" }));
@@ -27,6 +28,8 @@ const slug = (str) =>
     : undefined;
 
 const toAbsoluteUrl = (url) => new URL(url, meta.url).href;
+
+const parseAsMarkdown = (data) => markdownLibrary.render(data);
 
 /**
  * Firstly, I feel like I must apologize. However, I will not.
@@ -119,6 +122,6 @@ const excerpt = (post) => {
 };
 
 module.exports = {
-  filters: { postDate, slug, toAbsoluteUrl, excerpt },
+  filters: { postDate, slug, toAbsoluteUrl, excerpt, parseAsMarkdown },
   asyncFilters: { postcss, generateResume },
 };

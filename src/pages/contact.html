@@ -1,0 +1,19 @@
+---
+title: Contact
+order: 4
+---
+
+<ul role="list">
+  {% for social in socialMedia.all_socials %}
+
+  <li>
+    <span class="cluster">
+      <a class="icon inline-flex" href="{{ social.url }}">
+        {% include "partials/" + social.title | lower + ".html" %}
+      </a>
+      <a href="{{ social.url }}">{{ social.title }}</a>
+    </span>
+  </li>
+
+  {%- endfor %}
+</ul>

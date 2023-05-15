@@ -1,0 +1,26 @@
+---
+layout: base.html
+---
+
+<article class="flow">
+  <h1 id="{{ title | slugify }}" tabindex="-1">
+    <a href="#{{ title | slugify }}" class="header-anchor"
+      ><span>{{ title }}</span></a
+    >
+  </h1>
+  <p>
+    <a href="{{ event_site }}">{{ event }}</a> | {{ location }} | {{ date |
+    postDate }}
+  </p>
+  {{ abstract | parseAsMarkdown | safe }}
+  <ul class="cluster" style="list-style: none">
+    {% if slides %}
+    <li><a href="{{ slides }}">View the slides</a></li>
+    {% endif %} {% if video %}
+    <li><a href="{{ video }}">Watch the video</a></li>
+    {% endif %} {% if talk_page %}
+    <li><a href="{{ talk_page }}">Visit the program page</a></li>
+    {% endif %}
+  </ul>
+</article>
+<meta property="og:type" content="article" data-helmet="og:type" />

@@ -256,6 +256,9 @@ const pages = (api) =>
     .getFilteredByTag("_pages")
     .sort((a, b) => +a?.data?.order - +b?.data?.order);
 
+const talks = (api) =>
+  api.getFilteredByTag("talk").sort((a, b) => +a?.data?.date - +b?.data?.date);
+
 module.exports = {
   markdownLibrary,
   before: { generateCSS },
@@ -281,5 +284,6 @@ module.exports = {
   },
   collections: {
     pages,
+    talks,
   },
 };
