@@ -101,7 +101,7 @@ const generateCSS = async ({ dir, runMode, outputMode } = {}) => {
   `;
 
   // Make the CSS readable to help people with auto-complete in their editors
-  result = prettier.format(result, { parser: "css" });
+  result = await prettier.format(result, { parser: "css" });
 
   // Push this file into the CSS dir, ready to go
   fs.writeFileSync(

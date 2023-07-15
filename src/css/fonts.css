@@ -47,10 +47,3 @@
   font-weight: 400;
   src: url("/fonts/VictorMono-v1.5.3-Italic.woff2") format("woff2");
 }
-@font-face {
-  font-family: "Zilla Slab";
-  font-style: italic;
-  font-display: swap;
-  font-weight: 400;
-  src: url("/fonts/zilla-subset-footer.woff2") format("woff2");
-}

@@ -1,5 +1,5 @@
 ---
-title: Posts
+title: Blog
 order: 2
 ---
 
