@@ -26,7 +26,7 @@ It has been a mixed bag, to put it mildly.
   Once I realized that what they wanted was purely hourly labor of cheaper toil, I built them a "what they needed but not what they asked for" platform by scraping together enough time from various teams and then left once it was operational.
 - In another company, I was hired as a Staff Security-oriented SRE but they actually needed tooling expertise more so I built that for them.
   It went well, but they didn't go out of their way to actually hire for that.
-- I have been hired for a role (stablity / infrastructure / resilience) and had people hire me with the generic "backend software engineer" interview loops. The loop itself went alright, but that was more me being abnormally good at both backend _and_ this rather than than any indicator of their skill in placing me.
+- I have been hired for a role (stability / infrastructure / resilience) and had people hire me with the generic "backend software engineer" interview loops. The loop itself went alright, but that was more me being abnormally good at both backend _and_ this rather than than any indicator of their skill in placing me.
   That company underleveled me significantly and I left shortly after when it became obvious that they were incapable of seeing the value that the role was intended to capture.
 
 There's a trend here, really, and I think it's a common one.
