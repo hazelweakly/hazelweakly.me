@@ -3,7 +3,7 @@ title: "So You Want to Hire for Developer Tooling"
 date: 2023-07-14
 ---
 
-I see you want to hire a developer to work on developer tooling, developer experience, and the generally intangible but admirable goal of "making life better for devs".
+I see you want to hire a developer to work on internal developer tooling, developer experience, and the generally intangible but admirable goal of "making life better for devs".
 That's awesome; you've got one hell of a challenge ahead of you.
 This role is extremely difficult to hire for.
 In my opinion, and in my experience, it's been the most difficlt role in the company outside of senior leadership, and the most likely to fail; if there ever was a role that burns people out, it's this one.
@@ -77,7 +77,7 @@ This role probably doen't make sense until you're at 50 engineers, but it's not 
    - "It could've been an email" applies to overengineering your CI pipelines just as much as it does to useless meetings.
 8. Not having a way to get visibility into your actual needs
    - If I were to be in this role again, I would be fine doing interviewing tours amongst all the EMs and tech leads every month.
-     However, companies like [getdx](getdx.com) exist now to automate the vast majority of that toil; use them to set this role up for success.
+     However, companies like [getdx](https://getdx.com) exist now to automate the vast majority of that toil; use them to set this role up for success.
 
 # What Should Developer Tooling People Work On
 
