@@ -1,0 +1,15 @@
+figure.has-caption {
+  background-color: hsl(var(--color-secondary));
+}
+
+figure.has-caption img {
+  height: auto;
+}
+
+figure.has-caption figcaption {
+  text-align: center;
+  font-size: 0.8em;
+  background-color: hsl(var(--color-bg));
+  padding: theme("padding.0-5") theme("padding.1");
+  font-style: italic;
+}

@@ -68,6 +68,9 @@ devDependencies:
   markdown-it-deflist:
     specifier: ^2.1.0
     version: 2.1.0
+  markdown-it-eleventy-img:
+    specifier: ^0.10.1
+    version: 0.10.1(markdown-it@13.0.1)
   markdown-it-footnote:
     specifier: ^3.0.3
     version: 3.0.3
@@ -7045,6 +7048,19 @@ packages:
 
   /markdown-it-deflist@2.1.0:
     resolution: {integrity: sha512-3OuqoRUlSxJiuQYu0cWTLHNhhq2xtoSFqsZK8plANg91+RJQU1ziQ6lA2LzmFAEes18uPBsHZpcX6We5l76Nzg==}
+    dev: true
+
+  /markdown-it-eleventy-img@0.10.1(markdown-it@13.0.1):
+    resolution: {integrity: sha512-MaPM7M1qFzbMj1kUeOiC4ZKICO+543bCDyCd7X3PvUdKwIX1dLFv00jO4D6rJPhiJTW7iFdHkRATuvgUdYCE2w==}
+    engines: {node: '>=14.15'}
+    peerDependencies:
+      markdown-it: '>= 9.0.0'
+    dependencies:
+      '@11ty/eleventy-img': 3.1.0
+      markdown-it: 13.0.1
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
     dev: true
 
   /markdown-it-footnote@3.0.3:

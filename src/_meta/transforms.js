@@ -142,6 +142,35 @@ const markdownLibrary = markdownIt({
     });
   },
 })
+  .use(require("markdown-it-eleventy-img"), {
+    imgOptions: {
+      urlPath: "/images/",
+      widths: [1000, 600, 300],
+      formats: ["avif", "webp", "jpeg"],
+      outputDir: path.join("public", "images"),
+    },
+    globalAttributes: {
+      decoding: "async",
+      sizes: "100vw",
+    },
+    renderImage(image, attributes) {
+      const [Image, options] = image;
+      const [src, attrs] = attributes;
+
+      Image(src, options);
+
+      const metadata = Image.statsSync(src, options);
+      const imageMarkup = Image.generateHTML(metadata, attrs, {
+        whitespaceMode: "inline",
+      });
+
+      return `<figure class="flow bordered-box ${
+        attrs.title ? `has-caption` : ""
+      }">${imageMarkup}${
+        attrs.title ? `<figcaption>${attrs.title}</figcaption>` : ""
+      }</figure>`;
+    },
+  })
   .use(require("markdown-it-deflist"))
   .use(require("markdown-it-footnote"))
   .use(require("markdown-it-attrs"), {
