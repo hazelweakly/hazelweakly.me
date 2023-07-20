@@ -71,7 +71,7 @@ This role probably doen't make sense until you're at 50 engineers, but it's not 
 4. Literally any desire for this role involving the word "kubernetes". It's a fantastic tool; that is not this role.
 5. Not having a good picture for how consensus happens, a good process around moving from decision to action to execution, or a willingness to implement one top-down from senior leadership.
 6. Doing things way before you're ready:
-   - For example, self service catalogues are great. Implementing Spotify's Basecamp before you're at 500-1,500 engineers is a mistake.
+   - For example, self service catalogues are great. Implementing Spotify's Backstage before you're at 500-1,500 engineers is a mistake.
    - "Let's have the dev tools person implement observability" is going to end badly.
 7. Culture, then process, then tooling, then process, then culture.
    - "It could've been an email" applies to overengineering your CI pipelines just as much as it does to useless meetings.
