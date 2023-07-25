@@ -6,7 +6,7 @@ date: 2023-07-14
 I see you want to hire a developer to work on internal developer tooling, developer experience, and the generally intangible but admirable goal of "making life better for devs".
 That's awesome; you've got one hell of a challenge ahead of you.
 This role is extremely difficult to hire for.
-In my opinion, and in my experience, it's been the most difficlt role in the company outside of senior leadership, and the most likely to fail; if there ever was a role that burns people out, it's this one.
+In my opinion, and in my experience, it's been the most difficult role in the company outside of senior leadership, and the most likely to fail; if there ever was a role that burns people out, it's this one.
 Tread carefully, and good luck.
 You'll need it.
 
@@ -38,7 +38,7 @@ What you're looking for, I think, is someone who can take "developer experience"
 The hardest things they will have to do is gain the trust of the entire engineering organization, buy-in for their approach, and deliver perceived value and improvements.
 
 I'm reminded of the concept that there are several inflection points at which organizations change and their needs evolve; importantly, the nature of how work becomes visible and how coordination happens fundamentally shifts.
-Anecdotally, I've found these numbers to be true--you may recognize them as being related to dunbar's number(s): 5, 15, 50, 150, 500, 1500.
+Anecdotally, I've found these numbers to be true--you may recognize them as being related to Dunbar's number(s): 5, 15, 50, 150, 500, 1500.
 
 Here's how I personally apply them to the general bucket of "not product engineering", which includes but isn't limited to: infrastructure, operations, and developer experience.
 
@@ -61,7 +61,7 @@ Here's how I personally apply them to the general bucket of "not product enginee
   - The idea that you can have basically any engineering function without hiring industry experts in that function should seem both insulting and laughable; even if you hire them as consultants, you should understand deeply that success means leveraging others and you now have the funding to fully do so.
 
 Figure out where in here you are and how much catching up you have to do.
-This role probably doen't make sense until you're at 50 engineers, but it's not a bad idea to start thinking about it at 15.
+This role probably doesn't make sense until you're at 50 engineers, but it's not a bad idea to start thinking about it at 15.
 
 # How To Fuck Up Before You Even Start Hiring
 
@@ -170,7 +170,7 @@ This person will have to lead without authority, institute company wide change, 
 "The Vibes feel good; I would trust this person to tell me very uncomfortable things about stuff I am personally proud of" is absolutely something to aim for over most everything else.
 However, the full implications of this are not always obvious.
 For example, you will need to be very painfully aware that if you don't have diversity in senior leadership, hiring someone who is not a white male will likely not turn out well.
-The exceptions to this, imo, prove the rule; I have personally been both the exception and the rule, here.
+The exceptions to this, in my opinion, prove the rule; I have personally been both the exception and the rule, here.
 Many companies will be uncomfortable with this; which is one reason why this role is so prone to failure.
 
 This role is truly a Sociotechnical Engineer, in every sense of the term; they will expose the weaknesses of your company in ways you are not prepared for, and they will challenge the status quo in ways that are painful.
