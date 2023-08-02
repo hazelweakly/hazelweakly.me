@@ -22,5 +22,5 @@ abstract: |
 # slides: Need to publsh
 talk_page: https://2023.phillyemergingtech.com/session/hacking-the-pachyderm-scaling-servers-and-people/
 event_site: https://2023.phillyemergingtech.com/
-# video: Not yet public
+video: https://www.youtube.com/watch?v=uMzVRlYPPLo&list=PL9oQ7yETvN13V5Xp7016XupVLg3WqiMtx&index=10
 ---
