@@ -63,7 +63,7 @@ Here's how I personally apply them to the general bucket of "not product enginee
 Figure out where in here you are and how much catching up you have to do.
 This role probably doesn't make sense until you're at 50 engineers, but it's not a bad idea to start thinking about it at 15.
 
-# How To Fuck Up Before You Even Start Hiring
+## How To Fuck Up Before You Even Start Hiring
 
 1. Not having an answer for "How does this role demonstrate value."
 2. Not having significant buy-in across the entire CTO org for recognizing the need of this role and the benefits it will deliver.
@@ -79,7 +79,7 @@ This role probably doesn't make sense until you're at 50 engineers, but it's not
    - If I were to be in this role again, I would be fine doing interviewing tours amongst all the EMs and tech leads every month.
      However, companies like [getdx](https://getdx.com) exist now to automate the vast majority of that toil; use them to set this role up for success.
 
-# What Should Developer Tooling People Work On
+## What Should Developer Tooling People Work On
 
 In reality, this list should be informed by actual answers from engineers, where the "dev tools person" interviews everyone and figures out:
 
@@ -113,7 +113,7 @@ All of that said, the below list of projects is something that is pretty much gu
 
 Crucially here, the takeaway is that I would expect this person to succeed if, and likely only if, there is some visibility into showing what the actual needs of the company are, and they have the ability to globally prioritize needs as well as locally drive improvements.
 
-# How Do I Screen For This Role
+## How Do I Screen For This Role
 
 Here's the gist:
 This role requires leading without authority.

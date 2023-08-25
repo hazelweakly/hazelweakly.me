@@ -31,7 +31,7 @@ That's the magic, by the way.
 I'm going to break this down into a series of steps.
 Here's the formula:
 
-# Step 1: Take Notes and Absorb
+## Step 1: Take Notes and Absorb
 
 During the onboarding process, make it a habit to take detailed notes.
 If something is weird, take notes.
@@ -56,7 +56,7 @@ It'll open you up to being able to be a healer in a space as well, should you ne
 Take notes and absorb.
 Talk less, write more.
 
-# Step 2: Identify Opportunities for Improvement
+## Step 2: Identify Opportunities for Improvement
 
 (that don't involve "Big Changes")
 
@@ -78,7 +78,7 @@ Easy, right?
 Knowing _what_ you can change is half the battle; naturally, reading everything I write cause it's awesome and hilarious is the other half of the battle.
 The battle ain't the war though, so, y'know; measure twice, break prod _(only)_ once, and all that.
 
-# Step 3: Ask People What Sucked
+## Step 3: Ask People What Sucked
 
 Okay, here's the deal.
 You're going to start asking people questions, but this is very easy to fuck up, and if you fuck it up, you're going to set a bad impression that will be very difficult to undo later.
@@ -103,7 +103,7 @@ No matter how perfect and amazing the company culture is, I guarantee this will 
 
 Just... Be there for them, okay? You can fix the problems later; but right now, they need to know you can hear them as they are and understand what they have to say.
 
-# Step 4: Fix Local Development Environments
+## Step 4: Fix Local Development Environments
 
 Here's where the fixing happens, and here's how to do it:
 
@@ -150,7 +150,7 @@ Now, once you deliver this, that'll change.
 People will think you're amazing, cause you are; they'll think you're brilliant too, cause you followed my advice, and I'm a smart cookie.
 It's a win win, really.
 
-# The Takeaway: Empathy, Empathy, Empathy, Empathy, Empathy
+## The Takeaway: Empathy, Empathy, Empathy, Empathy, Empathy
 
 Embrace your role as the new person and leverage that.
 Take notes.
