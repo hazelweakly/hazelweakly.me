@@ -28,7 +28,10 @@ module.exports = function (cfg) {
   }
   cfg.addWatchTarget("./src/_resume/cv.md");
   cfg.addPassthroughCopy("./src/fonts");
-  cfg.addPassthroughCopy({ "./src/favicons": "." });
+  cfg.addPassthroughCopy({
+    "./src/favicons": ".",
+    "./src/admin/config.yml": "./admin/config.yml",
+  });
   cfg.addPassthroughCopy("./src/images");
 
   cfg.setLibrary("md", transforms.markdownLibrary);

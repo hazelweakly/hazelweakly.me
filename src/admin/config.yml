@@ -4,12 +4,14 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "src/images/uploads"
 public_folder: "/images/uploads"
+site_url: https://hazelweakly.me
 collections:
   - name: blog
     label: Blog
     folder: "src/blog"
     create: true
     slug: "{{slug}}"
+    preview_path: "blog/{{filename}}"
     fields:
       - { label: Title, name: title, widget: string }
       - label: Publish Date
