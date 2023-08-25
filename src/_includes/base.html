@@ -13,11 +13,7 @@
       {{ content | safe }}
     </main>
 
-    <footer class="center min-h-[10ex]">
-      <p class="text-center italic text-1">
-        &copy; {% year %} {{ meta.siteName }}
-      </p>
-    </footer>
+    {% include "footer.html" %}
 
     <script>
       document.documentElement.classList.remove("no-js");

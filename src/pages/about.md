@@ -1,6 +1,7 @@
 ---
 title: About Me
 order: 1
+footer: true
 ---
 
 <div data-atabs class="flow">

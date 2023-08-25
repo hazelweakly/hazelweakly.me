@@ -3,7 +3,7 @@ title: Résumé
 author: Hazel Weakly
 contact:
   address: |
-    Seattle, Washington, 98052, USA
+    Seattle, Washington, USA
   phone: "[(503) 369--8931](tel:5033698931)"
   email: "[hazel@theweaklys.com](mailto:hazel@theweaklys.com)"
 ---

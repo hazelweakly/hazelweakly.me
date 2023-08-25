@@ -23,3 +23,7 @@ Can be any acceptable flexbox alignment value.
 .cluster > .skip {
   margin-inline: auto;
 }
+
+.no-gutter {
+  row-gap: 0;
+}

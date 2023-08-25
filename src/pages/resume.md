@@ -2,7 +2,10 @@
 title: Résumé
 order: 4
 description: Experienced engineer specialized in developer experience and distributed systems, with a focus on blending theory with pragmatism while embracing empathy.
+footer: true
 ---
+
+<p><a href="/resume.pdf">[View as PDF]</a></p>
 
 {{ "html" | generateResume | safe }}
 

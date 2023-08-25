@@ -19,12 +19,14 @@ collections:
         widget: datetime
         date_format: "YYYY-MM-DD"
         time_format: false
+      - { label: Draft, name: draft, widget: boolean, required: false }
       - { label: "Body", name: body, widget: markdown }
   - name: talks
     label: Talks
     folder: "src/talks"
     create: true
     slug: "{{fields.event}}-{{year}}"
+    preview_path: "talks/{{filename}}"
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Event, name: event, widget: string }

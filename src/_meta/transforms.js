@@ -98,7 +98,21 @@ const generateCSS = async ({ dir, runMode, outputMode } = {}) => {
   // Close the :root block
   result += `
     }
+
+    /* Convenience classes for setting flow-space */
   `;
+
+  const { key, prefix } = aliasedGroups[0];
+  const group = config.theme[key];
+
+  if (!group) return;
+
+  // prefix is generic here but really it's just space
+  Object.keys(group).forEach((key) => {
+    result += `.flow-${key === "DEFAULT" ? "base" : key}  > * + * {
+        --flow-space: var(--${prefix}-${key === "DEFAULT" ? "base" : key});
+      }`;
+  });
 
   // Make the CSS readable to help people with auto-complete in their editors
   result = await prettier.format(result, { parser: "css" });
@@ -285,6 +299,21 @@ const pages = (api) =>
     .getFilteredByTag("_pages")
     .sort((a, b) => +a?.data?.order - +b?.data?.order);
 
+const blog = (api) =>
+  api
+    .getFilteredByTag("_blog")
+    .filter((p) => !p?.data?.draft)
+    .sort((a, b) => +a?.data?.order - +b?.data?.order);
+
+const headerPages = (api) =>
+  pages(api).filter(
+    (p) =>
+      !!p?.data?.header ||
+      (p?.data?.header === undefined && p?.data?.footer === undefined),
+  );
+
+const footerPages = (api) => pages(api).filter((p) => !!p?.data?.footer);
+
 const talks = (api) =>
   api.getFilteredByTag("talk").sort((a, b) => +a?.data?.date - +b?.data?.date);
 
@@ -300,6 +329,13 @@ module.exports = {
       components: "src/_components/**/*.webc",
     },
     "eleventy-plugin-helmet": {},
+    "eleventy-plugin-embed-everything": {
+      youtube: {
+        options: {
+          lite: true,
+        },
+      },
+    },
   },
   transforms: {
     criticalCSS,
@@ -313,6 +349,9 @@ module.exports = {
   },
   collections: {
     pages,
+    blog,
+    headerPages,
+    footerPages,
     talks,
   },
 };

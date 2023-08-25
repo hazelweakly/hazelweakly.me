@@ -13,23 +13,22 @@
           <span class="skip"></span>
 
           <div class="cluster">
-            {% for page in collections.pages %}
+            {% for page in collections.headerPages %}
             <li class="flex">
               <a {% if currentUrl===page.url %}aria-current="page" {% endif %} href="{{ page.url }}">
                 {{ page.data.title }}
               </a>
             </li>
             {%- endfor %}
+            <li class="flex">
+              <div class="user-toggle inline-flex">
+                <div role="status" class="visually-hidden"></div>
+                <button aria-label="Toggle Theme">
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+              </div>
+            </li>
           </div>
-
-          <li class="flex">
-            <div class="user-toggle inline-flex">
-              <div role="status" class="visually-hidden"></div>
-              <button aria-label="Toggle Theme">
-                <span class="icon" aria-hidden="true"></span>
-              </button>
-            </div>
-          </li>
         </ul>
       </nav>
     </div>

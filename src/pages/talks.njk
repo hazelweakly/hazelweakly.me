@@ -1,0 +1,29 @@
+---
+title: Talks
+order: 3
+---
+
+<ul class="flow flow-4">
+  {% for talk in collections.talks | reverse %}
+
+  <li class="bordered-box flow flow-2">
+    <p>
+      <a href="{{ talk.url }}" class="font-heading text-3">{{ talk.data.title }}</a>
+    </p>
+
+    <div class="cluster no-gutter"> 
+      <a href="{{ talk.data.event_site }}">{{ talk.data.event }}</a>
+      <time class="italic" datetime="{{ talk.date.toISOString() }}">{{ talk.date | postDate }}</time>
+    </div>
+
+    <div class="cluster">
+      {% if talk.data.slides %}<a href="{{ talk.data.slides }}">Slides</a>{% endif %}
+
+      {% if talk.data.video %}<a href="{{ talk.data.video }}">Video</a>{% endif %}
+
+      {% if talk.data.talk_page %}<a href="{{ talk.data.talk_page }}">Program Page</a>{% endif %}
+    </div>
+  </li>
+
+  {%- endfor %}
+</ul>

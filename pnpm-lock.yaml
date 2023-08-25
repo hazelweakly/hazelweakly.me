@@ -41,6 +41,9 @@ devDependencies:
   deasync:
     specifier: ^0.1.28
     version: 0.1.28
+  eleventy-plugin-embed-everything:
+    specifier: ^1.16.0
+    version: 1.16.0
   eleventy-plugin-helmet:
     specifier: ^0.2.2
     version: 0.2.2(@11ty/eleventy@2.0.1)
@@ -142,6 +145,19 @@ packages:
   /@11ty/eleventy-fetch@3.0.0:
     resolution: {integrity: sha512-qJvfb331rYQAmlCS71Ygg0/XHUdB4/qXBOLsG0DJ1m61WL5JNha52OtKVeQq34u2J2Nfzim+X4TIL/+QyesB7Q==}
     engines: {node: '>=12'}
+    dependencies:
+      debug: 4.3.4(supports-color@9.4.0)
+      flat-cache: 3.0.4
+      node-fetch: 2.6.12
+      p-queue: 6.6.2
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: true
+
+  /@11ty/eleventy-fetch@4.0.0:
+    resolution: {integrity: sha512-wGAd0r+8DUWr22fK5r07dOKuNY6ltA7hX+sJzngGZL1yJmuUVdM/xPQZ+iq0BFgf/ZeRdpVEzf2D0cpVZUuiTg==}
+    engines: {node: '>=14'}
     dependencies:
       debug: 4.3.4(supports-color@9.4.0)
       flat-cache: 3.0.4
@@ -4269,6 +4285,63 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /eleventy-plugin-embed-everything@1.16.0:
+    resolution: {integrity: sha512-IN/SEUBSmpwbhdazctiNQszTWWovAaHEWTD/sn4MKTo96TPg4uxuUH+5gJXB+laSsTpQeAkQN0IUORZxdr4yYQ==}
+    dependencies:
+      deepmerge: 4.3.1
+      eleventy-plugin-embed-instagram: 1.2.7
+      eleventy-plugin-embed-soundcloud: 1.2.7
+      eleventy-plugin-embed-spotify: 1.2.7
+      eleventy-plugin-embed-ted: 1.0.0
+      eleventy-plugin-embed-tiktok: 1.1.7
+      eleventy-plugin-embed-twitch: 1.2.7
+      eleventy-plugin-embed-twitter: 1.3.7
+      eleventy-plugin-vimeo-embed: 1.3.7
+      eleventy-plugin-youtube-embed: 1.9.0
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: true
+
+  /eleventy-plugin-embed-instagram@1.2.7:
+    resolution: {integrity: sha512-v6uSqeZiZU5L40lr4NTGBr+2Wbc81SqbNIllESEBQDFhS68g253WqkLaNs7gGh0k5hxhNuMt7ZZEBfous7jksw==}
+    dev: true
+
+  /eleventy-plugin-embed-soundcloud@1.2.7:
+    resolution: {integrity: sha512-0+VNeEcMiRySmyTmPmMhCwkbds44k9W4jWqUwjvk665TRagiXcCdj/BK2wl8vyiVrn/0arWeSCpol4NBb6BIvA==}
+    dependencies:
+      '@11ty/eleventy-fetch': 4.0.0
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: true
+
+  /eleventy-plugin-embed-spotify@1.2.7:
+    resolution: {integrity: sha512-CeybeLjIvZYAccByFsSl8Nrlh1F28aX0C+JvNPDsrPh1m0iJaKsm/8l7cebf2y9pA47y38D4XrGFIO8WoPx2sQ==}
+    dev: true
+
+  /eleventy-plugin-embed-ted@1.0.0:
+    resolution: {integrity: sha512-IOI9/nm4POAZbP4rnff77grKWxRGe2gYDfRBsDJwCn12ihNlfWTtg8o+a1E55nUb1xz1tvk/L9g98usMF6eqwg==}
+    dev: true
+
+  /eleventy-plugin-embed-tiktok@1.1.7:
+    resolution: {integrity: sha512-Yb/95hafIsKVsV11ebsX0PoYzpLQWWSbdznbvPfA0HIKjfTHGEt1q0XX5DRGPnn5tor7lM5sha9DMQPzJb/oGQ==}
+    dev: true
+
+  /eleventy-plugin-embed-twitch@1.2.7:
+    resolution: {integrity: sha512-E3oUtk5HhfgBaH9xpcnnByoddyyxuj0uhTzxD+UF5ftUU4pa0959HADBI1RuWUDssADzowpSes8m2gBgO4Peeg==}
+    dev: true
+
+  /eleventy-plugin-embed-twitter@1.3.7:
+    resolution: {integrity: sha512-cl2MuEqSHGhVwiA+rR6Wn8FwLIKYL0lpTL9TjXBXrBCNr5eTUGkN6odO/vRrUY4HY79THugoziWuhVkIx2UVeg==}
+    dependencies:
+      '@11ty/eleventy-fetch': 4.0.0
+      deepmerge: 4.3.1
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: true
+
   /eleventy-plugin-helmet@0.2.2(@11ty/eleventy@2.0.1):
     resolution: {integrity: sha512-gbRgv1cbj1nJGol/Clc+ZYNuTjusCz1iLyunBZfMMq01rrWpuh/H+72qj6tQT1xmy3woRQIKv9WXDlFyRNOHng==}
     engines: {node: '>=10'}
@@ -4277,6 +4350,17 @@ packages:
     dependencies:
       '@11ty/eleventy': 2.0.1
       posthtml: 0.13.4
+    dev: true
+
+  /eleventy-plugin-vimeo-embed@1.3.7:
+    resolution: {integrity: sha512-uH1iiUGgDPXD8/b/43gvJ0TX8PIvwO9L0fU8vmp2X4FJK+SERNnk7uP0G8pHg1x+1H7A1KWnu/sric5MtsMGeQ==}
+    dev: true
+
+  /eleventy-plugin-youtube-embed@1.9.0:
+    resolution: {integrity: sha512-jrFaYk8mgzI96iGixZlWk404/y+VBSEIMOmOEnmfumP35XGguACW+433ms4xYDbhM/Aa+Q/gKoQP4NbSX5kUHg==}
+    dependencies:
+      deepmerge: 4.3.1
+      lite-youtube-embed: 0.2.0
     dev: true
 
   /emoji-regex@8.0.0:
@@ -6791,6 +6875,10 @@ packages:
     transitivePeerDependencies:
       - zen-observable
       - zenObservable
+    dev: true
+
+  /lite-youtube-embed@0.2.0:
+    resolution: {integrity: sha512-XXXAk5sbvtjjwbie3XG+6HppgTm1HTGL/Uk9z9NkJH53o7puZLur434heHzAjkS60hZB3vT4ls25zl5rMiX4EA==}
     dev: true
 
   /locate-path@5.0.0:

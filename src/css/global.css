@@ -180,3 +180,7 @@ blockquote {
   margin: theme("margin.2") calc(-1 * theme("margin.2"));
   padding: theme("padding.1") theme("padding.2");
 }
+
+.eleventy-plugin-youtube-embed > * {
+  max-width: unset;
+}

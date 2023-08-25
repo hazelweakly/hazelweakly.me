@@ -1,0 +1,20 @@
+<footer class="center min-h-[10ex]">
+  <div class="center wrapper">
+    <nav aria-label="secondary" id="secondary-navigation" tabindex="-1">
+      <ul role="list" class="cluster">
+        <div class="cluster">
+          {% for page in collections.footerPages %}
+          <li class="flex">
+            <a {% if currentUrl===page.url %}aria-current="page" {% endif %} href="{{ page.url }}">
+              {{ page.data.title }}
+            </a>
+          </li>
+          {%- endfor %}
+        </div>
+      </ul>
+    </nav>
+    <p class="text-center italic text-1">
+      &copy; {% year %} {{ meta.siteName }}
+    </p>
+  </div>
+</footer>

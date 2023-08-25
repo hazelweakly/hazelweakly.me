@@ -8,19 +8,27 @@ layout: base.html
       ><span>{{ title }}</span></a
     >
   </h1>
-  <p>
-    <a href="{{ event_site }}">{{ event }}</a> | {{ location }} | {{ date |
-    postDate }}
+  <p class="cluster no-gutter">
+    <a href="{{ event_site }}">{{ event }}</a> <span class="skip"></span>
+    <span>{{ location }}</span> <span class="skip"></span>
+    <time class="italic" datetime="{{ date.toISOString() }}"
+      >{{ date | postDate }}</time
+    >
   </p>
-  {{ abstract | parseAsMarkdown | safe }}
-  <ul class="cluster" style="list-style: none">
+  {{ abstract | parseAsMarkdown | safe }} {% if slides or video or talk_page %}
+  <div class="py-3">
+    <hr />
+  </div>
+  {% endif %} {% if video %}
+  <p>{{video}}</p>
+  {% endif %} {% if slides or talk_page %}
+  <ul class="cluster" style="list-style: none; padding-left: initial">
     {% if slides %}
     <li><a href="{{ slides }}">View the slides</a></li>
-    {% endif %} {% if video %}
-    <li><a href="{{ video }}">Watch the video</a></li>
-    {% endif %} {% if talk_page %}
+    {% endif %}{% if talk_page %}
     <li><a href="{{ talk_page }}">Visit the program page</a></li>
     {% endif %}
   </ul>
+  {% endif %}
 </article>
 <meta property="og:type" content="article" data-helmet="og:type" />

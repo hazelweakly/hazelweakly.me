@@ -1,7 +1,7 @@
 ---
 title: Haskell Summer of Code
 date: 2017-06-13
-eleventyExcludeFromCollections: true
+draft: true
 ---
 
 Hey there! I’m Hazel and I’m proud to announce that I’ll be working with the Haskell Summer of Code project; specifically, on the project "Bringing Sanity to the GHC Performance Test-suite."
