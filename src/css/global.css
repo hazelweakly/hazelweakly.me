@@ -30,6 +30,7 @@ body {
   font-size: theme("fontSize.2");
   font-family: theme("fontFamily.body");
   line-height: 1.75;
+  min-height: 100dvh;
 }
 
 button {

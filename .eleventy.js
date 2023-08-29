@@ -18,7 +18,11 @@ module.exports = function (cfg) {
 
   foreach(transforms.plugins, (p, opts) => cfg.addPlugin(require(p), opts));
 
-  cfg.setServerOptions({ port: 8080, portReassignmentRetryCount: 0 });
+  cfg.setServerOptions({
+    port: 8080,
+    portReassignmentRetryCount: 0,
+    showAllHosts: true,
+  });
   cfg.setQuietMode(true);
 
   cfg.addWatchTarget("./src/css/");
