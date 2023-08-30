@@ -2,3 +2,24 @@
   font-size: theme("fontSize.8");
   text-align: center;
 }
+
+@supports (font-size: 1cqi) {
+  .home h1 {
+    font-size: clamp(theme("fontSize.4"), 100cqmin / 4.5, theme("fontSize.8"));
+  }
+
+  .home {
+    container-type: inline-size;
+  }
+
+  main.wrapper {
+    flex: auto;
+    flex-direction: column;
+    place-content: center;
+    padding-inline: 0;
+  }
+
+  body.flow {
+    --flow-space: 0;
+  }
+}
