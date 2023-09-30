@@ -12,14 +12,14 @@
     container-type: inline-size;
   }
 
-  main.wrapper {
+  main.wrapper:has(.home) {
     flex: auto;
     flex-direction: column;
     place-content: center;
     padding-inline: 0;
   }
 
-  body.flow {
+  body.flow:has(.home) {
     --flow-space: 0;
   }
 }
