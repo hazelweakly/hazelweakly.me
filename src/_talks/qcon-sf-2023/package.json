@@ -1,0 +1,36 @@
+{
+  "name": "qcon-2023",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "marp -s -w . -c marp.config.mjs",
+    "build:html": "timeout 10 marp -c marp.config.mjs || :",
+    "build:pdf": "decktape generic -s 1280x720 --load-pause 3000 ./index.html ./index.pdf"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@marp-team/marp-cli": "https://github.com/GuillaumeDesforges/marp-cli/releases/download/v3.2.0-gdforj.1/marp-team-marp-cli-v3.2.0-gdforj.1.tgz",
+    "@marp-team/marp-core": "^3.8.0",
+    "@mermaid-js/mermaid-cli": "^10.4.0",
+    "@types/markdown-it": "^13.0.1",
+    "@types/temp": "^0.9.1",
+    "@wekanteam/markdown-it-mermaid": "^0.6.4",
+    "decktape": "^3.10.0",
+    "jsdom": "^22.1.0",
+    "markdown-it-attrs": "^4.1.6",
+    "markdown-it-bracketed-spans": "^1.0.1",
+    "markdown-it-deflist": "^2.1.0",
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-include": "^2.0.0",
+    "markdown-it-multimd-table": "^4.2.3",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "markdown-it-table-of-contents": "^0.6.0",
+    "mathup": "1.0.0-beta.2",
+    "temp": "^0.9.4"
+  }
+}

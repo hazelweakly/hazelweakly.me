@@ -12,6 +12,7 @@ const slugify = require("slugify");
 // occasionally.
 // Eventually eleventy will support ESM everywhere and it'll be fine.
 const { sleep } = require("deasync"); // lmao hax
+const exec = require("util").promisify(require("child_process").exec);
 let createStarryNight, all, starryNight, toHtml;
 if (!starryNight) {
   import("@wooorm/starry-night").then((sn) => {
@@ -131,6 +132,41 @@ const generateResumePDF = async ({ dir, runMode, outputMode } = {}) => {
     format: "pdf",
     output: path.join(__dirname, "..", "..", dir.output, "resume.pdf"),
   });
+};
+
+const generateSlides = async ({ dir, runMode, outputMode } = {}) => {
+  // if (!isProd) return;
+
+  // const configFile = path.join(__dirname, "..", "..", "marp.config.mjs");
+  // const slidesFile = path.join(
+  //   __dirname,
+  //   "..",
+  //   "..",
+  //   dir.input,
+  //   "_talks",
+  //   "qcon-sf-2023",
+  //   "slides.md",
+  // );
+  const outputFile = path.join(
+    __dirname,
+    "..",
+    "..",
+    dir.output,
+    "talks",
+    "qcon-sf-2023",
+    "slides.html",
+  );
+  const output = await exec(`pnpm build:html`, {
+    cwd: path.join(__dirname, "..", "_talks", "qcon-sf-2023"),
+  }).catch((e) => e);
+
+  await exec(`cp ./${dir.input}/_talks/qcon-sf-2023/index.html ${outputFile}`, {
+    cwd: path.join(__dirname, "..", ".."),
+  }).catch((e) => e);
+
+  console.log(output);
+
+  return output;
 };
 
 const markdownLibrary = markdownIt({
@@ -320,7 +356,7 @@ const talks = (api) =>
 module.exports = {
   markdownLibrary,
   before: { generateCSS },
-  after: { generateResumePDF },
+  after: { generateResumePDF, generateSlides },
   plugins: {
     // "@11ty/eleventy-plugin-syntaxhighlight": {},
     "@11ty/eleventy-plugin-directory-output": {},

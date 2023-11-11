@@ -27,6 +27,7 @@ module.exports = function (cfg) {
 
   cfg.addWatchTarget("./src/css/");
   cfg.addWatchTarget("./postcss.config.js");
+  cfg.ignores.add("src/_talks");
   if (meta.env === "prod") {
     cfg.ignores.add("src/_resume");
   }
@@ -34,7 +35,8 @@ module.exports = function (cfg) {
   cfg.addPassthroughCopy("./src/fonts");
   cfg.addPassthroughCopy({
     "./src/favicons": ".",
-    "./src/admin/config.yml": "./admin/config.yml",
+    "./src/admin/config.yml": "./admin/confg.yml",
+    "./src/_talks/qcon-sf-2023/images": "./talks/qcon-sf-2023/images",
   });
   cfg.addPassthroughCopy("./src/images");
 

@@ -2,7 +2,7 @@
 title: QCon San Francisco 2023
 event: QCOn San Francisco
 location: San Francisco, CA
-date: 2023-10-02
+date: 2023-10-03
 abstract: |
   If you give a dev a platform, they're gonna want to... build things with it! Devs love a good platform, but what makes a platform good? Why are some platforms so good at enabling high-impact work while others make it harder to do high-impact work?
 

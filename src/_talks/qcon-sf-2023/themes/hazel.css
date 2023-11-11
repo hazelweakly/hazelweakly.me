@@ -1,0 +1,1440 @@
+/* @theme hazel */
+
+@import "default";
+
+@font-face {
+  font-family: "Italiana";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/italiana-v16-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Zilla Slab";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/zilla-slab-v11-latin-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Zilla Slab";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/zilla-slab-v11-latin-400italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Zilla Slab";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("/fonts/zilla-slab-v11-latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Zilla Slab";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+  src: url("/fonts/zilla-slab-v11-latin-700italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Victor Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/VictorMono-v1.5.3-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Victor Mono";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/VictorMono-v1.5.3-Italic.woff2") format("woff2");
+}
+
+/* VARIABLES GENERATED WITH TAILWIND CONFIG. */
+
+:root {
+  /* Aliased groups for convenience */
+  --space-0: 0;
+  --space-1: clamp(2rem, 1.87rem + 0.16vw, 2.08rem);
+  --space-2: clamp(2.13rem, 2.04rem + 0.43vw, 2.63rem);
+  --space-3: clamp(2.41rem, 2.23rem + 0.9vw, 3.44rem);
+  --space-4: clamp(2.76rem, 2.43rem + 1.65vw, 4.66rem);
+  --space-5: clamp(3.2rem, 2.63rem + 2.86vw, 6.48rem);
+  --space-6: clamp(3.75rem, 2.79rem + 4.77vw, 9.23rem);
+  --space-7: clamp(4.43rem, 2.88rem + 7.75vw, 13.34rem);
+  --space-8: clamp(5.29rem, 2.82rem + 12.36vw, 19.51rem);
+  --space-px: 2px;
+  --space-base: clamp(1rem, 1rem + 0vw, 1rem);
+  --space-0-5: clamp(1.72rem, 1.72rem + 0vw, 1.72rem);
+  --size-0: 0;
+  --size-1: clamp(2rem, 1.87rem + 0.16vw, 2.08rem);
+  --size-2: clamp(2.13rem, 2.04rem + 0.43vw, 2.63rem);
+  --size-3: clamp(2.41rem, 2.23rem + 0.9vw, 3.44rem);
+  --size-4: clamp(2.76rem, 2.43rem + 1.65vw, 4.66rem);
+  --size-5: clamp(3.2rem, 2.63rem + 2.86vw, 6.48rem);
+  --size-6: clamp(3.75rem, 2.79rem + 4.77vw, 9.23rem);
+  --size-7: clamp(4.43rem, 2.88rem + 7.75vw, 13.34rem);
+  --size-8: clamp(5.29rem, 2.82rem + 12.36vw, 19.51rem);
+  --size-px: 2px;
+  --size-base: clamp(2rem, 2rem + 0vw, 2rem);
+  --size-0-5: clamp(1.72rem, 1.72rem + 0vw, 1.72rem);
+}
+
+/* Convenience classes for setting flow-space */
+
+.flow-0 > * + * {
+  --flow-space: var(--space-0);
+}
+
+.flow-1 > * + * {
+  --flow-space: var(--space-1);
+}
+
+.flow-2 > * + * {
+  --flow-space: var(--space-2);
+}
+
+.flow-3 > * + * {
+  --flow-space: var(--space-3);
+}
+
+.flow-4 > * + * {
+  --flow-space: var(--space-4);
+}
+
+.flow-5 > * + * {
+  --flow-space: var(--space-5);
+}
+
+.flow-6 > * + * {
+  --flow-space: var(--space-6);
+}
+
+.flow-7 > * + * {
+  --flow-space: var(--space-7);
+}
+
+.flow-8 > * + * {
+  --flow-space: var(--space-8);
+}
+
+.flow-px > * + * {
+  --flow-space: var(--space-px);
+}
+
+.flow-base > * + * {
+  --flow-space: var(--space-base);
+}
+
+.flow-0-5 > * + * {
+  --flow-space: var(--space-0-5);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.quote,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.25;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  color-scheme: light dark;
+  scrollbar-gutter: stable both-edges;
+  overflow-wrap: break-word;
+}
+
+/* copied from index.css */
+
+:root {
+  --hue-primary: 340;
+  --hue-secondary: 227;
+  --color-primary: var(--hue-primary) 35% 66%;
+  --color-secondary: var(--hue-secondary) 35% 66%;
+  --color-light: var(--hue-primary) 35% 93%;
+  --color-dark: var(--hue-primary) 35% 13%;
+  --color-fg: var(--color-dark);
+  --h1-color: var(--color-dark);
+  --color-bg: var(--color-light);
+}
+
+html.dark,
+section.dark {
+  --color-primary: var(--hue-primary) 35% 66%;
+  --color-secondary: var(--hue-secondary) 35% 66%;
+  --color-light: var(--hue-primary) 35% 87%;
+  --color-dark: var(--hue-primary) 35% 13%;
+  --color-fg: var(--color-light);
+  --h1-color: var(--color-light);
+  --color-bg: var(--color-dark);
+}
+
+body,
+:root,
+html,
+section {
+  background-color: hsl(var(--color-bg));
+  color: hsl(var(--color-fg));
+  /* font-size: clamp(1.13rem, 1.04rem + 0.43vw, 1.63rem); */
+  font-size: clamp(2.13rem, 2.04rem + 0.43vw, 2.63rem);
+  font-family: "Zilla Slab", ui-sans-serif, sans-serif;
+  line-height: 1.55;
+}
+
+button {
+  color: inherit;
+}
+
+hr {
+  max-width: 65ch;
+  margin-left: 0;
+}
+
+main {
+  flex: auto;
+}
+
+code,
+pre {
+  font-family: "Victor Mono", ui-mono, mono;
+  font-variant-ligatures: contextual;
+  max-width: max-content;
+  font-size: 0.9em;
+}
+
+.bordered-box,
+table,
+pre {
+  line-height: 1.15;
+  border: clamp(0.72rem, 0.72rem + 0vw, 0.72rem) solid
+    hsl(var(--color-secondary));
+  padding: clamp(0.72rem, 0.72rem + 0vw, 0.72rem);
+  box-shadow: clamp(0.72rem, 0.72rem + 0vw, 0.72rem)
+    clamp(0.72rem, 0.72rem + 0vw, 0.72rem) 0 0 hsl(var(--color-primary));
+  overflow-x: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.15;
+  font-family: "Zilla Slab", ui-serif, serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: clamp(3.75rem, 2.79rem + 4.77vw, 9.23rem);
+  font-family: Italiana, ui-serif, serif;
+}
+
+h2 {
+  font-size: clamp(3.2rem, 2.63rem + 2.86vw, 6.48rem);
+  font-family: Italiana, ui-serif, serif;
+}
+
+h3 {
+  font-size: clamp(2.76rem, 2.43rem + 1.65vw, 4.66rem);
+}
+
+h4 {
+  font-size: clamp(2.41rem, 2.23rem + 0.9vw, 3.44rem);
+}
+
+p,
+li {
+  max-width: 65ch;
+}
+
+h1 {
+  max-width: calc(65ch / 4);
+}
+
+h2,
+h3,
+h4 {
+  max-width: calc(65ch / 2);
+}
+
+a {
+  color: currentColor;
+  text-decoration-color: currentColor;
+}
+
+a:hover:not(.header-anchor) {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+:focus {
+  outline: 2px dotted;
+  outline-offset: calc(clamp(0.72rem, 0.72rem + 0vw, 0.72rem) / 2);
+}
+
+main:focus {
+  outline: 0;
+}
+
+h2,
+h3,
+h4 {
+  --flow-space: var(--space-4);
+}
+
+h2 + *,
+h3 + *,
+h4 + * {
+  --flow-space: var(--space-base);
+}
+
+[id] {
+  scroll-margin-top: 1.5ex;
+}
+
+nav > ul {
+  padding: 0;
+}
+
+.header-anchor:is(:hover, :focus, :active)::after {
+  content: "#";
+  padding-left: 0.25em;
+  position: absolute;
+}
+
+.header-anchor:not(:hover, :focus, :active) {
+  text-decoration: none;
+}
+
+::selection {
+  background-color: hsl(var(--color-secondary) / 50%);
+}
+
+::marker {
+  color: hsl(var(--color-primary));
+}
+
+.quote,
+blockquote {
+  background-color: hsl(var(--color-bg));
+  border-left: clamp(1rem, 0.87rem + 0.16vw, 1.08rem) solid
+    hsl(var(--color-secondary));
+  margin: clamp(1.13rem, 1.04rem + 0.43vw, 1.63rem)
+    calc(-1 * clamp(1.13rem, 1.04rem + 0.43vw, 1.63rem));
+  padding: clamp(1rem, 0.87rem + 0.16vw, 1.08rem)
+    clamp(1.13rem, 1.04rem + 0.43vw, 1.63rem);
+
+  color: hsl(var(--color-fg));
+}
+
+.eleventy-plugin-youtube-embed > * {
+  max-width: unset;
+}
+
+/* Compositions */
+
+/*
+CLUSTER
+More info: https://every-layout.dev/layouts/cluster/
+A layout that lets you distribute items with consitent
+spacing, regardless of their size
+CUSTOM PROPERTIES AND CONFIGURATION
+--gutter ($global-gutter): This defines the space
+between each item.
+--cluster-horizontal-alignment (flex-start) How items should align
+horizontally. Can be any acceptable flexbox aligmnent value.
+--cluster-vertical-alignment How items should align vertically.
+Can be any acceptable flexbox alignment value.
+*/
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-1));
+  justify-content: var(--cluster-horizontal-alignment, flex-start);
+  align-items: var(--cluster-vertical-alignment, center);
+}
+
+.cluster > .skip {
+  margin-inline: auto;
+}
+
+.no-gutter {
+  row-gap: 0;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 100vh;
+  padding: 0;
+}
+
+.cover > * {
+  margin-block: 1rem;
+}
+
+.cover > :first-child:not(h1),
+.cover > :first-child:not(#main-content) {
+  margin-block-start: 0;
+}
+
+.cover > :last-child:not(h1),
+.cover > :last-child:not(#main-content) {
+  margin-block-end: 0;
+}
+
+.cover > h1 {
+  margin-block: auto;
+}
+
+/* Blocks */
+
+.center {
+  display: grid;
+  place-content: center;
+}
+
+figure.has-caption {
+  background-color: hsl(var(--color-secondary));
+}
+
+figure.has-caption img {
+  height: auto;
+}
+
+figure.has-caption figcaption {
+  text-align: center;
+  font-size: 0.8em;
+  background-color: hsl(var(--color-bg));
+  padding: clamp(0.72rem, 0.72rem + 0vw, 0.72rem)
+    clamp(1rem, 0.87rem + 0.16vw, 1.08rem);
+  font-style: italic;
+}
+
+/* Utilities */
+
+/* 
+FLOW UTILITY
+Info: https://piccalil.li/quick-tip/flow-utility/
+*/
+
+.flow > * + * {
+  margin-top: var(--flow-space, var(--space-2));
+}
+
+/*
+VISUALLY HIDDEN UTILITY
+Info: https://piccalil.li/quick-tip/visually-hidden/ 
+*/
+
+.visually-hidden,
+.skip-link:not(:focus) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.wrapper {
+  width: calc(var(--space-7) * 6);
+  margin-inline: auto;
+  padding-inline: var(--space-1);
+  position: relative;
+}
+
+/* Exceptions */
+
+/* tritanopia.css
+*
+/* This is a theme distributed by `starry-night`.
+ * It’s based on what GitHub uses on their site.
+ * See <https://github.com/wooorm/starry-night> for more info. */
+
+:root {
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #8250df;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #0550ae;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #a40e26;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #0550ae;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #0550ae;
+  --color-prettylights-syntax-markup-inserted-bg: #ddf4ff;
+  --color-prettylights-syntax-markup-changed-text: #a40e26;
+  --color-prettylights-syntax-markup-changed-bg: #ffcecb;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-prettylights-syntax-comment: #8b949e;
+    --color-prettylights-syntax-constant: #79c0ff;
+    --color-prettylights-syntax-entity: #d2a8ff;
+    --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+    --color-prettylights-syntax-entity-tag: #a5d6ff;
+    --color-prettylights-syntax-keyword: #ff7b72;
+    --color-prettylights-syntax-string: #a5d6ff;
+    --color-prettylights-syntax-variable: #ffa198;
+    --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+    --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+    --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+    --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+    --color-prettylights-syntax-carriage-return-bg: #b62324;
+    --color-prettylights-syntax-string-regexp: #a5d6ff;
+    --color-prettylights-syntax-markup-list: #f2cc60;
+    --color-prettylights-syntax-markup-heading: #1f6feb;
+    --color-prettylights-syntax-markup-italic: #c9d1d9;
+    --color-prettylights-syntax-markup-bold: #c9d1d9;
+    --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+    --color-prettylights-syntax-markup-deleted-bg: #67060c;
+    --color-prettylights-syntax-markup-inserted-text: #cae8ff;
+    --color-prettylights-syntax-markup-inserted-bg: #0c2d6b;
+    --color-prettylights-syntax-markup-changed-text: #ffdcd7;
+    --color-prettylights-syntax-markup-changed-bg: #67060c;
+    --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+    --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+    --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+    --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+    --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+    --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  }
+  :root:not(.dark) {
+    --color-prettylights-syntax-comment: #6e7781;
+    --color-prettylights-syntax-constant: #0550ae;
+    --color-prettylights-syntax-entity: #8250df;
+    --color-prettylights-syntax-storage-modifier-import: #24292f;
+    --color-prettylights-syntax-entity-tag: #0550ae;
+    --color-prettylights-syntax-keyword: #cf222e;
+    --color-prettylights-syntax-string: #0a3069;
+    --color-prettylights-syntax-variable: #a40e26;
+    --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+    --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+    --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+    --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+    --color-prettylights-syntax-carriage-return-bg: #cf222e;
+    --color-prettylights-syntax-string-regexp: #0550ae;
+    --color-prettylights-syntax-markup-list: #3b2300;
+    --color-prettylights-syntax-markup-heading: #0550ae;
+    --color-prettylights-syntax-markup-italic: #24292f;
+    --color-prettylights-syntax-markup-bold: #24292f;
+    --color-prettylights-syntax-markup-deleted-text: #82071e;
+    --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+    --color-prettylights-syntax-markup-inserted-text: #0550ae;
+    --color-prettylights-syntax-markup-inserted-bg: #ddf4ff;
+    --color-prettylights-syntax-markup-changed-text: #a40e26;
+    --color-prettylights-syntax-markup-changed-bg: #ffcecb;
+    --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+    --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+    --color-prettylights-syntax-meta-diff-range: #8250df;
+    --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+    --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+    --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  }
+}
+
+.pl-c {
+  color: var(--color-prettylights-syntax-comment);
+}
+
+.pl-c1,
+.pl-s .pl-v {
+  color: var(--color-prettylights-syntax-constant);
+}
+
+.pl-e,
+.pl-en {
+  color: var(--color-prettylights-syntax-entity);
+}
+
+.pl-smi,
+.pl-s .pl-s1 {
+  color: var(--color-prettylights-syntax-storage-modifier-import);
+}
+
+.pl-ent {
+  color: var(--color-prettylights-syntax-entity-tag);
+}
+
+.pl-k {
+  color: var(--color-prettylights-syntax-keyword);
+}
+
+.pl-s,
+.pl-pds,
+.pl-s .pl-pse .pl-s1,
+.pl-sr,
+.pl-sr .pl-cce,
+.pl-sr .pl-sre,
+.pl-sr .pl-sra {
+  color: var(--color-prettylights-syntax-string);
+}
+
+.pl-v,
+.pl-smw {
+  color: var(--color-prettylights-syntax-variable);
+}
+
+.pl-bu {
+  color: var(--color-prettylights-syntax-brackethighlighter-unmatched);
+}
+
+.pl-ii {
+  color: var(--color-prettylights-syntax-invalid-illegal-text);
+  background-color: var(--color-prettylights-syntax-invalid-illegal-bg);
+}
+
+.pl-c2 {
+  color: var(--color-prettylights-syntax-carriage-return-text);
+  background-color: var(--color-prettylights-syntax-carriage-return-bg);
+}
+
+.pl-sr .pl-cce {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-string-regexp);
+}
+
+.pl-ml {
+  color: var(--color-prettylights-syntax-markup-list);
+}
+
+.pl-mh,
+.pl-mh .pl-en,
+.pl-ms {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-markup-heading);
+}
+
+.pl-mi {
+  font-style: italic;
+  color: var(--color-prettylights-syntax-markup-italic);
+}
+
+.pl-mb {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-markup-bold);
+}
+
+.pl-md {
+  color: var(--color-prettylights-syntax-markup-deleted-text);
+  background-color: var(--color-prettylights-syntax-markup-deleted-bg);
+}
+
+.pl-mi1 {
+  color: var(--color-prettylights-syntax-markup-inserted-text);
+  background-color: var(--color-prettylights-syntax-markup-inserted-bg);
+}
+
+.pl-mc {
+  color: var(--color-prettylights-syntax-markup-changed-text);
+  background-color: var(--color-prettylights-syntax-markup-changed-bg);
+}
+
+.pl-mi2 {
+  color: var(--color-prettylights-syntax-markup-ignored-text);
+  background-color: var(--color-prettylights-syntax-markup-ignored-bg);
+}
+
+.pl-mdr {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-meta-diff-range);
+}
+
+.pl-ba {
+  color: var(--color-prettylights-syntax-brackethighlighter-angle);
+}
+
+.pl-sg {
+  color: var(--color-prettylights-syntax-sublimelinter-gutter-mark);
+}
+
+.pl-corl {
+  text-decoration: underline;
+  color: var(--color-prettylights-syntax-constant-other-reference-link);
+}
+
+.home h1 {
+  font-size: clamp(4.29rem, 1.82rem + 12.36vw, 18.51rem);
+  text-align: center;
+}
+
+@supports (font-size: 1cqi) {
+  .home h1 {
+    font-size: clamp(
+      clamp(1.76rem, 1.43rem + 1.65vw, 3.66rem),
+      100cqmin / 4.5,
+      clamp(4.29rem, 1.82rem + 12.36vw, 18.51rem)
+    );
+  }
+
+  .home {
+    container-type: inline-size;
+  }
+
+  main.wrapper {
+    flex: auto;
+    flex-direction: column;
+    place-content: center;
+    padding-inline: 0;
+  }
+
+  body.flow {
+    --flow-space: 0;
+  }
+}
+
+.skip-link {
+  top: var(--space-1);
+  left: var(--space-1);
+  position: absolute;
+  z-index: 1;
+  background: hsl(var(--color-bg));
+}
+
+/* when I have buttons, these will be button styles */
+
+.skip-link:active,
+.skip-link:focus,
+.skip-link:hover {
+  transition:
+    box-shadow 150ms ease-in-out,
+    transform 250ms cubic-bezier(0, 0, 0.2, 1),
+    background 50ms,
+    color 50ms;
+}
+
+.skip-link:focus,
+.skip-link:hover {
+  box-shadow:
+    0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+  transform: scale(1.05);
+}
+
+.icon > svg[role="img"] {
+  height: 1em;
+  width: auto;
+}
+
+/* quite a lot of this is nicked from */
+
+/* https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/ */
+
+/* however, I use a 'dark' class since that matches more closely with how tailwind */
+
+/* thinks about things and lets me use it more naturally for the U in CUBE */
+
+:root {
+  --color-mode: "light";
+
+  /* https://twitter.com/Una/status/1129401554732277760 */
+  --icon-sun: url('data:image/svg+xml,\
+  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">\
+    <path d="M18 12a5.97 5.97 0 0 0-6-6 5.97 5.97 0 0 0-6 6 5.97 5.97 0 0 0 6 6 5.97 5.97 0 0 0 6-6zm-2 0a3.97 3.97 0 0 1-2.47 3.7 3.97 3.97 0 0 1-4.36-.87 3.98 3.98 0 0 1 1.3-6.53 3.97 3.97 0 0 1 4.36.87A3.98 3.98 0 0 1 16 12zM11 1v2a1 1 0 0 0 2 0V1a1 1 0 0 0-2 0zm0 20v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-2 0zM3.51 4.93l1.42 1.42a1 1 0 1 0 1.42-1.42L4.93 3.51A1 1 0 1 0 3.5 4.93zm14.14 14.14 1.42 1.42a1 1 0 1 0 1.42-1.42l-1.42-1.42a1 1 0 1 0-1.42 1.42zM1 13h2a1 1 0 0 0 0-2H1a1 1 0 0 0 0 2zm20 0h2a1 1 0 0 0 0-2h-2a1 1 0 0 0 0 2zM4.93 20.49l1.42-1.42a1 1 0 1 0-1.42-1.42l-1.42 1.42a1 1 0 1 0 1.42 1.42zM19.07 6.35l1.42-1.42a1 1 0 1 0-1.42-1.42l-1.42 1.42a1 1 0 1 0 1.42 1.42z"/>\
+  </svg>');
+
+  --icon-moon: url('data:image/svg+xml,\
+  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">\
+    <path d="M22 12.9c0-.3 0-.5-.2-.7a1 1 0 0 0-1.4-.2 6.1 6.1 0 0 1-5.3 1 6 6 0 0 1-3-9.4l.1-.7c0-.5-.5-1-1-.9A10.1 10.1 0 0 0 3 7.6a10 10 0 0 0 4.3 13.2 10 10 0 0 0 14.6-8zm-2.4 1.8a8 8 0 0 1-5.2 5 8 8 0 0 1-10-5.4 8 8 0 0 1 5-9.9 8 8 0 0 0 .6 6.9 8 8 0 0 0 9.6 3.4z"/>\
+  </svg>');
+
+  --button-icon: var(--icon-moon);
+  --button-color: var(--color-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: "dark";
+
+    --button-icon: var(--icon-sun);
+    --button-color: var(--color-light);
+  }
+
+  :root:not(.dark) {
+    --button-icon: var(--icon-sun);
+    --button-color: var(--color-dark);
+  }
+}
+
+html.dark {
+  --button-icon: var(--icon-sun);
+  --button-color: var(--color-light);
+}
+
+/* If there’s no JS, there’s no need for the user toggle component to show */
+
+.no-js .user-toggle {
+  display: none;
+}
+
+.user-toggle button {
+  display: inline-flex;
+  background-color: initial;
+  border: none;
+}
+
+.user-toggle button .icon {
+  background: hsl(var(--button-color));
+  mask-image: var(--button-icon);
+  -webkit-mask-image: var(--button-icon);
+  height: 1em;
+  width: 1em;
+}
+
+/* Tailwind utilities */
+
+:root {
+  --hue-primary: 340;
+  --hue-secondary: 227;
+  --color-primary: var(--hue-primary) 35% 66%;
+  --color-secondary: var(--hue-secondary) 35% 66%;
+  --color-light: var(--hue-primary) 35% 93%;
+  --color-dark: var(--hue-primary) 35% 13%;
+  --color-fg: var(--color-dark);
+  --color-bg: var(--color-light);
+}
+
+html.dark {
+  --color-primary: var(--hue-primary) 35% 66%;
+  --color-secondary: var(--hue-secondary) 35% 66%;
+  --color-light: var(--hue-primary) 35% 87%;
+  --color-dark: var(--hue-primary) 35% 13%;
+  --color-fg: var(--color-light);
+  --color-bg: var(--color-dark);
+}
+
+*,
+::before,
+::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.bottom {
+  bottom: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+.end {
+  inset-inline-end: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+.left {
+  left: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+.right {
+  right: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+.start {
+  inset-inline-start: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+.top {
+  top: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+.m {
+  margin: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+.my {
+  margin-top: clamp(1rem, 1rem + 0vw, 1rem);
+  margin-bottom: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+.me {
+  margin-inline-end: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.table {
+  display: table;
+}
+
+.grid {
+  display: grid;
+}
+
+.contents {
+  display: contents;
+}
+
+.hidden {
+  display: none;
+}
+
+.h {
+  height: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+.min-h-\[10ex\] {
+  min-height: 10ex;
+}
+
+.w {
+  width: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+.shrink {
+  flex-shrink: 1;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap {
+  gap: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+.border {
+  border-width: 1px;
+}
+
+.bg-bg {
+  background-color: hsl(var(--color-bg));
+}
+
+.bg-fg {
+  background-color: hsl(var(--color-fg));
+}
+
+.\!p {
+  padding: clamp(1rem, 1rem + 0vw, 1rem) !important;
+}
+
+.p {
+  padding: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+.py-3 {
+  padding-top: clamp(1.41rem, 1.23rem + 0.9vw, 2.44rem);
+  padding-bottom: clamp(1.41rem, 1.23rem + 0.9vw, 2.44rem);
+}
+
+.py-4 {
+  padding-top: clamp(1.76rem, 1.43rem + 1.65vw, 3.66rem);
+  padding-bottom: clamp(1.76rem, 1.43rem + 1.65vw, 3.66rem);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-body {
+  font-family: "Zilla Slab", ui-sans-serif, sans-serif;
+}
+
+.font-display {
+  font-family: Italiana, ui-serif, serif;
+}
+
+.font-heading {
+  font-family: "Zilla Slab", ui-serif, serif;
+}
+
+.font-mono {
+  font-family: "Victor Mono", ui-mono, mono;
+}
+
+.text {
+  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+.text-0 {
+  font-size: 0;
+}
+
+.text-0-5 {
+  font-size: clamp(0.72rem, 0.72rem + 0vw, 0.72rem);
+}
+
+.text-1 {
+  font-size: clamp(1rem, 0.87rem + 0.16vw, 1.08rem);
+}
+
+.text-2 {
+  font-size: clamp(1.13rem, 1.04rem + 0.43vw, 1.63rem);
+}
+
+.text-3 {
+  font-size: clamp(1.41rem, 1.23rem + 0.9vw, 2.44rem);
+}
+
+.text-4 {
+  font-size: clamp(1.76rem, 1.43rem + 1.65vw, 3.66rem);
+}
+
+.text-5 {
+  font-size: clamp(2.2rem, 1.63rem + 2.86vw, 5.48rem);
+}
+
+.text-6 {
+  font-size: clamp(2.75rem, 1.79rem + 4.77vw, 8.23rem);
+}
+
+.text-7 {
+  font-size: clamp(3.43rem, 1.88rem + 7.75vw, 12.34rem);
+}
+
+.text-8 {
+  font-size: clamp(4.29rem, 1.82rem + 12.36vw, 18.51rem);
+}
+
+.text {
+  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+}
+
+.text-px {
+  font-size: 2px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.leading-tight {
+  line-height: 1.15;
+}
+
+.text-bg {
+  color: hsl(var(--color-bg));
+}
+
+.text-fg {
+  color: hsl(var(--color-fg));
+}
+
+.text-inherit {
+  color: inherit;
+}
+
+.text-primary {
+  color: hsl(var(--color-primary));
+}
+
+.text-secondary {
+  color: hsl(var(--color-secondary));
+}
+
+.text-transparent {
+  color: transparent;
+}
+
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+section {
+  width: 1280px;
+  height: 720px;
+  position: relative;
+}
+
+table {
+  table-layout: fixed;
+  place-self: center;
+  border-collapse: collapse;
+  padding: 0;
+  font-size: 0.85em;
+}
+
+section table tr,
+section table tr:nth-child(2n) {
+  background-color: var(--color-bg);
+}
+
+section {
+  justify-content: initial;
+  gap: var(--space-0-5);
+}
+
+section .note {
+  font-size: 0.65em;
+  text-align: left;
+  margin-top: auto;
+}
+
+ul,
+ol {
+  padding-left: revert;
+}
+
+section > :is(h1, h2):has(+ footer) {
+  place-self: center;
+}
+
+section > h1:has(+ footer) {
+  font-size: var(--size-6);
+  padding: var(--size-4);
+}
+
+section > h2:has(+ footer) {
+  font-size: var(--size-5);
+  padding: var(--size-3);
+}
+
+section:has(> :is(h1, h2) + footer) {
+  display: grid;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: 100%;
+  gap: 1rem;
+}
+.columns > * {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.columns > .quote {
+  margin-left: calc(-1 * var(--space-1));
+  padding-left: var(--space-2);
+}
+
+[data-marpit-fragment] {
+  display: none;
+  list-style-type: none;
+}
+
+ul:has(> [data-marpit-fragment]) {
+  padding-left: 0;
+}
+
+[data-marpit-fragment][data-bespoke-marp-current-fragment] {
+  display: list-item;
+}
+
+/* [data-marpit-fragment="1"][data-bespoke-marp-fragment="inactive"]:has( */
+/*     + [data-bespoke-marp-fragment="inactive"] */
+/*   ) { */
+/*   display: list-item; */
+/*   visibility: visible; */
+/* } */
+
+.fragmented:has(+ ul > [data-bespoke-marp-fragment="active"]) {
+  display: none;
+  visibility: hidden;
+}
+
+:has(> .fragmented):has(+ ul > [data-bespoke-marp-fragment="active"]) {
+  display: none;
+  visibility: hidden;
+}
+
+.table-of-contents {
+  font-size: var(--size-1);
+}
+
+.table-of-contents li:nth-of-type(-n + 2),
+.table-of-contents li:last-of-type {
+  display: none;
+}
+
+section li + li {
+  margin: initial;
+}
+
+:is(p, div, h1, h2):not([class]):empty {
+  display: none;
+}
+
+marp-pre {
+  max-width: none;
+}
+
+.__mermaid svg {
+  max-width: initial !important;
+}
+
+.columns.pic {
+  flex-shrink: 0;
+  align-items: flex-start;
+}
+
+marp-pre {
+  background-color: unset;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.cols {
+  columns: 2;
+}
+
+.__mermaid img {
+  width: auto;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+section img {
+  background-color: unset;
+}
+
+.mia {
+  margin-inline: auto;
+}
+
+section li p:has(> img) {
+  margin-top: 0;
+}
+
+section dl :is(dt, dd) {
+  margin-block: 0;
+}
+
+section ul ol {
+  list-style-type: revert;
+}
+section ul ul {
+  list-style-type: disc;
+}
