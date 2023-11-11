@@ -9,4 +9,5 @@ abstract: |
   In this talk, I'm going to be taking you through an approach that I've used, alongside some research, and show you how to build a playbook for creating high-impact platforms, inspired by my experiences in dramatically accelerating entire developer teams and organizations through the power of a platform that devs love.
 event_site: https://qconsf.com
 talk_page: https://qconsf.com/presentation/oct2023/understanding-platforms-what-they-are-why-they-work-when-use-them-how-build
+slides: ./slides
 ---

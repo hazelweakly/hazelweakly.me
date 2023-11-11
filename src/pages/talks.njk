@@ -17,7 +17,7 @@ order: 3
     </div>
 
     <div class="cluster">
-      {% if talk.data.slides %}<a href="{{ talk.data.slides }}">Slides</a>{% endif %}
+      {% if talk.data.slides %}<a href="{{ talk.data.slides | toAbsoluteUrl }}">Slides</a>{% endif %}
 
       {% if talk.data.video %}<a href="{{ talk.data.video }}">Video</a>{% endif %}
 
