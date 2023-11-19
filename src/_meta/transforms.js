@@ -135,18 +135,8 @@ const generateResumePDF = async ({ dir, runMode, outputMode } = {}) => {
 };
 
 const generateSlides = async ({ dir, runMode, outputMode } = {}) => {
-  // if (!isProd) return;
+  if (!isProd) return;
 
-  // const configFile = path.join(__dirname, "..", "..", "marp.config.mjs");
-  // const slidesFile = path.join(
-  //   __dirname,
-  //   "..",
-  //   "..",
-  //   dir.input,
-  //   "_talks",
-  //   "qcon-sf-2023",
-  //   "slides.md",
-  // );
   const outputFile = path.join(
     __dirname,
     "..",
@@ -163,8 +153,6 @@ const generateSlides = async ({ dir, runMode, outputMode } = {}) => {
   await exec(`cp ./${dir.input}/_talks/qcon-sf-2023/index.html ${outputFile}`, {
     cwd: path.join(__dirname, "..", ".."),
   }).catch((e) => e);
-
-  console.log(output);
 
   return output;
 };
