@@ -1,6 +1,7 @@
 ---
 title: Calendar
-order: 5
+order: 1
+footer: true
 ---
 
 If you're someone who wants to schedule 30 minutes with me to chat about life, the universe, tech, swing dancing, or anything else, feel free.

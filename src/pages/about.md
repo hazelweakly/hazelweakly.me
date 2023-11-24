@@ -1,7 +1,6 @@
 ---
 title: About Me
-order: 1
-footer: true
+order: 5
 ---
 
 <div data-atabs class="flow">
@@ -25,7 +24,7 @@ Any sufficiently complex system is a sociotechnical one, and so any sufficiently
 
 I am the resident infrastructure witch of the [Hachyderm](https://hachyderm.io) mastodon instance, and love talking about how we've handled some pretty tricky issues without burning out people or servers.
 I also maintain a repository of official [GitHub actions](https://github.com/haskell/actions) for the Haskell language.
-I enjoy advising companies and people and am currently helping a few friends break into the tech industry and plan to write more information about it soon.
+I aspire to leave myself open for meaningful consulting and advising opportunities, and invest time towards mentoring others.
 I've given [talks](/speaking) in a few conferences about my experiences and I love sharing what I've learned.
 And lastly (but not least), I currently serve as a Director on the board of the Haskell Foundation.
 
