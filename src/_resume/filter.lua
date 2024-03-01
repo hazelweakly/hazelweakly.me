@@ -1,11 +1,19 @@
 pandoc = require("pandoc")
 
 local function parse_attr(a)
- return pandoc.read(a, "markdown").blocks[1] and pandoc.read(a, "markdown").blocks[1].content or pandoc.Null()
+	return pandoc.read(a, "markdown").blocks[1] and pandoc.read(a, "markdown").blocks[1].content or pandoc.Null()
 end
 
 local function parse_attributes(attrs)
-	return "{" .. (attrs.Title and pandoc.utils.stringify(parse_attr(attrs.Title)) or "") .. "}" .. "{" .. (attrs.Company and pandoc.utils.stringify(parse_attr(attrs.Company)) or "") .. "}" .. "{" .. (attrs.Date and pandoc.utils.stringify(parse_attr(attrs.Date)) or "") .. "}"
+	return "{"
+		.. (attrs.Title and pandoc.utils.stringify(parse_attr(attrs.Title)) or "")
+		.. "}"
+		.. "{"
+		.. (attrs.Company and pandoc.utils.stringify(parse_attr(attrs.Company)) or "")
+		.. "}"
+		.. "{"
+		.. (attrs.Date and pandoc.utils.stringify(parse_attr(attrs.Date)) or "")
+		.. "}"
 end
 
 local function is_plain_section(attrs)
@@ -39,7 +47,7 @@ end
 
 function process_div(div)
 	if div.classes:includes("hidden") then
-		div = pandoc.Null()
+		div = {}
 	elseif div.content[1].t == "LineBlock" then
 		local attrs = parse_sentence(div.content[1].content[1])
 		attrs.class = div.classes[1]
@@ -97,7 +105,7 @@ end
 
 local function slugify(str)
 	str = string.lower(str)
-  str = string.gsub(str, "[\192-\255][\128-\191]*", "-")
+	str = string.gsub(str, "[\192-\255][\128-\191]*", "-")
 	str = string.gsub(str, "[%s]+", "-")
 	str = string.gsub(str, "[^%w-_]+", "")
 	return str
@@ -105,7 +113,7 @@ end
 
 local function linkify_headers(header)
 	if FORMAT:match("latex") then
-    return header.level == 2 and pandoc.Null() or header
+		return header.level == 2 and pandoc.Null() or header
 	end
 
 	local text = header.content
