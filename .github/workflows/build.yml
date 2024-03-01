@@ -7,18 +7,16 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: macos-14
     steps:
-      - uses: actions/checkout@v3
-      - uses: cachix/install-nix-action@v18
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@main
         with:
-          extra_nix_config: |
-            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
-
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Cache pnpm store
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         env:
-          cache-version: v1 # increment as needed to manually reset cache
+          cache-version: v2 # increment as needed to manually reset cache
         with:
           path: |
             ~/.pnpm-store/v3
