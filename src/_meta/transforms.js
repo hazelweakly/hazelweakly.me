@@ -296,24 +296,25 @@ const criticalCSS = async (content, outputPath) => {
     const outputDir = require("./cfg").dir.output;
 
     // Generate HTML with critical CSS
-    const { html, css } = await import("critical").then((critical) =>
-      critical.generate({
-        assetPaths: [path.dirname(outputPath)],
-        base: outputDir,
-        html: content,
-        inline: true,
-        ignore: {
-          atrule: ["@font-face"],
-          decl: (_, value) => /url\(/.test(value),
-        },
-        rebase: ({ originalUrl }) => originalUrl,
-      }),
-    );
+    try {
+      const { html, css } = await import("critical").then((critical) =>
+        critical.generate({
+          assetPaths: [path.dirname(outputPath)],
+          base: outputDir,
+          html: content,
+          inline: true,
+          ignore: {
+            atrule: ["@font-face"],
+            decl: (_, value) => /url\(/.test(value),
+          },
+          rebase: ({ originalUrl }) => originalUrl,
+        }),
+      );
 
-    // compute sha256 here.
-    // somehow CSP header something. Dump shit into a netlify file or smth
-
-    return html;
+      // compute sha256 here.
+      // somehow CSP header something. Dump shit into a netlify file or smth
+      return html;
+    } catch (_) {}
   }
   return content;
 };
