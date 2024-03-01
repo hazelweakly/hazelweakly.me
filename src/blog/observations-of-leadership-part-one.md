@@ -80,22 +80,27 @@ I really love thinking about interaction patterns; they're so influential in det
 Consequently, I really like to think of this in terms of "what is the collaboration outcome that we need and how do we address those deficiencies while emphasizing and leaning into what we're already good at?"
 
 Here's one that I really liked: in my team, when I was the interim Director and Engineering Manager, we had this problem of siloed information; because everyone had been so underwater for so long, the vast majority of work was interrupt driven.
+What I mean by interrupt driven work here is work that is primarily driven by asks from others and external demand rather than being planned or orchestrated; while that might be considered a normal flow of work for some infrastructure teams, it's not optimal for teams that do more than "call desk" style support, and so we needed to find a way to address that.
 Consequently, people ended up specializing in the interruptions they could solve the quickest, and so we had "the person who knows how to do X", and "the person who knows how to do Y" and so on.
 It became _really_ risky to make most changes in infrastructure when that person wasn't available.
 
 That wasn't a situation we could particularly afford, especially as I was trying desperately to prevent people from burning out, healing those who already had burned out, and grow the bus factor of the team while also trying to set up the future organization for success.
 I made a few changes to attempt to improve things, but they weren't ultimately particularly successful:
 
-- I setup a support slack channel and wired it up into Jira. This was fantastic and worked really well
+- I setup a support slack channel, so that other teams could reach out to us for any issues, and wired it up into Jira. This was fantastic and worked really well
+  - Previously, they had just DM'd various engineers on my team directly and so it was impossible to quantify the work being done, or share knowledge about what was going on, and we didn't even have an effective way of announcing outages or planned maintenance.
 - I attempted to encourage pairing on problems together
 - I had the entire team lean into the interrupt driven work rather than try to do planned work and then splinter off into hero work as things inevitably required immediate attention
+  - While interrupt driven work isn't necessarily ideal, since we were _so_ underwater, focusing entirely on it was more effective than attempting to work like a team that had triple the bandwidth of ours.
 
 These were all great steps, but the ones that I missed were:
 
 - _doubling down harder_: We still had instances of people doing project style work rather than having _everyone_ doing interrupt driven work. If you're going to lean into something, you need to really lean in.
-- Leaning into interrupt driven work was an attempt to minimize work in progress to a manageable level. While it worked, it would've worked vastly better by turning the entire team into a mob programming team
+- Leaning into interrupt driven work was an attempt to minimize work in progress to a manageable level. While it worked, it would've worked vastly better by turning the entire team into a mob programming team.
   We did this after our new Director joined and the change was incredible; it wasn't enough to have everyone working in the same area, they needed to work on the same thing at the same time, together.
   Not only did this speed up the entire team, but they grew closer together, collaborated better, and huge chunks of siloing disappeared overnight.
+  Did I mention that we're fully remote? We are. We still did mob programming, and it was amazing.
+  I highly recommend it as a way of accelerating a team in the storming and norming phases.
 
 Going back to the things that I did... Despite not quite doing the optimal thing here, what happened was really effective, if only for a particularly interesting and non-obvious reason:
 It was an extraordinarily compelling and straightforward thing to showcase to leadership.
@@ -159,6 +164,11 @@ Lastly, the path forward here was "building a path to build a path", in a sense,
 Communicating early and often was so important to the success of this, and if anything, my only regrets are that I could've communicated earlier and more often; I slowed down a bit after things started "working" and change started happening, but doubling down on the communication would've likely helped some.
 
 However, there's a danger there in over communicating to the point where people don't see change happening at the rate that you're communicating and then it sounds like you're all talk with no action (ironically, this was a frequent piece of feedback for me in the last two months; you can't really win here).
+The balance and nuance in what it means to be an effective communicator and a transparent one gets even fuzzier and more complicated when you're in leadership because there's extremely valid psychological safety concerns in being "too" transparent.
+In addition, one can find themselves communicating about the wrong things, or with the wrong ratio of frequency to message importance, and so on; one of the hardest lessons of leadership I had to learn was truly understanding what it means to communicate less and be less transparent in being more effective as a leader.
+
+As someone who really values transparency (and can handle "too much" transparency), it honestly particularly irked me to discover that there are, in fact, extremely legitimate reasons behind most leaders erring on the side of less transparency.
+I don't have any easy answers there, of course; it's one of the hardest skills to develop in leadership and I'm continually working on it myself.
 
 ## Identify Plausible Contributors / Multiple "Causes"
 
@@ -245,30 +255,64 @@ _Sooooo_, y'know, there's a ways to go before we get to build the innovative vis
 The big tension here, for me, comes from trying to determine how one is going to iterate; iteration is key in evolving and improving the situation, but it can be extremely difficult to iterate certain things.
 Feature flags help a lot, but you don't really get those for infrastructure in the same way, and if your infrastructure team is so underwater that they can barely handle what they have now, gradually and incrementally building out "the new thing" while struggling under the burden of what you have to do now is simply not going to work.
 One thing I did to explore the tension was to break down things that were causing this tension into a few categories: fixable, unfixable, workable, and unworkable.
+Fixable is fairly self explanatory and it's a property of whether or not you can remediate the issue in some way that _actually_ solves it; workable is a little fuzzier, I'm using this to mean the spectrum of how much of a concern is this to the business _only_, whether it be from the perspective of legal, compliance, risk, or anything else.
 I should note that I didn't actually have these categories laid out so cleanly when I did this, and I'm more going back and looking at what I did and making sense of it after the fact.
 
 That said, if we build these out, we have a "fixable/unfixable" and "workable/unworkable" split, so we can pull out one of my favorite tools, which is a 2x2 matrix (as an aside, seriously, I'm addicted to those, they're so helpful for my brain for some reason).
 Laying them out, you get four categories:
 
-- Fixable and unworkable
-  - These were the highest priority things to address: they were actively breaking the team or the organization, and we could fix them.
-    The hard part here is really about _finding_ these and appropriately labeling them: a lot of people want to label things they dislike as "unworkable" but doing so is a surefire way to lose trust in leadership.
-- Fixable and workable
+<table class="2x2 bordered-box">
+  <tbody>
+    <tr>
+      <td class="flow">
+        <p><strong>Fixable and Unworkable</strong></p>
+        <p><em>Highest priority to address</em></p>
+      </td>
+      <td class="flow">
+        <p><strong>Fixable and Workable</strong></p>
+        <p><em>Lowest priority, but quickest wins</em></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="flow">
+        <p><strong>Unfixable and Unworkable</strong></p>
+        <p><em>Identify and escalate</em></p>
+      </td>
+      <td class="flow">
+        <p><strong>Unfixable and Workable</strong></p>
+        <p><em>Label, quantify, and move on</em></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-  - These were workable, so they're automatically lower priority, _but_ if they're fixable, then they're great things to stick in and sprinkle in with your higher priority stuff.
-    Often because something _is_ workable, it's de-prioritized but it can be a source of morale drain or impedance; giving the team permission to work on those things can build a lot of trust with them, and they're often things that can be completed much quicker too.
+### Fixable and unworkable
 
-    While you can run the risk of appearing like you're only working on "workable" stuff, when done right, it's incredibly effective in being able to deliver a constant stream of improvements without necessarily meaningfully slowing down the high importance work.
+These were the highest priority things to address: they were actively breaking the team or the organization, and we could fix them.
+The hard part here is really about _finding_ these and appropriately labeling them: a lot of people want to label things they dislike as "unworkable" but doing so is a surefire way to lose trust in leadership.
 
-- Unfixable and unworkable
-  - This is something to escalate, and this category of problem is the one that keeps me up at night.
-    Not only can we not fix this with the current capabilities that we have, it's actively breaking something essential that we need to function as an organization.
-    Identifying these should be your second highest priority after identifying just enough work for the team to have things to do because the consequences of not knowing what these are and being unable to quantify the risk is absolutely massive.
-- Unfixable and workable
+### Fixable and workable
 
-  - Label this and move on; the things that are great to label it with are: a) a name that signifies it's not tech debt, b) a sufficiently low priority to signal that you don't care right now, c) _the conditions required for this to move into a different category_
+These were workable, so they're automatically lower priority, _but_ if they're fixable, then they're great things to stick in and sprinkle in with your higher priority stuff.
+Often because something _is_ workable, it's de-prioritized but it can be a source of morale drain or impedance; giving the team permission to work on those things can build a lot of trust with them, and they're often things that can be completed much quicker too.
 
-    That last bit is important enough that I'm going to repeat it; things that are unfixable and workable are very dangerous, because they can be ignored, but if it flips to any other state, it could turn out quite negatively: either people will see you as being inconsistent with what you choose to work on, or it'll silently flip into "unworkable" and you won't notice and that's going to cause a lot of damage to the business.
+While you can run the risk of appearing like you're only working on "workable" stuff, when done right, it's incredibly effective in being able to deliver a constant stream of improvements without necessarily meaningfully slowing down the high importance work.
+
+### Unfixable and unworkable
+
+This is something to escalate, and this category of problem is the one that keeps me up at night.
+Not only can we not fix this with the current capabilities that we have, it's actively breaking something essential that we need to function as an organization.
+Identifying these should be your second highest priority after identifying just enough work for the team to have things to do because the consequences of not knowing what these are and being unable to quantify the risk is absolutely massive.
+
+### Unfixable and workable
+
+Label this and move on; the things that are great to label it with are:
+
+- a name that signifies it's not tech debt
+- a sufficiently low priority to signal that you don't care right now
+- _the conditions required for this to move into a different category_
+
+That last bit is important enough that I'm going to repeat it; things that are unfixable and workable are very dangerous, because they can be ignored, but if it flips to any other state, it could turn out quite negatively: either people will see you as being inconsistent with what you choose to work on, or it'll silently flip into "unworkable" and you won't notice and that's going to cause a lot of damage to the business.
 
 Now that I've rambled on a bit about the theory of all of this, the situation that we had was one where all four categories each had more work than my team could actually accomplish, so it didn't matter what we did, because before we could finish any of the highest urgency work, more work would escalate into being in that very high urgency state.
 As it was, the only thing I could really do was minimize the amount of work in progress, free up as much bandwidth for the team, and buy them as much time as I could while I addressed the unfixable and unworkable issues with leadership directly.

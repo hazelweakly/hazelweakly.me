@@ -4,6 +4,11 @@
 
 @import "global.css";
 
+/*
+ * Note to self: if anything in any of these sub css files contains
+ * a bare html element I need to unfuck that up in the postcss.config.js
+ */
+
 /* Compositions */
 @import-glob 'compositions/*.css';
 

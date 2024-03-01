@@ -118,6 +118,7 @@ a:hover:not(.header-anchor) {
 
 table {
   border-collapse: collapse;
+  font-weight: inherit;
 }
 
 th {

@@ -33,6 +33,11 @@ module.exports = (ctx) => ({
               ":focus",
               ":root",
               '[role="tab"]',
+              "figure",
+              "table",
+              "th",
+              "tbody",
+              "thead",
             ],
           }
         : false,
