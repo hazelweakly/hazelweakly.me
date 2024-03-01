@@ -312,4 +312,4 @@ I suppose if I had to attempt to summarize a lot of the key themes here when it 
 ... , except for the parts where it's not.
 Expectations are hard, managing them is harder, etc.
 
-(words n stuff)
+(words n stufff)
