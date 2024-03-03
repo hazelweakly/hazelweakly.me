@@ -1,7 +1,6 @@
 ---
 title: "Observations of Leadership (Part One)"
 date: 2024-03-01
-draft: true
 ---
 
 I read [this post](https://cutlefish.substack.com/p/tbm-274-how-capable-leaders-navigate) from John Cutler and Tom Kerwin recently on how leaders navigate uncertainty and ambiguity and it intrigued me.
@@ -331,29 +330,75 @@ Totes worth, 10/10, would fuck up my reputation again in a heartbeat.
 ## Conclusion
 
 I don't even know how to conclude this, honestly; writing this has been a lot of fun, and I'm only a third of the way through.
-I suppose if I had to attempt to summarize a lot of the key themes here when it comes to dealing with uncertainty and ambiguity, the things that emerge for me are:
+I suppose if I had to attempt to summarize a lot of the key themes here when it comes to dealing with uncertainty and ambiguity, there are a few things that emerge for me: understanding the problem, empathy, communication, and that I did better than I thought I did.
 
-### Understanding the space of the problem
+### Understanding the Space of the Problem
 
-... is critical to knowing how to navigate it.
+I've come to terms with the fact that my brain works in a very unusual way; it's one of the biggest gifts I have and a core differentiator in my ability to do work.
+It also does mean, however, that I'm cautious when giving advice to other people.
+Just because it works for me doesn't mean it's going to work for you, and honestly, it's less likely to work for you if it works for me.
 
-(words n stuff)
+All of that said, something that works for me very well is having a sort of spacial relationship between things; I do symbolic manipulation and mental spatial navigation very very well, and I abuse that fact as much as possible in all of the reasoning that I do.
+If I can find a mental model that lets me do that, it helps me learn more concepts better, and if I have trouble recognizing how to solve a problem, I try to break it down to something that lets me spatially reason about it or symbolically manipulate it.
+It doesn't work for everything, but it works for most everything, and it helps me build a ton of bridges of understanding; it turns out that if you build a symbolic representation of something, since most other people haven't, it gives you a second modality of information with which to check your understanding.
+Being able to check understanding with others in multiple modalities or multiple analogies is a form of cross referencing that I find incredibly useful.
 
-### Empathy goes an incredibly long way
+It also does something very very useful for me: It helps me get a navigational structure in place.
+So much stuff out there is only ever explained in a way that's not actionable or constructable; if you can't construct a solution out of the description of the problem, you either don't understand the problem, or nobody else knows how to get the solution either.
+Building that path to a solution is going to get action and alignment actually happening, but it can only start once you have the space of a problem sort of laid out.
 
-... , but it looks nearly indistinguishable from "effectiveness" at the leadership level, and walking that balance can be quite difficult.
+### Empathy Goes an Incredibly Long Way
 
-(words n stuff)
+This is something I've talked about a lot on my blog before.
+I love empathy, and it's my secret superpower to getting things done at an organizational level (although the fact that it's a "secret superpower" rather than a basic tool of communication is... Anyway).
+However, there is something that was very difficult for me to learn and it was a bit of a bombshell for me when it really started to finally click.
+It turns out that empathy and effectiveness, at the leadership level, is pretty close to the same thing.
 
-### I did okay, really
+There are four parts of empathy: tuning into your feelings, expressing your feelings, tuning into their feelings, and responding to their feelings with understanding.
+Doing that well requires that you're able to connect with something inside of you that has been where they've been.
+The need for us to have _something_ in common with that situation is why we have such a hard time empathizing with people who are on sufficiently different walks of life than us.
+At the individual level, we're talking about individual experiences and individual emotions, but at the organizational level, we're talking about organizational experiences and organizational emotions.
 
-... I had a very unusual situation and I made the best of it; while I wasn't as effective as I could've been, I learned a tremendous amount, and was able to set up my director for success and play a part in getting us to where we are today.
+It should go without saying that organizations express emotions extremely differently than individuals, but don't worry, organizations absolutely do have emotions and do express them, we just call it values and we express those values through culture.
+But, how does one connect with the values in a company in a way that they map their individual emotions to the values of a company? How does that happen in a way that you can map your expression in a way that actually results in the company itself being able to feel that empathy?
+You understand the values, you participate in the culture, and the organization "feels" that through your participation in it... Which is basically your effectiveness as a leader, is it not?
 
-(words n stuff)
+Of course, to any one individual, it's going to look completely indecipherable; you're either going to come off as cold and disjointed, or completely unhinged; to the organization, you're going to either be entirely invisible or insignificant or unaligned with the needs of the company.
+You really can't win, and the more you manage to do well at balancing the needs and perception differences of the individual vs the group vs the organization, the more you're going to build up a skill-set that looks suspiciously like narcissism and socipathic behavior.
+It's to the point that any individual leader that tells you they can reliably tell the difference between effectiveness due to empathy and effectiveness due to behaving like a sociopath is lying; if they can tell, it's because of some other reason (but don't worry, there are almost always tells elsewhere).
 
-### Communication is the whole job
+Anyway, it was a weird trip for me to realize that empathy goes hand in hand with behavior that is, externally, occasionally unsettling; no wonder leadership is often described as being extraordinarily lonely.
+How do you even begin to get good at a skill-set like that? Especially when getting good at that skill-set will make most of the people you love in your life less able to relate to you?
+The cognitive dissonance required to be an effective leader in a capitalistic system is _wild_ and unbelievably damaging to most.
 
-... , except for the parts where it's not.
-Expectations are hard, managing them is harder, etc.
+### Communication is the Whole Job
 
-(words n stufff)
+Well... Communication is the whole job, except for the parts where it's not.
+Communication isn't the same as execution, which isn't the same as strategy, or mission, or values, or objectives, or any of the other myriad of things that we use to build up an organization of effective people and point them in the same general direction and have them build something great together.
+However, it really is sort of the same thing at the same time?
+
+Just because communication isn't strategy doesn't mean that strategy isn't communication, because it absolutely is, and it communicates a great deal of information when you learn how to read into it and interpret it and use that second layer of information to communicate more things when building out your _own_ strategy to compliment someone else's strategy.
+That goes for all of the others as well; they're all a stream of communication and communicate information in their own way, and you have to learn how to utilize them as the "thing" as well as the tool of communication that they are, while not forgetting that communication itself is also directly required, especially for people who haven't learned how to read into all of the other streams of communication that are embedded into all of the other things out there.
+
+In particular, something that isn't built into the rest of the things we communicate about are expectations.
+They're kinda there? Sorta? Kinda sorta, but not really.
+Anyone who says that strategy or objectives accurately help set expectations is absolutely full of it; even if you explicitly call out expectations when writing those two things, they are absolutely not going to be the expectations that anyone actually has or sets.
+Likewise, anyone who has expectations and communicates them out, but doesn't actually participate in making sure that those expectations were understood appropriately as well as communicated out to everyone else who needs then is not going to be an effective leader.
+
+This was probably something that I was the weakest at.
+I made a lot of mistakes in finding that balance between communicating, over communicating, setting the right expectations, not managing them, not updating them soon enough, and so on.
+I also made mistakes when it came to communicating appropriate expectations and sentiment with how other people were being perceived at the job, and that ended up causing pain in a lot of places that didn't need to be there.
+
+Communication is fucking hard, and it's one of the most painful things to mess up, even though it sounds so non-damaging because of how intangible it is.
+That said, if you are willing to be humble and learn from your mistakes, leveling up your communication skills in every aspect is going to be one of the quickest and highest leverage things you can do to accelerate your own growth and effectiveness as a leader.
+
+### I Did Okay, Really
+
+I had a very unusual situation and I made the best of it; while I wasn't as effective as I could've been, I learned a tremendous amount, and was able to set up my director for success and play a part in getting us to where we are today.
+In the end, I'm really proud of what I was able to accomplish and I'm deeply looking forward to being able to help continue to make this a wonderful place to work.
+
+I feel very fortunate to work somewhere that I can actually look forward to the positive changes that this might actually make to society, and I get to heal trauma and celebrate queerness and grow a diverse workforce?
+I helped build the culture in the platform organization where all of that is possible?
+It legitimately makes me tear up thinking about that sometimes.
+
+Fuck yeah, I did okay.
