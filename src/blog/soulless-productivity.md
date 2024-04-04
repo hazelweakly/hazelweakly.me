@@ -7,16 +7,16 @@ If there's one thing I wish I burn entirely to the ground and wipe away all trac
 
 What is Knowledge Work™, you ask?
 There's two concepts of Knowledge Work that I'm thinking about right now.
-The first is Knowledge Work as imagined, and Knowledge Work as done.
+The first is Knowledge Work as Imagined, and the second is Knowledge Work as Done.
 (I'm temporarily ignoring the actual literature definitions of Knowledge Work for the sake of ranting out some frustration. Forgive me pls)
 
-Knowledge Work as imagined is when you take the best of humanity, you embrace it, and you turn the lovely unbridled enthusiasm and exploratory nature of humanity into a powerful self-feeding engine that paints the world with the colors of the human soul itself as it learns to understand the world around it.
+**Knowledge Work as Imagined** is when you take the best of humanity, you embrace it, and you turn the lovely unbridled enthusiasm and exploratory nature of humanity into a powerful self-feeding engine that paints the world with the colors of the human soul itself as it learns to understand the world around it.
 It's art, beauty, love, and life.
 It's this amazing fucking thing that happens when you take a bunch of humans and you stick them in a pile and say "go forth and learn to love the world."
 
-Knowledge Work as done is what happens when you take art and artistry and creativity and imagination and the soulful awe inspiring wonder of a child and you figure out how to forcibly shove it into something that is roughly shaped like an assembly line.
+**Knowledge Work as Done** is what happens when you take art and artistry and creativity and imagination and the soulful awe inspiring wonder of a child and you figure out how to forcibly shove it into something that is roughly shaped like an assembly line.
 
-Knowledge Work as done is where the love of the world goes to die, it's where one of the most unique and beautiful aspects of the human mind gets turned into its most terrible weapon, it's the snake that eats its tail, it's the adult world equivalent of taking the quiet artist, giving them a wedgie, and shoving them into a high-school locker while you laugh at them and take all their pictures and shove them into chat jippity do dah, zippity day, my oh my, we're gonna IPO today.
+Knowledge Work as Done is where the love of the world goes to die, it's where one of the most unique and beautiful aspects of the human mind gets turned into its most terrible weapon, it's the snake that eats its tail, it's the adult world equivalent of taking the quiet artist, giving them a wedgie, and shoving them into a high-school locker while you laugh at them and take all their pictures and shove them into chat jippity do dah, zippity day, my oh my, we're gonna IPO today.
 
 It's a disgrace.
 
