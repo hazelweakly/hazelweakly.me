@@ -3,7 +3,7 @@ title: "The Trap of Soulless Productivity"
 date: 2024-04-03
 ---
 
-If there's one thing I wish I burn entirely to the ground and wipe away all traces and remnants of, its the misplaced notion that the productivity of Knowledge Work can be managed, measured, analyzed, and optimized as if all one needed to do was drip feed heroin up the arse of their hapless workers.
+If there's one thing I wish I could burn entirely to the ground and wipe away all traces and remnants of, its the misplaced notion that the productivity of Knowledge Work can be managed, measured, analyzed, and optimized as if all one needed to do was drip feed heroin up the arse of their hapless workers.
 
 What is Knowledge Work™, you ask?
 There's two concepts of Knowledge Work that I'm thinking about right now.
