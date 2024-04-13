@@ -13,6 +13,7 @@ jobs:
       - uses: DeterminateSystems/nix-installer-action@main
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+      - run: nix develop -c bash -c "echo \$PATH" | tr ':' '\n' | grep '^/nix/store' >> "$GITHUB_PATH"
       - name: Cache pnpm store
         uses: actions/setup-node@v4
         with:
