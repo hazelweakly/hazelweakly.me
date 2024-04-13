@@ -14,18 +14,9 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Cache pnpm store
-        uses: actions/cache@v4
-        env:
-          cache-version: v2 # increment as needed to manually reset cache
+        uses: actions/setup-node@v4
         with:
-          path: |
-            ~/.pnpm-store/v3
-          key:
-            ${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('pnpm-lock.yaml')
-            }}-${{ github.sha }}
-          restore-keys: |
-            ${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('pnpm-lock.yaml') }}-
-            ${{ runner.os }}-${{ env.cache-version }}-
+          cache: pnpm
 
       - run: nix develop -c pnpm install --frozen-lockfile
       - run: nix develop -c pnpm build
