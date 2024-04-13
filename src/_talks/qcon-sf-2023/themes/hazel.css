@@ -58,7 +58,7 @@
   /* Aliased groups for convenience */
   --space-0: 0;
   --space-1: clamp(2rem, 1.87rem + 0.16vw, 2.08rem);
-  --space-2: clamp(2.13rem, 2.04rem + 0.43vw, 2.63rem);
+  --space-2: clamp(2.13rem, 2.04rem + 0.43vw, 2.43rem);
   --space-3: clamp(2.41rem, 2.23rem + 0.9vw, 3.44rem);
   --space-4: clamp(2.76rem, 2.43rem + 1.65vw, 4.66rem);
   --space-5: clamp(3.2rem, 2.63rem + 2.86vw, 6.48rem);
@@ -70,7 +70,7 @@
   --space-0-5: clamp(1.72rem, 1.72rem + 0vw, 1.72rem);
   --size-0: 0;
   --size-1: clamp(2rem, 1.87rem + 0.16vw, 2.08rem);
-  --size-2: clamp(2.13rem, 2.04rem + 0.43vw, 2.63rem);
+  --size-2: clamp(2.13rem, 2.04rem + 0.43vw, 2.43rem);
   --size-3: clamp(2.41rem, 2.23rem + 0.9vw, 3.44rem);
   --size-4: clamp(2.76rem, 2.43rem + 1.65vw, 4.66rem);
   --size-5: clamp(3.2rem, 2.63rem + 2.86vw, 6.48rem);
@@ -239,7 +239,7 @@ section {
   --marpit-root-font-size: 16px !important;
   background-color: hsl(var(--color-bg));
   color: hsl(var(--color-fg));
-  font-size: clamp(2.13rem, 2.04rem + 0.43vw, 2.63rem);
+  font-size: clamp(2.13rem, 2.04rem + 0.43vw, 2.43rem);
   font-family: "Zilla Slab", ui-sans-serif, sans-serif;
   line-height: 1.55;
 }
@@ -292,7 +292,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(3.2rem, 2.63rem + 2.86vw, 6.48rem);
+  font-size: clamp(3.2rem, 2.43rem + 2.86vw, 6.48rem);
   font-family: Italiana, ui-serif, serif;
 }
 
@@ -325,7 +325,7 @@ h4 {
   html,
   section {
     container-type: inline-size;
-    font-size: clamp(2rem, 100cqmin / 27, 2.63rem);
+    font-size: clamp(2rem, 100cqmin / 27, 2.43rem);
   }
 
   h1 {
