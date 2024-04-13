@@ -1,0 +1,28 @@
+diff --git a/index.js b/index.js
+index 5b9a1d8df5634f22f1af9a55410406deb6e97c6f..812c3f0d06a30886ea5552d06892413860d42045 100644
+--- a/index.js
++++ b/index.js
+@@ -4,5 +4,6 @@ try {
+   // Prioritise any local built binary.
+   module.exports = require("./index.node");
+ } catch {
+-  module.exports = require(`@minify-html/node-${process.platform}-${process.arch}`);
++  const arch = process.arch === "arm64" ? "aarch64" : process.arch;
++  module.exports = require(`@minify-html/node-${process.platform}-${arch}`);
+ }
+diff --git a/package.json b/package.json
+index 3b54c72a01b58fde12bb5ec2b3d6d10fa00b74af..f9b3dd0134ddc4032e14b59504c8ea654dc1f72d 100644
+--- a/package.json
++++ b/package.json
+@@ -37,9 +37,9 @@
+   },
+   "homepage": "https://github.com/wilsonzlin/minify-html#readme",
+   "optionalDependencies": {
+-    "@minify-html/node-darwin-arm64": "0.15.0",
++    "@minify-html/node-darwin-aarch64": "0.15.0",
+     "@minify-html/node-darwin-x64": "0.15.0",
+-    "@minify-html/node-linux-arm64": "0.15.0",
++    "@minify-html/node-linux-aarch64": "0.15.0",
+     "@minify-html/node-linux-x64": "0.15.0",
+     "@minify-html/node-win32-x64": "0.15.0"
+   },

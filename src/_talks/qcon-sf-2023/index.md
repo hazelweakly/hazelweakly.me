@@ -463,6 +463,8 @@ Exec
 | Economies              | SDLC, DevEx             |
 | Context                | Cognitive Overhead      |
 
+{.text-2}
+
 ## Economic Model - Functional
 
 - Economics of scale
@@ -510,7 +512,7 @@ Exec
   Platform Engineering derisks effective diversification
 
   </div>
-* <div class="columns">
+* <div class="columns text-2">
 
   ![](./images/tree-map.png){.mia .h-75}
 
@@ -521,7 +523,7 @@ Exec
 
   </div>
 
-* <div class="columns">
+* <div class="columns text-2">
 
   ![](./images/fractal-map.png){.mia .h-75}
 

@@ -233,9 +233,12 @@ body,
 :root,
 html,
 section {
+  /* sigh, we define 1 rem to be 16 px here or marpit loses its shit
+   * when we use clamp on the default font-size
+   */
+  --marpit-root-font-size: 16px !important;
   background-color: hsl(var(--color-bg));
   color: hsl(var(--color-fg));
-  /* font-size: clamp(1.13rem, 1.04rem + 0.43vw, 1.63rem); */
   font-size: clamp(2.13rem, 2.04rem + 0.43vw, 2.63rem);
   font-family: "Zilla Slab", ui-sans-serif, sans-serif;
   line-height: 1.55;
@@ -314,6 +317,26 @@ h2,
 h3,
 h4 {
   max-width: calc(65ch / 2);
+}
+
+@supports (font-size: 1cqi) {
+  body,
+  :root,
+  html,
+  section {
+    container-type: inline-size;
+    font-size: clamp(2rem, 100cqmin / 27, 2.63rem);
+  }
+
+  h1 {
+    font-size: clamp(3.75rem, 100cqmin / 9, 9.23rem);
+  }
+  h2 {
+    font-size: clamp(3.2rem, 100cqmin / 13, 6.48rem);
+  }
+  h3 {
+    font-size: clamp(2.76rem, 100cqmin / 15, 4.66rem);
+  }
 }
 
 a {
@@ -1174,7 +1197,7 @@ html.dark {
 }
 
 .text-3 {
-  font-size: clamp(1.41rem, 1.23rem + 0.9vw, 2.44rem);
+  font-size: clamp(1.41rem, 1.23rem + 0.9vw, 2.4rem);
 }
 
 .text-4 {
