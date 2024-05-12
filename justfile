@@ -39,3 +39,14 @@ update-deps:
   set -euxo pipefail
   nix flake update
   pnpm update --latest
+
+post title:
+  #!/usr/bin/env bash
+  set -euo pipefail
+  slug="$(echo "{{ title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
+  cat <<EOF > ./src/blog/"$slug".md
+  ---
+  title: "{{ title }}"
+  date: $(date '+%F')
+  ---
+  EOF

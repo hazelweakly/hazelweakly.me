@@ -18,7 +18,7 @@ var util = {
   },
 
   generateID: function (base) {
-    return base + Math.floor(Math.random() * 999);
+    return base + window.Math.floor(window.Math.random() * 999);
   },
 
   getDirectChildren: function (elm, selector) {

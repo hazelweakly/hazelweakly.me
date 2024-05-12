@@ -29,16 +29,5 @@
     <noscript>
       <img src="https://5qcs9vnu0w.goatcounter.com/count?p=/test-noscript" />
     </noscript>
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
   </body>
 </html>
