@@ -6,6 +6,7 @@
   border-color: hsl(var(--color-bg));
   border-bottom-width: var(--space-0-5);
   border-bottom-color: hsl(var(--color-bg));
+  cursor: pointer;
 }
 
 [role="tab"][aria-selected="true"] {

@@ -48,9 +48,9 @@ const helmet = async function (content) {
 };
 
 const minifyHtml = async function (content) {
-  if (isProd && (this.page.outputPath || "").endsWith(".html")) {
+  if (isProd && this.page?.outputPath?.endsWith(".html")) {
     try {
-      content = minify(Buffer.from(content), {
+      content = minify.minify(Buffer.from(content), {
         // See https://docs.rs/minify-html/latest/minify_html/struct.Cfg.html
         do_not_minify_doctype: true,
         ensure_spec_compliant_unquoted_attribute_values: true,
@@ -61,7 +61,7 @@ const minifyHtml = async function (content) {
         keep_closing_tags: true,
       });
     } catch (err) {
-      console.warn(err, "while minifying", outputPath);
+      console.warn(err, "while minifying", this.page?.outputPath);
     }
   }
 
@@ -292,7 +292,7 @@ async function imageShortcode(src, alt, sizes) {
 const yearShortcode = () => `${new Date().getFullYear()}`;
 
 const criticalCSS = async (content, outputPath) => {
-  if (isProd && outputPath && outputPath.endsWith(".html")) {
+  if (isProd && outputPath?.endsWith(".html")) {
     const outputDir = dir.output;
 
     // Generate HTML with critical CSS

@@ -169,7 +169,7 @@ var util = {
       var disabled = panel.hasAttribute(_options.disabledAttribute);
 
       var generateTab = function (index, id, tabPanel, customClass) {
-        var newTab = doc.createElement("span");
+        var newTab = doc.createElement("a");
         newTab.id = elID + "_tab_" + index;
         newTab.tabIndex = -1;
         newTab.setAttribute("role", "tab");
