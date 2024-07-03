@@ -1,17 +1,6 @@
-import { filters as _filters, asyncFilters } from "./src/_meta/filters.js";
+import { filters, asyncFilters } from "./src/_meta/filters.js";
 import { env, url } from "./src/_data/meta.js";
 import transforms from "./src/_meta/transforms.js";
-
-const {
-  before,
-  after,
-  plugins,
-  markdownLibrary,
-  shortcodes,
-  asyncShortcodes,
-  transforms: _transforms,
-  collections,
-} = transforms;
 import c from "./src/_meta/cfg.js";
 
 import directoryOutput from "@11ty/eleventy-plugin-directory-output";
@@ -24,11 +13,15 @@ const foreach = (o, f) => Object.entries(o).forEach(([k, fn]) => f(k, fn));
 
 /** @param {import("@11ty/eleventy").UserConfig} cfg */
 export default async function (cfg) {
-  Object.entries(before).forEach(([_, fn]) => cfg.on("eleventy.before", fn));
-  Object.entries(after).forEach(([_, fn]) => cfg.on("eleventy.after", fn));
+  Object.entries(transforms.before).forEach(([_, fn]) =>
+    cfg.on("eleventy.before", fn),
+  );
+  Object.entries(transforms.after).forEach(([_, fn]) =>
+    cfg.on("eleventy.after", fn),
+  );
 
-  cfg.setLibrary("md", markdownLibrary);
-  foreach(_transforms, (k, fn) => cfg.addTransform(k, fn));
+  cfg.setLibrary("md", transforms.markdownLibrary);
+  foreach(transforms.transforms, (k, fn) => cfg.addTransform(k, fn));
 
   const rssCfg = (type) => ({
     type,
@@ -88,11 +81,11 @@ export default async function (cfg) {
   });
   cfg.addPassthroughCopy("./src/images");
 
-  foreach(shortcodes, (k, fn) => cfg.addShortcode(k, fn));
-  foreach(asyncShortcodes, (k, fn) => cfg.addAsyncShortcode(k, fn));
-  foreach(_filters, (k, fn) => cfg.addFilter(k, fn));
+  foreach(transforms.shortcodes, (k, fn) => cfg.addShortcode(k, fn));
+  foreach(transforms.asyncShortcodes, (k, fn) => cfg.addAsyncShortcode(k, fn));
+  foreach(filters, (k, fn) => cfg.addFilter(k, fn));
   foreach(asyncFilters, (k, fn) => cfg.addNunjucksAsyncFilter(k, fn));
-  foreach(collections, (k, fn) => cfg.addCollection(k, fn));
+  foreach(transforms.collections, (k, fn) => cfg.addCollection(k, fn));
 
   return { ...c, dir: { input: c.dir.input, output: c.dir.output } };
 }
