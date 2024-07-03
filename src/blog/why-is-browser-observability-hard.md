@@ -22,7 +22,7 @@ For one thing, you would have to build that into react.js itself and not anythin
 For another, root spans that can last indefinite amounts of time don't work well in opentelemetry.
 Some people don't refresh their browser tabs for weeks or months!
 It's the last issue that makes front end stuff so dfficult for opentelemetry.
-It's just really not designed to make it ergonomic to go "page load happened, <three weeks later>, oh look button press".
+It's just really not designed to make it ergonomic to go "page load happened, \*three weeks later\*, oh look button press".
 So how the fuck do you actually meaningfully instrument that?
 You can, of course, but you need to make almost everything a root span and correlate them together casually via attributes and, hopefully, also some links.
 Which won't be ideal from a querying perspective, but is more honest than other approaches.

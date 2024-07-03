@@ -18,6 +18,8 @@ import markdownItFootnote from "markdown-it-footnote";
 import markdownItAttrs from "markdown-it-attrs";
 import markdownItAnchor from "markdown-it-anchor";
 import { dir } from "./cfg.js";
+import { generate } from "critical";
+import posthtml from "posthtml";
 
 const __dirname = import.meta.dirname;
 
@@ -29,13 +31,24 @@ const __dirname = import.meta.dirname;
 import { exec as execSync } from "child_process";
 import { promisify } from "util";
 const exec = promisify(execSync);
+import postHtmlPlugin from "./helmet.js";
 
 const starryNight = await createStarryNight(all);
 
 const isProd = process.env.ELEVENTY_ENV === "prod";
 
-const minifyHtml = (content, outputPath) => {
-  if (isProd && outputPath && outputPath.endsWith(".html")) {
+const pipeline = posthtml().use(postHtmlPlugin);
+
+const helmet = async function (content) {
+  if (this.page?.outputPath?.endsWith(".html")) {
+    const { html } = await pipeline.process(content);
+    return html;
+  }
+  return content;
+};
+
+const minifyHtml = async function (content) {
+  if (isProd && (this.page.outputPath || "").endsWith(".html")) {
     try {
       content = minify(Buffer.from(content), {
         // See https://docs.rs/minify-html/latest/minify_html/struct.Cfg.html
@@ -284,19 +297,17 @@ const criticalCSS = async (content, outputPath) => {
 
     // Generate HTML with critical CSS
     try {
-      const { html, css } = await import("critical").then((critical) =>
-        critical.generate({
-          assetPaths: [dirname(outputPath)],
-          base: outputDir,
-          html: content,
-          inline: true,
-          ignore: {
-            atrule: ["@font-face"],
-            decl: (_, value) => /url\(/.test(value),
-          },
-          rebase: ({ originalUrl }) => originalUrl,
-        }),
-      );
+      const { html, css } = await generate({
+        assetPaths: [dirname(outputPath)],
+        base: outputDir,
+        html: processed,
+        inline: true,
+        ignore: {
+          atrule: ["@font-face"],
+          decl: (_, value) => /url\(/.test(value),
+        },
+        rebase: ({ originalUrl }) => originalUrl,
+      });
 
       // compute sha256 here.
       // somehow CSP header something. Dump shit into a netlify file or smth
@@ -333,23 +344,8 @@ export default {
   markdownLibrary,
   before: { generateCSS },
   after: { generateResumePDF, generateSlides },
-  plugins: {
-    // "@11ty/eleventy-plugin-syntaxhighlight": {},
-    "@11ty/eleventy-plugin-directory-output": {},
-    "@11ty/eleventy-plugin-rss": {},
-    "@11ty/eleventy-plugin-webc": {
-      components: "src/_components/**/*.webc",
-    },
-    "eleventy-plugin-helmet": {},
-    "eleventy-plugin-embed-everything": {
-      youtube: {
-        options: {
-          lite: true,
-        },
-      },
-    },
-  },
   transforms: {
+    helmet,
     criticalCSS,
     minifyHtml,
   },
