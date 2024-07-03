@@ -1,6 +1,9 @@
-const exec = require("node:util").promisify(require("child_process").exec);
+import { promisify } from "node:util";
+import { exec as execSync } from "node:child_process";
+import { dir } from "./cfg.js";
+const exec = promisify(execSync);
 
-const pandocArgs = ({ format, output }) => {
+export const pandocArgs = ({ format, output }) => {
   const pdfArgs = [
     "-s --pdf-engine=tectonic --template mcdowell.tex",
     `--pdf-engine-opt=-Zsearch-path=${process.env.FONT_DIR ?? ""}`,
@@ -12,9 +15,9 @@ const pandocArgs = ({ format, output }) => {
   ].join(" ");
 };
 
-const pandoc = async ({ format, output }) =>
+export const pandoc = async ({ format, output }) =>
   await exec(pandocArgs({ format, output }), {
-    cwd: require("./cfg").dir.resume,
+    cwd: dir.resume,
   }).then((x) => x.stdout);
 
-module.exports = { pandoc, pandocArgs };
+export default { pandoc, pandocArgs };

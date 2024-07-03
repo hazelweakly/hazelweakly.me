@@ -1,30 +1,28 @@
-const resolveConfig = require("tailwindcss/resolveConfig");
-const initialConfig = require("../../tailwind.config.js");
+import resolveConfig from "tailwindcss/resolveConfig.js";
+import initialConfig from "../../tailwind.config.js";
 const config = resolveConfig(initialConfig);
 
-module.exports = {
-  colors() {
-    let response = [];
+export function colors() {
+  let response = [];
 
-    Object.keys(config.theme.colors).forEach((key) => {
-      response.push({
-        value: config.theme.colors[key],
-        key,
-      });
+  Object.keys(config.theme.colors).forEach((key) => {
+    response.push({
+      value: config.theme.colors[key],
+      key,
     });
+  });
 
-    return response;
-  },
-  sizes() {
-    let response = [];
+  return response;
+}
+export function sizes() {
+  let response = [];
 
-    Object.keys(config.theme.spacing).forEach((key) => {
-      response.push({
-        value: config.theme.spacing[key],
-        key,
-      });
+  Object.keys(config.theme.spacing).forEach((key) => {
+    response.push({
+      value: config.theme.spacing[key],
+      key,
     });
+  });
 
-    return response;
-  },
-};
+  return response;
+}

@@ -1,47 +1,43 @@
 // https://github.com/GoogleChrome/web.dev/blob/main/src/site/_transforms/minify-html.js
 
-const htmlMinifier = require("@minify-html/node");
-const path = require("path");
-const markdownIt = require("markdown-it");
-const Image = require("@11ty/eleventy-img");
-const slugify = require("slugify");
+import minify from "@minify-html/node";
+import { join, dirname } from "path";
+import markdownIt from "markdown-it";
+import Image, { generateHTML } from "@11ty/eleventy-img";
+import slugify from "slugify";
+import { pandoc } from "./utils.js";
+import fs from "fs";
+import prettier from "prettier";
+import resolveConfig from "tailwindcss/resolveConfig.js";
+import initialConfig from "../../tailwind.config.js";
+import { all, createStarryNight } from "@wooorm/starry-night";
+import { toHtml } from "hast-util-to-html";
+import markdownItEleventyImg from "markdown-it-eleventy-img";
+import markdownItDeflist from "markdown-it-deflist";
+import markdownItFootnote from "markdown-it-footnote";
+import markdownItAttrs from "markdown-it-attrs";
+import markdownItAnchor from "markdown-it-anchor";
+import { dir } from "./cfg.js";
+
+const __dirname = import.meta.dirname;
 
 // absolutely disgusting bullshit going on here
 // because I can't use top level async or ESM anywhere
 // This is also pretty fragile and is breaking the watch functionality
 // occasionally.
 // Eventually eleventy will support ESM everywhere and it'll be fine.
-const { sleep } = require("deasync"); // lmao hax
-const exec = require("util").promisify(require("child_process").exec);
-let createStarryNight, all, starryNight, toHtml;
-if (!starryNight) {
-  import("@wooorm/starry-night").then((sn) => {
-    createStarryNight = sn.createStarryNight;
-    all = sn.all;
-  });
-  import("hast-util-to-html").then((i) => (toHtml = i.toHtml));
-  let count = 10000 / 200;
-  while (!typeof createStarryNight !== "function" && !all && !toHtml) {
-    sleep(200);
-    count -= 1;
-    if (count <= 0) break;
-  }
+import { exec as execSync } from "child_process";
+import { promisify } from "util";
+const exec = promisify(execSync);
 
-  createStarryNight(all).then((s) => (starryNight = s));
-  count = 10000 / 200;
-  while (!starryNight) {
-    sleep(200);
-    count -= 1;
-    if (count <= 0) break;
-  }
-}
+const starryNight = await createStarryNight(all);
 
 const isProd = process.env.ELEVENTY_ENV === "prod";
 
 const minifyHtml = (content, outputPath) => {
   if (isProd && outputPath && outputPath.endsWith(".html")) {
     try {
-      content = htmlMinifier.minify(Buffer.from(content), {
+      content = minify(Buffer.from(content), {
         // See https://docs.rs/minify-html/latest/minify_html/struct.Cfg.html
         do_not_minify_doctype: true,
         ensure_spec_compliant_unquoted_attribute_values: true,
@@ -60,11 +56,6 @@ const minifyHtml = (content, outputPath) => {
 };
 
 const generateCSS = async ({ dir, runMode, outputMode } = {}) => {
-  const fs = require("fs");
-  const prettier = require("prettier");
-
-  const resolveConfig = require("tailwindcss/resolveConfig");
-  const initialConfig = require("../../tailwind.config.js");
   const config = resolveConfig(initialConfig);
 
   let result = "";
@@ -119,25 +110,21 @@ const generateCSS = async ({ dir, runMode, outputMode } = {}) => {
   result = await prettier.format(result, { parser: "css" });
 
   // Push this file into the CSS dir, ready to go
-  fs.writeFileSync(
-    path.join(dir?.input ?? ".", "css", "custom-props.css"),
-    result,
-  );
+  fs.writeFileSync(join(dir?.input ?? ".", "css", "custom-props.css"), result);
 };
 
 const generateResumePDF = async ({ dir, runMode, outputMode } = {}) => {
   if (!isProd) return;
-  const pandoc = require("./utils").pandoc;
   return await pandoc({
     format: "pdf",
-    output: path.join(__dirname, "..", "..", dir.output, "resume.pdf"),
+    output: join(__dirname, "..", "..", dir.output, "resume.pdf"),
   });
 };
 
 const generateSlides = async ({ dir, runMode, outputMode } = {}) => {
   if (!isProd) return;
 
-  const outputFile = path.join(
+  const outputFile = join(
     __dirname,
     "..",
     "..",
@@ -147,17 +134,17 @@ const generateSlides = async ({ dir, runMode, outputMode } = {}) => {
     "slides.html",
   );
   const output = await exec(`pnpm build:html`, {
-    cwd: path.join(__dirname, "..", "_talks", "qcon-sf-2023"),
+    cwd: join(__dirname, "..", "_talks", "qcon-sf-2023"),
   }).catch((e) => e);
 
   await exec(`cp ./${dir.input}/_talks/qcon-sf-2023/index.html ${outputFile}`, {
-    cwd: path.join(__dirname, "..", ".."),
+    cwd: join(__dirname, "..", ".."),
   }).catch((e) => e);
 
   return output;
 };
 
-const markdownLibrary = markdownIt({
+export const markdownLibrary = markdownIt({
   html: true,
   typographer: true,
   highlight: function (value, lang) {
@@ -180,12 +167,12 @@ const markdownLibrary = markdownIt({
     });
   },
 })
-  .use(require("markdown-it-eleventy-img"), {
+  .use(markdownItEleventyImg, {
     imgOptions: {
       urlPath: "/images/",
       widths: [1000, 600, 300],
       formats: ["avif", "webp", "jpeg"],
-      outputDir: path.join("public", "images"),
+      outputDir: join("public", "images"),
     },
     globalAttributes: {
       decoding: "async",
@@ -209,16 +196,16 @@ const markdownLibrary = markdownIt({
       }</figure>`;
     },
   })
-  .use(require("markdown-it-deflist"))
-  .use(require("markdown-it-footnote"))
-  .use(require("markdown-it-attrs"), {
+  .use(markdownItDeflist)
+  .use(markdownItFootnote)
+  .use(markdownItAttrs, {
     leftDelimiter: "{",
     rightDelimiter: "}",
     allowedAttributes: ["id", "class", /^data-.*$/],
   })
-  .use(require("markdown-it-anchor"), {
+  .use(markdownItAnchor, {
     level: 2,
-    permalink: require("markdown-it-anchor").permalink.headerLink({
+    permalink: markdownItAnchor.permalink.headerLink({
       safariReaderFix: true,
     }),
     slugify: (s) => slugify(s, { lower: true }),
@@ -284,22 +271,22 @@ async function imageShortcode(src, alt, sizes) {
 
   const imageAttributes = { alt, sizes, loading: "lazy", decoding: "async" };
 
-  return Image.generateHTML(metadata, imageAttributes, {
+  return generateHTML(metadata, imageAttributes, {
     whitespaceMode: "inline",
   });
 }
 
-yearShortcode = () => `${new Date().getFullYear()}`;
+const yearShortcode = () => `${new Date().getFullYear()}`;
 
 const criticalCSS = async (content, outputPath) => {
   if (isProd && outputPath && outputPath.endsWith(".html")) {
-    const outputDir = require("./cfg").dir.output;
+    const outputDir = dir.output;
 
     // Generate HTML with critical CSS
     try {
       const { html, css } = await import("critical").then((critical) =>
         critical.generate({
-          assetPaths: [path.dirname(outputPath)],
+          assetPaths: [dirname(outputPath)],
           base: outputDir,
           html: content,
           inline: true,
@@ -342,7 +329,7 @@ const footerPages = (api) => pages(api).filter((p) => !!p?.data?.footer);
 const talks = (api) =>
   api.getFilteredByTag("talk").sort((a, b) => +a?.data?.date - +b?.data?.date);
 
-module.exports = {
+export default {
   markdownLibrary,
   before: { generateCSS },
   after: { generateResumePDF, generateSlides },

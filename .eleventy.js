@@ -1,22 +1,46 @@
-const filters = require("./src/_meta/filters");
-const meta = require("./src/_data/meta");
-const transforms = require("./src/_meta/transforms");
+import { filters as _filters, asyncFilters } from "./src/_meta/filters.js";
+import { env } from "./src/_data/meta.js";
+import transforms from "./src/_meta/transforms.js";
+
+const {
+  before,
+  after,
+  plugins,
+  markdownLibrary,
+  shortcodes,
+  asyncShortcodes,
+  transforms: _transforms,
+  collections,
+} = transforms;
+import c from "./src/_meta/cfg.js";
+
+import directoryOutput from "@11ty/eleventy-plugin-directory-output";
+import rssPlugin from "@11ty/eleventy-plugin-rss";
+import webcPlugin from "@11ty/eleventy-plugin-webc";
+import helmetPlugin from "eleventy-plugin-helmet";
+import embedPlugin from "eleventy-plugin-embed-everything";
+
 const foreach = (o, f) => Object.entries(o).forEach(([k, fn]) => f(k, fn));
 
-// lmao crimez
-// https://github.com/11ty/eleventy/issues/2033
-const UserConfig = require("@11ty/eleventy/src/UserConfig");
+/** @param {import("@11ty/eleventy").UserConfig} cfg */
+export default async function (cfg) {
+  Object.entries(before).forEach(([_, fn]) => cfg.on("eleventy.before", fn));
+  Object.entries(after).forEach(([_, fn]) => cfg.on("eleventy.after", fn));
 
-/** @param {UserConfig} cfg */
-module.exports = function (cfg) {
-  Object.entries(transforms.before).forEach(([_, fn]) =>
-    cfg.on("eleventy.before", fn),
-  );
-  Object.entries(transforms.after).forEach(([_, fn]) =>
-    cfg.on("eleventy.after", fn),
-  );
-
-  foreach(transforms.plugins, (p, opts) => cfg.addPlugin(require(p), opts));
+  // foreach(plugins, async (p, opts) => cfg.addPlugin(await import(p), opts));
+  cfg.addPlugin(directoryOutput);
+  cfg.addPlugin(rssPlugin);
+  cfg.addPlugin(webcPlugin, {
+    components: "src/_components/**/*.webc",
+  });
+  cfg.addPlugin(helmetPlugin);
+  cfg.addPlugin(embedPlugin, {
+    youtube: {
+      options: {
+        lite: true,
+      },
+    },
+  });
 
   cfg.setServerOptions({
     port: 8080,
@@ -28,7 +52,7 @@ module.exports = function (cfg) {
   cfg.addWatchTarget("./src/css/");
   cfg.addWatchTarget("./postcss.config.js");
   cfg.ignores.add("src/_talks");
-  if (meta.env === "prod") {
+  if (env === "prod") {
     cfg.ignores.add("src/_resume");
   }
   cfg.addWatchTarget("./src/_resume/cv.md");
@@ -40,15 +64,14 @@ module.exports = function (cfg) {
   });
   cfg.addPassthroughCopy("./src/images");
 
-  cfg.setLibrary("md", transforms.markdownLibrary);
+  cfg.setLibrary("md", markdownLibrary);
 
-  foreach(transforms.shortcodes, (k, fn) => cfg.addShortcode(k, fn));
-  foreach(transforms.asyncShortcodes, (k, fn) => cfg.addAsyncShortcode(k, fn));
-  foreach(filters.filters, (k, fn) => cfg.addFilter(k, fn));
-  foreach(filters.asyncFilters, (k, fn) => cfg.addNunjucksAsyncFilter(k, fn));
-  foreach(transforms.transforms, (k, fn) => cfg.addTransform(k, fn));
-  foreach(transforms.collections, (k, fn) => cfg.addCollection(k, fn));
+  foreach(shortcodes, (k, fn) => cfg.addShortcode(k, fn));
+  foreach(asyncShortcodes, (k, fn) => cfg.addAsyncShortcode(k, fn));
+  foreach(_filters, (k, fn) => cfg.addFilter(k, fn));
+  foreach(asyncFilters, (k, fn) => cfg.addNunjucksAsyncFilter(k, fn));
+  foreach(_transforms, (k, fn) => cfg.addTransform(k, fn));
+  foreach(collections, (k, fn) => cfg.addCollection(k, fn));
 
-  const c = require("./src/_meta/cfg");
   return { ...c, dir: { input: c.dir.input, output: c.dir.output } };
-};
+}

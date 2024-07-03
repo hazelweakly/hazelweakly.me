@@ -1,12 +1,19 @@
-const { DateTime } = require("luxon");
-const p = require("postcss");
-const postcssLoadConfig = require("postcss-load-config");
-const slugify = require("slugify");
-const meta = require("../_data/meta");
-const { markdownLibrary } = require("./transforms");
+import { DateTime } from "luxon";
+import p from "postcss";
+import postcssLoadConfig from "postcss-load-config";
+import slugify from "slugify";
+import { url as _url } from "../_data/meta.js";
+import { markdownLibrary } from "./transforms.js";
+import { pandoc } from "./utils.js";
 
 const generateResume = async (_, done) =>
-  done(null, await require("./utils").pandoc({ format: "html", output: "-" }));
+  done(
+    null,
+    await pandoc({
+      format: "html",
+      output: "-",
+    }),
+  );
 
 const postcss = async (cssCode, done) =>
   postcssLoadConfig({ env: process.env.ELEVENTY_ENV }).then(
@@ -27,7 +34,7 @@ const slug = (str) =>
     ? slugify(str, { lower: true, strict: true, remove: /["]/g })
     : undefined;
 
-const toAbsoluteUrl = (url) => new URL(url, meta.url).href;
+const toAbsoluteUrl = (url) => new URL(url, _url).href;
 
 const parseAsMarkdown = (data) => markdownLibrary.render(data);
 
@@ -121,7 +128,11 @@ const excerpt = (post) => {
     : content.slice(0, content.lastIndexOf(" ", 160)) + "...";
 };
 
-module.exports = {
-  filters: { postDate, slug, toAbsoluteUrl, excerpt, parseAsMarkdown },
-  asyncFilters: { postcss, generateResume },
+export const filters = {
+  postDate,
+  slug,
+  toAbsoluteUrl,
+  excerpt,
+  parseAsMarkdown,
 };
+export const asyncFilters = { postcss, generateResume };

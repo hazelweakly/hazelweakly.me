@@ -23,7 +23,7 @@ const reddit = {
   url: "https://reddit.com/u/hazelweakly",
 };
 
-module.exports = {
+export default {
   github,
   mastodon,
   cohost,

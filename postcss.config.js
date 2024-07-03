@@ -1,4 +1,4 @@
-module.exports = (ctx) => ({
+export default (ctx) => ({
   plugins: {
     "postcss-import-ext-glob": {},
     "postcss-import": {},
