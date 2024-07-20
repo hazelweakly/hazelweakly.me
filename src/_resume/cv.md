@@ -10,8 +10,8 @@ contact:
 
 ::: cv
 
-Experienced engineer specialized in developer experience and distributed systems,
-with a focus on blending theory with pragmatism while embracing empathy.
+Experienced and influential engineering leader, specialized in developer experience, observability, and distributed systems,
+with a focus on organizational change, holistic efficiency, and driving cross-functional business results in a sustainable manner.
 
 :::
 
@@ -20,29 +20,69 @@ with a focus on blending theory with pragmatism while embracing empathy.
 ::: cv
 
 Languages
-: TypeScript, JavaScript, Bash, Nix, Haskell, Rust, Python, JSON, YAML, Sass, CSS, SQL, Go, C
+: TypeScript, JavaScript, Bash, Nix, Haskell, Rust, Python, CSS, SQL, Go
 
-OS/Virtualization
+Infrastructure
 : Linux (Debian, RHEL, CentOS, Ubuntu, NixOS, Amazon Linux), Kubernetes, Nomad, Docker, Terraform, Ansible, AWS, Packer
 
+Cross-Functional
+: FedRAMP, SOC2 Type II, HITRUST, HIPAA, UI / UX , Full-Stack, Platform Engineering, Developer Experience
+
 Technologies
-: GitLab CI/CD, GitHub Actions, Varnish, Git, React, NoSQL, PostgreSQL, Helm, ArgoCD, Tailscale, Atlantis, Okta, Open Telemetry
+: GitLab CI/CD, GitHub Actions, Git, React, NoSQL, PostgreSQL, Helm, ArgoCD, Tailscale, Atlantis, Okta, Open Telemetry, Observability
 
 Attributes
-: Strong and attentive listener, empathetic, leads by example, attention to detail, passionate equity advocate
+: Strong and Attentive Listener, Cross-Functional Collaboration, Organizational Change Agency, Alignment Building, Leads by Example, Force-Multiplier, Sought-after International Speaker
 
 :::
 
 # Experience
 
-::: {.cv Title="Team Lead" Company="[Seaplane.io](https://seaplane.io)" Date="Aug. 2022"}
+::: {.cv Title="Principal Architect - Platform" Company="[Datavant](https://datavant.com)" Date="Jan. 2024--Present"}
 
-Took on technical leadership of the infrastructure team.
-Focused on guiding the infrastructure of Seaplane, leveraging and monitoring tech choices and their implications, enabling other teams to execute on building out critical competencies for the platform, and maintaining and balancing flexibility as an early stage startup.
+Developed, oversaw, and drove the technical vision for Platform Engineering and Infrastructure at Datavant.
+Executed on broad impact projects with high visibility, leveled up the technical excellence of the organization, accelerated timelines exponentially, and derisked key initiatives.
 
-- Broke down communication silos within teams
-- Mentoring reports in personal growth, sociotechnical growth, and professional goals
-- Stabilized roadmap for critical novel infrastructure capabilities
+- Architected the "Golden Path" of the company, building alignment around a strategy for reducing technical fatigue and accelerating development efforts.
+- Worked with my Director to define technical vision, write strategy, and develop processes for operational maturity.
+- Executed on exploratory work in order to align teams in the Platform Org on synergetic initiatives.
+- Built a FedRAMP Moderate compliant Continuous Delivery platform, trained the team on usage and operation, accelerating the migration timeline by a quarter in order to deliver on time
+- Architected a live migration of all existing services with zero downtime or developer workflow disruption.
+- Derisked ambitious timelines regarding infrastructure modernization, platform acceleration, and developing capabilities for product teams.
+- Built a multi-stage container testing framework, enabling platform teams to iterate fearlessly on improvements for product teams without regressions.
+
+:::
+
+::: {.cv Title="Engineering Manager - Platform" Company="[Datavant](https://datavant.com)" Date="Sep. 2023--Jan. 2024"}
+
+Hired a long-term Head of Platform, grew team stability and fostered a healthy culture throughout rapid org evolution, while improving team-level efficiency.
+
+- Reduced interrupt driven work by over 70%, bringing WIP load to sustainable levels, accelerating project timelines by several months.
+- Designed clear and quantifiable org-wide goals with high ROI to justify and allocate headcount.
+- Worked with the Head of Platform to grow the team into a full Organization, balancing hiring with feature development.
+- Facilitated and designd interview loops to rapidly hire the most diverse teams in the CTO org within a single quarter, achieving over eight high quality hires more than twice as fast as the org average.
+- Prepared for a FedRAMP audit cycle, SOC2 Type II audit cycle, unblocking several high profile issues in preparation for our audit cycles.
+- Designed key data-driven Developer Experience initiatives, turning them into a smooth on-ramp for the new Developer Experience team, giving them a successful integration into the CTO Org.
+- Cultivated the culture of the Platform Org to where it ranked as a significant outlier in happiness, NPS, leadership trust, and other core engagement metrics.
+
+:::
+
+::: {.cv Title="Head of Platform" Company="[Datavant](https://datavant.com)" Date="May 2023--Sep. 2023"}
+
+Led the Platform Org in an explicitly interim capacity, focusing on preparing the Org to go through an operational maturity transformation and be taken over by a long-term leader successfully.
+
+- Built awareness around resource allocation needs for the Platform Org, leading to substantially re-allocating resources in order to right-size our infrastructure investment.
+- Procured and rolled out a developer experience platform to monitor and identify key wins. This resulted in multiple teams being able to independently improve their velocity and happiness in quantifiable ways.
+- Built a data-driven and strategic process around identifying and allocating developer experience interventions, leading to substantial improvements to developer satisfaction and velocity.
+- Worked with Product Engineering, Security, and the CTO Leadership Team to build a narrative of cross-functional collaboration and trust, bringing about a significant improvement in the organization's alignment and messaging around Security and Platform.
+
+:::
+
+::: {.cv Title="Team Lead" Company="[Seaplane.io](https://seaplane.io)" Date="Aug. 2022--Jan. 2023"}
+
+Took on technical leadership of the infrastructure team, guiding the infrastructure of Seaplane, and enabling other teams to execute on building out critical competencies for the platform.
+
+- Broke down communication silos within teams, mentoring reports in personal growth, sociotechnical growth, and professional goals
 - Rescoped infrastructure team to focus on core competencies and more effectively leverage existing industry practices
 - Implemented plan for paying down existing tech debt and focusing on resilience engineering
 - Built out and scaffolded multi environment GitOps terraform structure according to best practices
@@ -54,18 +94,14 @@ Focused on guiding the infrastructure of Seaplane, leveraging and monitoring tec
 Took a leading role in prioritizing security related initiatives.
 Strong focus on improving the developer experience, design systems, and architecture.
 
-- Developed an environment specification DSL in Nix in order to allow for rapid iteration and increased efficiency.
 - Created a cross-platform codebase for a design system that worked across React and React Native, allowing for seamless collaboration between design, product, and engineering teams.
-- Built out the infrastructure required to adopt a mesh VPN solution as part of implementing Zero Trust Networking.
-- Implemented and deployed self-hosted package registries, enabling SBOM auditing, reducing CI failures, and doubling CI install speeds.
 - Revamped developer on-boarding documentation and integrated a discoverable bootstrapping mechanism into projects, reduced on-boarding time by over 80% created future automation opportunities.
 - Designed the approach to developer environments, and implemented change management across the engineering and product teams.
-- Initiated and supervised vendor procurements to enable higher security, cost savings, and developer efficiency.
 - Lead adaption of `open-telemetry` in the front-end by demonstrating benefits, improving knowledge sharing, and delivering an internal talk on the results.
 
 :::
 
-::: {.cv Title="Build/Release Engineer" Company="[Galois, Inc.](https://galois.com)" Date="Dec. 2019--Sept. 2021"}
+::: {.cv .hidden Title="Build/Release Engineer" Company="[Galois, Inc.](https://galois.com)" Date="Dec. 2019--Sept. 2021"}
 
 Took a leading role in the build out of the DevOps team as its first member.
 Participated in contracts for the Department of Defense for transitionable R&D initiatives.
@@ -78,7 +114,7 @@ Participated in contracts for the Department of Defense for transitionable R&D i
 
 :::
 
-::: {.cv Title="Sr. Web Developer" Company="[503 Collective](https://www.linkedin.com/company/503-collective-inc/)" Date="March 2019--Nov. 2019"}
+::: {.cv .hidden Title="Sr. Web Developer" Company="[503 Collective](https://www.linkedin.com/company/503-collective-inc/)" Date="March 2019--Nov. 2019"}
 
 Working in a startup environment, I lead initiatives related to improving every aspect of client and internal focused efforts and communication.
 
@@ -103,22 +139,13 @@ As a web developer, I maintained and developed websites and the infrastructure t
 
 :::
 
-# Community & Activities
+# Community & Activities & Education
 
 ::: cv
 
 - I am a member of the [Haskell Foundation](https://haskell.foundation/who-we-are/)'s Board of Directors. (2023--Present)
-- I created and maintain the official Haskell setup action for GitHub Actions to make using Haskell in GitHub's CI easier.
 - I help run the [Hachyderm](https://hachyderm.io) Mastodon instance and am fondly known as the Infrastructure Witch of Hachyderm.
-- I have presented several talks which can be found [on my website](https://hazelweakly.me/talks)
-
-:::
-
-# Education
-
-::: cv
-
-Portland State University
-: B.S. in Computer Science.
+- I have presented several talks, and appeared in many podcasts, which can be found [on my website](https://hazelweakly.me/talks): <https://hazelweakly.me/talks>
+- **B.S. in Computer Science** from _Portland State University_
 
 :::
