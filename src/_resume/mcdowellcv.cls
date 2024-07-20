@@ -189,17 +189,17 @@
 % Print a subsection
 \makeatletter
 % Define toggles checking if titles were defined
-\newtoggle{lefttitledefined}
 \newtoggle{centertitledefined}
+\newtoggle{lefttitledefined}
 \newtoggle{righttitledefined}
 
 \newenvironment{cvsubsection}[4][1]{
-	\notblank{#2}{\toggletrue{lefttitledefined}}{}
-	\notblank{#3}{\toggletrue{centertitledefined}}{}
+	\notblank{#2}{\toggletrue{centertitledefined}}{}
+	\notblank{#3}{\toggletrue{lefttitledefined}}{}
 	\notblank{#4}{\toggletrue{righttitledefined}}{}
-	\ifboolexpr{togl {lefttitledefined} or togl {centertitledefined} or togl {righttitledefined}}{
+	\ifboolexpr{togl {centertitledefined} or togl {lefttitledefined} or togl {righttitledefined}}{
 		\begin{tabu} to 1\textwidth { X[l,p] X[c,p] X[r,p] }
-			\textbf{#2} & \textbf{#3} & \textbf{#4} \\
+			\textbf{#3} & \textbf{#2} & \textbf{#4} \\
 		\end{tabu}
 		% Add space according to the specidied number of lines
 		\ifnumcomp{#1}{=}{1}{\vspace*{\aftersinglelinesubsectionheaderspace}}{
@@ -210,8 +210,8 @@
 	}{
 		\vspace*{\afteremptysubsectionheaderspace}
 	}
-	\togglefalse{lefttitledefined}
 	\togglefalse{centertitledefined}
+	\togglefalse{lefttitledefined}
 	\togglefalse{righttitledefined}
 	\begin{adjustwidth}{\subsectionmargin}{\subsectionmargin}
 		}

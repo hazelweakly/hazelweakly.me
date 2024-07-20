@@ -10,7 +10,7 @@ contact:
 
 ::: cv
 
-Experienced and influential engineering leader, specialized in developer experience, observability, and distributed systems,
+Influential engineering leader, experienced in developer experience, observability, and distributed systems,
 with a focus on organizational change, holistic efficiency, and driving cross-functional business results in a sustainable manner.
 
 :::
@@ -44,10 +44,9 @@ Developed, oversaw, and drove the technical vision for Platform Engineering and 
 Executed on broad impact projects with high visibility, leveled up the technical excellence of the organization, accelerated timelines exponentially, and derisked key initiatives.
 
 - Architected the "Golden Path" of the company, building alignment around a strategy for reducing technical fatigue and accelerating development efforts.
-- Worked with my Director to define technical vision, write strategy, and develop processes for operational maturity.
-- Executed on exploratory work in order to align teams in the Platform Org on synergetic initiatives.
+- Implemented a live migration of all existing services with zero downtime or developer workflow disruption, personally coding the majority of the scaffolding.
 - Built a FedRAMP Moderate compliant Continuous Delivery platform, trained the team on usage and operation, accelerating the migration timeline by a quarter in order to deliver on time
-- Architected a live migration of all existing services with zero downtime or developer workflow disruption.
+- Executed on exploratory work in order to align teams in the Platform Org on synergetic initiatives, converting proofs-of-concept into production-ready solutions.
 - Derisked ambitious timelines regarding infrastructure modernization, platform acceleration, and developing capabilities for product teams.
 - Built a multi-stage container testing framework, enabling platform teams to iterate fearlessly on improvements for product teams without regressions.
 
@@ -58,11 +57,8 @@ Executed on broad impact projects with high visibility, leveled up the technical
 Hired a long-term Head of Platform, grew team stability and fostered a healthy culture throughout rapid org evolution, while improving team-level efficiency.
 
 - Reduced interrupt driven work by over 70%, bringing WIP load to sustainable levels, accelerating project timelines by several months.
-- Designed clear and quantifiable org-wide goals with high ROI to justify and allocate headcount.
-- Worked with the Head of Platform to grow the team into a full Organization, balancing hiring with feature development.
-- Facilitated and designd interview loops to rapidly hire the most diverse teams in the CTO org within a single quarter, achieving over eight high quality hires more than twice as fast as the org average.
-- Prepared for a FedRAMP audit cycle, SOC2 Type II audit cycle, unblocking several high profile issues in preparation for our audit cycles.
-- Designed key data-driven Developer Experience initiatives, turning them into a smooth on-ramp for the new Developer Experience team, giving them a successful integration into the CTO Org.
+- Facilitated and designed interview loops to rapidly hire the most diverse teams in the CTO org within a single quarter, achieving over eight high quality hires more than twice as fast as the org average.
+- Developed data-driven Developer Experience initiatives, turning them into a smooth on-ramp for the new Developer Experience team's integration with the CTO org.
 - Cultivated the culture of the Platform Org to where it ranked as a significant outlier in happiness, NPS, leadership trust, and other core engagement metrics.
 
 :::
@@ -72,7 +68,6 @@ Hired a long-term Head of Platform, grew team stability and fostered a healthy c
 Led the Platform Org in an explicitly interim capacity, focusing on preparing the Org to go through an operational maturity transformation and be taken over by a long-term leader successfully.
 
 - Built awareness around resource allocation needs for the Platform Org, leading to substantially re-allocating resources in order to right-size our infrastructure investment.
-- Procured and rolled out a developer experience platform to monitor and identify key wins. This resulted in multiple teams being able to independently improve their velocity and happiness in quantifiable ways.
 - Built a data-driven and strategic process around identifying and allocating developer experience interventions, leading to substantial improvements to developer satisfaction and velocity.
 - Worked with Product Engineering, Security, and the CTO Leadership Team to build a narrative of cross-functional collaboration and trust, bringing about a significant improvement in the organization's alignment and messaging around Security and Platform.
 
@@ -83,7 +78,7 @@ Led the Platform Org in an explicitly interim capacity, focusing on preparing th
 Took on technical leadership of the infrastructure team, guiding the infrastructure of Seaplane, and enabling other teams to execute on building out critical competencies for the platform.
 
 - Broke down communication silos within teams, mentoring reports in personal growth, sociotechnical growth, and professional goals
-- Rescoped infrastructure team to focus on core competencies and more effectively leverage existing industry practices
+- Re-scoped infrastructure team to focus on core competencies and more effectively leverage existing industry practices
 - Implemented plan for paying down existing tech debt and focusing on resilience engineering
 - Built out and scaffolded multi environment GitOps terraform structure according to best practices
 
@@ -97,7 +92,7 @@ Strong focus on improving the developer experience, design systems, and architec
 - Created a cross-platform codebase for a design system that worked across React and React Native, allowing for seamless collaboration between design, product, and engineering teams.
 - Revamped developer on-boarding documentation and integrated a discoverable bootstrapping mechanism into projects, reduced on-boarding time by over 80% created future automation opportunities.
 - Designed the approach to developer environments, and implemented change management across the engineering and product teams.
-- Lead adaption of `open-telemetry` in the front-end by demonstrating benefits, improving knowledge sharing, and delivering an internal talk on the results.
+- Led adaption of `open-telemetry` in the front-end by demonstrating benefits, improving knowledge sharing, and delivering an internal talk on the results.
 
 :::
 
@@ -146,6 +141,6 @@ As a web developer, I maintained and developed websites and the infrastructure t
 - I am a member of the [Haskell Foundation](https://haskell.foundation/who-we-are/)'s Board of Directors. (2023--Present)
 - I help run the [Hachyderm](https://hachyderm.io) Mastodon instance and am fondly known as the Infrastructure Witch of Hachyderm.
 - I have presented several talks, and appeared in many podcasts, which can be found [on my website](https://hazelweakly.me/talks): <https://hazelweakly.me/talks>
-- **B.S. in Computer Science** from _Portland State University_
+- B.S. in Computer Science from Portland State University
 
 :::
