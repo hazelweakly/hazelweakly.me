@@ -194,6 +194,7 @@
 \newtoggle{righttitledefined}
 
 \newenvironment{cvsubsection}[4][1]{
+	\filbreak
 	\notblank{#2}{\toggletrue{centertitledefined}}{}
 	\notblank{#3}{\toggletrue{lefttitledefined}}{}
 	\notblank{#4}{\toggletrue{righttitledefined}}{}
