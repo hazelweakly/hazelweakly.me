@@ -9,19 +9,42 @@ import webcPlugin from "@11ty/eleventy-plugin-webc";
 import helmetPlugin from "eleventy-plugin-helmet";
 import embedPlugin from "eleventy-plugin-embed-everything";
 
+import { renderToStaticMarkup } from "react-dom/server";
+import * as runtime from "react/jsx-runtime";
+import React from "react";
+import { register } from "node:module";
+import { EleventyRenderPlugin } from "@11ty/eleventy";
+import { evaluate } from "@mdx-js/mdx";
+
+register("@mdx-js/node-loader", import.meta.url);
+
 const foreach = (o, f) => Object.entries(o).forEach(([k, fn]) => f(k, fn));
 
-/** @param {import("@11ty/eleventy").UserConfig} cfg */
-export default async function (cfg) {
+/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
+export default async function (eleventyConfig) {
   Object.entries(transforms.before).forEach(([_, fn]) =>
-    cfg.on("eleventy.before", fn),
+    eleventyConfig.on("eleventy.before", fn),
   );
   Object.entries(transforms.after).forEach(([_, fn]) =>
-    cfg.on("eleventy.after", fn),
+    eleventyConfig.on("eleventy.after", fn),
   );
 
-  cfg.setLibrary("md", transforms.markdownLibrary);
-  foreach(transforms.transforms, (k, fn) => cfg.addTransform(k, fn));
+  eleventyConfig.setLibrary("md", transforms.markdownLibrary);
+  foreach(transforms.transforms, (k, fn) => eleventyConfig.addTransform(k, fn));
+
+  eleventyConfig.addExtension("mdx", {
+    key: "11ty.js",
+    read: true,
+    compile: function () {
+      return async function (data) {
+        let content = await this.defaultRenderer(data);
+        // TODO: Switch everything to rehype or remark or something and then I can reuse all the plugins here
+        const rendered = await evaluate(content, { ...runtime });
+        return renderToStaticMarkup(React.createElement(rendered.default));
+      };
+    },
+  });
+  eleventyConfig.addTemplateFormats("mdx");
 
   const rssCfg = (type) => ({
     type,
@@ -44,48 +67,55 @@ export default async function (cfg) {
       },
     },
   });
-  cfg.addPlugin(feedPlugin, rssCfg("rss"));
-  cfg.addPlugin(feedPlugin, rssCfg("atom"));
-  cfg.addPlugin(feedPlugin, rssCfg("json"));
-  cfg.addPlugin(directoryOutput);
-  cfg.addPlugin(helmetPlugin);
-  cfg.addPlugin(webcPlugin, {
+  eleventyConfig.addPlugin(feedPlugin, rssCfg("rss"));
+  eleventyConfig.addPlugin(feedPlugin, rssCfg("atom"));
+  eleventyConfig.addPlugin(feedPlugin, rssCfg("json"));
+  eleventyConfig.addPlugin(directoryOutput);
+  eleventyConfig.addPlugin(helmetPlugin);
+  eleventyConfig.addPlugin(webcPlugin, {
     components: "src/_components/**/*.webc",
   });
-  cfg.addPlugin(embedPlugin, {
+  eleventyConfig.addPlugin(embedPlugin, {
     youtube: {
       options: {
         lite: true,
       },
     },
   });
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
 
-  cfg.setServerOptions({
+  eleventyConfig.setServerOptions({
     port: 8080,
     portReassignmentRetryCount: 0,
     showAllHosts: true,
   });
-  cfg.setQuietMode(true);
+  eleventyConfig.setQuietMode(true);
 
-  cfg.addWatchTarget("./src/css/");
-  cfg.addWatchTarget("./postcss.config.js");
-  cfg.ignores.add("src/_talks");
+  eleventyConfig.addWatchTarget("./src/css/");
+  eleventyConfig.addWatchTarget("./postcss.config.js");
+  eleventyConfig.ignores.add("src/_talks");
   if (env === "prod") {
-    cfg.ignores.add("src/_resume");
+    eleventyConfig.ignores.add("src/_resume");
   }
-  cfg.addWatchTarget("./src/_resume/cv.md");
-  cfg.addPassthroughCopy("./src/fonts");
-  cfg.addPassthroughCopy({
+  eleventyConfig.addWatchTarget("./src/_resume/cv.md");
+  eleventyConfig.addPassthroughCopy("./src/fonts");
+  eleventyConfig.addPassthroughCopy({
     "./src/favicons": ".",
     "./src/_talks/qcon-sf-2023/images": "./talks/qcon-sf-2023/images",
   });
-  cfg.addPassthroughCopy("./src/images");
+  eleventyConfig.addPassthroughCopy("./src/images");
 
-  foreach(transforms.shortcodes, (k, fn) => cfg.addShortcode(k, fn));
-  foreach(transforms.asyncShortcodes, (k, fn) => cfg.addAsyncShortcode(k, fn));
-  foreach(filters, (k, fn) => cfg.addFilter(k, fn));
-  foreach(asyncFilters, (k, fn) => cfg.addNunjucksAsyncFilter(k, fn));
-  foreach(transforms.collections, (k, fn) => cfg.addCollection(k, fn));
+  foreach(transforms.shortcodes, (k, fn) => eleventyConfig.addShortcode(k, fn));
+  foreach(transforms.asyncShortcodes, (k, fn) =>
+    eleventyConfig.addAsyncShortcode(k, fn),
+  );
+  foreach(filters, (k, fn) => eleventyConfig.addFilter(k, fn));
+  foreach(asyncFilters, (k, fn) =>
+    eleventyConfig.addNunjucksAsyncFilter(k, fn),
+  );
+  foreach(transforms.collections, (k, fn) =>
+    eleventyConfig.addCollection(k, fn),
+  );
 
   return { ...c, dir: { input: c.dir.input, output: c.dir.output } };
 }

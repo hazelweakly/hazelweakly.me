@@ -1,6 +1,8 @@
 ---
 title: Blog
 order: 2
+eleventyImport:
+  collections: ["blog"]
 ---
 
 {% for post in collections.blog | reverse %}
