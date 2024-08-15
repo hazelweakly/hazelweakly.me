@@ -1,7 +1,7 @@
 ---
 title: Résumé
 order: 4
-description: Experienced engineer specialized in developer experience and distributed systems, with a focus on blending theory with pragmatism while embracing empathy.
+description: Influential engineering leader with a focus on organizational change, holistic efficiency, and driving cross-functional business results in a sustainable manner.
 footer: true
 ---
 
