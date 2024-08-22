@@ -68,7 +68,7 @@ eleventyExcludeFromCollections: true
   </p>
   <h2>Text sizes</h2>
   <!-- tricking tailwind into generating classes -->
-  <!-- text-0 text-1 text-2 text-3 text-4 text-5 text-6 text-7 text-8 text-px text-DEFAULT text-0-5 -->
+  <!-- w-full text-0 text-1 text-2 text-3 text-4 text-5 text-6 text-7 text-8 text-px text-DEFAULT text-0-5 -->
   {% for size in styleguide.sizes() %}
   <p class="text-{{ size.key }}" style="--flow-space: 1.5rem">
     {{ size.value }} - <code>text-{{ size.key }}</code>
