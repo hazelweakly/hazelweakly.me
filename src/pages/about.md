@@ -7,7 +7,7 @@ order: 5
   <section id="short" data-atabs-panel data-atabs-tab-label="Short" class="flow">
 
 Currently, I spend my days working on building out teams of humans as well as the infrastructure, systems, automation, and tooling to make life better for others.
-If I'm not working or programming, I'm probably swing dancing.
+If I'm not working or programming, I'm probably swing dancing or playing pool!
 Find me on [mastodon]({{socialMedia.mastodon.url}})! (or [elsewhere](/contact))
 
   </section>
@@ -23,30 +23,30 @@ Any sufficiently complex system is a sociotechnical one, and so any sufficiently
 > To strive ever towards perfection: not because it's possible, but precisely because it is not.
 
 I am the resident infrastructure witch of the [Hachyderm](https://hachyderm.io) mastodon instance, and love talking about how we've handled some pretty tricky issues without burning out people or servers.
-I also maintain a repository of official [GitHub actions](https://github.com/haskell/actions) for the Haskell language.
+I also built the first set of official [GitHub actions](https://github.com/haskell-actions/setup) for the Haskell language and helped maintain that for a while, although I mostly sit on the backburner now as it's turned into a lovely project and ecosystem in my absence.
 I aspire to leave myself open for meaningful consulting and advising opportunities, and invest time towards mentoring others.
-I've given [talks](/speaking) in a few conferences about my experiences and I love sharing what I've learned.
-And lastly (but not least), I currently serve as a Director on the board of the Haskell Foundation.
+I've given [talks](/speaking) in a few conferences about my experiences, appeared on quite a few podcasts, and I love sharing what I've learned with the world.
+And lastly (but not least), I currently serve as a Director on the board of the Haskell Foundation and as a Fellow of the Nivenly Foundation.
 
 I do strongly believe that intersectional advocacy is not only needed, but necessary.
 To that end, I am continually working to be better at listening, understanding, and holding space for others.
 I have a focus on underrepresented minorities in tech because that aligns closest with my personal life, but I strive to be an understanding and empathetic advocate in every aspect I can.
 
-When I'm not working or programming, you can find me swing dancing, doing gymnastics, playing board games, playing with makeup, thrift shopping for the perfect dress, nerding out about keyboards, drinking coffee, sampling scotch, or playing with my dog, Lupita.
-Research interest wise, I tend to get most into resilience engineering, systems safety, build systems, distributed systems, programming language theory, type systems, category theory, formal verification, and information geometry.
-I also read quite a bit, and frequently write about my findings on [mastodon]({{socialMedia.mastodon.url}}).
+When I'm not working or programming, you can find me swing dancing, doing gymnastics, shooting pool, playing board games, playing with makeup, thrift shopping for the perfect dress, drinking coffee, sampling scotch, or playing with my dog, Lupita; I've been told I have too many hobbies, so, naturally, I like to add more over time.
+Research interest wise, I tend to get most into resilience engineering, psychological safety, organizational design, empathetic leadership, systems safety, build systems, distributed systems, programming language theory, type systems, category theory, formal verification, and information geometry.
+I also read quite a bit, and frequently write about my findings on [mastodon]({{socialMedia.mastodon.url}}) and my blog.
 
   </section>
   <section id="speaker" data-atabs-panel data-atabs-tab-label="Speaker" class="flow">
 
 Hazel spends her days working on building out teams of humans as well as the infrastructure, systems, automation, and tooling to make life better for others.
 She's worked at a variety of companies, across a wide range of tech, and knows that the hardest problems to solve are the social ones.
-Hazel currently serves as a Director on the board of the Haskell Foundation and is fondly known as the Infrastructure Witch of Hachyderm (a popular Mastodon instance).
-She also created the official Haskell "setup" Github Action and helps maintain it.
-She enjoys traveling to speak at conferences and sharing what she's learned with others.
+Hazel currently serves as a Director on the board of the Haskell Foundation, as a Fellow of the Nivenly Foundation, and is fondly known as the Infrastructure Witch of Hachyderm (a popular Mastodon instance).
+She also created the first official Haskell "setup" Github Action and helped turn it into an active community-maintained project.
+She enjoys traveling to speak at conferences, appearing on podcasts, mentoring others, and sharing what she's learned with the world.
 
 One of her favorite things is watching someone light up when they understand something for the first time, and a life goal of hers is to help as many people as possible experience that joy.
-She also loves swing dancing, both as a leader and a follower.
+She also loves shooting pool and going swing dancing, both as a leader and a follower.
 
 [Headshot](/images/og.jpg)
 
