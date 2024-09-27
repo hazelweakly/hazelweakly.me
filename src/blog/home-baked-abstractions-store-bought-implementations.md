@@ -148,9 +148,29 @@ Naturally, that's not going to fly for a project that has a deadline because it'
 So, `https://arewedoneyet.YOUR_COMPANY.TLD/YOUR_PROJECT`.
 Make it, own it, update it, get it ready before you even write your code.
 
+Does it have to be a specific TLD? Nah, it's really about what works for the company.
+Some companies have a high trust culture of internal wikis and so the wiki is absolutely the right place for that (in which case the URL could be a CNAME redirect to the wiki).
+That said, I find a ton of value in having an extremely visible url that's stable, because it acts as an external interface point for others in the company.
+
+When you give someone a link to an internal wiki, you're giving them information, but when you're giving them a link to "arewedoneyet.COMPANY" you're saying "you can check this page and treat it as the truth, I promise to update it, and it will be extremely usable and understandable to everyone who needs it. This page is for YOU, not for me"
+It's actually that last point that's the most important.
+Wiki pages and roadmaps are useful for those doing the project or managing it, but for people not in the know? Those without context? It can be inscrutable.
+
+[The "are we web yet" page by the rust community is a prime example of this](https://www.arewewebyet.org/).
+Giant bold caption, answering the question in one sentence. A C-level exec could stop there and get an answer in 5 seconds. Beautiful!
+For those who need more, the answer is available from the perspective of the consumer, which is invaluable.
+For example, the first question is "can this replace laravel" and the answer is "not yet".
+You find that out in 10 seconds, and the hundreds of people building hundreds of projects and thousands of lines of code with all of their own committees and PMs and repos and everything?
+That all gets abstracted into something imminently usable.
+
+Plus, the people using the project can immediately see how well you understand their needs.
+If they're confused by the page, then that's a huge warning sign because it means the project communication isn't clear somewhere.
+But with internal docs or wiki pages, people can feel like "oh well that's okay, it's more for them and not for me"; the website really acts as a forcing function to align people and put that emphasis where it belongs (in my opinion).
+
 I have a few regrets about the projects I've architected and lead, and not having this be a real, fully updating, automated website has consistently been one of them.
 It's easy to think "okay but that's a lotta effort", but it's significantly less effort than spending weeks in meetings convincing people that you're making the progress that you're making and getting them to understand the shape of the project.
 Linking to an outdated wiki page and saying "ok all the information on here is mostly wrong but this bit is right and this..." is just fucking embarrassing for both you and the person your boss is going to relay that information to.
+It's so much more than a roadmap, it's almost like a blend of marketing and sales and user research than a roadmap (shoutout to [Asbjørn Brandt](https://asbjornbrandt.com/) for giving me the inspiration that this is more like marketing than a roadmap).
 Do yourself a favor, make the website.
 
 ### Make a giant whammy reset button
