@@ -6,10 +6,6 @@ const mastodon = {
   title: "Mastodon",
   url: "https://hachyderm.io/@hazelweakly",
 };
-const cohost = {
-  title: "Cohost",
-  url: "https://cohost.org/hazelweakly",
-};
 const linkedIn = {
   title: "LinkedIn",
   url: "https://www.linkedin.com/in/hazelweakly",
@@ -22,14 +18,17 @@ const reddit = {
   title: "Reddit",
   url: "https://reddit.com/u/hazelweakly",
 };
+const bluesky = {
+  title: "Bluesky",
+  url: "https://bsky.app/profile/hazelweakly.me",
+};
 
 export default {
   github,
   mastodon,
-  cohost,
   linkedIn,
   discord,
   reddit,
-  all_socials: [github, mastodon, cohost, linkedIn, discord, reddit],
+  all_socials: [github, mastodon, bluesky, linkedIn, discord, reddit],
   socials: [github, mastodon, linkedIn],
 };
