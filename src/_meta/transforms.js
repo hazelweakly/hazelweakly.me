@@ -276,6 +276,14 @@ rules.hr = (tokens, idx, options, env, self) =>
     : self.renderToken(tokens, idx, options)) +
   `</div>`;
 
+const blockquote_open = rules.blockquote_open;
+rules.blockquote_open = (tokens, idx, options, env, self) => {
+  tokens[idx].attrJoin("class", "flow");
+  return blockquote_open
+    ? blockquote_open(tokens, idx, options, env, self)
+    : self.renderToken(tokens, idx, options);
+};
+
 async function imageShortcode(src, alt, sizes) {
   const metadata = await Image(src, {
     widths: [300, 600],
@@ -340,6 +348,11 @@ const footerPages = (api) => pages(api).filter((p) => !!p?.data?.footer);
 const talks = (api) =>
   api.getFilteredByTag("talk").sort((a, b) => +a?.data?.date - +b?.data?.date);
 
+const podcasts = (api) =>
+  api
+    .getFilteredByTag("podcast")
+    .sort((a, b) => +a?.data?.date - +b?.data?.date);
+
 export default {
   markdownLibrary,
   before: { generateCSS },
@@ -361,5 +374,6 @@ export default {
     headerPages,
     footerPages,
     talks,
+    podcasts,
   },
 };

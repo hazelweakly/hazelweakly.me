@@ -50,3 +50,38 @@ post title:
   date: $(date '+%F')
   ---
   EOF
+
+podcast title:
+  #!/usr/bin/env bash
+  set -euo pipefail
+  slug="$(echo "{{ title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
+  cat <<EOF > ./src/podcasts/"$slug".md
+  ---
+  title: "{{ title }}"
+  event:
+  date: $(date '+%F')
+  abstract:  |
+  event_site:
+  talk_page:
+  video:
+  audio:
+  ---
+  EOF
+
+talk eventdate:
+  #!/usr/bin/env bash
+  set -euo pipefail
+  slug="$(echo "{{ eventdate }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
+  cat <<EOF > ./src/talks/"$slug".md
+  ---
+  title: ""
+  event:
+  location:
+  date: $(date '+%F')
+  abstract:  |
+  slides:
+  talk_page:
+  event_site:
+  video:
+  ---
+  EOF

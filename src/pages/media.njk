@@ -1,0 +1,70 @@
+---
+title: Media Listing
+order: 3
+eleventyImport:
+  collections: ["talks", "podcasts"]
+---
+
+<h2 id="talks" tabindex="-1">
+  <a class="header-anchor" href="#talks">
+    <span>Talks</span>
+  </a>
+</h2>
+
+<ul class="flow flow-5">
+  {% for talk in collections.talks | reverse %}
+
+  <li class="bordered-box flow flow-2">
+    <p>
+      <a href="{{ talk.url }}" class="font-heading text-3">{{ talk.data.title }}</a>
+    </p>
+
+    <div class="cluster no-gutter"> 
+      <a href="{{ talk.data.event_site }}">{{ talk.data.event }}</a>
+      <time class="italic" datetime="{{ talk.date.toISOString() }}">{{ talk.date | postDate }}</time>
+    </div>
+
+    <div class="cluster">
+      {% if talk.data.slides %}<a href="{{ talk.data.slides | toAbsoluteUrl }}">Slides</a>{% endif %}
+
+      {% if talk.data.video %}<a href="{{ talk.data.video }}">Video</a>{% endif %}
+
+      {% if talk.data.talk_page %}<a href="{{ talk.data.talk_page }}">Program Page</a>{% endif %}
+    </div>
+  </li>
+
+  {%- endfor %}
+</ul>
+
+<h2 id="podcasts" tabindex="-1">
+  <a class="header-anchor" href="#podcasts">
+    <span>Podcasts</span>
+  </a>
+</h2>
+
+<ul class="flow flow-5">
+  {% for podcast in collections.podcasts | reverse %}
+
+  <li class="bordered-box flow flow-2">
+    <p>
+      <a href="{{ podcast.url }}" class="font-heading text-3">{{ podcast.data.title }}</a>
+    </p>
+
+    <div class="cluster no-gutter"> 
+      <a href="{{ podcast.data.event_site }}">{{ podcast.data.event }}</a>
+      <time class="italic" datetime="{{ podcast.date.toISOString() }}">{{ podcast.date | postDate }}</time>
+    </div>
+
+    <div class="cluster">
+      {% if podcast.data.slides %}<a href="{{ podcast.data.slides | toAbsoluteUrl }}">Slides</a>{% endif %}
+
+      {% if podcast.data.video %}<a href="{{ podcast.data.video }}">Video</a>{% endif %}
+
+      {% if podcast.data.audio %}<a href="{{ podcast.data.audio }}">Audio</a>{% endif %}
+
+      {% if podcast.data.talk_page %}<a href="{{ podcast.data.talk_page }}">Program Page</a>{% endif %}
+    </div>
+  </li>
+
+  {%- endfor %}
+</ul>
