@@ -51,6 +51,17 @@ post title:
   ---
   EOF
 
+cfp title:
+  #!/usr/bin/env bash
+  set -euo pipefail
+  slug="$(echo "{{ title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
+  cat <<EOF > ./src/cfps/"$slug".md
+  ---
+  title: "{{ title }}"
+  date: $(date '+%F')
+  ---
+  EOF
+
 podcast title:
   #!/usr/bin/env bash
   set -euo pipefail
