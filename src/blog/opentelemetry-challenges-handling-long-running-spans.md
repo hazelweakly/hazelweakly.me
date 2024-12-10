@@ -1,6 +1,8 @@
 ---
 title: "OpenTelemetry Challenges: Handling Long-Running Spans"
 date: 2024-10-10
+external: https://thenewstack.io/opentelemetry-challenges-handling-long-running-spans/
+tags: [external]
 ---
 
 > Long running spans are one of my biggest "we don't really actually have a good standard solution for this" issues in opentelemetry.

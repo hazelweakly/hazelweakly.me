@@ -1,6 +1,7 @@
 ---
 title: "Overengineering Isn't Real"
 date: 2024-01-20
+tags: [note]
 ---
 
 I find it fascinating that we talk about overengineering as if it's a thing in software engineering.

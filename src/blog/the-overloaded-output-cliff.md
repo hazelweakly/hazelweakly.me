@@ -1,6 +1,7 @@
 ---
 title: "The Overloaded Output Cliff"
 date: 2023-12-15
+tags: [note]
 ---
 
 There's this thing about group work which is really interesting and somewhat hard to quantify, but it's something I've been spending a lot of effort fixing in my team lately.

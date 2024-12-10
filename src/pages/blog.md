@@ -5,6 +5,8 @@ eleventyImport:
   collections: ["blog"]
 ---
 
+{% include "tag-nav.html" %}
+
 {% for post in collections.blog | reverse %}
 
 - [{{ post.data.title }}]({{ post.url }}){.font-heading .text-3}  

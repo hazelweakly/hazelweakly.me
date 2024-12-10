@@ -214,7 +214,7 @@ export const markdownLibrary = markdownIt({
   .use(markdownItAttrs, {
     leftDelimiter: "{",
     rightDelimiter: "}",
-    allowedAttributes: ["id", "class", /^data-.*$/],
+    allowedAttributes: ["id", "class", /^data-.*$/, /^role.*$/],
   })
   .use(markdownItAnchor, {
     level: 2,
@@ -334,6 +334,7 @@ const blog = (api) =>
   api
     .getFilteredByTag("_blog")
     .filter((p) => !p?.data?.draft)
+    .filter(p => p?.data?.tags?.every(t => t !== "note" && t !== "rant"))
     .sort((a, b) => +a?.data?.order - +b?.data?.order);
 
 const headerPages = (api) =>

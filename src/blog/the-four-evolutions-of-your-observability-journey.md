@@ -2,6 +2,7 @@
 title: "The 4 Evolutions of Your Observability Journey"
 date: 2024-10-03
 external: https://thenewstack.io/the-4-evolutions-of-your-observability-journey/
+tags: [external]
 ---
 
 > When going on an observability journey, there tends to be a few concrete phases that every company goes through.

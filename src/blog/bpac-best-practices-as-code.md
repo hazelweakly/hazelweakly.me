@@ -1,12 +1,7 @@
 ---
 title: "BPaC: Best Practices As Code"
 date: 2024-02-25
-description: Infrastructure as code is great and all, but why is it that we've completely failed as an industry when it comes to best practices as code?
----
-
-_I am normally nuanced and full of empathy for differing perspectives; I try very hard to present things in a balanced way and to steer away from inflamatory nonsense that doesn't actually result in making things better._
-_However, this is a rant, because I am having feelings, and those feelings are going to be feel'd._
-
+tags: [rant]
 ---
 
 Infrastructure as code is great and all, but why is it that we've completely failed as an industry when it comes to best practices as code?

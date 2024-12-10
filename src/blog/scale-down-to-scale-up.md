@@ -1,13 +1,7 @@
 ---
 title: "Scale Down to Scale Up"
 date: 2024-02-19
-description: >-
-  "If your service can't be run on a laptop, your service doesn't deserve to be ran in a cluster" - Marilyn Monroe
----
-
-_I am normally nuanced and full of empathy for differing perspectives; I try very hard to present things in a balanced way and to steer away from inflamatory nonsense that doesn't actually result in making things better._
-_However, this is a rant, because I am having feelings, and those feelings are going to be feel'd._
-
+tags: [rant]
 ---
 
 > "If your service can't be run on a laptop, your service doesn't deserve to be ran in a cluster" - Marilyn Monroe

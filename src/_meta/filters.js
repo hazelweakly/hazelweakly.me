@@ -42,7 +42,7 @@ const parseAsMarkdown = (data) => markdownLibrary.render(data);
 // Ok fine I'll use an HTML parser. Ugh, whatever.
 const excerpt = (post) => {
   const doc = new jsdom.JSDOM(post);
-  const content = [...doc.window.document.querySelectorAll("h1 ~ *")]
+  const content = [...doc.window.document.querySelectorAll("h1 ~ *:not([data-nosnippet])")]
     .map((x) => x.textContent.trim())
     .join(" ")
     .replace(/[\r\n]+/g, " ");

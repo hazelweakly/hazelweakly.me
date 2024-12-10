@@ -1,6 +1,7 @@
 ---
 title: "Why I Do What I Do"
 date: 2024-08-13
+tags: [note]
 ---
 
 I thought today about why I do what I do.
