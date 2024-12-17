@@ -1,7 +1,6 @@
 ---
 title: "The Future of Observability: Observability 3.0"
 date: 2024-12-09
-draft: true
 ---
 
 Observability, so hot right now.
