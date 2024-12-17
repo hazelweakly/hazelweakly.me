@@ -25,7 +25,7 @@ Anyone?
 And then **WHAT**?
 Draw the rest of the fucking owl already.
 
-If you remember seeing a previous post I wrote on [redefining observability](/redefining-observability), I brought this up as something I specifically wanted to address in the new definition of observability that I proposed.
+If you remember seeing a previous post I wrote on [redefining observability](/blog/redefining-observability), I brought this up as something I specifically wanted to address in the new definition of observability that I proposed.
 In fact, this "and then" problem is a huge reason why my definition is
 
 > A process through which one develops the ability to ask meaningful questions, get useful answers, **and act effectively on what you learn.**
