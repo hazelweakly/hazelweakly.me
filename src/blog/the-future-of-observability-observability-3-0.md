@@ -4,7 +4,7 @@ date: 2024-12-09
 ---
 
 Observability, so hot right now.
-Over the years, we've seen observability go from an unknown concept to a ubiquitious phrase that everyone is desperate to stamp on their products.
+Over the years, we've seen observability go from an unknown concept to a ubiquitous phrase that everyone is desperate to stamp on their products.
 We've seen projects come, evolve, and die.
 We've seen technologies emerge out of the ashes, born from the tears of SREs long departed.
 Yet, amongst all of this growth, all of this innovation, one question remains: and then _what_?
@@ -71,8 +71,8 @@ They're capabilities! It's a maturity model! Just allocate the headcount, implem
 
 Well, okay, it turns out we need to back up a little bit because that isn't really what happens in reality.
 Despite implementing the three pillars, you run into a lot of limitations, all stemming from a central foundational choice: multiple sources of truth, with no ability to correlate them, leads to an inability to ask meaningful questions.
-Charity referrs to this this when she talks about how observability 1.0 ends up ["making decisions at write time about how you and yoru team would use the data in the future"](https://www.honeycomb.io/blog/one-key-difference-observability1dot0-2dot0) in her nice observability 1.0 vs 2.0 article.
-I like that phrasing a lot, but I personally like to emphasize the "inability to ask meaningful questions" part a bit more than the "write-time decisions" and "existance of pillars" parts.
+Charity refers to this this when she talks about how observability 1.0 ends up ["making decisions at write time about how you and your team would use the data in the future"](https://www.honeycomb.io/blog/one-key-difference-observability1dot0-2dot0) in her nice observability 1.0 vs 2.0 article.
+I like that phrasing a lot, but I personally like to emphasize the "inability to ask meaningful questions" part a bit more than the "write-time decisions" and "existence of pillars" parts.
 That's just me, though.
 
 However, I do want to note that these are equivalent ideas: I'm not reinventing anything here.
@@ -88,7 +88,7 @@ Now, let's go forward in time a little bit to where observability 2.0 comes in.
 The thing that defines observability 2.0 is a combination of one data format, one storage location, and one source of truth.
 Charity would argue that the structured log events are the data format that is required by observability 2.0; I think anything that lets you build relational data structure on top works.
 Consequently, that implies that a time series, logs, and any other temporal data structure that can be decorated with metadata works fine.
-While, yes, that's _true_... seriously, use structured log events, you'll hate yourself a whole lot less.
+While, yes, that's _true_... Seriously, use structured log events, you'll hate yourself a whole lot less.
 
 Regardless! The big shift here from an _implementation_ standpoint is uniformity in data format, storage location, and source of truth.
 And from a capabilities standpoint, you get the ability to correlate information together.
@@ -110,7 +110,7 @@ You can ask meaningful questions now... But there's still that one last question
 ## And Then What?
 
 Firstly, I'm going to make a somewhat controversial claim in that you can get observability 2.0 just fine with "observability 1.0" vendors.
-The only thing you need from a UX standpoint is the ability to query correlations, which means any temporal datastructure, decorated with metadata, is sufficient.
+The only thing you need from a UX standpoint is the ability to query correlations, which means any temporal data-structure, decorated with metadata, is sufficient.
 Hell if you hate yourself enough, you don't actually need the temporal part to be a real clock, a logical clock works just fine.
 
 Now, is that hard as fuck with observability 1.0 tooling? Yeah, generally; there's a reason you don't really do that.
@@ -119,7 +119,7 @@ I mean, you can _also_ [implement your entire backend in brainfuck](https://sour
 The point I'm really making here is that the tooling and/or vendor choice(s) don't actually restrict or limit the capabilities you get out of them from a purely technical standpoint.
 Which, naturally, goes both ways.
 I can't tell you how many times I've run into people using observability 2.0 tooling, super modern vendors, really excellent tooling, and getting absolutely zero value out of it.
-Slicing and dicing autoinstrumented code with zero manual instrumentation, _wrong_ instrumentation, broken service graphs, disconnected distributed tracing, and every other crime under the sun.
+Slicing and dicing auto-instrumented code with zero manual instrumentation, _wrong_ instrumentation, broken service graphs, disconnected distributed tracing, and every other crime under the sun.
 Not only is it quite _possible_ to hold the tool wrong, but damn y'all, I remain fairly convinced that "holding it wrong" is the case in by far the vast majority of observability implementations out there.
 
 Which means, there's gotta be something else here; it's not just the ones and zeroes, because those aren't the thing holding us back as an industry.
@@ -129,7 +129,7 @@ There's a technical component to it, sure, but the main one is social.
 
 Are you ready? Here are my predictions:
 
-- Observability 3.0 backends are going to look a _lot_ like a data lakehouse architecture
+- Observability 3.0 backends are going to look a _lot_ like a data lake-house architecture
 - Observability 3.0 will expand query capabilities to the point that it mostly erases the distinction between pay now / pay later, or "write time" vs "read time"
 - Observability 3.0 will, more than anything else, be measured by the value that _non-engineering functions_ in the business are able to get from it
 
