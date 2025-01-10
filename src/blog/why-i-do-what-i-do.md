@@ -16,8 +16,8 @@ I couldn't even express or name that which I suffered from; the closest I got wa
 I remember thinking to myself "I am missing a fundamental part of the human experience, because to be human is to be understood, and to belong, and I have neither of those."
 
 Today, what I strive to do is build things that bring delight and wholeness to others, that they might create ideas of beauty, and build expressions of their soul.
-I want nothing more than to build a world in which people collaborate with each other.
-To build a world in which people build beautiful creations, see each other's creations, and see each other deeply.
+I want nothing more than to build a world in which people collaborate with each other, build beautiful creations, take delight in the creations of others, and strive see each other deeply.
+Happiness, to me, is a world in which people can show up authentically as their whole self and help craft a sense of wholeness in their communities.
 
 I will pursue this until I have rebuilt the heavens, the hells, and the celestials, if necessary.
 
