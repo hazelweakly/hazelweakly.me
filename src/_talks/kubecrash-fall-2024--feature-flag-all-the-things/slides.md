@@ -35,8 +35,8 @@ defaults:
 # Feature Flag All The Things
 
 ---
-
-## layout: quote
+layout: quote
+---
 
 # What are Feature Flags?
 
@@ -47,40 +47,40 @@ From: https://openfeature.dev/
 Sounds awesome! But, let's boil that down to its essence
 
 ---
-
-## layout: intro
+layout: intro
+---
 
 # What are Feature Flags?
 
 Feature flags are a software development technique that allows teams to enable, disable or **change the behavior** of certain features or code paths in a **product** or service, **without modifying the source code**.
 
 ---
-
-## layout: intro
+layout: intro
+---
 
 # What are Feature Flags?
 
 Feature flags allow teams to change the behavior in a product, without modifying the source code.
 
 ---
-
-## layout: intro
+layout: intro
+---
 
 # What are Feature Flags?
 
 Feature flags allow teams to change the behavior in a product, ~~without modifying the source code~~.
 
 ---
-
-## layout: intro
+layout: intro
+---
 
 # What are Feature Flags?
 
 Feature flags allow team**s** to change the behavior in a product, **at runtime**
 
 ---
-
-## layout: intro
+layout: intro
+---
 
 # Feature flags allow teams to coordinate runtime optionality
 
@@ -156,8 +156,8 @@ Here's the outline:
    - Product OKRs for A/B feature success? Sounds like a feature flag
 
 ---
-
-## layout: intro
+layout: intro
+---
 
 # Your Turn
 
@@ -167,8 +167,8 @@ Distributed
 = Feature Flags
 
 ---
-
-## layout: intro
+layout: intro
+---
 
 # Your Turn
 
