@@ -14,7 +14,6 @@ eleventyExcludeFromCollections: true
   </p>
   <ul class="swatches">
     {% for color in styleguide.colors() %}
-    <!-- text-inherit text-current text-transparent text-primary text-secondary text-bg text-fg -->
     <li class="flow">
       <h3>{{ color.key }}</h3>
       <dl class="props">
@@ -38,7 +37,6 @@ eleventyExcludeFromCollections: true
     {% endfor %}
   </ul>
   <h2>Fonts</h2>
-  <!-- font-display font-heading font-body font-mono -->
   <h3>Display</h3>
   <p class="flow">
     <span
@@ -67,40 +65,10 @@ eleventyExcludeFromCollections: true
     <code>.font-body</code>
   </p>
   <h2>Text sizes</h2>
-  <!-- tricking tailwind into generating classes -->
-  <!-- w-full text-0 text-1 text-2 text-3 text-4 text-5 text-6 text-7 text-8 text-px text-DEFAULT text-0-5 flow-5 -->
   {% for size in styleguide.sizes() %}
   <p class="text-{{ size.key }}" style="--flow-space: 1.5rem">
     {{ size.value }} - <code>text-{{ size.key }}</code>
   </p>
-  {% endfor %}
-  <h2>Spacing</h2>
-  <p>
-    There’s size ratio utilities that give you margin (<code
-      >gap-top, gap-bottom</code
-    >) and padding (<code>pad-top, pad-left, pad-bottom</code>).
-  </p>
-  <h3>Margin</h3>
-  <p class="visually-hidden">Margin token classes that you can copy</p>
-  <div>
-    {% for size in styleguide.sizes() %}
-    <div>
-      <code>gap-top-{{ size.key }}</code>
-    </div>
-    {% endfor %}
-  </div>
-  <h3>Padding</h3>
-  <p class="visually-hidden">Padding token classes that you can copy</p>
-  {% for size in styleguide.sizes() %}
-  <div>
-    <code>pad-top-{{ size.key }}</code>
-  </div>
-  <div>
-    <code>pad-bottom-{{ size.key }}</code>
-  </div>
-  <div>
-    <code>pad-left-{{ size.key }}</code>
-  </div>
   {% endfor %}
 </section>
 

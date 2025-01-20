@@ -4,10 +4,38 @@
 export const darkMode = "class";
 export const mode = "jit";
 export const content = [
-  "./src/**/*.html",
-  "./src/**/*.njk",
-  "./src/**/*.js",
-  "./src/**/*.md",
+  "./src/{_includes,_includes/partials,pages}/*.html",
+  "./src/*.njk",
+  "./src/{_data,_includes,_meta,blog,cfps,pages,podcasts,talks}/*.js",
+  "./src/*.md",
+  "./src/{blog,cfps,pages,podcasts,talks}/*.md",
+];
+export const safelist = [
+  "text-inherit",
+  "text-current",
+  "text-transparent",
+  "text-primary",
+  "text-secondary",
+  "text-bg",
+  "text-fg",
+  "font-display",
+  "font-heading",
+  "font-body",
+  "font-mono",
+  "w-full",
+  "text-0",
+  "text-1",
+  "text-2",
+  "text-3",
+  "text-4",
+  "text-5",
+  "text-6",
+  "text-7",
+  "text-8",
+  "text-px",
+  "text-DEFAULT",
+  "text-0-5",
+  "flow-5",
 ];
 export const theme = {
   // soft summer color palette
@@ -63,4 +91,5 @@ export default {
   content,
   theme,
   corePlugins,
+  safelist,
 };

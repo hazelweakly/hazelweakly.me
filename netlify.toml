@@ -48,3 +48,8 @@ to = "/talks/observability-day-kubecon-na--panel-opentelemetry-bridging-platform
 [[redirects]]
 from = "/talks/kubecrash-2024"
 to = "/talks/kubecrash-fall--feature-flag-all-the-things-2024"
+
+[[redirects]]
+from = '/talks/kubecrash-fall-2024--feature-flag-all-the-things/slides/*'
+to = '/talks/kubecrash-fall-2024--feature-flag-all-the-things/slides/index.html'
+status = 200

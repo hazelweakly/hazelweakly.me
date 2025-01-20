@@ -1,3 +1,5 @@
+// https://www.11ty.dev/docs/config-preprocessors/ use this for drafts and other stuff
+
 import { filters, asyncFilters } from "./src/_meta/filters.js";
 import { env, url } from "./src/_data/meta.js";
 import transforms from "./src/_meta/transforms.js";
@@ -101,7 +103,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/fonts");
   eleventyConfig.addPassthroughCopy({
     "./src/favicons": ".",
-    "./src/_talks/qcon-sf-2023/images": "./talks/qcon-sf-2023/images",
+    "./src/_talks/qcon-san-francisco-2023--understanding-platforms-what-they-are-why-they-work-when-to-use-them-how-to-build-them/images":
+      "./talks/qcon-san-francisco-2023--understanding-platforms-what-they-are-why-they-work-when-to-use-them-how-to-build-them/images",
   });
   eleventyConfig.addPassthroughCopy("./src/images");
 

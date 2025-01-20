@@ -12,8 +12,9 @@ abstract: |
   We'll demonstrate this with a proof of concept of tying together a feature flag for the frontend, backend, and infrastructure in a seamless way.
 
   (Note: This talk had to be rewritten right before presenting it due to the demo completely breaking...)
-slides: # todo
 talk_page: https://www.kubecrash.io/past-events-fall-2024#feature-flag-all-the-things
 event_site: https://www.kubecrash.io/
 video: https://www.youtube.com/watch?v=KRO2AosCR_A
+eleventyComputed:
+  slides: "/talks/{{ page.fileSlug }}/slides"
 ---

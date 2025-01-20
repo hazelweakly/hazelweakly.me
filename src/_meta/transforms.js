@@ -136,23 +136,35 @@ const generateResumePDF = async ({ dir, runMode, outputMode } = {}) => {
 
 const generateSlides = async ({ dir, runMode, outputMode } = {}) => {
   if (!isProd) return;
+  const talkdir = join(__dirname, "..", "..", dir.output, "talks");
+  // yeah its horrible; don't worry it gets worse.
+  const [slides, [qcon]] = fs
+    .readdirSync(join(dir.input, "_talks"))
+    .reduce((a, c) => (a[+c.includes("qcon")].push(c), a), [[], []]);
 
-  const outputFile = join(
-    __dirname,
-    "..",
-    "..",
-    dir.output,
-    "talks",
-    "qcon-san-francisco-2023--understanding-platforms-what-they-are-why-they-work-when-to-use-them-how-to-build-them",
-    "slides.html",
-  );
+  // qcon was built with marp CLI
+  const outputFile = join(talkdir, qcon, "slides.html");
   const output = await exec(`pnpm build:html`, {
-    cwd: join(__dirname, "..", "_talks", "qcon-sf-2023"),
+    cwd: join(__dirname, "..", "_talks", qcon),
   }).catch((e) => e);
 
-  await exec(`cp ./${dir.input}/_talks/qcon-sf-2023/index.html ${outputFile}`, {
+  await exec(`mv ./${dir.input}/_talks/${qcon}/index.html ${outputFile}`, {
     cwd: join(__dirname, "..", ".."),
   }).catch((e) => e);
+
+  // everything else was built with sli.dev
+  for (const talk of slides) {
+    const outdir = join(talkdir, talk, "slides");
+    fs.rmSync(outdir, { recursive: true, force: true });
+    await exec(
+      `pnpm slidev build --base /talks/${talk}/slides/ --out ${outdir}`,
+      { cwd: join(dir.input, "_talks", talk) },
+    );
+    console.log(
+      "Remember to ensure that the redirects in netlify.toml has everything you need for ",
+      talk,
+    );
+  }
 
   return output;
 };
