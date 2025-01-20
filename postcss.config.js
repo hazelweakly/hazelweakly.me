@@ -3,45 +3,7 @@ export default (ctx) => ({
     "postcss-import-ext-glob": {},
     "postcss-import": {},
     tailwindcss: {},
-    "@fullhuman/postcss-purgecss":
-      ctx.env === "prod"
-        ? {
-            content: [
-              "./src/**/*.html",
-              "./src/**/*.njk",
-              "./src/**/*.js",
-              "./src/**/*.md",
-            ],
-            fontFace: true,
-            variables: false,
-            safelist: [
-              "body",
-              "blockquote",
-              "h1",
-              "h2",
-              "h3",
-              "h4",
-              /\[.*\]$/,
-              /pl-.*$/,
-              "p",
-              "li",
-              "a",
-              "pre",
-              "code",
-              "dl",
-              "dt",
-              "header-anchor",
-              ":focus",
-              ":root",
-              '[role="tab"]',
-              "figure",
-              "table",
-              "th",
-              "tbody",
-              "thead",
-            ],
-          }
-        : false,
+    // We have to handle purgeCSSPlugin manually in filters.js
     "postcss-parcel-css": ctx.env === "prod" ? {} : false,
   },
 });

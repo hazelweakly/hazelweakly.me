@@ -6,6 +6,8 @@ import { url as _url } from "../_data/meta.js";
 import { markdownLibrary } from "./transforms.js";
 import { pandoc } from "./utils.js";
 import jsdom from "jsdom";
+import { purgeCSSPlugin } from "@fullhuman/postcss-purgecss";
+import { content } from "../../tailwind.config.js";
 
 const generateResume = async (_, done) =>
   done(
@@ -18,13 +20,49 @@ const generateResume = async (_, done) =>
 
 const postcss = async (cssCode, done) =>
   postcssLoadConfig({ env: process.env.ELEVENTY_ENV }).then(
-    ({ plugins, options }) =>
-      p(plugins)
+    ({ plugins, options }) => {
+      if (process.env.ELEVENTY_ENV === "prod") {
+        plugins.push(
+          purgeCSSPlugin({
+            content,
+            fontFace: true,
+            variables: false,
+            safelist: [
+              "body",
+              "blockquote",
+              "h1",
+              "h2",
+              "h3",
+              "h4",
+              /\[.*\]$/,
+              /pl-.*$/,
+              "p",
+              "li",
+              "a",
+              "pre",
+              "code",
+              "dl",
+              "dt",
+              "header-anchor",
+              ":focus",
+              ":root",
+              '[role="tab"]',
+              "figure",
+              "table",
+              "th",
+              "tbody",
+              "thead",
+            ],
+          }),
+        );
+      }
+      return p(plugins)
         .process(cssCode, { ...options, from: "src/css/index.css" })
         .then(
           (r) => done(null, r.css),
           (e) => done(e, null),
-        ),
+        );
+    },
   );
 
 const postDate = (dateObj) =>

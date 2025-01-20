@@ -1,5 +1,5 @@
 ---
-theme: ./theme
+theme: ../../../slidev-theme
 title: Abstractions as Bridges
 info: |
   Have you ever wondered about what makes a good abstraction vs a bad one? Do you want to examine potential reasons why efforts to develop abstractions at a company or in a project take hold, and some don't? Or what it takes to develop an abstraction that reaches beyond the technical corner of your company or project and becomes something that helps actually shape how you think about the entire problem?

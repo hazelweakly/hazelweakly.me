@@ -1,5 +1,5 @@
 ---
-theme: ./theme
+theme: ../../../slidev-theme
 title: Feature Flag All The Things
 info: |
   Feature flags are amazing for derisking code and separating deployments from releases!
