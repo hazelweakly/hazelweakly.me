@@ -79,14 +79,15 @@ podcast title:
   ---
   EOF
 
-talk eventdate:
+talk event title year=`date +%Y`:
   #!/usr/bin/env bash
   set -euo pipefail
-  slug="$(echo "{{ eventdate }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
-  cat <<EOF > ./src/talks/"$slug".md
+  event_slug="$(echo "{{ event }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
+  title_slug="$(echo "{{ title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
+  cat <<EOF > ./src/talks/"${event_slug}--${title_slug}-{{year}}".md
   ---
-  title: ""
-  event:
+  title: "{{ title }}"
+  event: "{{ event }}"
   location:
   date: $(date '+%F')
   abstract:  |

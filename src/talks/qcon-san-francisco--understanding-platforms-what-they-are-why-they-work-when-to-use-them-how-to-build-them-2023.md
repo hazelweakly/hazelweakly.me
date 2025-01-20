@@ -10,7 +10,7 @@ abstract: |
 
   Not only will we go over a consistent framework for how each group can think about and understand platform engineering, we'll spend time going over how each group can communicate with other and understand each other in a way that's effective, actionable, and transformative.
 event_site: https://qconsf.com
-talk_page: https://qconsf.com/presentation/oct2023/understanding-platforms-what-they-are-why-they-work-when-use-them-how-build
+talk_page: https://www.infoq.com/presentations/platforms-social-engineering/
 eleventyComputed:
   slides: "/talks/{{ page.fileSlug }}/slides"
 ---

@@ -8,3 +8,35 @@ targetPort = 8080
 [[redirects]]
 from = "/contact-me"
 to = "/contact"
+
+[[redirects]]
+from = "/talks/monitorama-pdx-2023"
+to = "/talks/monitorama-pdx--monitoring-mastodons-a-story-about-hachyderm-2023"
+
+[[redirects]]
+from = "/talks/philly-ete-2023"
+to = "/talks/philly-emerging-tech-conference--hacking-the-pachyderm-scaling-servers-and-people-2023"
+
+[[redirects]]
+from = "/talks/qcon-sf-2023"
+to = "/talks/qcon-san-francisco--understanding-platforms-what-they-are-why-they-work-when-to-use-them-how-to-build-them-2023"
+
+[[redirects]]
+from = "/talks/sloconf-2023"
+to = "/talks/sloconf--motivating-slos-mathematically-2023"
+
+[[redirects]]
+from = "/talks/srecon-americas-2023"
+to = "/talks/srecon-americas--hacking-the-pachyderm-scaling-servers-and-people-2023"
+
+[[redirects]]
+from = "/talks/kubehuddle-2024"
+to = "/talks/kubehuddle--not-just-another-dei-panel-2024"
+
+[[redirects]]
+from = "/talks/kubecon-na-2024"
+to = "/talks/observability-day-kubecon-na--panel-opentelemetry-bridging-platform-and-enablement-2024"
+
+[[redirects]]
+from = "/talks/kubecrash-2024"
+to = "/talks/kubecrash-fall--feature-flag-all-the-things-2024"

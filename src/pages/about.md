@@ -1,18 +1,9 @@
 ---
 title: About Me
-order: 5
+order: 4
 ---
 
 <div data-atabs class="flow">
-  <section id="short" data-atabs-panel data-atabs-tab-label="Short" class="flow">
-
-Currently, I spend my days building out teams of humans as well as the systems and tooling to make life better for others.
-I'm a fellow of the Nivenly Foundation and a Director of the Haskell Foundation.
-If I’m not working or programming, I’m probably swing dancing or playing pool!
-Find me on [mastodon]({{socialMedia.mastodon.url}})! (or [elsewhere](/contact))
-
-  </section>
-
   <section id="long" data-atabs-panel data-atabs-tab-label="Long" class="flow">
 
 Currently, I spend my days building out teams of humans as well as the systems and tooling to make life better for others.
@@ -39,16 +30,43 @@ Research interest wise, I tend to get most into resilience engineering, psycholo
 I also read quite a bit, and frequently write about my findings on [mastodon]({{socialMedia.mastodon.url}}) and my blog.
 
   </section>
+  <section id="short" data-atabs-panel data-atabs-tab-label="Short" class="flow">
+
+Currently, I spend my days building out teams of humans as well as the systems and tooling to make life better for others.
+I'm a fellow of the Nivenly Foundation and a Director of the Haskell Foundation.
+If I’m not working or programming, I’m probably swing dancing or playing pool!
+Find me [online](/contact)!
+
+  </section>
   <section id="speaker" data-atabs-panel data-atabs-tab-label="Speaker" class="flow">
 
+## 165 Words / 973 Characters {.text-4}
+
 Hazel spends her days building out teams of humans as well as the systems and tooling to make life better for others.
-She's worked at a variety of companies, across a wide range of tech, and knows that the hardest problems to solve are the social ones.
+She's worked at a variety of companies and knows that the hardest problems to solve are the social ones.
 Hazel currently serves as a Director on the board of the Haskell Foundation, as a Fellow of the Nivenly Foundation, and is fondly known as the Infrastructure Witch of Hachyderm (a popular Mastodon instance).
 She also created the first official Haskell "setup" Github Action and helped turn it into an active community-maintained project.
 She enjoys traveling to speak at conferences, appearing on podcasts, mentoring others, and sharing what she's learned with the world.
 
 One of her favorite things is watching someone light up when they understand something for the first time, and a life goal of hers is to help as many people as possible experience that joy.
 She also loves shooting pool and going swing dancing, both as a leader and a follower.
+
+## 123 Words / 696 Characters {.text-4}
+
+Hazel spends her days building out teams of humans as well as the systems and tooling to make life better for others.
+She's worked at a variety of companies and knows that the hardest problems to solve are the social ones.
+Hazel currently serves as a Director of the Haskell Foundation, as a Fellow of the Nivenly Foundation, and is fondly known as the Infrastructure Witch of Hachyderm (a popular Mastodon instance).
+
+One of her favorite things is watching someone light up when they understand something for the first time, and a life goal of hers is to help as many people as possible experience that joy.
+She also loves shooting pool and going swing dancing, both as a leader and a follower.
+
+## 81 Words / 480 Characters {.text-4}
+
+Hazel spends her days building out teams of humans as well as the systems and tooling to make life better for others.
+She currently serves as a Director of the Haskell Foundation, as a Fellow of the Nivenly Foundation, and is fondly known as the Infrastructure Witch of Hachyderm (a popular Mastodon instance).
+
+One of her favorite joys is the light on someone's face when they understand something for the first time.
+She also loves shooting pool, swing dancing, and boardgames.
 
 [Headshot](/images/og.jpg)
 
