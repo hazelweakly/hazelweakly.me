@@ -20,9 +20,10 @@ eleventyImport:
       <a href="{{ talk.url }}" class="font-heading text-3">{{ talk.data.title }}</a>
     </p>
 
-    <div class="cluster no-gutter"> 
+    <div class="cluster no-gutter">
       <a href="{{ talk.data.event_site }}">{{ talk.data.event }}</a>
       <time class="italic" datetime="{{ talk.date.toISOString() }}">{{ talk.date | postDate }}</time>
+      {% if talk.date | isFutureDate %} (Upcoming!) {% endif %}
     </div>
 
     <div class="cluster">
@@ -51,9 +52,10 @@ eleventyImport:
       <a href="{{ podcast.url }}" class="font-heading text-3">{{ podcast.data.title }}</a>
     </p>
 
-    <div class="cluster no-gutter"> 
+    <div class="cluster no-gutter">
       <a href="{{ podcast.data.event_site }}">{{ podcast.data.event }}</a>
       <time class="italic" datetime="{{ podcast.date.toISOString() }}">{{ podcast.date | postDate }}</time>
+      {% if podcast.date | isFutureDate %} (Upcoming!) {% endif %}
     </div>
 
     <div class="cluster">

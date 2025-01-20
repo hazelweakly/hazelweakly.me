@@ -30,6 +30,9 @@ const postcss = async (cssCode, done) =>
 const postDate = (dateObj) =>
   DateTime.fromJSDate(dateObj).toUTC().toLocaleString(DateTime.DATE_MED);
 
+const isFutureDate = (dateObj) =>
+  DateTime.fromJSDate(dateObj).diffNow("days").days > 0;
+
 const slug = (str) =>
   !!str
     ? slugify(str, { lower: true, strict: true, remove: /["]/g })
@@ -56,6 +59,7 @@ const excerpt = (post) => {
 
 export const filters = {
   postDate,
+  isFutureDate,
   slug,
   toAbsoluteUrl,
   excerpt,

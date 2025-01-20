@@ -84,7 +84,7 @@ talk event title year=`date +%Y`:
   set -euo pipefail
   event_slug="$(echo "{{ event }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
   title_slug="$(echo "{{ title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
-  cat <<EOF > ./src/talks/"${event_slug}--${title_slug}-{{year}}".md
+  cat <<EOF > ./src/talks/"${event_slug}-{{year}}--${title_slug}".md
   ---
   title: "{{ title }}"
   event: "{{ event }}"

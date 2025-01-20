@@ -10,6 +10,10 @@ from = "/contact-me"
 to = "/contact"
 
 [[redirects]]
+from = "/talks"
+to = "/media"
+
+[[redirects]]
 from = "/talks/monitorama-pdx-2023"
 to = "/talks/monitorama-pdx--monitoring-mastodons-a-story-about-hachyderm-2023"
 
