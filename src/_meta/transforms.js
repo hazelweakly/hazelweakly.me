@@ -143,7 +143,7 @@ const generateSlides = async ({ dir, runMode, outputMode } = {}) => {
     "..",
     dir.output,
     "talks",
-    "qcon-sf-2023",
+    "qcon-san-francisco-2023--understanding-platforms-what-they-are-why-they-work-when-to-use-them-how-to-build-them",
     "slides.html",
   );
   const output = await exec(`pnpm build:html`, {
@@ -334,7 +334,7 @@ const blog = (api) =>
   api
     .getFilteredByTag("_blog")
     .filter((p) => !p?.data?.draft)
-    .filter(p => p?.data?.tags?.every(t => t !== "note" && t !== "rant"))
+    .filter((p) => p?.data?.tags?.every((t) => t !== "note" && t !== "rant"))
     .sort((a, b) => +a?.data?.order - +b?.data?.order);
 
 const headerPages = (api) =>

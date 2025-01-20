@@ -26,6 +26,10 @@ from = "/talks/qcon-sf-2023"
 to = "/talks/qcon-san-francisco--understanding-platforms-what-they-are-why-they-work-when-to-use-them-how-to-build-them-2023"
 
 [[redirects]]
+from = "/talks/qcon-sf-2023/slides"
+to = "/talks/qcon-san-francisco--understanding-platforms-what-they-are-why-they-work-when-to-use-them-how-to-build-them-2023/slides"
+
+[[redirects]]
 from = "/talks/sloconf-2023"
 to = "/talks/sloconf--motivating-slos-mathematically-2023"
 

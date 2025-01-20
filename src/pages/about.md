@@ -18,7 +18,7 @@ Happiness, to me, is a world in which people can show up authentically as their 
 I am the resident infrastructure witch of the [Hachyderm](https://hachyderm.io) mastodon instance, and love talking about how we've handled some pretty tricky issues without burning out people or servers.
 I also built the first set of official [GitHub actions](https://github.com/haskell-actions/setup) for the Haskell language and helped maintain that for a while, although I mostly sit on the backburner now as it's turned into a lovely project and ecosystem in my absence.
 I aspire to leave myself open for meaningful consulting and advising opportunities, and invest time towards mentoring others.
-I've given [talks](/media#speaking) in a few conferences about my experiences, appeared on quite a few [podcasts](/media#podcasts), and I love sharing what I've learned with the world.
+I've given [talks](/media/#talks) in a few conferences about my experiences, appeared on quite a few [podcasts](/media/#podcasts), and I love sharing what I've learned with the world.
 Lastly (but certainly not least), I currently serve as a Director on the board of the Haskell Foundation and as the first Fellow of the Nivenly Foundation.
 
 I do strongly believe that intersectional advocacy is not only needed, but necessary.
@@ -27,7 +27,7 @@ I have a focus on underrepresented minorities in tech because that aligns closes
 
 When I'm not working or programming, you can find me swing dancing, doing gymnastics, shooting pool, playing board games, playing with makeup, thrift shopping for the perfect dress, drinking coffee, sampling scotch, or playing with my dog, Lupita; I've been told I have too many hobbies, so, naturally, I like to add more over time.
 Research interest wise, I tend to get most into resilience engineering, psychological safety, organizational design, empathetic leadership, systems safety, build systems, distributed systems, programming language theory, type systems, category theory, formal verification, and information geometry.
-I also read quite a bit, and frequently write about my findings on [mastodon]({{socialMedia.mastodon.url}}) and my blog.
+I also read quite a bit, and frequently write about my findings on [mastodon]({{socialMedia.mastodon.url}}), [bluesky]({{socialMedia.bluesky.url}}) and my blog.
 
   </section>
   <section id="short" data-atabs-panel data-atabs-tab-label="Short" class="flow">

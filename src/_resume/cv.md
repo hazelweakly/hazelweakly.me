@@ -142,7 +142,7 @@ As a web developer, I maintained and developed websites and the infrastructure t
 - I am a member of the [Haskell Foundation](https://haskell.foundation/who-we-are/)'s Board of Directors and Executive Oversight committee. (2023--Present)
 - I am the first Fellow of the [Nivenly Foundation](https://nivenly.org/). (2024--Present)
 - I scaled the [Hachyderm](https://hachyderm.io) Mastodon instance into one of the largest in the world and am fondly known as the Infrastructure Witch of Hachyderm.
-- I have presented several talks, and appeared in many podcasts, which can be found [on my website](https://hazelweakly.me/talks): <https://hazelweakly.me/talks>
+- I have presented several talks, and appeared in many podcasts, which can be found [on my website](https://hazelweakly.me/media): <https://hazelweakly.me/media>
 - I obtained a B.S. in Computer Science from Portland State University
 
 :::
