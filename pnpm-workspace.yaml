@@ -1,0 +1,4 @@
+packages:
+  - "."
+  - "./src/_talks/*"
+  - "./slidev-theme"

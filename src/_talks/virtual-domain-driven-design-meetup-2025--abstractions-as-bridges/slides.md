@@ -91,7 +91,7 @@ Something you use to help _shape_ and _articulate_ the **desired emergent behavi
 <!--
 From Dr. Cat Hicks, great insight.
 
-Insight: Mindset + Context, Seed and Soil.
+Insight: Mindset + Context, Seed and Soil<sup>3</sup>.
 
 Remember that support? You can't build a bridge, no matter how tiny, without the support.
 -->
@@ -102,7 +102,7 @@ layout: fact
 
 # (Mindset x Context), (Seed + Soil)
 
-Interventions are the seeds.
+Interventions are the seeds<sup>1</sup>.
 
 Culture and politics are the soil.
 
@@ -135,6 +135,8 @@ zoom: 0.6
 ---
 
 # Leverage Points
+
+From Donella Meadows<sup>2</sup>:
 
 1. The power to transcend paradigms.
 2. The mindset or paradigm out of which the system — its goals, structure, rules, delays, parameters — arises.
@@ -190,7 +192,7 @@ layout: fact
 
 # The Real Power of Abstraction
 
-When done right, it changes the very fabric of how a collective perceives knowledge itself.
+When done right, it changes the very fabric of how a collective perceives knowledge itself.<sup>1</sup>
 
 <!--
 Story about my platform at Galois
@@ -205,3 +207,13 @@ layout: intro
 <!--
 Speaking of communities: Story time! What's your favorite abstraction, and why?
 -->
+
+---
+layout: default
+---
+
+# References
+
+1. Hicks, C. M. (2024, January 25). Psychological Affordances Can Provide a Missing Explanatory Layer for Why Interventions to Improve Developer Experience Take Hold or Fail. <https://doi.org/10.31234/osf.io/qz43x>
+2. Meadows, D. (1999). Leverage Points: Places to Intervene in a System. <https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/>
+3. Walton, G. M., & Yeager, D. S. (2020). Seed and Soil: Psychological Affordances in Contexts Help to Explain Where Wise Interventions Succeed or Fail. Current Directions in Psychological Science, 29(3), 219-226. <https://doi.org/10.1177/0963721420904453>
