@@ -29,7 +29,7 @@ jobs:
           if ${{ github.event_name == 'push' }}; then
             cmd='--prod'
           fi
-          nix develop -c netlify deploy $cmd
+          nix develop -c netlify deploy --cwd . --filter "hazelweakly.me" --dir=public $cmd
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

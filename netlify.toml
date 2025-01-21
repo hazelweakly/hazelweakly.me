@@ -1,5 +1,6 @@
 [build]
 publish = "public"
+base = "/"
 [dev]
 command = "pnpm start:prod"
 publish = "public"
@@ -52,4 +53,9 @@ to = "/talks/kubecrash-fall--feature-flag-all-the-things-2024"
 [[redirects]]
 from = '/talks/kubecrash-fall-2024--feature-flag-all-the-things/slides/*'
 to = '/talks/kubecrash-fall-2024--feature-flag-all-the-things/slides/index.html'
+status = 200
+
+[[redirects]]
+from = '/talks/virtual-domain-driven-design-meetup-2025--abstractions-as-bridges/slides/*'
+to = '/talks/virtual-domain-driven-design-meetup-2025--abstractions-as-bridges/slides/index.html'
 status = 200
