@@ -38,7 +38,7 @@ Attributes
 
 # Experience
 
-::: {.cv Title="Principal Architect - Platform" Company="[Datavant](https://datavant.com)" Date="Jan. 2024--Present"}
+::: {.cv Title="Principal Architect - Platform" Company="[Datavant](https://datavant.com)" Date="Jan. 2024--Aug. 2024"}
 
 Developed, oversaw, and drove the technical vision for Platform Engineering and Infrastructure at Datavant.
 Executed on broad impact projects with high visibility, leveled up the technical excellence of the organization, accelerated timelines exponentially, and derisked key initiatives.
