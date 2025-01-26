@@ -23,6 +23,7 @@ export const safelist = [
   "font-body",
   "font-mono",
   "w-full",
+  "px-0",
   "text-0",
   "text-1",
   "text-2",
