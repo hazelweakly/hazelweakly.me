@@ -70,7 +70,7 @@ line-height: 1.5 !important;
 
 # Software
 
-![](/SubwaySound.svg){.inline-block} `/ˈsɒf(t)wɛː/` _concept._
+![](/images/SubwaySound.svg){.inline-block} `/ˈsɒf(t)wɛː/` _concept._
 
 <center>
 
@@ -99,7 +99,7 @@ ol {
 
 # Configuration?
 
-![](/SubwaySound.svg){.inline-block} `/kənˌfɪɡjʊˈreɪʃn/` _concept._
+![](/images/SubwaySound.svg){.inline-block} `/kənˌfɪɡjʊˈreɪʃn/` _concept._
 
 <center>
 
