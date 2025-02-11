@@ -105,6 +105,8 @@ Awesome! Reach out to me via [email](mailto:speaking@hazelweakly.me) with the na
 (You can also reach out via one of the nifty options on my [contact me](/contact) page).
 If your event fits into the corporate events category, please also include your speaker budget.
 
+(PS: _please_ do not use this email to sign me up for something or to register me on my behalf for events, it is an alias to my personal email and using it in lieu of my personal breaks everything.)
+
 Thank you! I look forward to working with you!
 
 ---

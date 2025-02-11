@@ -68,7 +68,11 @@ She currently serves as a Director of the Haskell Foundation, as a Fellow of the
 One of her favorite joys is the light on someone's face when they understand something for the first time.
 She also loves shooting pool, swing dancing, and boardgames.
 
-[Headshot](/images/og.jpg)
+## Other Information
+
+- [Headshot](/images/og.jpg)
+- Title: `Fellow`
+- Affiliated Organization: `Nivenly Foundation`
 
   </section>
 </div>

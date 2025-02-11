@@ -91,9 +91,22 @@ talk event title year=`date +%Y`:
   location:
   date: $(date '+%F')
   abstract:  |
-  slides:
   talk_page:
   event_site:
   video:
+  eleventyComputed:
+    slides: "/talks/{{{{ page.fileSlug }}/slides"
   ---
   EOF
+
+slides event title year=`date +%Y`:
+  #!/usr/bin/env bash
+  set -euo pipefail
+  event_slug="$(echo "{{ event }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
+  title_slug="$(echo "{{ title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
+  dest=./src/_talks/"${event_slug}-{{year}}--${title_slug}"
+
+  cp -R ./src/_talks/kubecrash-fall-2024--feature-flag-all-the-things/ "$dest"
+  sed -i "s/feature-flag-all-the-things/$title_slug/g" "$dest"/package.json
+  sed -i '3s/:.*$/: "{{title}}"/' "$dest"/slides.md
+  sed -i -e '5,12d' -e '36,$d' "$dest"/slides.md

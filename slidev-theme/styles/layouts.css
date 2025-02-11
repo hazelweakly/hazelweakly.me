@@ -52,8 +52,34 @@
 .slidev-layout.quote {
   @apply grid h-full;
 
-  h1+p {
-    @apply text-4xl mt-2;
+  h1 {
+    position: relative;
+    font-weight: bold;
+    @apply px-10 text-6xl;
+  }
+
+  h1:after,
+  h1:before {
+    font-weight: normal;
+    opacity: 25%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 6em;
+    line-height: 1;
+  }
+
+  h1:after {
+    content: "”";
+    top: 0.75ch;
+    left: 75%;
+  }
+
+  h1:before {
+    content: "“";
+    top: -0.5ch;
   }
 }
 
