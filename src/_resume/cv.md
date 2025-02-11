@@ -10,7 +10,8 @@ contact:
 
 ::: cv
 
-Influential engineering leader, experienced in developer experience, observability, and distributed systems,
+Influential engineering leader and sought-after international keynote speaker;
+experienced in developer experience, observability, resilience, and distributed systems;
 with a focus on organizational change, holistic efficiency, and driving cross-functional business results in a sustainable manner.
 
 :::
@@ -37,6 +38,16 @@ Attributes
 :::
 
 # Experience
+
+::: {.cv Title="Sr. Lead Software Engineer - Software Defined Infrastructure" Company="[JPMorgan Chase](https://chase.com)" Date="Sep. 2024--Present"}
+
+Due to the nature of this role, publicly provided details are scarce. Details may be provided upon request, if feasible.
+
+Worked to build a next-generation compute and networking platform utilizing cutting edge technology.
+Acted as a subject matter expert to help validate and inform the implementation strategy for the project.
+Facilitated communications across teams and organizations, guiding prioritization of roadmaps.
+
+:::
 
 ::: {.cv Title="Principal Architect - Platform" Company="[Datavant](https://datavant.com)" Date="Jan. 2024--Aug. 2024"}
 

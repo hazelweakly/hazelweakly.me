@@ -59,3 +59,8 @@ status = 200
 from = '/talks/virtual-domain-driven-design-meetup-2025--abstractions-as-bridges/slides/*'
 to = '/talks/virtual-domain-driven-design-meetup-2025--abstractions-as-bridges/slides/index.html'
 status = 200
+
+[[redirects]]
+from = '/talks/cfgmgmtcamp-2025-01-03--working-configs-humanity-the-real-world-joy-and-happiness-pick-two-ish/slides/*'
+to = '/talks/cfgmgmtcamp-2025-01-03--working-configs-humanity-the-real-world-joy-and-happiness-pick-two-ish/slides/index.html'
+status = 200
