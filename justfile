@@ -79,17 +79,18 @@ podcast title:
   ---
   EOF
 
-talk event title year=`date +%Y`:
+talk event title date=`date +%Y`:
   #!/usr/bin/env bash
   set -euo pipefail
   event_slug="$(echo "{{ event }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
   title_slug="$(echo "{{ title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
-  cat <<EOF > ./src/talks/"${event_slug}-{{year}}--${title_slug}".md
+  year="$(date --date='{{date}}' '+%Y')"
+  cat <<EOF > ./src/talks/"${event_slug}-${year}--${title_slug}".md
   ---
   title: "{{ title }}"
   event: "{{ event }}"
   location:
-  date: $(date '+%F')
+  date: {{ date }}
   abstract:  |
   talk_page:
   event_site:
@@ -99,12 +100,13 @@ talk event title year=`date +%Y`:
   ---
   EOF
 
-slides event title year=`date +%Y`:
+slides event title date=`date +%Y`:
   #!/usr/bin/env bash
   set -euo pipefail
   event_slug="$(echo "{{ event }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
   title_slug="$(echo "{{ title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)"
-  dest=./src/_talks/"${event_slug}-{{year}}--${title_slug}"
+  year="$(date --date='{{date}}' '+%Y')"
+  dest=./src/_talks/"${event_slug}-${year}--${title_slug}"
 
   cp -R ./src/_talks/kubecrash-fall-2024--feature-flag-all-the-things/ "$dest"
   sed -i "s/feature-flag-all-the-things/$title_slug/g" "$dest"/package.json
