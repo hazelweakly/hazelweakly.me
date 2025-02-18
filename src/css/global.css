@@ -15,6 +15,7 @@
   --color-fg: var(--color-dark);
   --color-bg: var(--color-light);
 }
+
 html.dark {
   --color-primary: var(--hue-primary) 35% 66%;
   --color-secondary: var(--hue-secondary) 35% 66%;
@@ -59,8 +60,7 @@ pre {
   line-height: theme("lineHeight.tight");
   border: theme("borderSpacing.0-5") solid theme("borderColor.secondary");
   padding: theme("margin.0-5");
-  box-shadow: theme("margin.0-5") theme("margin.0-5") 0 0
-    theme("borderColor.primary");
+  box-shadow: theme("margin.0-5") theme("margin.0-5") 0 0 theme("borderColor.primary");
   overflow-x: auto;
 }
 
@@ -140,9 +140,9 @@ h4 {
   --flow-space: var(--space-4);
 }
 
-h2 + *,
-h3 + *,
-h4 + * {
+h2+*,
+h3+*,
+h4+* {
   --flow-space: var(--space-base);
 }
 
@@ -150,7 +150,7 @@ h4 + * {
   scroll-margin-top: 1.5ex;
 }
 
-nav > ul {
+nav>ul {
   padding: theme("spacing.0");
 }
 
@@ -179,6 +179,6 @@ blockquote {
   padding: theme("padding.1") theme("padding.2");
 }
 
-.eleventy-plugin-youtube-embed > * {
+.eleventy-plugin-youtube-embed>* {
   max-width: unset;
 }

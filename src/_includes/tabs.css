@@ -12,3 +12,23 @@
 [role="tab"][aria-selected="true"] {
   border-bottom-color: hsl(var(--color-primary));
 }
+
+.headshot {
+  height: auto;
+}
+
+figure.bordered-box {
+  border: calc(clamp(0.72rem, 0.72rem + 0vw, 0.72rem) * 0.5) solid hsl(var(--color-secondary));
+  padding: calc(clamp(0.72rem, 0.72rem + 0vw, 0.72rem) * 0.5);
+  box-shadow: calc(clamp(0.72rem, 0.72rem + 0vw, 0.72rem) * 0.5) calc(clamp(0.72rem, 0.72rem + 0vw, 0.72rem) * 0.5) 0 0 hsl(var(--color-primary));
+  margin-top: var(--space-0-5);
+  margin-right: var(--space-2);
+}
+
+figure:has(.headshot) {
+  width: 25%;
+}
+
+figure:has(.float) {
+  float: left;
+}

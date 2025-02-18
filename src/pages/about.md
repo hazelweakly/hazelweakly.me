@@ -40,6 +40,8 @@ Find me [online](/contact)!
   </section>
   <section id="speaker" data-atabs-panel data-atabs-tab-label="Speaker" class="flow">
 
+Use with permission.
+
 ## 165 Words / 973 Characters {.text-4}
 
 Hazel spends her days building out teams of humans as well as the systems and tooling to make life better for others.
@@ -70,9 +72,36 @@ She also loves shooting pool, swing dancing, and boardgames.
 
 ## Other Information
 
-- [Headshot](/images/og.jpg)
-- Title: `Fellow`
-- Affiliated Organization: `Nivenly Foundation`
+- [**Headshot**](/images/og.jpg)
+- **Title:** Fellow
+- **Affiliated Organization:** Nivenly Foundation
+- **Email:** Reach out to me to ensure you use the correct one
+
+  </section>
+  <section id="executive" data-atabs-panel data-atabs-tab-label="Executive" class="flow">
+
+![](./src/images/og.jpg){.headshot}
+
+Frequently described as a "firehose of insights", Hazel has become known for her uncanny ability to solve impossible problems, create centers of continuous innovation, and to inspire those around her to show up as their authentically whole selves.
+Hazel Weakly serves as an Engineering Leader for Software Defined Infrastructure at JPMorgan Chase, where she drives deep technical innovation on a firm wide platform transformation initiative to build the next generation of compute and networking systems.
+
+Previously, she held the positions of Principal Architect and Head of Platform Engineering at Datavant, where she spearheaded the vision for Platform Engineering, Systems Reliability, and Developer Experience.
+During her tenure, her outcomes included enabling zero-downtime platform migrations across multiple environments, data informed re-imagining of developer experience, and unlocking cross-functional alignment.
+Hazel's collaborative approach was instrumental in helping Datavant realize measurable improvements to organizational efficiency, engineering trust in leadership, and system reliability.
+Her work paved the foundations for Datavant to continue its mission of making the world's health data secure, accessible and actionable.
+
+As a distinguished technology leader with expertise in sociotechnical systems and organizational transformation, Hazel has rapidly made a name for herself due to her ability to enact lasting change.
+Known for her holistic and empathetic approach to engineering leadership, Hazel excels in building high-performing, diverse teams and fostering cultures of technical excellence.
+Her leadership philosophy emphasizes developer thriving, cross-functional collaboration, and data-driven decision-making.
+She believes, and demonstrates, that excellence and high performance does not require sacrificing what makes humans magical.
+
+As a respected voice in the technology community, Hazel serves on the Board of Directors for the Haskell Foundation and holds the distinction of being the first Fellow of the Nivenly Foundation.
+Hazel's writing is read worldwide and she is an internationally sought after keynote speaker who has spoken at some of the most prominent conferences in the world, including UK's State of Open Con, QCon San Francisco, and Kubecon NA.
+Her mission is to help create a world in which people learn together and work to build a sense of wholeness in their own communities.
+
+Hazel's vision centers on transforming how humanity approaches knowledge work with a focus on understanding emergent behavior.
+Systems that enable rapid innovation, maintain stringent compliance standards, and embrace the complexities of humanity, are natural outcomes of that understanding.
+As she guides the industry to push the boundaries of what's possible, she remains determined to continuously make the world better than she finds it.
 
   </section>
 </div>
