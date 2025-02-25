@@ -9,7 +9,7 @@ abstract: |
   Together we'll go on a journey, touring the space of where humans meet configuration as code with a blend of stories, visions, laments, and insights.
 talk_page: https://cfp.cfgmgmtcamp.org/ghent2025/talk/39GGMS/
 event_site: https://cfgmgmtcamp.org/ghent2025/
-video: https://www.youtube.com/watch?v=mBJdzRdWjVg
+video: https://www.youtube.com/watch?v=0CGp5auXgFQ
 eleventyComputed:
   slides: "/talks/{{ page.fileSlug }}/slides"
 ---
