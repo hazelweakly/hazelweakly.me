@@ -1,9 +1,10 @@
 :root {
   --slidev-theme-primary: #5d8392;
 
-  p,
-  li {
-    @apply text-2xl;
+  p:not([class]),
+  li:not([class]) {
+    font-size: 1.5rem;
+    line-height: 1.5;
   }
 }
 
@@ -45,7 +46,11 @@
   @apply text-center grid h-full;
 
   h1 {
-    @apply text-8xl font-700;
+    @apply text-9xl font-400;
+  }
+
+  h1+*:not([class]) {
+    @apply font-400 text-7xl;
   }
 }
 
@@ -84,7 +89,57 @@
 }
 
 .slidev-layout.section {
+  background-color: hsl(var(--color-fg));
+
   h1 {
-    @apply text-8xl font-400 leading-20;
+    @apply text-9xl;
+    color: hsl(var(--color-bg));
   }
+}
+
+/* \32 x2 is written in css as .2x2 */
+
+.\32 x2 {
+  display: grid;
+  grid-template-rows: repeat(2, minmax(min-content, 1fr));
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+table.\32 x2 tbody,
+.\32 x2 tr,
+.\32 x2 thead {
+  display: contents;
+}
+
+.\32 x2 td {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-color: hsl(var(--color-secondary));
+  border-style: solid;
+  border-width: 3px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.my-auto:has(.\32 x2) {
+  height: 100%;
+}
+
+.slidev-layout .slidev-vclick-target p:not([class]),
+.slidev-layout .slidev-vclick-target li:not([class]) {
+  @apply text-4xl;
+}
+
+.slidev-layout .my-auto:has(.slidev-vclick-target) {
+  height: 100%;
+}
+
+.slidev-layout .slidev-vclick-target {
+  width: 100%;
 }

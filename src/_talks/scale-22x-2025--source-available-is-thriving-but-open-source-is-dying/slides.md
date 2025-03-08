@@ -40,6 +40,13 @@ defaults:
 
 # Source Available is Thriving but Open Source is Dying
 
+<!--
+Fellow of Nivenly Foundation.
+Director on board of Haskell Foundation.
+
+Complex issue. This is one perspective.
+-->
+
 ---
 layout: center
 ---
@@ -208,6 +215,7 @@ layout: intro
 
 <!--
 pressure => requires capital to address, power to push back
+
 attacks => requires power to counter, capital to withstand
 
 Funding + Politics => harder to get power and capital
@@ -223,6 +231,7 @@ We're attempting to answer the question "how does collaboration work at scale?"
 
 <!--
 Strong implications for how communities will form and function.
+
 Will shape what we can do, how we do it, our possibilities, etc.
 -->
 
@@ -234,7 +243,9 @@ What do you mean we live in the real world? {.text-4xl}
 
 <!--
 Interaction points between collectives.
+
 Organizing and understanding decision making.
+
 Economies, Governments.
 -->
 
@@ -256,7 +267,7 @@ layout: quote
 2. For some definition of "become", up to--and including--"_MY_ project figured that out 25 years ago, pffh"
 3. Not sure what sustainability means, either...
 4. Remain? Says who?
-5. Exploits are only exploits if they come from the threat model region of "I care about that," otherwise they're just sparkling code paths.
+5. Exploits are only exploits if they come from the threat model region of "I care about that," otherwise they're just sparkling code paths.go
 
 ---
 layout: section
@@ -264,15 +275,34 @@ layout: section
 
 # Funding Crisis
 
+<!--
+Every foundation all at once.
+
+Funding dried up.
+
+Realized "go out of their way to hand us  money" didn't work anymore.
+-->
+
 ---
 
 # ZIRP go ZIP
+
+<!--
+- Good will.
+- Employed OSS eliminated.
+-->
 
 ---
 layout: fact
 ---
 
 # Crisis? Or bad business model?
+
+<!--
+Open Source is not a business strategy.
+
+OSS doesn't have a viable way to translate between economies.
+-->
 
 ---
 
@@ -291,26 +321,8 @@ layout: section
 # Political Turmoil
 
 <!--
-
-# Hard Power & Soft Power
-
-
-# Consumption & Production
-
--->
-
-<!--
-Hard Power:
-- Compelled Action
-- capitalism exercises via: (economics, conflict)
-- oss exercises via: (time, values: four freedoms, policy)
-
-Soft Power:
-- Influenced Action
-- capitalism exercises via: (culture, values, policy)
-- oss exercises via: (economics, conflict, culture)
-
-Differences: economics, time, conflict, policy, values
+- Hard Power & Soft Power
+- Consumption & Production
 -->
 
 ---
@@ -401,6 +413,10 @@ layout: intro
 - Are you a cook or a chef?
 - Project? Product? Community? Ecosystem?
 - What are your problems?
+
+---
+
+# It's not Hopeless, it's just Dire
 
 ---
 layout: default

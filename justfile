@@ -112,3 +112,5 @@ slides event title date=`date +%Y`:
   sed -i "s/feature-flag-all-the-things/$title_slug/g" "$dest"/package.json
   sed -i '3s/:.*$/: "{{title}}"/' "$dest"/slides.md
   sed -i -e '5,12d' -e '36,$d' "$dest"/slides.md
+  sed -i 's/^ layout: default$/   layout: fact/' "$dest"/slides.md
+  sed -i 's/--color-secondary/--color-fg/' "$dest"/slides.md
