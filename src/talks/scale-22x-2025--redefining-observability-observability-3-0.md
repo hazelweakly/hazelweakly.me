@@ -11,7 +11,8 @@ abstract: |
   The talk will be packed with concrete examples of meshing institutional context with operational excellence. We'll also go over actionable steps that can be taken regardless of where you are on your observability journey, regardless of what your budget is, and how to get started when you don't have time.
 
   Join Hazel as she blends together a vision of the future with the realities of today in a way that prepares you to seize the moment and level up your company's ability to effectively operate across functional and disciplinary lines.
-slides:
+eleventyComputed:
+  slides: "/talks/{{ page.fileSlug }}/slides"
 talk_page: https://www.socallinuxexpo.org/scale/22x/presentations/redefining-observability-observability-30
 event_site: https://www.socallinuxexpo.org/scale/22x
 video:

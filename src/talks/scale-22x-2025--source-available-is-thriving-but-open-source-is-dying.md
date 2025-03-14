@@ -19,7 +19,8 @@ abstract: |
   The situation isn’t hopeless, but it is urgent. There are potential solutions we can utilize, and possible directions we can go. There are people and programs out there working right now to reverse the course, but heightened awareness and action is urgently needed. Right now, things are bad, and they’re getting much worse.
 
   What's next after awareness? That's for us to decide and act on together. But we can delay not a moment longer; for many, by the time you hear this talk, it will already be too late.
-slides:
+eleventyComputed:
+  slides: "/talks/{{ page.fileSlug }}/slides"
 talk_page: https://www.socallinuxexpo.org/scale/22x/presentations/source-available-thriving-open-source-dying
 event_site: https://www.socallinuxexpo.org/scale/22x
 video:
