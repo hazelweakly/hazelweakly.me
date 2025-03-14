@@ -280,7 +280,7 @@ Every foundation all at once.
 
 Funding dried up.
 
-Realized "go out of their way to hand us  money" didn't work anymore.
+Realized "rely on others to go out of their way to hand us money" didn't work anymore.
 -->
 
 ---
