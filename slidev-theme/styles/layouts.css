@@ -11,6 +11,7 @@
 .slidev-layout {
   h1 {
     color: var(--slidev-theme-primary);
+    @apply text-6xl;
   }
 }
 
