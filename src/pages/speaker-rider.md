@@ -95,6 +95,7 @@ Cancelling a speaking engagement is something I try very, very hard to avoid; so
 That said, the ongoing global pandemic means that a cancellation is more likely than ever before.
 In the case of a viral surge, either globally or locally, as a result of a new variant or not, I reserve the right to pull out of your event for my own safety and the safety of others.
 I also reserve the right to pull out of attending an event in person should sudden and unavoidable circumstances make it prohibitively unsafe to attend.
+Additionally, the political climate of the US necessitates considering US engagements as indefinitely tentative; I maintain diligence in monitoring the situation and will reach out promptly if need arises.
 In that case, I will make my best effort to offer a remote presentation.
 If that is not possible and it is appropriate to do so, I may suggest an alternate speaker take my slot.
 
