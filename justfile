@@ -108,9 +108,8 @@ slides event title date=`date +%Y`:
   year="$(date --date='{{date}}' '+%Y')"
   dest=./src/_talks/"${event_slug}-${year}--${title_slug}"
 
-  cp -R ./src/_talks/kubecrash-fall-2024--feature-flag-all-the-things/ "$dest"
-  sed -i "s/feature-flag-all-the-things/$title_slug/g" "$dest"/package.json
+  cp -R ./src/_talks/scale-22x-2025--source-available-is-thriving-but-open-source-is-dying/ "$dest"
+  sed -i "s/source-available-is-thriving-but-open-source-is-dying/$title_slug/g" "$dest"/package.json
   sed -i '3s/:.*$/: "{{title}}"/' "$dest"/slides.md
-  sed -i -e '5,12d' -e '36,$d' "$dest"/slides.md
-  sed -i 's/^ layout: default$/   layout: fact/' "$dest"/slides.md
-  sed -i 's/--color-secondary/--color-fg/' "$dest"/slides.md
+  sed -i -e '5,19d' -e '41,$d' "$dest"/slides.md
+  echo "# {{title}}" >> "$dest"/slides
