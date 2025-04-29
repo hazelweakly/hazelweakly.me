@@ -7,6 +7,9 @@ start:
 start-prod:
   pnpm start:prod
 
+build:
+  pnpm build
+
 resume:
   cd src/_resume && \
     pandoc -s \

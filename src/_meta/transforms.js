@@ -32,6 +32,7 @@ import { exec as execSync } from "child_process";
 import { promisify } from "util";
 const exec = promisify(execSync);
 import postHtmlPlugin from "./helmet.js";
+import { parse, stringify } from "smol-toml";
 
 const starryNight = await createStarryNight(all);
 
@@ -152,6 +153,11 @@ const generateSlides = async ({ dir, runMode, outputMode } = {}) => {
     cwd: join(__dirname, "..", ".."),
   }).catch((e) => e);
 
+  const netlifyFile = fs
+    .readFileSync(join(__dirname, "..", "..", "netlify.toml"))
+    .toString();
+  const netlifyCfg = parse(netlifyFile);
+
   // everything else was built with sli.dev
   for (const talk of slides) {
     const outdir = join(talkdir, talk, "slides");
@@ -160,11 +166,22 @@ const generateSlides = async ({ dir, runMode, outputMode } = {}) => {
       `pnpm slidev build --base /talks/${talk}/slides/ --out ${outdir}`,
       { cwd: join(dir.input, "_talks", talk) },
     );
-    console.log(
-      "Remember to ensure that the redirects in netlify.toml has everything you need for ",
-      talk,
-    );
+
+    if (
+      !netlifyCfg.redirects.some((r) => r.from === `/talks/${talk}/slides/*`)
+    ) {
+      netlifyCfg.redirects.push({
+        from: `/talks/${talk}/slides/*`,
+        to: `/talks/${talk}/slides/index.html`,
+        status: 200,
+      });
+    }
   }
+
+  fs.writeFileSync(
+    join(__dirname, "..", "..", "netlify.toml"),
+    stringify(netlifyCfg),
+  );
 
   return output;
 };
@@ -349,6 +366,8 @@ const blog = (api) =>
     .filter((p) => p?.data?.tags?.every((t) => t !== "note" && t !== "rant"))
     .sort((a, b) => +a?.data?.order - +b?.data?.order);
 
+const visible = (api) => api.getAll().filter((p) => !p?.data?.draft);
+
 const headerPages = (api) =>
   pages(api).filter(
     (p) =>
@@ -388,5 +407,6 @@ export default {
     footerPages,
     talks,
     podcasts,
+    visible,
   },
 };

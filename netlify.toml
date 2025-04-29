@@ -1,6 +1,7 @@
 [build]
 publish = "public"
 base = "/"
+
 [dev]
 command = "pnpm start:prod"
 publish = "public"
@@ -51,16 +52,46 @@ from = "/talks/kubecrash-2024"
 to = "/talks/kubecrash-fall--feature-flag-all-the-things-2024"
 
 [[redirects]]
-from = '/talks/kubecrash-fall-2024--feature-flag-all-the-things/slides/*'
-to = '/talks/kubecrash-fall-2024--feature-flag-all-the-things/slides/index.html'
+from = "/talks/kubecrash-fall-2024--feature-flag-all-the-things/slides/*"
+to = "/talks/kubecrash-fall-2024--feature-flag-all-the-things/slides/index.html"
 status = 200
 
 [[redirects]]
-from = '/talks/virtual-domain-driven-design-meetup-2025--abstractions-as-bridges/slides/*'
-to = '/talks/virtual-domain-driven-design-meetup-2025--abstractions-as-bridges/slides/index.html'
+from = "/talks/virtual-domain-driven-design-meetup-2025--abstractions-as-bridges/slides/*"
+to = "/talks/virtual-domain-driven-design-meetup-2025--abstractions-as-bridges/slides/index.html"
 status = 200
 
 [[redirects]]
-from = '/talks/cfgmgmtcamp-2025--working-configs-humanity-the-real-world-joy-and-happiness-pick-two-ish/slides/*'
-to = '/talks/cfgmgmtcamp-2025--working-configs-humanity-the-real-world-joy-and-happiness-pick-two-ish/slides/index.html'
+from = "/talks/cfgmgmtcamp-2025--working-configs-humanity-the-real-world-joy-and-happiness-pick-two-ish/slides/*"
+to = "/talks/cfgmgmtcamp-2025--working-configs-humanity-the-real-world-joy-and-happiness-pick-two-ish/slides/index.html"
+status = 200
+
+[[redirects]]
+from = "/talks/linuxfest-northwest-2025--carrying-the-torch-grief-and-remembrance-in-open-source/slides/*"
+to = "/talks/linuxfest-northwest-2025--carrying-the-torch-grief-and-remembrance-in-open-source/slides/index.html"
+status = 200
+
+[[redirects]]
+from = "/talks/linuxfest-northwest-2025--the-geology-of-open-source/slides/*"
+to = "/talks/linuxfest-northwest-2025--the-geology-of-open-source/slides/index.html"
+status = 200
+
+[[redirects]]
+from = "/talks/observability-day-kubecon-eu-2025--operationalizing-observability-the-invisible-parts/slides/*"
+to = "/talks/observability-day-kubecon-eu-2025--operationalizing-observability-the-invisible-parts/slides/index.html"
+status = 200
+
+[[redirects]]
+from = "/talks/platform-engineering-day-kubecon-eu-2025--so-you-want-to-hire-for-platform-engineering/slides/*"
+to = "/talks/platform-engineering-day-kubecon-eu-2025--so-you-want-to-hire-for-platform-engineering/slides/index.html"
+status = 200
+
+[[redirects]]
+from = "/talks/scale-22x-2025--redefining-observability-observability-3-0/slides/*"
+to = "/talks/scale-22x-2025--redefining-observability-observability-3-0/slides/index.html"
+status = 200
+
+[[redirects]]
+from = "/talks/scale-22x-2025--source-available-is-thriving-but-open-source-is-dying/slides/*"
+to = "/talks/scale-22x-2025--source-available-is-thriving-but-open-source-is-dying/slides/index.html"
 status = 200
