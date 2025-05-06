@@ -1,11 +1,17 @@
-import { fileURLToPath } from "node:url";
-export default {
+import { defineConfig } from "vite";
+
+export default defineConfig({
   build: {
+    assetsInlineLimit: 0,
     emptyOutDir: true,
-    rollupOptions: {
-      external: [
-        fileURLToPath(new URL("/images/rock-cycle.png", import.meta.url)),
-      ],
+  },
+  slidev: {
+    vue: {
+      template: {
+        transformAssetUrls: {
+          includeAbsolute: false,
+        },
+      },
     },
   },
-};
+});
