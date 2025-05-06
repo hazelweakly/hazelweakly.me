@@ -1,6 +1,4 @@
-import { defineConfig } from "vite";
-
-export default defineConfig({
+export default {
   build: {
     assetsInlineLimit: 0,
     emptyOutDir: true,
@@ -14,4 +12,4 @@ export default defineConfig({
       },
     },
   },
-});
+};
