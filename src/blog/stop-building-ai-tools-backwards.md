@@ -80,7 +80,7 @@ Whatever floats your ducky.
 So, I'm going to walk through one of the anti-patterns I see in AI tooling and fix it by taking an evidence-based teaching process and imagining it augmented with AI.
 The teaching process, by the way, is: **Explain, Demonstrate, Guide, Enhance.**
 
-If you've ever done boy scouts, you'll recognize this as their EDGE method with a small difference; rather than "enable", I'm using "enhance".
+If you've ever been in scouting, you'll recognize this as their EDGE method with a small difference; rather than "enable", I'm using "enhance".
 The reason for that is because "enable" is about having someone perform the action, but we are already sprinkling human actions all the way through the process.
 Instead, "enhance" is going to be about feeding that human action into the next iteration of problem solving, so that the next time someone does something, they get even better.
 Ideally, we want to encourage and inspire even more ambitious tasks, guiding people towards increasingly effective actions.
