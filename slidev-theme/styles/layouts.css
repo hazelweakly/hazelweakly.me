@@ -35,7 +35,7 @@
   @apply text-center grid h-full;
 
   h1 {
-    @apply text-8xl font-700;
+    @apply text-8xl font-400;
   }
 
   h1+p {
@@ -60,7 +60,6 @@
 
   h1 {
     position: relative;
-    font-weight: bold;
     @apply px-10 text-6xl;
   }
 

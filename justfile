@@ -115,4 +115,4 @@ slides event title date=`date +%Y`:
   sed -i "s/source-available-is-thriving-but-open-source-is-dying/$title_slug/g" "$dest"/package.json
   sed -i '3s/:.*$/: "{{title}}"/' "$dest"/slides.md
   sed -i -e '5,19d' -e '41,$d' "$dest"/slides.md
-  echo "# {{title}}" >> "$dest"/slides
+  echo "# {{title}}" >> "$dest"/slides.md
