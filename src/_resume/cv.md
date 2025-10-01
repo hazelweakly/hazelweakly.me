@@ -154,6 +154,6 @@ As a web developer, I maintained and developed websites and the infrastructure t
 - I am the first Fellow of the [Nivenly Foundation](https://nivenly.org/). (2024--Present)
 - I scaled the [Hachyderm](https://hachyderm.io) Mastodon instance into one of the largest in the world and am fondly known as the Infrastructure Witch of Hachyderm.
 - I have presented several talks, and appeared in many podcasts, which can be found [on my website](https://hazelweakly.me/media): <https://hazelweakly.me/media>
-- I obtained a B.S. in Computer Science from Portland State University
+- I obtained a B.S. in Computer Science from Portland State University in Portland, OR, USA.
 
 :::
