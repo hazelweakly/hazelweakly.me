@@ -4,7 +4,7 @@ author: Hazel Weakly
 contact:
   address: |
     Seattle, Washington, USA
-  phone: "[(503) 369--8931](tel:5033698931)"
+  phone: "[+1-(503) 369--8931](tel:+15033698931)"
   email: "[hazel@theweaklys.com](mailto:hazel@theweaklys.com)"
 ---
 
@@ -39,7 +39,7 @@ Attributes
 
 # Experience
 
-::: {.cv Title="Sr. Lead Software Engineer - Software Defined Infrastructure" Company="[JPMorgan Chase](https://chase.com)" Date="Sep. 2024--Present"}
+::: {.cv Title="Sr. Lead Software Engineer - Software Defined Infrastructure" Company="[JPMorgan Chase](https://chase.com)" Date="Sep. 2024--Present" Location="Seattle, WA, USA"}
 
 Due to the nature of this role, publicly provided details are scarce. Details may be provided upon request, if feasible.
 
@@ -49,7 +49,7 @@ Facilitated communications across teams and organizations, guiding prioritizatio
 
 :::
 
-::: {.cv Title="Principal Architect - Platform" Company="[Datavant](https://datavant.com)" Date="Jan. 2024--Aug. 2024"}
+::: {.cv Title="Principal Architect - Platform" Company="[Datavant](https://datavant.com)" Date="Jan. 2024--Aug. 2024" Location="Seattle, WA, USA"}
 
 Developed, oversaw, and drove the technical vision for Platform Engineering and Infrastructure at Datavant.
 Executed on broad impact projects with high visibility, leveled up the technical excellence of the organization, accelerated timelines exponentially, and derisked key initiatives.
@@ -63,7 +63,7 @@ Executed on broad impact projects with high visibility, leveled up the technical
 
 :::
 
-::: {.cv Title="Engineering Manager - Platform" Company="[Datavant](https://datavant.com)" Date="Sep. 2023--Jan. 2024"}
+::: {.cv Title="Engineering Manager - Platform" Company="[Datavant](https://datavant.com)" Date="Sep. 2023--Jan. 2024" Location="Seattle, WA, USA"}
 
 Hired a long-term Head of Platform, grew team stability and fostered a healthy culture throughout rapid org evolution, while improving team-level efficiency.
 
@@ -74,7 +74,7 @@ Hired a long-term Head of Platform, grew team stability and fostered a healthy c
 
 :::
 
-::: {.cv Title="Head of Platform" Company="[Datavant](https://datavant.com)" Date="May 2023--Sep. 2023"}
+::: {.cv Title="Head of Platform" Company="[Datavant](https://datavant.com)" Date="May 2023--Sep. 2023" Location="Seattle, WA, USA"}
 
 Led the Platform Org in an explicitly interim capacity, focusing on preparing the Org to go through an operational maturity transformation and be taken over by a long-term leader successfully.
 
@@ -84,7 +84,7 @@ Led the Platform Org in an explicitly interim capacity, focusing on preparing th
 
 :::
 
-::: {.cv Title="Team Lead" Company="[Seaplane.io](https://seaplane.io)" Date="Aug. 2022--Jan. 2023"}
+::: {.cv Title="Team Lead" Company="[Seaplane.io](https://seaplane.io)" Date="Aug. 2022--Jan. 2023" Location="Vancouver, WA, USA"}
 
 Took on technical leadership of the infrastructure team, guiding the infrastructure of Seaplane, and enabling other teams to execute on building out critical competencies for the platform.
 
@@ -95,7 +95,7 @@ Took on technical leadership of the infrastructure team, guiding the infrastruct
 
 :::
 
-::: {.cv Title="Staff SRE" Company="[Eden Health](https://edenhealth.com)" Date="Sept. 2021--Aug. 2022"}
+::: {.cv Title="Staff SRE" Company="[Eden Health](https://edenhealth.com)" Date="Sept. 2021--Aug. 2022" Location="Portland, OR, USA"}
 
 Took a leading role in prioritizing security related initiatives.
 Strong focus on improving the developer experience, design systems, and architecture.
@@ -108,7 +108,7 @@ Strong focus on improving the developer experience, design systems, and architec
 
 :::
 
-::: {.cv .hidden Title="Build/Release Engineer" Company="[Galois, Inc.](https://galois.com)" Date="Dec. 2019--Sept. 2021"}
+::: {.cv .hidden Title="Build/Release Engineer" Company="[Galois, Inc.](https://galois.com)" Date="Dec. 2019--Sept. 2021" Location="Portland, OR, USA"}
 
 Took a leading role in the build out of the DevOps team as its first member.
 Participated in contracts for the Department of Defense for transitionable R&D initiatives.

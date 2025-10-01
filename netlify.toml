@@ -95,3 +95,8 @@ status = 200
 from = "/talks/scale-22x-2025--source-available-is-thriving-but-open-source-is-dying/slides/*"
 to = "/talks/scale-22x-2025--source-available-is-thriving-but-open-source-is-dying/slides/index.html"
 status = 200
+
+[[redirects]]
+from = "/talks/ldx3-2025--so-you-want-to-hire-engineering-force-multipliers/slides/*"
+to = "/talks/ldx3-2025--so-you-want-to-hire-engineering-force-multipliers/slides/index.html"
+status = 200

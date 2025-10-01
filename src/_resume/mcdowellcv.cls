@@ -193,14 +193,15 @@
 \newtoggle{lefttitledefined}
 \newtoggle{righttitledefined}
 
-\newenvironment{cvsubsection}[4][1]{
+\newenvironment{cvsubsection}[5][1]{
 	\filbreak
 	\notblank{#2}{\toggletrue{centertitledefined}}{}
 	\notblank{#3}{\toggletrue{lefttitledefined}}{}
 	\notblank{#4}{\toggletrue{righttitledefined}}{}
+	\notblank{#5}{\toggletrue{righttitledefined}}{}
 	\ifboolexpr{togl {centertitledefined} or togl {lefttitledefined} or togl {righttitledefined}}{
-		\begin{tabu} to 1\textwidth { X[l,p] X[c,p] X[r,p] }
-			\textbf{#3} & \textbf{#2} & \textbf{#4} \\
+    \begin{tabu} to 1\textwidth { X[1,l] X[2,c] X[1,r] X[1,r] }
+      \textbf{#3} & \textbf{#2} & \small{\textbf{#4}} & \small{\textbf{#5}} \\
 		\end{tabu}
 		% Add space according to the specidied number of lines
 		\ifnumcomp{#1}{=}{1}{\vspace*{\aftersinglelinesubsectionheaderspace}}{

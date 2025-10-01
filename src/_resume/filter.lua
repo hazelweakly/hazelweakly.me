@@ -14,6 +14,9 @@ local function parse_attributes(attrs)
 		.. "{"
 		.. (attrs.Date and pandoc.utils.stringify(parse_attr(attrs.Date)) or "")
 		.. "}"
+		.. "{"
+		.. (attrs.Location and pandoc.utils.stringify(parse_attr(attrs.Location)) or "")
+		.. "}"
 end
 
 local function is_plain_section(attrs)
@@ -26,8 +29,8 @@ function Pandoc(doc)
 end
 
 function parse_sentence(strs)
-	local attrs = { Title = "", Company = "", Date = "" }
-	local attr_idx = { "Title", "Company", "Date" }
+	local attrs = { Title = "", Company = "", Date = "", Location = "" }
+	local attr_idx = { "Title", "Company", "Date", "Location" }
 	local idx = 1
 
 	for _, el in ipairs(strs) do
@@ -66,7 +69,7 @@ function subsection_transform(div)
 			div.content:insert(pandoc.RawBlock("latex", "\\end{cvsubsection}"))
 		elseif (FORMAT:match("native") or FORMAT:match("html")) and not is_plain_section(div.attributes) then
 			local lst = {}
-			for _, a in ipairs({ "Company", "Date" }) do
+			for _, a in ipairs({ "Company", "Date", "Location" }) do
 				if div.attributes[a] ~= nil and div.attributes[a] ~= "" then
 					table.insert(lst, { pandoc.Str(a), pandoc.Plain(parse_attr(div.attributes[a])) })
 				end
