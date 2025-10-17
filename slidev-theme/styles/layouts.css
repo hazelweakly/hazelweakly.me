@@ -53,6 +53,10 @@
   h1+*:not([class]) {
     @apply font-400 text-7xl;
   }
+
+  ul {
+    text-align: left;
+  }
 }
 
 .slidev-layout.quote {
@@ -142,4 +146,8 @@ table.\32 x2 tbody,
 
 .slidev-layout .slidev-vclick-target {
   width: 100%;
+}
+
+.mia {
+  margin-inline: auto;
 }
