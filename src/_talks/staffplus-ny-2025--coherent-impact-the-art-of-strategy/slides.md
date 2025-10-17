@@ -70,7 +70,7 @@ layout: default
 
 # Confluence
 
-![](./images/confluence.png){.mia .h-100}
+![](/images/confluence.png){.mia .h-100}
 
 (image: Wikipedia){.text-2 .center}
 
