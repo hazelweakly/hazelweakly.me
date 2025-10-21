@@ -121,6 +121,16 @@ table {
   font-weight: inherit;
 }
 
+table:not([class]) thead {
+  font-variant: small-caps;
+}
+
+table:not([class]) th+th,
+table:not([class]) td+td {
+  padding-inline-start: theme("spacing.2");
+  padding-block: theme("spacing.1");
+}
+
 th {
   text-align: left;
 }
