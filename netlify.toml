@@ -100,3 +100,8 @@ status = 200
 from = "/talks/ldx3-2025--so-you-want-to-hire-engineering-force-multipliers/slides/*"
 to = "/talks/ldx3-2025--so-you-want-to-hire-engineering-force-multipliers/slides/index.html"
 status = 200
+
+[[redirects]]
+from = "/talks/staffplus-ny-2025--coherent-impact-the-art-of-strategy/slides/*"
+to = "/talks/staffplus-ny-2025--coherent-impact-the-art-of-strategy/slides/index.html"
+status = 200
