@@ -23,5 +23,5 @@ eleventyComputed:
   slides: "/talks/{{ page.fileSlug }}/slides"
 talk_page: https://www.socallinuxexpo.org/scale/22x/presentations/source-available-thriving-open-source-dying
 event_site: https://www.socallinuxexpo.org/scale/22x
-video:
+video: https://www.youtube.com/watch?v=adlkJRJR7_U
 ---

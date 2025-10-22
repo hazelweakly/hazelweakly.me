@@ -15,5 +15,5 @@ eleventyComputed:
   slides: "/talks/{{ page.fileSlug }}/slides"
 talk_page: https://www.socallinuxexpo.org/scale/22x/presentations/redefining-observability-observability-30
 event_site: https://www.socallinuxexpo.org/scale/22x
-video:
+video: https://www.youtube.com/watch?v=eYLXR55owSA
 ---
