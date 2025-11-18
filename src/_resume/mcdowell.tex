@@ -214,7 +214,8 @@ $endif$
 % Set applicant's personal data for header
 \name{$author$}
 \address{$contact.address$}
-\contacts{$contact.phone$ \linebreak $contact.email$ \linebreak $for(social)$ $social$ $endfor$}
+% TODO: Add support for optional phone
+\contacts{$contact.email$ \linebreak $for(social)$ $social$ $endfor$}
 
 \begin{document}
 
