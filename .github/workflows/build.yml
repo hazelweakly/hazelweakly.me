@@ -10,8 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: DeterminateSystems/nix-installer-action@v20
         with:
+          source-url: "${{ format('https://install.lix.systems/lix/lix-installer-{0}', 'x86_64-linux') }}"
+          diagnostic-endpoint: ""
+          backtrace: "true"
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: nix develop -c bash -c "echo \$PATH" | tr ':' '\n' | grep '^/nix/store' >> "$GITHUB_PATH"
       - name: Cache pnpm store
