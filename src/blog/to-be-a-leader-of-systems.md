@@ -38,7 +38,7 @@ Going past the moments beyond when you thought you could go.
 To succeed often requires--and always demands--of you to embrace the utterly insane notion that you cannot fail.
 
 Thirdly, you will need to prepare and make ready everyone around you.
-Because to fail as a leader is not when you conviction and go down the wrong path.
+Because to fail as a leader is not when you lose conviction and go down the wrong path.
 To fail as a leader is when you do not prepare people for when that inevitable failure happens.
 This will feel in uncomfortable contrast to the necessary conviction that you cannot fail.
 Unfortunately, leadership is defined by contradictions.

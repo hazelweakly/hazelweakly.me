@@ -4,7 +4,7 @@ date: 2026-01-05
 ---
 
 Hey again! Welcome back to part two of me reflecting on the past few quarters and writing down my answers to John Cutler and Tom Kerwin's questions on how leaders navigate uncertainty and ambiguity.
-If you're lost, part one is [here](/observations-of-leadership-part-one).
+If you're lost, part one is [here](/blog/observations-of-leadership-part-one/).
 I started writing my reflections to this a while ago (almost two years now!) and decided that I actually wanted to separate out every edition of this by a few years.
 That's how long it takes for feedback cycles to truly hit at my level, anyway, and it's a good excuse to practice self reflection.
 I've also grown to enjoy seeing how my thinking matures over the years, and this is a natural way to do that.
