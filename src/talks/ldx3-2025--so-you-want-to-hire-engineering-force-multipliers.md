@@ -11,7 +11,7 @@ abstract: |
   Come along with Hazel as we draw on her experiences building “cost-center” organizations that punch above their weight, creating healthy outlier teams that redefine the bar for excellence, and diagnosing hiccups that may occur along the way.
 talk_page: https://leaddev.com/leaddev-london/agenda/
 event_site: https://leaddev.com/leaddev-london/
-video:
+video: https://www.youtube.com/watch?v=vuc9WxPoW4Q
 eleventyComputed:
   slides: "/talks/{{ page.fileSlug }}/slides"
 ---

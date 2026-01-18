@@ -17,7 +17,7 @@ abstract: |
   - Strategies for making local decisions pay off in the long run.
   - Techniques to not get buried in the firefighting.
   - What worked, what didn’t, what would Hazel have done differently?
-talk_page: https://leaddev.com/staffplus-new-york/agenda/
+talk_page: https://leaddev.com/technical-direction/coherent-impact-the-art-of-strategy
 event_site: https://leaddev.com/staffplus-new-york
 video:
 eleventyComputed:
