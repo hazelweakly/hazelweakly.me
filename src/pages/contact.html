@@ -4,6 +4,16 @@ order: 2
 footer: true
 ---
 
+<p>
+  Please send media or speaking inquiries to: {{ socialMedia['emailMedia'].url }}
+</p>
+
+<h2 id="social-media" tabindex="-1">
+  <a class="header-anchor" href="#social-media">
+    <span>Social Media</span>
+  </a>
+</h2>
+
 <ul role="list" class="px-0">
   {% for social in socialMedia.all_socials %}
 
@@ -13,6 +23,27 @@ footer: true
         {% include "partials/" + social.title | lower + ".html" %}
       </a>
       <a href="{{ social.url }}">{{ social.title }}</a>
+    </span>
+  </li>
+
+  {%- endfor %}
+</ul>
+
+<h2 id="messaging" tabindex="-1">
+  <a class="header-anchor" href="#messaging">
+    <span>Messaging</span>
+  </a>
+</h2>
+
+<ul role="list" class="px-0">
+  {% for social in socialMedia.messaging %}
+
+  <li>
+    <span class="cluster">
+      <span class="icon inline-flex">
+        {% include "partials/" + social.title | lower + ".html" %}
+      </span>
+      {{ social.url }}
     </span>
   </li>
 

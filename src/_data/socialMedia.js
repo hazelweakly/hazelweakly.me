@@ -1,3 +1,19 @@
+const emailHello = {
+  title: "Email",
+  url: "hazel at hazelweakly.me",
+};
+const emailMedia = {
+  title: "Email for Media or Speaking inquiries",
+  url: "media at hazelweakly.me",
+};
+const matrix = {
+  title: "Matrix",
+  url: "hazelweakly on matrix.org",
+};
+const signal = {
+  title: "Signal",
+  url: "hazelweakly dot zero one",
+};
 const github = {
   title: "GitHub",
   url: "https://github.com/hazelweakly",
@@ -14,10 +30,6 @@ const discord = {
   title: "Discord",
   url: "https://discordapp.com/users/690271969962098728",
 };
-const reddit = {
-  title: "Reddit",
-  url: "https://reddit.com/u/hazelweakly",
-};
 const bluesky = {
   title: "Bluesky",
   url: "https://bsky.app/profile/hazelweakly.me",
@@ -28,7 +40,10 @@ export default {
   mastodon,
   linkedIn,
   discord,
-  reddit,
-  all_socials: [github, mastodon, bluesky, linkedIn, discord, reddit],
+  emailMedia,
+  matrix,
+  signal,
+  all_socials: [github, mastodon, bluesky, linkedIn, discord],
   socials: [github, mastodon, linkedIn],
+  messaging: [signal, matrix, emailHello],
 };
