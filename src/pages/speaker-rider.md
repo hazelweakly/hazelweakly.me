@@ -95,18 +95,16 @@ Cancelling a speaking engagement is something I try very, very hard to avoid; so
 That said, the ongoing global pandemic means that a cancellation is more likely than ever before.
 In the case of a viral surge, either globally or locally, as a result of a new variant or not, I reserve the right to pull out of your event for my own safety and the safety of others.
 I also reserve the right to pull out of attending an event in person should sudden and unavoidable circumstances make it prohibitively unsafe to attend.
-Additionally, the political climate of the US necessitates considering US engagements as indefinitely tentative; I maintain diligence in monitoring the situation and will reach out promptly if need arises.
-In that case, I will make my best effort to offer a remote presentation.
-If that is not possible and it is appropriate to do so, I may suggest an alternate speaker take my slot.
+Additionally, the political climate of the US is currently such that, indefinitely, I will not travel to the US to speak for any reason; I maintain diligence in monitoring the situation and will update this rider if there are changes.
 
 ## Contacting Me
 
 Want to have me speak?
-Awesome! Reach out to me via [email](mailto:speaking@hazelweakly.me) with the name, dates, location, and website for your event, as well as any confirmed speakers and an idea of what you want me to talk about.
+Awesome! Reach out to me via email ({{ socialMedia['emailMedia'].url }}) with the name, dates, location, and website for your event, as well as any confirmed speakers and an idea of what you want me to talk about.
 (You can also reach out via one of the nifty options on my [contact me](/contact) page).
 If your event fits into the corporate events category, please also include your speaker budget.
 
-(PS: _please_ do not use this email to sign me up for something or to register me on my behalf for events, it is an alias to my personal email and using it in lieu of my personal breaks everything.)
+(PS: _please_ do not use this email to sign me up for something or to register me on my behalf for events, it is an alias to my personal email and using it in lieu of my personal one breaks everything.)
 
 Thank you! I look forward to working with you!
 

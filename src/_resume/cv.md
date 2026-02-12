@@ -4,7 +4,7 @@ author: Hazel Weakly
 contact:
   address: |
     Utrecht, Netherlands
-  email: "[hazel@theweaklys.com](mailto:hazel@theweaklys.com)"
+  email: "hazel at theweaklys.com"
 ---
 
 ::: cv
@@ -15,30 +15,20 @@ with a focus on organizational change, holistic efficiency, and driving cross-fu
 
 :::
 
-# ~~Buzzword Bingo~~ Technical Skills
+# Experience
 
-::: cv
+::: {.cv Title="Architect V - Lead of Guardrails" Company="[ING Bank](https://ing.nl)" Date="Nov. 2025--Present" Location="Utrecht, NL"}
 
-Languages
-: TypeScript, JavaScript, Bash, Nix, Haskell, Rust, Python, CSS, SQL, Go
+Acting as Central Product Owner and Enterprise Architect of ING's Guardrails platform.
+Responsible for directing product strategy, delivery and architecture across several teams, and developing the policy governance framework across our entire internal engineering platform.
 
-Infrastructure
-: Linux (Debian, RHEL, CentOS, Ubuntu, NixOS, Amazon Linux), Kubernetes, Nomad, Docker, Terraform, Ansible, AWS, Packer
+Developing architectural framework governance and the resilience foundations, with an eye towards enabling effective collaboration across entities and unlocking innovation.
 
-Cross-Functional
-: FedRAMP, SOC2 Type II, HITRUST, HIPAA, UI / UX, Full-Stack, Platform Engineering, Developer Experience
-
-Technologies
-: GitLab CI/CD, GitHub Actions, Git, React, NoSQL, PostgreSQL, Helm, ArgoCD, GitOps, Tailscale, Atlantis, Okta, Open Telemetry, Observability, GraphQL, DataDog, Honeycomb.io
-
-Attributes
-: Strong and Attentive Listener, Cross-Functional Collaboration, Organizational Change Agency, Alignment Building, Leads by Example, Force-Multiplier, Sought-after International Speaker
+Evolving capabilities around policy governance, policy as code, automated compliance evidence collection, and automated system healing.
 
 :::
 
-# Experience
-
-::: {.cv Title="Sr. Lead Software Engineer - Software Defined Infrastructure" Company="[JPMorgan Chase](https://chase.com)" Date="Sep. 2024--Present" Location="Seattle, WA, USA"}
+::: {.cv Title="Sr. Lead Software Architect - Software Defined Infrastructure" Company="[JPMorgan Chase](https://chase.com)" Date="Sep. 2024--Nov. 2025" Location="Seattle, WA, USA"}
 
 Due to the nature of this role, publicly provided details are scarce. Details may be provided upon request, if feasible.
 
@@ -154,5 +144,26 @@ As a web developer, I maintained and developed websites and the infrastructure t
 - I scaled the [Hachyderm](https://hachyderm.io) Mastodon instance into one of the largest in the world and am fondly known as the Infrastructure Witch of Hachyderm.
 - I have presented several talks, and appeared in many podcasts, which can be found [on my website](https://hazelweakly.me/media): <https://hazelweakly.me/media>
 - I obtained a B.S. in Computer Science from Portland State University in Portland, OR, USA.
+
+:::
+
+# ~~Buzzword Bingo~~ Technical Skills
+
+::: cv
+
+Languages
+: TypeScript, JavaScript, Bash, Nix, Haskell, Rust, Python, CSS, SQL, Go
+
+Infrastructure
+: Linux (Debian, RHEL, CentOS, Ubuntu, NixOS, Amazon Linux), Kubernetes, Nomad, Docker, Terraform, Ansible, AWS, Packer
+
+Cross-Functional
+: FedRAMP, SOC2 Type II, HITRUST, HIPAA, UI / UX, Full-Stack, Platform Engineering, Developer Experience
+
+Technologies
+: GitLab CI/CD, GitHub Actions, Git, React, NoSQL, PostgreSQL, Helm, ArgoCD, GitOps, Tailscale, Atlantis, Okta, Open Telemetry, Observability, GraphQL, DataDog, Honeycomb.io
+
+Attributes
+: Strong and Attentive Listener, Cross-Functional Collaboration, Organizational Change Agency, Alignment Building, Leads by Example, Force-Multiplier, Sought-after International Speaker
 
 :::
