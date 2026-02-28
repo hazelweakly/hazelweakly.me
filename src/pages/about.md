@@ -82,24 +82,22 @@ She also loves shooting pool, swing dancing, and boardgames.
 
 ![](./src/images/og.jpg){.headshot}
 
-Frequently described as a "firehose of insights", Hazel has become known for her uncanny ability to solve impossible problems, create centers of continuous innovation, and to inspire those around her to show up as their authentically whole selves.
-Hazel Weakly serves as an Engineering Leader for Software Defined Infrastructure at JPMorgan Chase, where she drives deep technical innovation on a firm wide platform transformation initiative to build the next generation of compute and networking systems.
+Frequently described as a "firehose of insights", Hazel has become known for her uncanny ability to solve impossible problems, create centres of continuous innovation, and to inspire those around her to show up as their authentically whole selves.
+Hazel weakly serves as the Central Product Owner and Enterprise Architect of ING's Guardrails platform, where she is responsible for directing product strategy, delivery and architecture, and developing the next generation policy governance framework across the firm's global internal engineering platform.
 
-Previously, she held the positions of Principal Architect and Head of Platform Engineering at Datavant, where she spearheaded the vision for Platform Engineering, Systems Reliability, and Developer Experience.
-During her tenure, her outcomes included enabling zero-downtime platform migrations across multiple environments, data informed re-imagining of developer experience, and unlocking cross-functional alignment.
-Hazel's collaborative approach was instrumental in helping Datavant realize measurable improvements to organizational efficiency, engineering trust in leadership, and system reliability.
-Her work paved the foundations for Datavant to continue its mission of making the world's health data secure, accessible and actionable.
+Previously, she has held positions in Architectural and Platform Engineering leadership, and has sustained a track record of delivering successful and ambitious projects.
+Her unique approach to blending cutting edge research with pragmatic excution has resulted in industry wide impact, changing how observability, resilience engineering, and developer experience is perceived in the industry.
 
-As a distinguished technology leader with expertise in sociotechnical systems and organizational transformation, Hazel has rapidly made a name for herself due to her ability to enact lasting change.
+As a distinguished technology leader with expertise in sociotechnical systems and organisational transformation, Hazel has rapidly made a name for herself due to her ability to enact lasting change.
 Known for her holistic and empathetic approach to engineering leadership, Hazel excels in building high-performing, diverse teams and fostering cultures of technical excellence.
-Her leadership philosophy emphasizes developer thriving, cross-functional collaboration, and data-driven decision-making.
+Her leadership philosophy emphasises developer thriving, cross-functional collaboration, and data-driven decision-making.
 She believes, and demonstrates, that excellence and high performance does not require sacrificing what makes humans magical.
 
 As a respected voice in the technology community, Hazel serves on the Board of Directors for the Haskell Foundation and holds the distinction of being the first Fellow of the Nivenly Foundation.
-Hazel's writing is read worldwide and she is an internationally sought after keynote speaker who has spoken at some of the most prominent conferences in the world, including UK's State of Open Con, QCon San Francisco, and Kubecon NA.
-Her mission is to help create a world in which people learn together and work to build a sense of wholeness in their own communities.
+Hazel's writing is read worldwide and she is an internationally sought after keynote speaker who has spoken at some of the most prominent conferences in the world, including UK's State of Open Con, QCon London, and Kubecon EU.
+Her mission is to help teach the world to build self-organising ecosystems that enable people to learn together and work to build a sense of wholeness in their own communities.
 
-Hazel's vision centers on transforming how humanity approaches knowledge work with a focus on understanding emergent behavior.
+Hazel's vision centres on transforming how humanity approaches knowledge work with a focus on understanding emergent behavior.
 Systems that enable rapid innovation, maintain stringent compliance standards, and embrace the complexities of humanity, are natural outcomes of that understanding.
 As she guides the industry to push the boundaries of what's possible, she remains determined to continuously make the world better than she finds it.
 

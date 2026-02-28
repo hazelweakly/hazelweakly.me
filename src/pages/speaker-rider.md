@@ -55,10 +55,10 @@ For more information on how to make the event more accessible to me, there is a 
 
 No part of the cost of speaking at your event should lie with the speaker.
 Despite this not being a primary aspect of my job, my employer will _sometimes_ cover airfare and hotel for an event, if the conference theme or attendee demographic is one that aligns with their goals.
-If your event will not be covered by my employer, you must cover a hotel near the conference venue, airfare (preferably on Alaska Airlines or one of their partner airlines, as I do have status with them), and transportation between the airport and the hotel.
+If your event will not be covered by my employer, you must cover a hotel near the conference venue, airfare (preferably on KLM or one of their partner airlines, as I do have status with them), and transportation between the airport and the hotel.
 Regardless of whether or not my employer covers the cost of my appearance at your event, you must provide me with a full pass for the event.
 
-If your event is a significant time zone change from me (US Pacific time), I do ask that my arrival flight be booked to arrive a day or two before my speaking slot.
+If your event is a significant time zone change from me (Central European Time), I do ask that my arrival flight be booked to arrive a day or two before my speaking slot.
 
 ## Speaking Fees and Honorariums
 
