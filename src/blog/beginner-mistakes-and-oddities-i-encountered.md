@@ -16,7 +16,7 @@ Unfortunately it’s not really something where comprehensive documentation can 
 
 - GHC has a lot of submodules. Before working you should not only pull the master but you should also run `git submodule update`; I had quite a few issues early on with extraneous files in git status before I learned to do that.
 - Git notes is really not that ergonomic at all. If you have any namespaces used in your git notes (which this project does) you’ll need –ref=perf for damn near every command you use. It’s a small thing, but it can sometimes take a while to realise what you missed.
-- Running the ./validate script is the only way to guarantee a clean anything. Switch a branch and something weird breaks? ./validate; Not quite sure why tests started failing after a git pull and a small innocuous code changes? ./validate. The real bummer here is that ./validate wipes everything and rebuilds the entire damn compiler and all that stuff from scratch and then runs the most extensive version of the testsuite. The exhaustive version of the testsuite alone can take nearly 2 hours on my computer if it’s not run threaded, so it’s definitely a huge time sink if you don’t have this thing optimized.
+- Running the ./validate script is the only way to guarantee a clean anything. Switch a branch and something weird breaks? ./validate; Not quite sure why tests started failing after a git pull and a small innocuous code changes? ./validate. The real bummer here is that ./validate wipes everything and rebuilds the entire damn compiler and all that stuff from scratch and then runs the most extensive version of the testsuite. The exhaustive version of the testsuite alone can take nearly 2 hours on my computer if it’s not run threaded, so it’s definitely a huge time sink if you don’t have this thing optimised.
   - Related pain-point; there’s a lot of things you can do to tweak and fix your setup so that you can build and validate quicker. Unfortunately, this is all something that you just have to kind of learn over time and there’s no real way to intelligently "auto-configure" this nicely. You’ll have to suffer super long build times for GHC and long runtimes for the testsuite or sink quite a few hours into configuring the "quicker options" for your specific usecase.
   - Update: Thanks to a few helpful Reddit comments, I’m now aware that `dist/maintainer clean` instead of ./validate will help you out quite a bit. Unfortunately, this still doesn’t clean out everything.
   - To thoroughly clean out the ghc repo, you’ll need to copy mk/build.mk (and everything else you don’t want to lose) somewhere else and then run git clean -ffdx && git submodule foreach git clean -ffdx.
@@ -93,13 +93,13 @@ I tend to get hyperfocus and I’ll either not work on a project or I’ll sink 
 That’s not particularly healthy nor is it particularly effective; it’s fine when you’re just dinking around on things, but when efficiency and critical thinking matters, it’s no longer very sufficient.
 Eat regularly, sleep regularly, take breaks regularly, and work regularly; the mind thrives on consistency and learns to work well when it’s given that consistency.
 If I didn’t do these things, I’d find that I would have a constant feeling of "needing to work on the project" but what I would usually end up doing was just screwing around on the computer rather than getting things done in a productive manner.
-Closely related to all of this is optimizing your workflow for you and being able to recognize your limitations and how to get around them.
+Closely related to all of this is optimizing your workflow for you and being able to recognise your limitations and how to get around them.
 One thing that’s critical for me is being able to immediately answer the question "what is the next immediate task I need to do"; if I can’t answer that, I need to sit down and figure out that answer and get a small checklist written before I start working, otherwise I’ll just wander around aimlessly for a while until I sorta get stuff done.
 This applies to everything in my life and it’s why making breakfast takes me an hour some days and 3 minutes other days and why I can get ready for the day in 30 minutes or 3 hours.
 
 ## Conclusion
 
-So these are just some of the things I’ve learned and struggled with while working on this project. I’d probably summarize this into a few key points:
+So these are just some of the things I’ve learned and struggled with while working on this project. I’d probably summarise this into a few key points:
 
 - Abstraction is the process of communicating more precisely about something. Use it whenever possible and helpful to make code more robust.
 - Be explicit about your assumptions and use implicit behaviour as little as possible; ideally document that implicit behaviour in a comment whenever you can.

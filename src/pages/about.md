@@ -93,9 +93,9 @@ Known for her holistic and empathetic approach to engineering leadership, Hazel 
 Her leadership philosophy emphasises developer thriving, cross-functional collaboration, and data-driven decision-making.
 She believes, and demonstrates, that excellence and high performance does not require sacrificing what makes humans magical.
 
-As a respected voice in the technology community, Hazel serves on the Board of Directors for the Haskell Foundation and holds the distinction of being the first Fellow of the Nivenly Foundation.
+Excelling as a respected voice in the technology community, Hazel serves on the Board of Directors for the Haskell Foundation and holds the distinction of being the first Fellow of the Nivenly Foundation.
 Hazel's writing is read worldwide and she is an internationally sought after keynote speaker who has spoken at some of the most prominent conferences in the world, including UK's State of Open Con, QCon London, and Kubecon EU.
-Her mission is to help teach the world to build self-organising ecosystems that enable people to learn together and work to build a sense of wholeness in their own communities.
+Her mission is to help teach the world to build self-organising ecosystems that enable people to learn together and thrive.
 
 Hazel's vision centres on transforming how humanity approaches knowledge work with a focus on understanding emergent behaviour.
 Systems that enable rapid innovation, maintain stringent compliance standards, and embrace the complexities of humanity, are natural outcomes of that understanding.

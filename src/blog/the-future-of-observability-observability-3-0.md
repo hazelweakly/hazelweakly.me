@@ -72,7 +72,7 @@ They're capabilities! It's a maturity model! Just allocate the headcount, implem
 Well, okay, it turns out we need to back up a little bit because that isn't really what happens in reality.
 Despite implementing the three pillars, you run into a lot of limitations, all stemming from a central foundational choice: multiple sources of truth, with no ability to correlate them, leads to an inability to ask meaningful questions.
 Charity refers to this this when she talks about how observability 1.0 ends up ["making decisions at write time about how you and your team would use the data in the future"](https://www.honeycomb.io/blog/one-key-difference-observability1dot0-2dot0) in her nice observability 1.0 vs 2.0 article.
-I like that phrasing a lot, but I personally like to emphasize the "inability to ask meaningful questions" part a bit more than the "write-time decisions" and "existence of pillars" parts.
+I like that phrasing a lot, but I personally like to emphasise the "inability to ask meaningful questions" part a bit more than the "write-time decisions" and "existence of pillars" parts.
 That's just me, though.
 
 However, I do want to note that these are equivalent ideas: I'm not reinventing anything here.

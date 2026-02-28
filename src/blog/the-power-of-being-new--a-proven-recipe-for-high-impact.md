@@ -12,7 +12,7 @@ Embrace the pain, it builds character (well, not really, but it provides really 
 
 I've been able to take this approach and do some pretty cool things with it in my career.
 
-At a previous company I onboarded, improved onboarding documentation, synthesized cross-org inefficiencies, wrote a technical doc on developer productivity and how it fit into the company, got buy-in, implemented it, shepherded it, and onboarded the entire org, all in one month--the month that I joined.
+At a previous company I onboarded, improved onboarding documentation, synthesised cross-org inefficiencies, wrote a technical doc on developer productivity and how it fit into the company, got buy-in, implemented it, shepherded it, and onboarded the entire org, all in one month--the month that I joined.
 
 Some things that made this possible:
 
@@ -20,12 +20,12 @@ Some things that made this possible:
 - I have years of experience in internalizing other people's workflows and improving them without wrecking them. I am _very_ good at it.
 - Most importantly? It didn't require a lot of deep context, and I knew how to implement changes in a way that was opt-in without breaking individual workflows.
 
-The other time I delivered strong results immediately after being hired was when I came into a company, onboarded myself, broke major communication silos, internalized a very poorly communicated product, repaired trust between multiple teams, and broke a 3 month roadblock.
+The other time I delivered strong results immediately after being hired was when I came into a company, onboarded myself, broke major communication silos, internalised a very poorly communicated product, repaired trust between multiple teams, and broke a 3 month roadblock.
 In my first 2 weeks.
 I became the tech lead of the infrastructure team in those first two weeks as well.
 I had to reshape some mental models, coach and mentor some people, and start improving some practices while planning for 2 weeks, 3 months, and 6 months down the road concurrently.
 
-Again, a lot of that didn't require deep context in order to _start_ the changing process and know where to go; the important part was to utilize my empathy, listen to others, understand their viewpoints, and solve their problems.
+Again, a lot of that didn't require deep context in order to _start_ the changing process and know where to go; the important part was to utilise my empathy, listen to others, understand their viewpoints, and solve their problems.
 That's the magic, by the way.
 
 I'm going to break this down into a series of steps.
@@ -65,7 +65,7 @@ Questions to ask yourself during the onboarding process:
 - Are there repetitive tasks that could be automated?
 - Are there manual processes that could benefit from streamlining?
 - Are there missing steps in the documentation?
-- Are there people that have to coordinate efforts when those efforts could be centralized?
+- Are there people that have to coordinate efforts when those efforts could be centralised?
 - Is information scattered everywhere, out of date, wrong, or all of the above?
 
 Here's the important magic that makes this work:
@@ -130,7 +130,7 @@ It's great; I highly recommend.
 Once you've identified the 3-5 most annoying or repetitive problems: ask in chat casually "hey has anyone noticed this as a problem?"
 You really want to avoid jumping straight into "hey imma solve this."
 Don't do that, nobody wants that; even if you're right, people will legitimately be offended if someone comes in and fixes their shit without asking.
-It's like if you invite a friend over to be a roommate and the first they do is organize your sock drawer; like, okay, maybe it needed a little bit of organizing, but are you for real?
+It's like if you invite a friend over to be a roommate and the first they do is organise your sock drawer; like, okay, maybe it needed a little bit of organizing, but are you for real?
 Meanwhile the attic is molding, the sink is flooding, the laundry machine is haunted, and the basement has a cryptid in it.
 
 Anyways.
@@ -156,7 +156,7 @@ Embrace your role as the new person and leverage that.
 Take notes.
 So many fuckin notes.
 Seriously. I usually take about 15 pages of notes in my first month of working somewhere and it has never not paid off.
-Do some of the shit work that nobody wants to do, and nobody can ever prioritize, but you can!
+Do some of the shit work that nobody wants to do, and nobody can ever prioritise, but you can!
 Because you're currently suffering from it!
 Awesomesauce!
 Radical.

@@ -3,7 +3,7 @@ title: "The Trap of Soulless Productivity"
 date: 2024-04-03
 ---
 
-If there's one thing I wish I could burn entirely to the ground and wipe away all traces and remnants of, its the misplaced notion that the productivity of Knowledge Work can be managed, measured, analysed, and optimized as if all one needed to do was drip feed heroin up the arse of their hapless workers.
+If there's one thing I wish I could burn entirely to the ground and wipe away all traces and remnants of, its the misplaced notion that the productivity of Knowledge Work can be managed, measured, analysed, and optimised as if all one needed to do was drip feed heroin up the arse of their hapless workers.
 
 What is Knowledge Work™, you ask?
 There's two concepts of Knowledge Work that I'm thinking about right now.
@@ -25,7 +25,7 @@ But, that requires understanding what makes Knowledge Work tick, what makes it..
 In short, understanding Knowledge Work means understanding the human condition itself, and taking a dark look at how we managed to turn humans from a social equitable animal that has unlimited curiosity and a desire to help each other succeed into a raving, bloodthirsty mass of hyperindividualistic demons solely bent on hedonistic self exploitation at the expense of the other.
 Seriously, how the fuck did we do that? How? How did we so deeply and fundamentally break humanity like this?
 
-Now you might be reading this and going "Hazel, that's a lotta emotions, goodness; but, be real now, how do you actually expect a company to pay millions of dollars for knowledge workers and not want to optimize them?"
+Now you might be reading this and going "Hazel, that's a lotta emotions, goodness; but, be real now, how do you actually expect a company to pay millions of dollars for knowledge workers and not want to optimise them?"
 Well, _you_, my dears, are probably not thinking this, but this is unfortunately a realistic question one might ask when attempting to be Doing a Capitalism™.
 
 Sure, fair enough, let me rephrase that question a bit:

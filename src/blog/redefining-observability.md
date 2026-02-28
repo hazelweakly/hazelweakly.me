@@ -69,7 +69,7 @@ Nobody buys PowerBI because they need to invest in "super fancy ass spreadsheet 
 So, the control theory definition makes it really hard to think about the people, and it doesn't give you a starting point, ending point, or a strategy of how to get there.
 Well, that's not great, so how about the cognitive systems engineering one?
 
-Honestly, I like that one a lot more, and I wish we had popularized that one over the control theory one--while the control theory one helps guide the idea of the _implementation_ of what an effective component of observability looks like, it doesn't actually help the practitioner understand what's going on.
+Honestly, I like that one a lot more, and I wish we had popularised that one over the control theory one--while the control theory one helps guide the idea of the _implementation_ of what an effective component of observability looks like, it doesn't actually help the practitioner understand what's going on.
 That doesn't mean it's perfect though: one really glaring thing that is missing from it (and the control theory definition) is the point behind why you care about this in the first place.
 You have "provide insight into a process" and "the work needed to extract meaning from that insight" and, honestly, why do you care?
 In addition, there's still the problem of not really knowing where you are, where you need to go, and how to know that you got there.
@@ -87,7 +87,7 @@ Which leads me to why I like my definition the most:
 ## Observability Gone Wrong
 
 This is probably my biggest gripe with the current direction of observability.
-Engineering has always been a bit of a silo from the rest of the business; it's understandable, of course, you have a very specialized field filled to the brim with a very rapidly evolving internally focused set of concerns--no wonder it's going to look completely alien to others.
+Engineering has always been a bit of a silo from the rest of the business; it's understandable, of course, you have a very specialised field filled to the brim with a very rapidly evolving internally focused set of concerns--no wonder it's going to look completely alien to others.
 Much of the medical field is the same way, and so is the legal field, to give two other examples.
 However, Engineering had the golden chance of a century: Here we are with complex sociotechnical systems encompassing essentially "every fucking thing a business does to business business" and we have this awesome concept of "we need to understand what we're doing" and what did we do?
 
@@ -125,10 +125,10 @@ Let's take the question "are we healthy" and blend that with various composite s
 - I am an Engineer on Team A that is working on service A1. Is service A1's `/health` endpoint returning a successful response 99.9% of the time over a 5 minute interval?
 - I am an Engineering Manager of Team A that works on services A1, A2, and A3; is our team within our stated SLAs with our customers for the quarter?
 - We are the Senior Engineering Manager and Senior Product Manager overseeing teams A, B, and C. Are we communicating effectively with each other, are we understanding each other, and are we building things that are in alignment with both our vertical's OKRs as well as the rest of the organisation?
-- I am an Engineering Director of Org ABC, are we making the right trade-offs between feature work and reliability work so that we can maximize value delivery while not compromising on engineering health, employee attrition, customer satisfaction, and fiscal concerns?
-- I am a Product Manager, of these 50 features, which ones have the most synergy with what our GTM research is indicating we need to develop, and which ones can be designed in a way that our engineers have room to bake in reliability work _into_ the product implementation so we can maximize roadmap velocity?
+- I am an Engineering Director of Org ABC, are we making the right trade-offs between feature work and reliability work so that we can maximise value delivery while not compromising on engineering health, employee attrition, customer satisfaction, and fiscal concerns?
+- I am a Product Manager, of these 50 features, which ones have the most synergy with what our GTM research is indicating we need to develop, and which ones can be designed in a way that our engineers have room to bake in reliability work _into_ the product implementation so we can maximise roadmap velocity?
 - I am a Director of Customer Success that oversees customer support for the services of Org ABC, are we building the right internal tools to maximally enable our CSE function while also gaining the ability to understand what classes of customer support to automate or proactively mitigate?
-- I am the VP of Engineering, are we designing our engineering culture and engineering process in a way that maximizes productivity and ensures alignment of development work with the company north star?
+- I am the VP of Engineering, are we designing our engineering culture and engineering process in a way that maximises productivity and ensures alignment of development work with the company north star?
 - I am the CTO, are we preparing our architecture to strategically position ourselves against the market today as well as ensuring that we build capabilities that allow us to rapidly innovate five years in the future?
 - I am the CISO, what is our business continuity profile, how does our risk profile look, and are we working effectively with other functions to ensure that appropriate trade-offs are being made to keep us in the clear in a cost-effective manner?
 
@@ -166,7 +166,7 @@ You know that phrase that everyone loves to quote? "Disagree and commit"?
 I hate it.
 I think it's a phrase that causes a lot more harm than good because it's quoted so often out of context and used frequently as a cudgel by leadership to force top down consensus when it was originally intended to be a reminder to leaders to trust the people you hired.
 
-That said, if you take the concept of trusting those you work with, and you throw away the oppositional and aggressive framing its buried in, you get something really cool: trust the questions people ask and utilize the answers they learn.
+That said, if you take the concept of trusting those you work with, and you throw away the oppositional and aggressive framing its buried in, you get something really cool: trust the questions people ask and utilise the answers they learn.
 
 Get rid of "disagree and commit" and lean into "ask meaningful questions, get useful answers, and act on what you learn."
 As a leader, it's your job to help enable as many answers as possible to be meaningful to the business.

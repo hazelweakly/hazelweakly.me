@@ -26,7 +26,7 @@ I can make one of them actually secure and production ready in 8 months with a t
 **WHY. WHY ARE WE LIKE THIS.**
 
 It's not even about sane and secure defaults, it's about us having a culture of not making the things that matter ergonomic that goes back 80 years and I don't have the slightest fucking clue on how we're going to fix that mountain of compounding consequences as an industry.
-What I do know, however, is that it's endlessly frustrating to see the results slam into the marginalized, the beginners, and those with less resources over and over and over.
+What I do know, however, is that it's endlessly frustrating to see the results slam into the marginalised, the beginners, and those with less resources over and over and over.
 I'm sick of it, honestly.
 
 What would it even look like as an industry if we valued composition of security and accessibility even 5% as much as we valued syntax highlighting and emojis in a terminal?

@@ -75,7 +75,7 @@ So, I made the decision to try that. And here's where I fucked up:
 2. For controllers going from 3 to 4 causes split brain.
 
 The second point was also obvious in retrospect.
-I was working in a broken system that nobody understood in a toxic company under pressure from people who never once prioritized doing the right thing or addressing tech debt or, forbid, prevention of issues.
+I was working in a broken system that nobody understood in a toxic company under pressure from people who never once prioritised doing the right thing or addressing tech debt or, forbid, prevention of issues.
 Of course my choices were bad
 
 Long story short: I split brained the cluster and then cycled it. ***WOO!***

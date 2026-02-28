@@ -57,9 +57,9 @@ Yes, it's thingy; one can't take themselves too seriously if they wish to study 
 My hypothesis is that given the above, we then see:
 
 - Cumulative culture as a way to understand under what environmental conditions humans achieve optimal collaboration.
-- How to optimize and facilitate human innovation, and how to understand when one has studied to compromise the human element.
-- Socioeconomic systems then provide a way to understand what properties of the system result in effective environments, as well as ways to understand and optimize the efficiency of the environment by being able to visualize it as an economy.
-- Resilience engineering comes in to provide the most generally formed "laws of the universe" for CASTs, ways to strategically visualize and orient towards desired system performance, and a robust toolkit for helping humans handle the non-intuitive nature of CASTs.
+- How to optimise and facilitate human innovation, and how to understand when one has studied to compromise the human element.
+- Socioeconomic systems then provide a way to understand what properties of the system result in effective environments, as well as ways to understand and optimise the efficiency of the environment by being able to visualise it as an economy.
+- Resilience engineering comes in to provide the most generally formed "laws of the universe" for CASTs, ways to strategically visualise and orient towards desired system performance, and a robust toolkit for helping humans handle the non-intuitive nature of CASTs.
 - Lastly, Operads provide a mathematical framework under which one can validate that automation built to compose complex components do not result in a globally incoherent system.
 
 ## Understanding Ecosystems
@@ -111,8 +111,8 @@ They are about as close to a law of the universes we can get, essentially.
 | _4B_ | Monitoring the resource                   | Monitors who are accountable to the users monitor the condition of the resource.                                                                                                                                                           |
 | _5_  | Graduated sanctions                       | Appropriators who violate operational rules are likely to be assessed graduated sanctions (depending on the seriousness and the context of the offense) by other appropriators, by officials accountable to the appropriators, or by both. |
 | _6_  | Conflict-resolution mechanisms            | Appropriators and their officials have rapid access to low-cost local arenas to resolve conflicts among appropriators or between appropriators and officials.                                                                              |
-| _7_  | Minimal recognition of rights to organize | The rights of appropriators to devise their own institutions are not challenged by external governmental authorities.                                                                                                                      |
-| _8_  | Nested enterprises                        | Appropriation, provision, monitoring, enforcement, conflict resolution, and governance activities are organized in multiple layers of nested enterprises.                                                                                  |
+| _7_  | Minimal recognition of rights to organise | The rights of appropriators to devise their own institutions are not challenged by external governmental authorities.                                                                                                                      |
+| _8_  | Nested enterprises                        | Appropriation, provision, monitoring, enforcement, conflict resolution, and governance activities are organised in multiple layers of nested enterprises.                                                                                  |
 
 _([Cox, Michael, Gwen Arnold, and Sergio Villamayor Tomás. "A Review of Design Principles for Community-Based Natural Resource Management." Ecology and Society 15, no. 4 (2010).](http://www.jstor.org/stable/26268233))_
 
@@ -139,7 +139,7 @@ I'm just going to dump a bunch of info here for now in order to list out the rel
 
 [Elinor Ostrom. "Beyond Markets and States: Polycentric Governance of Complex Economic Systems"](https://web.pdx.edu/~nwallace/EHP/OstromPolyGov.pdf)
 
-> "A core effort is developing a more general theory of individual choice that recognizes the **central role of trust in coping with social dilemmas.**"
+> "A core effort is developing a more general theory of individual choice that recognises the **central role of trust in coping with social dilemmas.**"
 
 - Trust and reciprocity are core ideas of success in systems.
   Trust is the _most essential element_ to overcoming social dilemmas.
@@ -147,7 +147,7 @@ I'm just going to dump a bunch of info here for now in order to list out the rel
   In other words: collective benefit is directly derived from how much cooperation actors exhibit.
   Cooperation is directly derived from how much trust actors have that other participants are reciprocators.
 - "One-size-fits-all" policies are not effective.
-- There are four types of goods and they can be categorized by factor and difficulty of but slowly potential beneficiaries with shift tractability of use.
+- There are four types of goods and they can be categorised by factor and difficulty of but slowly potential beneficiaries with shift tractability of use.
 - Providing opportunities for "cheap talk" (or any form of communication) reduces over-consumption of common-point resources
 - Polycentric governance models, the governance of a CAST: many centres of decision making that are formally independent of each other, either by being truly independent or by being interdependent.
   - Importantly, this shows empirically that complex systems are not chaotic systems, even if a sufficiently complex CAST approaches the appearance of chaos, they can still be governed with better-than-chaotic approaches despite the potential loss of globally coherent collective knowledge.
@@ -201,7 +201,7 @@ Adversarial in this sense means in the us versus them sense (like the capitalist
 A notion of Collaborative competition, here, is my idea.
 The idea is that, given a large enough internal ecosystem, we benefit from artificially creating enough diversity in order to stimulate innovation faster than may naturally occur otherwise.
 
-I find it fruitful to approach designing ecosystems for collaborative competition by thinking of them through an Innovate Leverage Commoditize (ILC) model.
+I find it fruitful to approach designing ecosystems for collaborative competition by thinking of them through an Innovate Leverage Commoditise (ILC) model.
 [This blog post by Simon Wordley](https://blog.gardeviance.org/2014/03/understanding-ecosystems-part-i-of-ii.html) contains a fantastic overview and example of this and how it can look in the real world.
 Quoting Simon here, we can see why this is directly applicable to most large enterprises.
 
@@ -211,7 +211,7 @@ Quoting Simon here, we can see why this is directly applicable to most large ent
 > 2.  Your customer focus
 > 3.  Your efficiency
 > 4.  Your stability of revenue
-> 5.  Your ability to maximize opportunity
+> 5.  Your ability to maximise opportunity
 >
 > ... All increase, SIMULTANEOUSLY, with the size of your ecosystem and NOT the physical size of your company.
 
@@ -231,31 +231,31 @@ This works by tracing through the following chain of thought.
 Looking at the diagram below, the numbers labeled 1 2 3 (in red) correspond to the below chain of thought.
 This chain of thought pattern matches on the above one intentionally to drive the point home a bit more thoroughly.
 
-1. If you commoditize a component into an industrialized form, that enables others to innovate on top
+1. If you commoditise a component into an industrialised form, that enables others to innovate on top
 2. Then you can leverage consumption behaviour in order to detect successful innovations.
-3. Finally, you can commoditize any identified success to become a fast follower without incurring prohibitive R&D risk. This repeats indefinitely.
+3. Finally, you can commoditise any identified success to become a fast follower without incurring prohibitive R&D risk. This repeats indefinitely.
 
 ![An ILC diagram showing the zig zag upwards motion of the commodification and industrialization of individual innovations](./src/images/ilc-model.png "The zig-zag evolution of innovation via cooperative competition"){.w-full}
 
 _([Wardley, S. "Understanding Ecosystems" (2014).](https://blog.gardeviance.org/2014/03/understanding-ecosystems-part-i-of-ii.html))_
 
 The reason this works so well is because there are two different types of risk here.
-Firstly, there is the R&D risk that you externalize onto the people operating in the ecosystem.
+Firstly, there is the R&D risk that you externalise onto the people operating in the ecosystem.
 Secondly, there is the risk of scale.
 Taking a solution that has proven to work at one scale, and then actually scaling up, creates a lot of challenges and risk in budget and operational skill.
 You, as the caretaker of an ecosystem, can actually take on that type of risk because you are better equipped to handle the economies of scale.
 Your consumers, on the other hand, are better equipped to handle the economies of diversity.
 Building a game that plays to the strengths of both allows you to actually work collaboratively together, even if you're not on the same team, and even though it appears to operate like a competition.
 
-In an adversarial competition, one must balance how rapidly and pervasively the opponent's consume and commoditize successes in order to make it financially worthwhile for actors to build on top of the existing commodities in your ecosystem.
-In a cooperative competition, one must balance how rapidly and proficiently they consume and commoditize successes in order to ensure that they can curate the growing ecosystem effectively, and also to ensure that innovators have an incentive to work with you to make it easier for the hand-off to occur.
+In an adversarial competition, one must balance how rapidly and pervasively the opponent's consume and commoditise successes in order to make it financially worthwhile for actors to build on top of the existing commodities in your ecosystem.
+In a cooperative competition, one must balance how rapidly and proficiently they consume and commoditise successes in order to ensure that they can curate the growing ecosystem effectively, and also to ensure that innovators have an incentive to work with you to make it easier for the hand-off to occur.
 
 I like to think of this as a garden (and indeed, Wardley uses that metaphor occasionally as well).
 If one harvests the garden too aggressively, the garden dies from resource starvation.
 If one harvests it too little, the garden dies from becoming overgrown and unruly beyond manageable capacity.
 In many enterprises, we can think of our platforms as ecosystems that are comprised of inner overlapping sub-ecosystems, each with their own set of components and various levels of evolution (but often at the product-to-utility maturity of evolution).
-It follows, then, that if a company's platform adopts components and commoditizes them too slowly, teams will be reluctant to build and innovate because the cost of carrying the burden of R&D will be too high.
-Likewise, if that company's platforms commoditize too rapidly, teams will not innovate because the platforms will lack the stability required to be built build on top of, and the teams will experience prohibitive amounts of churn fatigue.
+It follows, then, that if a company's platform adopts components and commoditises them too slowly, teams will be reluctant to build and innovate because the cost of carrying the burden of R&D will be too high.
+Likewise, if that company's platforms commoditise too rapidly, teams will not innovate because the platforms will lack the stability required to be built build on top of, and the teams will experience prohibitive amounts of churn fatigue.
 
 To expand on that, one can imagine enabling product teams at the "uncharted" side to innovate, rather than requiring innovation to happen solely through platform teams.
 This would be de-risked on the product side by allowing them to solve their immediate problems faster than otherwise could happen.
@@ -266,16 +266,16 @@ Ultimately, this would have the goal of ensuring that successful innovations can
 Essentially, what we form here is a positive feedback loop in the form of a **bidirectional trust building engine**, where
 
 1. Actors become increasingly trusting that **platforms reciprocate investment and innovation by rewarding actors with a better platform and reduced operational burden**, with which they can continually ratchet up their capabilities and build increasingly valuable products.
-2. Simultaneously, platforms become increasingly trusting that **actors reciprocate investment and commoditization by building on top of platforms and working to reduce burden of adoption by delivering high-quality innovations** that can be efficiently and effectively commoditized.
+2. Simultaneously, platforms become increasingly trusting that **actors reciprocate investment and commoditization by building on top of platforms and working to reduce burden of adoption by delivering high-quality innovations** that can be efficiently and effectively commoditised.
 
 In my opinion, this is _similar_, but not entirely equivalent, to concepts like the [golden path](https://charity.wtf/2018/12/02/software-sprawl-the-golden-path-and-scaling-teams-with-agency/), [the paved road](https://www.oreilly.com/videos/oscon-2017/9781491976227/9781491976227-video306724/), and the [reliability collaboration model](https://medium.com/booking-com-infrastructure/how-reliability-and-product-teams-collaborate-at-booking-com-f6c317cc0aeb).
 I also think that this serves as a very handy approach, combined with Ostrom's design principles, towards solving the problem of continually growing standardization without stifling innovation or preventing necessary specialization.
-By bringing both into a consistent framework, we turn an otherwise tension filled trade-off of "I want to optimize for my product use case" versus "I want to optimize for ease of uniform operation" into a mutual trade-off space of "how can I innovate in a way that helps you help me best" and "how can commoditize in a way that helps you help me best."
+By bringing both into a consistent framework, we turn an otherwise tension filled trade-off of "I want to optimise for my product use case" versus "I want to optimise for ease of uniform operation" into a mutual trade-off space of "how can I innovate in a way that helps you help me best" and "how can commoditise in a way that helps you help me best."
 
 ## Understanding Cumulative Culture
 
 What follows is a very rough dump of my internal notes which will be cleaned up later.
-I do apologize for the mess, but I apologize only mildly.
+I do apologise for the mess, but I apologise only mildly.
 
 - [Eureka! What is innovation, how does it develop, and who does it?](https://pmc.ncbi.nlm.nih.gov/articles/PMC5053256/)
   - Idea. Innovation is independent invention, age social learning, and/or modification of social learning, but it must be novel.
@@ -327,7 +327,7 @@ The abstract is below (emphasis mine)
 
 What I take from this is that, in other words, developer productivity and the overall velocity of innovation are best thought of as a product of collective social learning.
 Fortunately, collective social learning is well studied in humans as a cumulative culture, and we would do well to learn from that existing and rich body of work.
-Bringing everything together, I take this to mean that, in my opinion, focusing on a collective environment directly implies that the facilitation and creation of that environment becomes a top priority for a high performing enterprise, and we can understand how to operationalize this facilitation by framing it in the lens of socio-economic systems.
+Bringing everything together, I take this to mean that, in my opinion, focusing on a collective environment directly implies that the facilitation and creation of that environment becomes a top priority for a high performing enterprise, and we can understand how to operationalise this facilitation by framing it in the lens of socio-economic systems.
 
 To put concisely: The journey to high performance in a community is equivalent to pursuing the art of learning.
 For an enterprise, that means the enterprise should built towards having and maintaining a culture that seeks to understand itself better.

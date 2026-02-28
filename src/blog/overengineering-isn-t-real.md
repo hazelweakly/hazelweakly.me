@@ -38,7 +38,7 @@ One of the secrets to software engineering is to focus all of your energy as a t
 Build that understanding.
 Build that ability to uplift and teach each other.
 Once you build that, you'll be amazed at how often it feels like you almost accidentally end up building the correct thing.
-It just starts to materialize out of nowhere, and becomes an emergent property of your shared understanding and collaboration.
+It just starts to materialise out of nowhere, and becomes an emergent property of your shared understanding and collaboration.
 
 For fuck's sake, stop worrying about overengineering and start worrying about under-understanding the problem.
 The "overengineering" magically goes away the second you start putting humans first and start prioritizing understanding over an artificial roadmap built without context.

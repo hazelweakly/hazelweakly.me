@@ -38,14 +38,14 @@ What you're looking for, I think, is someone who can take "developer experience"
 The hardest things they will have to do is gain the trust of the entire engineering organisation, buy-in for their approach, and deliver perceived value and improvements.
 
 I'm reminded of the concept that there are several inflection points at which organisations change and their needs evolve; importantly, the nature of how work becomes visible and how coordination happens fundamentally shifts.
-Anecdotally, I've found these numbers to be true--you may recognize them as being related to Dunbar's number(s): 5, 15, 50, 150, 500, 1500.
+Anecdotally, I've found these numbers to be true--you may recognise them as being related to Dunbar's number(s): 5, 15, 50, 150, 500, 1500.
 
 Here's how I personally apply them to the general bucket of "not product engineering", which includes but isn't limited to: infrastructure, operations, and developer experience.
 
 - 5 Engineers: The number of engineers you can have and work without docs. The true bliss of "yolo driven development."
 - 15 Engineers: You now need documentation, but still don't need "real" infrastructure (or pretty much anything else).
 - 50 Engineers:
-  - The threshold by which it makes sense to have one person specialized on infrastructure, ops stuff, developer environments, CI/CD, etc.
+  - The threshold by which it makes sense to have one person specialised on infrastructure, ops stuff, developer environments, CI/CD, etc.
   - Start building what will become the internal platform; but don't build the platform yet, it's still too early.
 - 150 Engineers:
   - The threshold where it makes sense to transition from people-driven coordination to process-driven coordination.
@@ -89,7 +89,7 @@ In reality, this list should be informed by actual answers from engineers, where
 4. shared frustrations
 5. things teams aren't aware of but cause friction
 
-That list should then be categorized, prioritized, and an appropriate allocation of time should be spent on it.
+That list should then be categorised, prioritised, and an appropriate allocation of time should be spent on it.
 In my experience, it has always been that immediate pain points needs 80%+ time allocation for the first quarter, because nobody ever hires for this role before it's too late.
 Eventually, a 30/30/30 split of immediate pain, medium term plans, and knowledge sharing is a great place to be.
 You'll notice I didn't allocate any time to items 3, 4 and 5; that was intentional.
@@ -111,7 +111,7 @@ All of that said, the below list of projects is something that is pretty much gu
   - Nothing says "I know how to improve things where it actually hurts" like bringing more visibility into tickets and making it easier to open and close them
 - Find a new project a team is about to do, sit in on planning, and take notes. Look for opportunities to notice when multiple teams are trying to solve the same problem, and bridge that communication gap.
 
-Crucially here, the takeaway is that I would expect this person to succeed if, and likely only if, there is some visibility into showing what the actual needs of the company are, and they have the ability to globally prioritize needs as well as locally drive improvements.
+Crucially here, the takeaway is that I would expect this person to succeed if, and likely only if, there is some visibility into showing what the actual needs of the company are, and they have the ability to globally prioritise needs as well as locally drive improvements.
 
 ## How Do I Screen For This Role
 
@@ -122,7 +122,7 @@ It is not about technical skills.
 It is not about architecture.
 
 If you screen for those, you will probably fail to hire someone who will succeed in this role.
-If you utilize in a whiteboard algorithms interview, you will _actively screen out_ everyone who is qualified to do this role; they will be capable of doing the interview just fine, they will just tell you to fuck off.
+If you utilise in a whiteboard algorithms interview, you will _actively screen out_ everyone who is qualified to do this role; they will be capable of doing the interview just fine, they will just tell you to fuck off.
 They will be right.
 
 > If you do not reach the offer stage with at least 50% of the pipeline being women and at least 40% of the pipeline being other underrepresented minorities, you fucked up.
@@ -136,19 +136,19 @@ If you want to hire someone who knows how to pull off a developer experience tra
 - Lean in on questions that ask them how they drive organisational change.
   You're asking for someone to be an expert in leading without authority and doing so is incredibly challenging even with leadership buy-in.
   If this doesn't go well, it will probably be the reason they quit, and hiring their backfill will be 10x harder than it should be.
-- My favorite architecture/technical question here is asking people to walk through how they build a paperclip maximizer.
+- My favorite architecture/technical question here is asking people to walk through how they build a paperclip maximiser.
   I personally call it an addition function.
   Here's the question: "let's say I want to add two numbers and return a result, how do I scale that taking into account people, coordinating teams, software architecture, and infrastructure?" You're going to be looking for people who can walk the evolution of a company and point out how the nature of coordination, tooling requirements, architecture needs, etc., fundamentally change _both as the software scales as well as the organisation_.
-- People don't do well in this role if they don't recognize the sociotechnical nature of the work; they will also not do well in this role if _you_ don't recognize the sociotechnical nature of the work.
+- People don't do well in this role if they don't recognise the sociotechnical nature of the work; they will also not do well in this role if _you_ don't recognise the sociotechnical nature of the work.
   Empowering the social humanity with technology and humanizing the technical systems is key to this role and most people don't seem to understand how to do that.
   Look for indicators of this thinking throughout answers.
 - Ask about times they have done something intentionally that is not a best practice.
   Example: One of my favorite stories to tell is when I turned off all of the on-call for the entire company.
-  Leadership refused to prioritize stability, the alerts were not actionable, and fatigue was burning teams out; so I turned it off rather than fight against leadership priorities.
+  Leadership refused to prioritise stability, the alerts were not actionable, and fatigue was burning teams out; so I turned it off rather than fight against leadership priorities.
   That's the kind of thinking that will be required to succeed here; working with the dysfunctions of an organisation to improve the health of the engineers is really the value here, not migrating a CI system.
 - Look for the types of questions _they_ ask when interviewing _you_. High quality questions speak volumes.
   Some great questions would be:
-  - how does the company think about value, ROI, and what incentivizes work
+  - how does the company think about value, ROI, and what incentivises work
   - what does high impact mean at the company
   - how does leading without authority look like at the company
   - what does success in this role look like.

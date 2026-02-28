@@ -4,7 +4,7 @@ date: 2022-11-27
 ---
 
 This blog post will be kept up to date as I find out more information and publish my findings.
-It's currently organized in no particular order, as a collection of several fragmented thoughts.
+It's currently organised in no particular order, as a collection of several fragmented thoughts.
 
 ---
 
@@ -232,7 +232,7 @@ Have to stop all clients to get the database back online.
 > so can be active at one time. [...]
 >
 > Adjusting connection counts may also require you to adjust some system limits
-> to allow PgBouncer to utilize the number of sockets required [...]
+> to allow PgBouncer to utilise the number of sockets required [...]
 >
 > -- [postgres at scale][multi_pgbouncer]
 
@@ -381,7 +381,7 @@ Run an object storage locally if you have to; it's simpler now with projects lik
 
 ### Sidekiq scaling indications
 
-> These jobs are split into as many tiny jobs as we can manage, because that's how you can make parallelize them best and thus make the most optimal use of hardware and horizontal scaling. But if you've got 10 threads and 22,000 followers, do not be surprised that there are delays. In fact, that is how the need for scaling Sidekiq shows itself: the dreaded backlog.
+> These jobs are split into as many tiny jobs as we can manage, because that's how you can make parallelise them best and thus make the most optimal use of hardware and horizontal scaling. But if you've got 10 threads and 22,000 followers, do not be surprised that there are delays. In fact, that is how the need for scaling Sidekiq shows itself: the dreaded backlog.
 >
 > -- [scaling a mastodon server][scaling_gist]
 

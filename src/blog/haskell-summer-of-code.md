@@ -15,7 +15,7 @@ For those who want a less technical introduction, here’s a bit of introduction
 First off, GHC is the compiler of the programming language Haskell.
 It’s pretty neat and does lots of cool stuff; unfortunately, one of the things it isn’t super great at right now is running performance tests.
 The performance tests do two things: first, they make sure that when people change the compiler, they don’t accidentally make it slower; secondly, they make sure that when people change the compiler, they don’t accidentally make the generated code less efficient.
-Right now, the performance test situation requires manually generating "target numbers," which are the same for every machine and operating system–this renders them mostly useless unless you submit your patch to the build server that has a standardized testing area.
+Right now, the performance test situation requires manually generating "target numbers," which are the same for every machine and operating system–this renders them mostly useless unless you submit your patch to the build server that has a standardised testing area.
 
 ## Pain... Everywhere...
 

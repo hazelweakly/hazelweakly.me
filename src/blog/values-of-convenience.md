@@ -50,7 +50,7 @@ _"That's because it's woman's work."_
 
 We're currently trapped in a ~~dystopian hellscape~~ patriarchal society where the undercurrent of the internet and technological cultures are one of egocentric bias and rugged individualism.
 
-On the egocentric side, the incentives around removing barriers seem to be non-existent or even dis-incentivized entirely.
+On the egocentric side, the incentives around removing barriers seem to be non-existent or even dis-incentivised entirely.
 Why make life easier for the next person if it "devalues" your own resume of achievements?
 For people to stand on _your_ shoulders in an egocentric zero-sum society, it would imply that you had not achieved greatness yourself.
 Far from the "standing on the shoulders of giants" ideals that we love to pretend we believe in, we seem to tend towards viewing that sort of progress as being at the expense of those who came before, as if the very act of forging ahead diminishes the path itself and those who laid it.

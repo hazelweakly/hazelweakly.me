@@ -61,7 +61,7 @@ We should lean into that! It's awesome! But it also means that when we belittle 
 
 The second point.
 When we declare the legitimacy of something, as a society, we often do so at the expense of another thing.
-Likewise, when we declare the illegitimacy of something, as a society, we often do so in order to belittle or ostracize or otherwise hurt a particular group associated with it.
+Likewise, when we declare the illegitimacy of something, as a society, we often do so in order to belittle or ostracise or otherwise hurt a particular group associated with it.
 Whether intentional or not, that is a profound and inescapable result.
 It doesn't "have" to be that way; there's definitely ways to say "this tech is legitimate" without criticizing another tech choice, but be real, how many times have you actually seen that happen?
 Yeah, I thought so.
@@ -105,7 +105,7 @@ Likewise, when I noticed the front-end community split into a "respected" engine
 Seeing a community go from uplifting CSS and heralding things such as the [CSS zen garden](https://csszengarden.com/) as a feat of engineering to seeing just about nobody give a single flying fuck about the incredible works of [Jen Simmons](https://labs.jensimmons.com/) is... Surreal.
 I can't even say "this happened in my lifetime" because I'm too fucking young to be saying shit like "this happened in my lifetime."
 
-But we're here now, and it's been very interesting to reflect on how the changing language I've seen utilized, the technological choices people have made, and how engineering organisations and communities approach certain problems has fundamentally shifted public perception of this type of work in such a profound way that it'll take decades to undo the damage.
+But we're here now, and it's been very interesting to reflect on how the changing language I've seen utilised, the technological choices people have made, and how engineering organisations and communities approach certain problems has fundamentally shifted public perception of this type of work in such a profound way that it'll take decades to undo the damage.
 It's breathtaking.
 How the hell did we get here, anyway?
 

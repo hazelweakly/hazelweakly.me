@@ -171,7 +171,7 @@ If you've made it this far, congratulations, you got to read my ramblings for a 
 
 But really, what's the point here?
 The point for me, simply, is that I don't think tech companies are thinking enough about what it means to build a language for engineering.
-How does one go about building something in a way that you can distribute tools of thought that are deeply embedded in peoples workflows that they learn to conceptualize thought intuitively in a way that's aligned with the direction that you need to go?
+How does one go about building something in a way that you can distribute tools of thought that are deeply embedded in peoples workflows that they learn to conceptualise thought intuitively in a way that's aligned with the direction that you need to go?
 How do you make software architecture where coherence with the company vision is an _emergent property_?
 Is that even a thing people think is possible? I think it is, I just also think we suck at doing that.
 

@@ -38,7 +38,7 @@ At first, I was thinking that the next logical step towards working on the tooli
   - Other things as I think of them or the need presents itself.
 - Flesh out the current proof of concept comparison utility:
   - The table output is currently useless for actually ‘comparing.’ I need to fix that.
-  - While I’m at it, I need to tag each bit of data I grab with the commit it came from so that I can organize the data from oldest commit to newest commit and then group it by test.
+  - While I’m at it, I need to tag each bit of data I grab with the commit it came from so that I can organise the data from oldest commit to newest commit and then group it by test.
   - Nifty features here and there as I figure out new ways to make people’s lives easier.
 
 If you have any questions, feel free to ask them on reddit where this will be cross-posted, or on #haskell (my nick is hazel-w), or feel free to stalk my facebook and send super creepy messages at 3am (maybe don’t do that).

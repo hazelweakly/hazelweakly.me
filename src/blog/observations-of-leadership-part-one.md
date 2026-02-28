@@ -28,7 +28,7 @@ This is also going to have to be a multi part series because I started writing t
 
 ## Accept We Are Part of the Problem
 
-> Can you share a specific instance when you recognized your contribution to a problem?
+> Can you share a specific instance when you recognised your contribution to a problem?
 > What led to this realization, and how did it influence your actions in the future?
 >
 > -- <https://cutlefish.substack.com/i/142017363/accept-we-are-part-of-the-problem>
@@ -50,7 +50,7 @@ Now, let's get to the part where I fucked up: to put it directly, I did an _okay
 One of the things that's so difficult about leadership is that you can really only start to realise this type of thing by the nature of the conversations you have months down the road after it's a bit too late to directly address them.
 If I were to break down an ideal scenario for what I could've done, it would be:
 
-- Recognize and position myself as an interim director with the sole focus of preparing for the next change in leadership
+- Recognise and position myself as an interim director with the sole focus of preparing for the next change in leadership
 - In doing so, one of the highest impact things I could've done was: documenting, describing, and quantifying the scope of the problem.
   I did the describing part really well, I'm proud of that; but I did precious little documentation of it, which led to repeated conversations and some uncomfortable moments for my SVP as she came in and had very little ability to immediately present clear and quantifiable cases to the rest of leadership for the problem that she and I were both able to articulate.
 
@@ -95,7 +95,7 @@ I made a few changes to attempt to improve things, but they weren't ultimately p
 These were all great steps, but the ones that I missed were:
 
 - _doubling down harder_: We still had instances of people doing project style work rather than having _everyone_ doing interrupt driven work. If you're going to lean into something, you need to really lean in.
-- Leaning into interrupt driven work was an attempt to minimize work in progress to a manageable level. While it worked, it would've worked vastly better by turning the entire team into a mob programming team.
+- Leaning into interrupt driven work was an attempt to minimise work in progress to a manageable level. While it worked, it would've worked vastly better by turning the entire team into a mob programming team.
   We did this after our new Director joined and the change was incredible; it wasn't enough to have everyone working in the same area, they needed to work on the same thing at the same time, together.
   Not only did this speed up the entire team, but they grew closer together, collaborated better, and huge chunks of siloing disappeared overnight.
   Did I mention that we're fully remote? We are. We still did mob programming, and it was amazing.
@@ -141,18 +141,18 @@ Each have their own goals, strategies, and tools available to them to help steer
 In addition (and I am grossly oversimplifying here), each company, particularly startups, are going to find themselves in one of _roughly_ three phases: Exploration, Expansion, or Extraction.
 One of the difficulties that comes here in the Executive and Management level is that any advice, tool, strategy, goal, or whatever else that you receive or attempt to implement is only going to work if it's a match for the particular stage of a company; consequently, you essentially have to throw out your understanding of "how to run a company" every time you switch stages.
 
-When I came in, I would categorize our company as one that had just gone through the Exploration stage and was now entering into the most awkward phase, Expansion.
+When I came in, I would categorise our company as one that had just gone through the Exploration stage and was now entering into the most awkward phase, Expansion.
 It turns out this isn't quite right, we have two to three main business markets and each one is in a different stage; in addition, each company that we've merged with or acquired also was in a different stage, so what you really had from the perspective of the Executive layer was a very fuzzy matrix of approaches, strategies, tools, and everyone came in with a slightly different toolset and rationale for said toolset.
-This isn't a worst case scenario for the business (it's quite normal), but it's close to a worst case scenario for when it comes to **understanding how to build and utilize effective communication streams and feedback loops so that information travels bidirectionally in a way that people feel valued and heard**.
+This isn't a worst case scenario for the business (it's quite normal), but it's close to a worst case scenario for when it comes to **understanding how to build and utilise effective communication streams and feedback loops so that information travels bidirectionally in a way that people feel valued and heard**.
 
 Coming back to the initial situation that I found myself in when I joined the company: it should now come as zero surprise that we were having a particularly difficult time getting good feedback from ICs, acting on said feedback, and doing so in a way that they felt heard and valued.
-As a consequence, many of the issues that actually mattered to ICs weren't acted on or even identified; most of which would be issues that we could broadly categorize as "developer experience."
+As a consequence, many of the issues that actually mattered to ICs weren't acted on or even identified; most of which would be issues that we could broadly categorise as "developer experience."
 
 I was actually deeply fortunate here: I came in as an IC, and then stepped into an interim hybrid Engineering Manager and Director of Infrastructure within a month of joining, so I got to see all three perspectives almost simultaneously, and I attribute a very large amount of my ability to effectively and rapidly zero in on "the real issues" at our company to this unique start.
-As such, I was able to categorize a lot of things in ways that helped ICs feel heard and understood, but then translate those issues into something that the management and executive layers could actually see.
+As such, I was able to categorise a lot of things in ways that helped ICs feel heard and understood, but then translate those issues into something that the management and executive layers could actually see.
 
 One of the first things I did here was to quantify and outline the issue in way that presented enough evidence to the executive layer that investing in a developer experience platform would be cost effective and a force multiplier for helping figure out what to do next.
-In our case, we utilized DX because I was familiar with the tool and research behind it and made a strong case that the qualitative feedback mechanism of a survey would offer a much more rapid and tangible ROI.
+In our case, we utilised DX because I was familiar with the tool and research behind it and made a strong case that the qualitative feedback mechanism of a survey would offer a much more rapid and tangible ROI.
 In a cheeky sense: "Hey, a lot of our devs complain that our infrastructure and tooling is really broken, we can't use quantitative reasoning to measure any of this because the tools don't work" is a surprisingly effective argument and it's essentially the one I used.
 
 While we did settle on the developer experience platform of choice somewhat quickly because I pushed hard for it, I was very careful to lay out that we had a 1-2 quarter plan for procuring the platform, using it, and actually understanding what we needed to do with it.
@@ -219,7 +219,7 @@ Ultimately, the answer ended up being yes, but several things had to happen for 
 
 Did I manage this process well?
 Eh..., I did okay; my inexperience really showed up here.
-This was a problem that I unintentionally solved mostly in my head and, while I took the team with me, I should've externalized the process and externalized the information in a better way.
+This was a problem that I unintentionally solved mostly in my head and, while I took the team with me, I should've externalised the process and externalised the information in a better way.
 
 It would've been amazing to have something like an ADR (architectural decision record) but for hypothetical needs.
 The "hack vs doing it right" set of trade-offs that we had was all informal discussion; while it was amazingly helpful, it would've been much more impactful to lay it out in a way that external stakeholders could see it and reason about it, and while we were able to have conversations with others for the first time of "hey this thing you want isn't possible because X, Y, Z" it would've been a huge benefit for them to be able to take a document and share it with their leaders so that people could connect the dots for themselves and tie their business goals to ours in a way that would help everyone involved plan for success.
@@ -293,7 +293,7 @@ The hard part here is really about _finding_ these and appropriately labeling th
 ### Fixable and workable
 
 These were workable, so they're automatically lower priority, _but_ if they're fixable, then they're great things to stick in and sprinkle in with your higher priority stuff.
-Often because something _is_ workable, it's de-prioritized but it can be a source of morale drain or impedance; giving the team permission to work on those things can build a lot of trust with them, and they're often things that can be completed much quicker too.
+Often because something _is_ workable, it's de-prioritised but it can be a source of morale drain or impedance; giving the team permission to work on those things can build a lot of trust with them, and they're often things that can be completed much quicker too.
 
 While you can run the risk of appearing like you're only working on "workable" stuff, when done right, it's incredibly effective in being able to deliver a constant stream of improvements without necessarily meaningfully slowing down the high importance work.
 
@@ -314,7 +314,7 @@ Label this and move on; the things that are great to label it with are:
 That last bit is important enough that I'm going to repeat it; things that are unfixable and workable are very dangerous, because they can be ignored, but if it flips to any other state, it could turn out quite negatively: either people will see you as being inconsistent with what you choose to work on, or it'll silently flip into "unworkable" and you won't notice and that's going to cause a lot of damage to the business.
 
 Now that I've rambled on a bit about the theory of all of this, the situation that we had was one where all four categories each had more work than my team could actually accomplish, so it didn't matter what we did, because before we could finish any of the highest urgency work, more work would escalate into being in that very high urgency state.
-As it was, the only thing I could really do was minimize the amount of work in progress, free up as much bandwidth for the team, and buy them as much time as I could while I addressed the unfixable and unworkable issues with leadership directly.
+As it was, the only thing I could really do was minimise the amount of work in progress, free up as much bandwidth for the team, and buy them as much time as I could while I addressed the unfixable and unworkable issues with leadership directly.
 The first being headcount, and justifying said headcount in a way that aligned the success of the org with the success of the company; this was a bit difficult because the company was very much in expansion mode, and so _everyone_ urgently needed headcount.
 Us getting that headcount meant that we took it from the rest of the org, which is exactly what happened, but the argument for doing so had to essentially become "this will accelerate everyone else more than hiring more headcount for them will" and one of the key pieces of information there was showing that we had become the blocker to essentially all progress in the organisation.
 
@@ -330,7 +330,7 @@ Totes worth, 10/10, would fuck up my reputation again in a heartbeat.
 ## Conclusion
 
 I don't even know how to conclude this, honestly; writing this has been a lot of fun, and I'm only a third of the way through.
-I suppose if I had to attempt to summarize a lot of the key themes here when it comes to dealing with uncertainty and ambiguity, there are a few things that emerge for me: understanding the problem, empathy, communication, and that I did better than I thought I did.
+I suppose if I had to attempt to summarise a lot of the key themes here when it comes to dealing with uncertainty and ambiguity, there are a few things that emerge for me: understanding the problem, empathy, communication, and that I did better than I thought I did.
 
 ### Understanding the Space of the Problem
 
@@ -378,7 +378,7 @@ Communication isn't the same as execution, which isn't the same as strategy, or 
 However, it really is sort of the same thing at the same time?
 
 Just because communication isn't strategy doesn't mean that strategy isn't communication, because it absolutely is, and it communicates a great deal of information when you learn how to read into it and interpret it and use that second layer of information to communicate more things when building out your _own_ strategy to compliment someone else's strategy.
-That goes for all of the others as well; they're all a stream of communication and communicate information in their own way, and you have to learn how to utilize them as the "thing" as well as the tool of communication that they are, while not forgetting that communication itself is also directly required, especially for people who haven't learned how to read into all of the other streams of communication that are embedded into all of the other things out there.
+That goes for all of the others as well; they're all a stream of communication and communicate information in their own way, and you have to learn how to utilise them as the "thing" as well as the tool of communication that they are, while not forgetting that communication itself is also directly required, especially for people who haven't learned how to read into all of the other streams of communication that are embedded into all of the other things out there.
 
 In particular, something that isn't built into the rest of the things we communicate about are expectations.
 They're kinda there? Sorta? Kinda sorta, but not really.

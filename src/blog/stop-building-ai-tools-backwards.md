@@ -20,7 +20,7 @@ This has some big implications for designing collaborative tooling!
 Second: What we learn.
 It turns out, the "thing" that we learn most effectively is not _knowledge_ as we typically think of it, it's _process_.
 This should be intuitive, if we put into a bit of a more natural context.
-Imaging learning baking for a moment: Do you teach someone to bake a cake by spitting out a fact sheet of ingredients and having them memorize it? Or do you teach them the process?
+Imaging learning baking for a moment: Do you teach someone to bake a cake by spitting out a fact sheet of ingredients and having them memorise it? Or do you teach them the process?
 
 Third: How we level up.
 Humans are really bad at "novel" innovation, which is a bit tragic because novel innovation seems to be the thing that the tech industry thinks of when it talks about developer productivity.
@@ -29,7 +29,7 @@ Yet, it turns out that sustained solo innovation is both extremely rare, and als
 It's much more like the sprinkles on top of a cupcake, rather than the main course; simply put, it's not how innovation _generally_ happens.
 
 However! We're really good at cumulative iteration.
-Humans are turbo optimized for communities, basically.
+Humans are turbo optimised for communities, basically.
 This is why brainstorming is so effective... But usually only in a group.
 There is an entire theory in cognitive psychology about cumulative culture that goes directly into this and shows empirically how humans work in groups.
 Humans learn collectively and innovate collectively via copying, mimicry, and iteration on top of prior art.
@@ -80,7 +80,7 @@ Whatever floats your ducky.
 So, I'm going to walk through one of the anti-patterns I see in AI tooling and fix it by taking an evidence-based teaching process and imagining it augmented with AI.
 The teaching process, by the way, is: **Explain, Demonstrate, Guide, Enhance.**
 
-If you've ever been in scouting, you'll recognize this as their EDGE method with a small difference; rather than "enable", I'm using "enhance".
+If you've ever been in scouting, you'll recognise this as their EDGE method with a small difference; rather than "enable", I'm using "enhance".
 The reason for that is because "enable" is about having someone perform the action, but we are already sprinkling human actions all the way through the process.
 Instead, "enhance" is going to be about feeding that human action into the next iteration of problem solving, so that the next time someone does something, they get even better.
 Ideally, we want to encourage and inspire even more ambitious tasks, guiding people towards increasingly effective actions.
@@ -224,7 +224,7 @@ Instead, work "backwards" with the AI.
 Generate rough documentation, rough/high-level architecture diagrams, then a testing plan, then the tests, then stubbed feature-flagged code...
 _THEN_ generate the code.
 
-Once the code passes the tests, work backwards over the entire process and use the existing code to improve the tests, flesh out the testing plan, polish the architecture diagrams, and finalize the documentation.
+Once the code passes the tests, work backwards over the entire process and use the existing code to improve the tests, flesh out the testing plan, polish the architecture diagrams, and finalise the documentation.
 
 Why? Because if you ask a human "is this right?" when they don't have a solution in mind, you're asking a validation-style question that humans can't assess.
 That's not retrieval, and even worse, we're _really_ bad at it.
@@ -312,11 +312,11 @@ Seriously, we need to cut that out.
 We don't _have_ to do that, either!
 (I'm not even making this up! There's evidence for this! Science!)
 
-If you build tools for collaborative learning, if you prioritize assisting and augmenting a human driven process over outputting exponential amounts of noise, then what you're going to end up doing is building tooling that helps humans get better at getting better.
+If you build tools for collaborative learning, if you prioritise assisting and augmenting a human driven process over outputting exponential amounts of noise, then what you're going to end up doing is building tooling that helps humans get better at getting better.
 That, in turn, then helps the tooling get better, which then helps the humans get better; the result is the creation of a reinforcing positive feedback loop rather than reinforcing negative feedback loop.
 Please, y'all, put the emphasis on humanity back into our tooling rather than pretending nothing matters, as if somehow humans will supposedly be irrelevant in a few years.
 Although, arguably, that human focus was never in our tooling in the first place--I mean, let's be real here.
 
 Systems tooling is ripe for revolutionary changes in how they're imagined, how they're implemented, and how they're valued.
-But those changes will _never_ materialize if we don't build them to be human-first.
+But those changes will _never_ materialise if we don't build them to be human-first.
 Don't just keep humans in the loop, remember that humans _are_ the loop.

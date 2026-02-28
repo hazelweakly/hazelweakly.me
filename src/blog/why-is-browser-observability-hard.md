@@ -15,7 +15,7 @@ In addition to the browser being async and event-loop driven, React is a runtime
 
 1.  give you no control over the lifetime of any root span
 2.  encourage you to make the lifetimes of every node as long as possible (for efficiency reasons)
-3.  not give you lifecycle hooks granular enough to synchronize your span lifecycle to that of a component
+3.  not give you lifecycle hooks granular enough to synchronise your span lifecycle to that of a component
 
 Even if 3 was solved by introducing the concept of "on component creation, on component render, on component removal, on component re-render" and whatever else that was required for creating autoinstrumentation, that wouldn't really work meaningfully.
 For one thing, you would have to build that into react.js itself and not anything on top of it.

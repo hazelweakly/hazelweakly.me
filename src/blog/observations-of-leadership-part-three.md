@@ -33,7 +33,7 @@ If you're still lost, part one is [here](/observations-of-leadership-part-one) a
 ## Coherence vs. Alignment
 
 > Can you tell me about a situation where you were tasked with getting people to take action, and you did it without forcing everyone to align on every detail?
-> How did you determine a generally coherent direction without defining an idealized end state?
+> How did you determine a generally coherent direction without defining an idealised end state?
 >
 > -- <https://cutlefish.substack.com/i/142017363/coherence-vs-alignment>
 

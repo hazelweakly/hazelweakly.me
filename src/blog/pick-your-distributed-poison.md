@@ -42,7 +42,7 @@ My poison?
 I prefer reproducible and bootstrappable systems.
 That's my thing.
 I want cold caches, constant work, and young state.
-It minimizes, for me, the amount of things I need to keep in working memory.
+It minimises, for me, the amount of things I need to keep in working memory.
 
 Of course, I pay the price: I lose the ability to detect leaks, stale references, clean shutdowns, and long lived properties.
 I also lose out on emergent performance, large amount of adaptability, and entire methodologies of systems safety.

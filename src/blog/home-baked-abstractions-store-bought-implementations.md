@@ -1,10 +1,10 @@
 ---
 title: "Home Baked Abstractions, Store Bought Implementations"
 date: 2024-08-21
-description: I like to home roll abstractions, but commoditize implementations. What I mean by that is a fairly simple rule that has a very powerful effect, but can be tricky to find the right balance.
+description: I like to home roll abstractions, but commoditise implementations. What I mean by that is a fairly simple rule that has a very powerful effect, but can be tricky to find the right balance.
 ---
 
-I like to home roll abstractions, but commoditize implementations.
+I like to home roll abstractions, but commoditise implementations.
 
 What I mean by that is a fairly simple rule that has a very powerful effect, but can be tricky to find the right balance.
 
@@ -13,8 +13,8 @@ But to do that effectively requires context from the team, the company, the indu
 You can't "off the shelf" ship a meaningful abstraction around semantic metadata, for example, but it's invaluable to _have_ one.
 Why? Well, because an abstraction to me is something you use to help shape and articulate the desired emergent behaviour of groups and systems; thus, by definition, the emergent behaviour is very specific to your current context.
 
-Using a commoditized implementation, on the other hand, has a fairly simple litmus test: is the implementation largely outside of your company, and can it survive the subject matter expert on your team leaving?
-Kubernetes, Jira, Salesforce, Spark, Postgres, etc, are all great examples of commoditized implementations.
+Using a commoditised implementation, on the other hand, has a fairly simple litmus test: is the implementation largely outside of your company, and can it survive the subject matter expert on your team leaving?
+Kubernetes, Jira, Salesforce, Spark, Postgres, etc, are all great examples of commoditised implementations.
 This is all about improving optionality, business continuity, reducing risk, and increasing leverage; while it can help shape your abstraction, it's not really about shaping the emergent behaviour of a system, it's about shaping the solution space you use to solve your problems with.
 
 Why is it tricky to find the right balance?
@@ -34,7 +34,7 @@ Some common examples of this are:
 Do you see a trend?
 It's not just a thing that programmers do! (Although I do confess that most of my examples are tech oriented because that's the main audience of my blog posts).
 The trap lies in when you embed the company context so deeply into the tool that the implementation can't ever change and that the emergent behaviour becomes uncontrollable.
-You lose all of the optionality of a commoditized solution and all of the power of shaping emergent behaviour via hand rolling.
+You lose all of the optionality of a commoditised solution and all of the power of shaping emergent behaviour via hand rolling.
 It becomes the worst of both worlds.
 
 ## Abstraction? Product? Project? Glue Code?
@@ -45,7 +45,7 @@ Whatever it is, we're defining _something_.
 
 I've asked around a bit and, while a lot of people can articulate this thing, and that it exists, and that it's important, I don't think we really have a name for it.
 I'm not sure abstraction is the right name for it, honestly, because it's already quite the overloaded word.
-This is really about the process through which a collective group of people figure out a concept and then figure out how to conceptualize and chunk that concept together into more tangible and malleable shapes so that we can build bigger ideas on top of it.
+This is really about the process through which a collective group of people figure out a concept and then figure out how to conceptualise and chunk that concept together into more tangible and malleable shapes so that we can build bigger ideas on top of it.
 
 That said, you might be thinking "what's the point in all this definition nonsense?"
 The point of doing this definition work in the first place is to give people a [shared language](/blog/engineering-language) to work from, so they can build that understanding and actually ship innovation rather than functionality.
@@ -83,7 +83,7 @@ In my experience, there's typically around three stages:
 2. Chaos. Sobbing. Here Be Dragons. ?????
 3. An Abstraction!
 
-Naturally, this doesn't fill a lot of people with hope, because now the first thought they have is how to cross that giant gap in-between "some MVP prototype thingy" and "an internalized concept that people utilize seamlessly to navigate a solution space in a way that results in desired outcomes."
+Naturally, this doesn't fill a lot of people with hope, because now the first thought they have is how to cross that giant gap in-between "some MVP prototype thingy" and "an internalised concept that people utilise seamlessly to navigate a solution space in a way that results in desired outcomes."
 
 So, uh, how do?
 
@@ -99,7 +99,7 @@ Listening to your emotions now and feeling them will help you regulate yourself 
 
 Second, get a support channel together; this probably won't be your manager, or the team you're working with, although they should ideally be quite supportive and helpful!
 You need to be able to talk to someone (ideally more than one) about the struggles you're facing and get an objective opinion on how you're working with others.
-This is honestly deeply crucial; what you're fundamentally doing here is you're switching from thinking of things in terms of a set of functionality or a list of features or implementation and glue-code into figuring out how to get an entire engineering organisation to literally change their language and how they conceptualize and approach an entire problem space.
+This is honestly deeply crucial; what you're fundamentally doing here is you're switching from thinking of things in terms of a set of functionality or a list of features or implementation and glue-code into figuring out how to get an entire engineering organisation to literally change their language and how they conceptualise and approach an entire problem space.
 
 That. is. very. fucking. hard.
 
@@ -223,7 +223,7 @@ A better way to do it, again, involves understanding the culture of the company 
 This is something that, honestly, I'm still getting better at; it's probably one of the more difficult and harder to define things, especially since it's not actually the same as the AreWePlatformYet question, even though it really feels the same.
 
 To me, this really boils down to "how do I teach leadership an effective mental model around how work effectively happens in the technical domain I'm in" and "how do I help them get an intuition for when things are going well and when they are not."
-Leaders want to unblock people, accelerate work, de-risk outcomes, and globally prioritize a shared pool of limited resources so that the company objectives happen most effectively.
+Leaders want to unblock people, accelerate work, de-risk outcomes, and globally prioritise a shared pool of limited resources so that the company objectives happen most effectively.
 If you don't teach them how to do that well, they're going to come up with their own mental model for this and, odds are, you are _not_ gonna like it.
 This is not a "leadership bad, they so dum" thing, this is "leadership needs to globally balance apples to oranges to bananas to pears" constantly and do so in an empathetic manner and equitable manner.
 So help them do that.
@@ -240,8 +240,8 @@ How I'm going to try doing this next time is by establishing a sort of "explore,
   - Problems can now be enumerated and burndown charts might exist, but it's a Done/Not-Done granularity and progress may flap
 - When we're in the extract phase, we've scaled things out to where its functional, and now we're optimizing and balancing non-functional requirements.
   - Investment needs to be "just the right amount" of effort, "appropriate" friction, and iteration speed can be low
-  - Deadlines exist, can be prioritized, and can be depended on by external stakeholders in the company
-  - Problems can be resourced and prioritized and predicted
+  - Deadlines exist, can be prioritised, and can be depended on by external stakeholders in the company
+  - Problems can be resourced and prioritised and predicted
 
 Then updates can get split across the three categories and what you're looking for is for stuff to gradually move "up" the ladder of explore to expand to extract.
 Honestly, this seems solid to me, but I have no idea how effective it would actually be in the real world.
@@ -288,7 +288,7 @@ Here are some concrete ideas you can do to help make this more successful:
 
 - Create a feedback channel in your company's chat application of choice (or a mailing list)
 - Host office hours where you answer live Q&A and go over the abstraction and some of the things that it enables
-- Find a team and migrate something they use to utilize the abstraction, use that to find weak points you haven't considered, and then address those
+- Find a team and migrate something they use to utilise the abstraction, use that to find weak points you haven't considered, and then address those
 
 #### Your Leadership
 
@@ -299,7 +299,7 @@ Unlike projects, abstractions here are directly a thing that leadership cares ab
 Which means, if this goes badly, they're going to behave like they're taking it _awfully_ personally.
 Not in a bad way, necessarily, but this gets to the heart of the "enabling" aspect of leadership in a way that few other things do.
 
-Success here, fundamentally means that you understand how your leadership thinks about those emergent behaviours and what leading indicators they utilize to understand whether or not the right emergent behaviour is shaping out.
+Success here, fundamentally means that you understand how your leadership thinks about those emergent behaviours and what leading indicators they utilise to understand whether or not the right emergent behaviour is shaping out.
 Additionally, you're going to be looking for the "unsaid" things that they're concerned about; often when leaders talk about a concern, there's a hidden one underneath it that's more valuable, and you're going to need to extract that one out if you want to be able to help them help you succeed.
 
 Here are some concrete ideas you can do to help make this more successful:
@@ -315,13 +315,13 @@ The stakeholders are are the people that aren't directly in charge of the leader
 A huge, yet often not considered, aspect of success in the creation of an abstraction is whether or not the stakeholders involved can learn how to communicate with the abstraction.
 This doesn't mean that they understand it: domain experts often need to build abstractions that don't translate well outside of said domain, but that doesn't mean they can't be used to communicate outside the domain.
 In fact, the ability to communicate the abstraction outside of the domain in which it "belongs" is likely one of the most important success criteria for determining the longevity of the abstraction in the organisation.
-As the abstraction goes from being an innovation to a novelty to a product to a commodity, you're going to see the scope of who utilizes it in the company widen over time.
+As the abstraction goes from being an innovation to a novelty to a product to a commodity, you're going to see the scope of who utilises it in the company widen over time.
 
 Stepping back for a brief moment, though, what's really happening here is that you have the people who are going to be using the abstraction, and the people that are building the abstraction; importantly, they are two separate groups of people.
 One of the biggest force multipliers of programming comes from the fact that those two people are the _same group_.
 When they are not the same group, a ton of the magic of programming goes away and you're going to need to learn how to actually think in terms of group and social dynamics and investigate ways to improve those.
 
-A very handy thing to utilize for this is [Liberating Structures](https://www.liberatingstructures.com/ls-menu/).
+A very handy thing to utilise for this is [Liberating Structures](https://www.liberatingstructures.com/ls-menu/).
 Liberating structures work at the level of how people meet, plan, decide, and work together in order to make things go better.
 In other words, they're exactly what you want and they help you build up the layers of understanding an abstraction bit by bit _with_ the people who are going to be using it, rather than despite them.
 
@@ -350,7 +350,7 @@ We _tend_ to just consider the financial market because it's convenient and acts
 
 In other words, what we're really talking about here is a system, not a market; people just tend to get a mental freeze when you talk about The System or Systems Thinking, so explaining it in terms of several different markets where you have exchanges of value is a much more approachable way for a lot of people.
 They're the same thing, though.
-When I'm personally thinking about the system or market, I often want to go backwards; I think about how I can influence change, and then I think about what the outcomes are, and then I start winding time backwards and figuring out what might go wrong, and then I find out what interventions can be inacted in order to minimize the wrong futures and encourage the right futures to grow.
+When I'm personally thinking about the system or market, I often want to go backwards; I think about how I can influence change, and then I think about what the outcomes are, and then I start winding time backwards and figuring out what might go wrong, and then I find out what interventions can be inacted in order to minimise the wrong futures and encourage the right futures to grow.
 Importantly, you're also going to have to figure out the introduction and trigger inflection points: an introduction inflection point is "the conditions at which it makes most sense to introduce this" and the trigger inflection point is "the conditions at which the intervention needs to be re-evaluated, terminated, or modified."
 
 So, the steps, for me, are:
@@ -367,7 +367,7 @@ I'm going to list them in reverse order (they list them from least effective to 
 1. The power to transcend paradigms.
 2. The mindset or paradigm out of which the system — its goals, structure, rules, delays, parameters — arises.
 3. The goals of the system.
-4. The power to add, change, evolve, or self-organize system structure.
+4. The power to add, change, evolve, or self-organise system structure.
 5. The rules of the system (such as incentives, punishments, constraints).
 6. The structure of information flows (who does and does not have access to information).
 7. The gain around driving positive feedback loops.
@@ -418,21 +418,21 @@ Here's an example of something that I went through at a previous company I worke
 The company context was:
 
 - Culturally
-  - Individual autonomy was prioritized over over realised productivity.
-  - There was a hero culture and employees who shoved things through and got it done while burning out doing 80+ hour weeks were idolized.
+  - Individual autonomy was prioritised over over realised productivity.
+  - There was a hero culture and employees who shoved things through and got it done while burning out doing 80+ hour weeks were idolised.
   - The shared understanding of the product among leadership was "this should be a very simple piece of software, all of our complexity is in the sales and in hitting a critical point for network effects to kick in."
 - Strategically
   - The Go To Market strategy heavily leaned on specific one-on-one engagements with customers.
   - Talent acquisition revolved around hiring "undiscovered and potentially inexperienced smart generalists with lots of potential" and having them do everything end to end.
   - Product diversification was simultaneously a top concern and a low priority.
 - Politically
-  - Work that wasn't explicitly a feature designed to close a sale was heavily de-prioritized and under-resourced.
+  - Work that wasn't explicitly a feature designed to close a sale was heavily de-prioritised and under-resourced.
   - Alpha mentality and individualism were rewarded.
   - "Disagree and commit" was more like "publicly agree, privately do your own thing anyway" in practice
 - Operationally
   - Software ran in a heavily regulated environment.
   - Multi-cloud was embraced as a strategic need out of necessity.
-  - Mergers & Acquisitions were utilized heavily as a growth mechanism, and so the ability to accommodate diversity across diversity, ways of working, and tooling, was required.
+  - Mergers & Acquisitions were utilised heavily as a growth mechanism, and so the ability to accommodate diversity across diversity, ways of working, and tooling, was required.
 
 Some of the circumstances (for the CTO org), then, were:
 
@@ -450,7 +450,7 @@ Some of the circumstances (for the CTO org), then, were:
 The problem(s) to solve, in question, was:
 
 1. How do we deploy software safely, rapidly, and reliably
-2. How do we make it so that a centralized function can build and improve core infrastructure
+2. How do we make it so that a centralised function can build and improve core infrastructure
 3. How do we get to the point where we can prepare a multi-cloud playbook for integrating acquisitions and mergers
 4. How do we enable change management and migrations without interrupting engineers
 5. How do we do this in a way that is compatible with a highly regulated industry
@@ -523,7 +523,7 @@ Now that we have this, we can also start to think about some things that we _do_
 - If multi-cloud is a thing, the solution needs to not _require_ any cloud provider (but in practice it can assume certain defaults)
 - If autonomy is valued over productivity, the solution needs to allow teams to shove their own thing into it somehow
 - If self service is a need, people need a cookbook that lets them apply very standard and methodical solutions to common problems
-- If we don't want custom / in-house solutions, we need to choose implementations that let us minimize custom glue
+- If we don't want custom / in-house solutions, we need to choose implementations that let us minimise custom glue
 - If we can't have one size fits all and we need out of band deployment, the solution has to allow for "custom deployment code"
 - If we can't require teams to refactor their code, it means we're doing the migration, and so that needs to be possible with the team size and resources
 
@@ -581,7 +581,7 @@ For this particular context and circumstances, we really wanted a few things to 
 - Usage of new or existing vendors goes up as integration points can now be done in a 1:many fashion
 - Exponential curve of complexity lowers
 - Duplicated services naturally start to merge
-- Engineers build personalized value-adds on top
+- Engineers build personalised value-adds on top
 - help-desk requests stop re-occurring repeatedly for the same type/instance of problem
 
 ### Intuitive Solution Space
@@ -617,7 +617,7 @@ You have two paths: making a new service, and changing an existing one.
 3. The secret third option: YOLO on your own
    - There should be a well defined list of "all the things the platform and golden path give you"
    - There should be a well understood set of tooling that helps verify whether or not a service fulfills all the needed criteria. The golden path and the platform use it, but there's nothing stopping you from using it
-   - Should your secret third option become sufficiently fleshed out and widely utilized, it can "graduate" into the platform and you can gradually wean yourself off of needing to run it yourself
+   - Should your secret third option become sufficiently fleshed out and widely utilised, it can "graduate" into the platform and you can gradually wean yourself off of needing to run it yourself
 
 One possible way this could work might be:
 
@@ -800,7 +800,7 @@ Here were our stages of done
 
 The last stage of done was not something that we could control, so I removed it from the migration scope , which left us with four levels of done.
 Why remove the last stage?
-Because this company in question prioritized individual autonomy over team productivity, so cross team collaboration was something you should never put as a blocker for your team's progress.
+Because this company in question prioritised individual autonomy over team productivity, so cross team collaboration was something you should never put as a blocker for your team's progress.
 
 Now, selfishly, here's why I personally did things this way.
 I'm going to take off my "explaining things" hat and put on my "Hazel is going to be vulnerable" hat.
@@ -814,7 +814,7 @@ So the quickest way I could see to make that true was to unleash a team of peopl
 In doing so, I could help write documentation, or help explain things in a way that would hopefully prevent these failure modes.
 
 Candidly, I was only partially successful there.
-One thing I should've done differently is recognize that I needed to write a lot more documentation; I tried to pass the documentation off to people as a learning exercise of taking what I taught them and writing it down, but realised too late that this is a learning mode that basically only works for me.
+One thing I should've done differently is recognise that I needed to write a lot more documentation; I tried to pass the documentation off to people as a learning exercise of taking what I taught them and writing it down, but realised too late that this is a learning mode that basically only works for me.
 I've yet to meet someone else who learns optimally this way (although I'm sure they exist); I needed to sit down and write the notes _while_ I taught people, and then write the documentation from that.
 Another thing I should've done differently is I didn't model my thinking flow well enough; there's a fairly predictable flow chart you can follow to mechanically migrate a service, and while I tried to write it out, it ended up looking like "step one... look at the vibes. step two, pick the right solution. step three, just do the thing".
 
@@ -948,7 +948,7 @@ Here are the relevant bits of the company context:
   - Product diversification was simultaneously a top concern and a low priority.
 - Operationally
   - Multi-cloud was embraced as a strategic need out of necessity.
-  - Mergers & Acquisitions were utilized heavily as a growth mechanism, and so the ability to accommodate diversity across diversity, ways of working, and tooling, was required.
+  - Mergers & Acquisitions were utilised heavily as a growth mechanism, and so the ability to accommodate diversity across diversity, ways of working, and tooling, was required.
 
 Oooh, look at that!
 We want to onboard new people and projects, communicate about this at higher levels and with customers, and it'll shape how we identify and execute mergers and acquisitions.
@@ -972,7 +972,7 @@ All the best abstractions don't get to pick their own names, anyway.
 Now, this section is going to be forward facing, because I never got to build this part.
 While it's really cool to be able to stick around long enough to build the abstraction and actually see it flourish, one of the hardest parts of leadership is knowing that, realistically, the odds of you actually being able to see that abstraction through to completion are slim.
 Too many things change around you: company priorities, politics, market concerns, and more are all competing and interacting in odd ways.
-As often happens, that meant that my time at a company often ended before the abstraction could even be started, or maybe it got started but not finalized, or maybe it got finalized but never got to evolve over time.
+As often happens, that meant that my time at a company often ended before the abstraction could even be started, or maybe it got started but not finalised, or maybe it got finalised but never got to evolve over time.
 
 If you get to stick around and do this part, though, it's really cool.
 You get to see the fruits of your labour be born and turn into wild and wondrous things, beyond what you could've ever imagined.
@@ -1020,7 +1020,7 @@ So exposing the ability to have "an object store" but not requiring that to be S
 In memory caching can be handled via something like [pelikan](https://pelikan.io/) rather than immediately assuming memcache or redis (or a managed solution of those).
 You don't even need to update the code!
 
-You can also do this in environments where it makes sense, and then avoid it in environments where it doesn't; high compliance environments, for example, mean that storing data on disk is sometimes annoyingly hard and you'd prefer to externalize it, but you could probably cut off a large chunk of your object storage costs in non-production by using a local storage alternative with the same API.
+You can also do this in environments where it makes sense, and then avoid it in environments where it doesn't; high compliance environments, for example, mean that storing data on disk is sometimes annoyingly hard and you'd prefer to externalise it, but you could probably cut off a large chunk of your object storage costs in non-production by using a local storage alternative with the same API.
 While this type of optimization might be too overkill for most environments, making it _possible_ and _feasible_ to do, even at lower scale, unlocks absolutely massive potential and optionality for companies; something everyone is desperately hunting for right now.
 
 Pivoting to exploring a separate area of the solution space, one of the coolest and most exciting capabilities I've yet to see people really flesh out, is magical headers in requests.
@@ -1036,7 +1036,7 @@ For progressive delivery, [ArgoCD](https://argo-cd.readthedocs.io/), rather than
 
 - For the main branch, deploy the production version of the service in a progressive way, allowing for rollbacks and automatically toggling a feature flag off if the SLOs for it failed. Entire deployments would automatically stop if errors were detected, leaving the service up but isolated for future debugging.
 - For any PRs, deploy an ephemeral version of the service based on labels set on the PR, allowing for any individual PR to iterate on multiple services as needed.
-- For "major PRs", due to compliance reasons, allow for embedding enough metadata into the PR that argocd could be utilized programatically along with some custom glue to collect together all the required information for creating a FedRAMP SCR. This would work automatically, and only if the appropriate compliance flags were set, so that developers and security could work together effectively.
+- For "major PRs", due to compliance reasons, allow for embedding enough metadata into the PR that argocd could be utilised programatically along with some custom glue to collect together all the required information for creating a FedRAMP SCR. This would work automatically, and only if the appropriate compliance flags were set, so that developers and security could work together effectively.
 - Feature flags could override various aspects of the deployment.
 
 Eventually, [vCluster](https://www.vcluster.com/) would've been introduced for a very fun reason: it makes the ephemeral environment concept much more robust, and also does something very interesting: it provides a vanilla Kubernetes API inside of another Kubernetes cluster.
@@ -1075,7 +1075,7 @@ If nothing else burns you out and destroys your faith in humanity, that will.
 
 Please, lean into the vulnerability and plant the flowers.
 Love them as deeply as you can, even if you know you'll one day see them trampled, even if you know that what sprouts won't be what you planted.
-Keep that part of you that recognizes the inevitable as carefully separated from the part of you that loves and hopes for the brighter future.
+Keep that part of you that recognises the inevitable as carefully separated from the part of you that loves and hopes for the brighter future.
 Show it to nobody.
 As a leader, this is something nobody talks about, but you lose the ability to hold this grief and share it with another person at your company.
 Even fellow leaders at your company will not be someone you can share this with, because to do so will cause them to not buy into what you're doing.

@@ -6,12 +6,12 @@ tags: [note]
 
 I thought today about why I do what I do.
 
-When I was a child, I yearned very deeply to be seen and recognized for who I truly was.
+When I was a child, I yearned very deeply to be seen and recognised for who I truly was.
 I didn't quite realise the cause of this, or reason.
 I couldn't have articulated it had I tried.
 Nevertheless, it was there.
 
-However, though I tried desperately, nobody ever saw me or recognized me, and so I grew up with this profound sense of isolation, of misunderstanding, of invisibility.
+However, though I tried desperately, nobody ever saw me or recognised me, and so I grew up with this profound sense of isolation, of misunderstanding, of invisibility.
 I couldn't even express or name that which I suffered from; the closest I got was to call myself alien.
 I remember thinking to myself "I am missing a fundamental part of the human experience, because to be human is to be understood, and to belong, and I have neither of those."
 
