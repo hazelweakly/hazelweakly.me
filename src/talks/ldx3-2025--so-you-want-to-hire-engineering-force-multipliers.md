@@ -8,7 +8,7 @@ abstract: |
 
   This role is extremely difficult to hire for. In my opinion, and in my experience, these roles have been the most difficult role in the company to hire for outside of senior leadership, and the most likely to fail; if there ever was a role that burns people out, it’s this one.
 
-  Come along with Hazel as we draw on her experiences building “cost-center” organizations that punch above their weight, creating healthy outlier teams that redefine the bar for excellence, and diagnosing hiccups that may occur along the way.
+  Come along with Hazel as we draw on her experiences building “cost-center” organisations that punch above their weight, creating healthy outlier teams that redefine the bar for excellence, and diagnosing hiccups that may occur along the way.
 talk_page: https://leaddev.com/leaddev-london/agenda/
 event_site: https://leaddev.com/leaddev-london/
 video: https://www.youtube.com/watch?v=vuc9WxPoW4Q

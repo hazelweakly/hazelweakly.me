@@ -11,7 +11,7 @@ contact:
 
 Influential engineering leader and sought-after international keynote speaker;
 experienced in developer experience, observability, resilience, and distributed systems;
-with a focus on organizational change, holistic efficiency, and driving cross-functional business results in a sustainable manner.
+with a focus on organisational change, holistic efficiency, and driving cross-functional business results in a sustainable manner.
 
 :::
 
@@ -34,14 +34,14 @@ Due to the nature of this role, publicly provided details are scarce. Details ma
 
 Worked to build a next-generation compute and networking platform utilizing cutting edge technology.
 Acted as a subject matter expert to help validate and inform the implementation strategy for the project.
-Facilitated communications across teams and organizations, guiding prioritization of roadmaps.
+Facilitated communications across teams and organisations, guiding prioritization of roadmaps.
 
 :::
 
 ::: {.cv Title="Principal Architect - Platform" Company="[Datavant](https://datavant.com)" Date="Jan. 2024--Aug. 2024" Location="Seattle, WA, USA"}
 
 Developed, oversaw, and drove the technical vision for Platform Engineering and Infrastructure at Datavant.
-Executed on broad impact projects with high visibility, leveled up the technical excellence of the organization, accelerated timelines exponentially, and derisked key initiatives.
+Executed on broad impact projects with high visibility, leveled up the technical excellence of the organisation, accelerated timelines exponentially, and derisked key initiatives.
 
 - Architected the "Golden Path" of the company, building alignment around a strategy for reducing technical fatigue and accelerating development efforts.
 - Designed and executed the observability strategy, including incremental adoption, improvement, platform capabilities and end-user integrations.
@@ -69,7 +69,7 @@ Led the Platform Org in an explicitly interim capacity, focusing on preparing th
 
 - Built awareness around resource allocation needs for the Platform Org, leading to substantially re-allocating resources in order to right-size our infrastructure investment.
 - Built a data-driven and strategic process around identifying and allocating developer experience interventions, leading to substantial improvements to developer satisfaction and velocity.
-- Worked with Product Engineering, Security, and the CTO Leadership Team to build a narrative of cross-functional collaboration and trust, bringing about a significant improvement in the organization's alignment and messaging around Security and Platform.
+- Worked with Product Engineering, Security, and the CTO Leadership Team to build a narrative of cross-functional collaboration and trust, bringing about a significant improvement in the organisation's alignment and messaging around Security and Platform.
 
 :::
 

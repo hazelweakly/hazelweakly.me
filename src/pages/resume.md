@@ -1,7 +1,7 @@
 ---
 title: Résumé
 order: 3
-description: Influential engineering leader with a focus on organizational change, holistic efficiency, and driving cross-functional business results in a sustainable manner.
+description: Influential engineering leader with a focus on organisational change, holistic efficiency, and driving cross-functional business results in a sustainable manner.
 footer: true
 ---
 

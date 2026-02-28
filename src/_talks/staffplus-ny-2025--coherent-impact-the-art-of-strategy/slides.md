@@ -30,7 +30,7 @@ defaults:
 # _Impact?_ **Impact**
 
 - Rewrote the entire hiring budget in one quarter
-- Grew Platform organization from 8 people to 40+ in two quarters
+- Grew Platform organisation from 8 people to 40+ in two quarters
 - Developer sentiment and productivity measurably improved
 - Rebuilt the entire infrastructure stack
 - FedRAMP rev 4 to rev 5

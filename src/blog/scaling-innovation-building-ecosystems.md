@@ -105,7 +105,7 @@ They are about as close to a law of the universes we can get, essentially.
 | _1A_ | User boundaries                           | Clear boundaries between legitimate users and nonusers must be clearly defined.                                                                                                                                                            |
 | _1B_ | Resource boundaries                       | Clear boundaries are present that define a resource system and separate it from the larger biophysical environment.                                                                                                                        |
 | _2A_ | Congruence with local conditions          | Appropriation and provision rules are congruent with local social and environmental conditions.                                                                                                                                            |
-| _2B_ | Appropriation and provision               | The benefits obtained by users from a common-pool resource (CPR), as determined by appropriation rules, are proportional to the amount of inputs required in the form of labor, material, or money, as determined by provision rules.      |
+| _2B_ | Appropriation and provision               | The benefits obtained by users from a common-pool resource (CPR), as determined by appropriation rules, are proportional to the amount of inputs required in the form of labour, material, or money, as determined by provision rules.     |
 | _3_  | Collective-choice arrangements            | Most individuals affected by the operational rules can participate in modifying the operational rules.                                                                                                                                     |
 | _4A_ | Monitoring users                          | Monitors who are accountable to the users monitor the appropriation and provision levels of the users.                                                                                                                                     |
 | _4B_ | Monitoring the resource                   | Monitors who are accountable to the users monitor the condition of the resource.                                                                                                                                                           |
@@ -149,7 +149,7 @@ I'm just going to dump a bunch of info here for now in order to list out the rel
 - "One-size-fits-all" policies are not effective.
 - There are four types of goods and they can be categorized by factor and difficulty of but slowly potential beneficiaries with shift tractability of use.
 - Providing opportunities for "cheap talk" (or any form of communication) reduces over-consumption of common-point resources
-- Polycentric governance models, the governance of a CAST: many centers of decision making that are formally independent of each other, either by being truly independent or by being interdependent.
+- Polycentric governance models, the governance of a CAST: many centres of decision making that are formally independent of each other, either by being truly independent or by being interdependent.
   - Importantly, this shows empirically that complex systems are not chaotic systems, even if a sufficiently complex CAST approaches the appearance of chaos, they can still be governed with better-than-chaotic approaches despite the potential loss of globally coherent collective knowledge.
   - **Crucially, polycentric governance of resource and infrastructure systems are more efficient, more effective, and more understandable.**
 
@@ -232,7 +232,7 @@ Looking at the diagram below, the numbers labeled 1 2 3 (in red) correspond to t
 This chain of thought pattern matches on the above one intentionally to drive the point home a bit more thoroughly.
 
 1. If you commoditize a component into an industrialized form, that enables others to innovate on top
-2. Then you can leverage consumption behavior in order to detect successful innovations.
+2. Then you can leverage consumption behaviour in order to detect successful innovations.
 3. Finally, you can commoditize any identified success to become a fast follower without incurring prohibitive R&D risk. This repeats indefinitely.
 
 ![An ILC diagram showing the zig zag upwards motion of the commodification and industrialization of individual innovations](./src/images/ilc-model.png "The zig-zag evolution of innovation via cooperative competition"){.w-full}
@@ -287,13 +287,13 @@ I do apologize for the mess, but I apologize only mildly.
   - Idea. Four distinct trends associated with cumulative culture. adaptiveness, complexity, efficiency, and disparity.
   - Adaptiveness. As variants are transmitted over time, they can accumulate modifications, and some of these make about a concomitant increase in the biological fitness of individuals who bear or express these variants.
   - Complexity. There are three competing accounts that overlap and conflict. Unit Counting, Skillfulness, and Interactive Complexity
-    - Unit counting is the increase in actions and tools involved to produce a behavior.
+    - Unit counting is the increase in actions and tools involved to produce a behaviour.
     - Skillfulness is how many people are required to transmit cultural knowledge and how difficult expertise is.
     - Interactive complexly is the number of components in a tradition and degree of interaction between them.
-  - Efficiency - Lowering costs associated to acquiring or performing behaviors
+  - Efficiency - Lowering costs associated to acquiring or performing behaviours
   - Disparity. Accumulating increasing numbers of qualitatively distinct cultural traditions. Disparity also likely has to come before complexity.
 - [Where does cumulative culture begin? A plea for a sociologically informed perspective.](https://link.springer.com/article/10.1007/s13752-020-00351-w)
-  - Idea: cumulative culture as a form of behavior that could not have been invented by an individual alone.
+  - Idea: cumulative culture as a form of behaviour that could not have been invented by an individual alone.
   - Care giving and culture giving go hand in hand.
   - Social Learning: Emulation, Imitation, Modification, Teaching, high fidelity transmission
     - Transfer mechanisms that are simpler than social learning are: peering, participation, co-performance, or engagement with a material environment altered by group members.
@@ -339,4 +339,4 @@ Roughly a quarter of the way done.
 I still need to flesh out all of the skeletons and add all of the Resilience Engineering and Mathematics in here.
 Rest assured, I will probably get to that. I have every intention! But I don't control the future.
 
-Anyways, if you're reading this and have suddenly realized that the blog post is old enough to go to school and I have yet to remove this notice, please find me somewhere on the internet and poke me about it.
+Anyways, if you're reading this and have suddenly realised that the blog post is old enough to go to school and I have yet to remove this notice, please find me somewhere on the internet and poke me about it.

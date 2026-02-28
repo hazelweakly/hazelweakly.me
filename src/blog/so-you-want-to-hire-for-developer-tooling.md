@@ -23,7 +23,7 @@ It has been a mixed bag, to put it mildly.
 
 - In one company, I was hired as "the first devops person".
   They fundamentally misunderstood what they needed and were institutionally incapable of handling or addressing cross cutting concerns.
-  Once I realized that what they wanted was purely hourly labor of cheaper toil, I built them a "what they needed but not what they asked for" platform by scraping together enough time from various teams and then left once it was operational.
+  Once I realised that what they wanted was purely hourly labour of cheaper toil, I built them a "what they needed but not what they asked for" platform by scraping together enough time from various teams and then left once it was operational.
 - In another company, I was hired as a Staff Security-oriented SRE but they actually needed tooling expertise more so I built that for them.
   It went well, but they didn't go out of their way to actually hire for that.
 - I have been hired for a role (stability / infrastructure / resilience) and had people hire me with the generic "backend software engineer" interview loops. The loop itself went alright, but that was more me being abnormally good at both backend _and_ this rather than than any indicator of their skill in placing me.
@@ -35,9 +35,9 @@ I'm not sure _why_ this correlation seems to exist (although I have my suspicion
 
 To wit, I would personally not see this role as a dev tools role; I would also not see it as operationally oriented.
 What you're looking for, I think, is someone who can take "developer experience" and push that forward holistically by whatever way is necessary.
-The hardest things they will have to do is gain the trust of the entire engineering organization, buy-in for their approach, and deliver perceived value and improvements.
+The hardest things they will have to do is gain the trust of the entire engineering organisation, buy-in for their approach, and deliver perceived value and improvements.
 
-I'm reminded of the concept that there are several inflection points at which organizations change and their needs evolve; importantly, the nature of how work becomes visible and how coordination happens fundamentally shifts.
+I'm reminded of the concept that there are several inflection points at which organisations change and their needs evolve; importantly, the nature of how work becomes visible and how coordination happens fundamentally shifts.
 Anecdotally, I've found these numbers to be true--you may recognize them as being related to Dunbar's number(s): 5, 15, 50, 150, 500, 1500.
 
 Here's how I personally apply them to the general bucket of "not product engineering", which includes but isn't limited to: infrastructure, operations, and developer experience.
@@ -57,7 +57,7 @@ Here's how I personally apply them to the general bucket of "not product enginee
   - You should have an internal platform that is fully fleshed out.
   - Enabling experimentation, progressive delivery, and effective testing as an expertise is no longer optional.
 - 1500 Engineers
-  - Developer experience, infrastructure, cost visibility, security, etc., should be embedded into the culture, exist as teams within organizations, and also as a separate organization.
+  - Developer experience, infrastructure, cost visibility, security, etc., should be embedded into the culture, exist as teams within organisations, and also as a separate organisation.
   - The idea that you can have basically any engineering function without hiring industry experts in that function should seem both insulting and laughable; even if you hire them as consultants, you should understand deeply that success means leveraging others and you now have the funding to fully do so.
 
 Figure out where in here you are and how much catching up you have to do.
@@ -133,19 +133,19 @@ If you are screeening out the experts in sociotechnical systems, you are doing i
 If you want to hire someone who knows how to pull off a developer experience transformation and building all of that out, the things that would highlight that strength are:
 
 - Skip the coding interview. You'll probably need _some_ technical aptitude, but this is best measured with a coding review, or even better yet, an architecture review.
-- Lean in on questions that ask them how they drive organizational change.
+- Lean in on questions that ask them how they drive organisational change.
   You're asking for someone to be an expert in leading without authority and doing so is incredibly challenging even with leadership buy-in.
   If this doesn't go well, it will probably be the reason they quit, and hiring their backfill will be 10x harder than it should be.
 - My favorite architecture/technical question here is asking people to walk through how they build a paperclip maximizer.
   I personally call it an addition function.
-  Here's the question: "let's say I want to add two numbers and return a result, how do I scale that taking into account people, coordinating teams, software architecture, and infrastructure?" You're going to be looking for people who can walk the evolution of a company and point out how the nature of coordination, tooling requirements, architecture needs, etc., fundamentally change _both as the software scales as well as the organization_.
+  Here's the question: "let's say I want to add two numbers and return a result, how do I scale that taking into account people, coordinating teams, software architecture, and infrastructure?" You're going to be looking for people who can walk the evolution of a company and point out how the nature of coordination, tooling requirements, architecture needs, etc., fundamentally change _both as the software scales as well as the organisation_.
 - People don't do well in this role if they don't recognize the sociotechnical nature of the work; they will also not do well in this role if _you_ don't recognize the sociotechnical nature of the work.
   Empowering the social humanity with technology and humanizing the technical systems is key to this role and most people don't seem to understand how to do that.
   Look for indicators of this thinking throughout answers.
 - Ask about times they have done something intentionally that is not a best practice.
   Example: One of my favorite stories to tell is when I turned off all of the on-call for the entire company.
   Leadership refused to prioritize stability, the alerts were not actionable, and fatigue was burning teams out; so I turned it off rather than fight against leadership priorities.
-  That's the kind of thinking that will be required to succeed here; working with the dysfunctions of an organization to improve the health of the engineers is really the value here, not migrating a CI system.
+  That's the kind of thinking that will be required to succeed here; working with the dysfunctions of an organisation to improve the health of the engineers is really the value here, not migrating a CI system.
 - Look for the types of questions _they_ ask when interviewing _you_. High quality questions speak volumes.
   Some great questions would be:
   - how does the company think about value, ROI, and what incentivizes work

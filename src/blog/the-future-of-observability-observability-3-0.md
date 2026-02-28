@@ -11,7 +11,7 @@ Yet, amongst all of this growth, all of this innovation, one question remains: a
 
 You see, it turns out observability is pretty useless because it doesn't _do_ anything.
 Not by itself, that is.
-Which makes sense! Computers don't do anything until you turn them on; bikes don't go forward unless you pedal them; raw materials won't turn themselves into a building without blueprints and labor.
+Which makes sense! Computers don't do anything until you turn them on; bikes don't go forward unless you pedal them; raw materials won't turn themselves into a building without blueprints and labour.
 But observability? Somehow it's this thing that we've been able to grow into a multi billion dollar industry composed entirely out of "get a bunch of data, and then..."
 
 That's it.
@@ -39,7 +39,7 @@ Honestly, I don't really see it talked about anywhere, period.
 Which is wild, right?
 Imagine a sales team that had a motto of "we create sales leads!" and then never talked about the "and then" part.
 Imagine a marking department whose mission was "we create impactful campaigns to raise awareness!" and then never bothered to think about what comes after that.
-Imagine an engineering organization who aligned around the most beautiful strategy of "we design reliable systems" and then forgot to care about writing the fucking code in the first place.
+Imagine an engineering organisation who aligned around the most beautiful strategy of "we design reliable systems" and then forgot to care about writing the fucking code in the first place.
 
 Seriously? Who would hire those jokers? Who would trust products produced by that malarkey?
 
@@ -134,7 +134,7 @@ Are you ready? Here are my predictions:
 - Observability 3.0 will, more than anything else, be measured by the value that _non-engineering functions_ in the business are able to get from it
 
 That last one is the big one, it's the whole point of the damn thing, and it's the entire reason for the 3.0 instead of calling this a 2.5 or something like that.
-The critical difference in observability 2.0 and 1.0 vs 3.0, for me, is that the success of rolling out observability 1.0 or 2.0 relies entirely on how valuable it is for the engineering organizations in the business.
+The critical difference in observability 2.0 and 1.0 vs 3.0, for me, is that the success of rolling out observability 1.0 or 2.0 relies entirely on how valuable it is for the engineering organisations in the business.
 For observability 3.0, that'll still be important, but the success of it will be mostly defined by how non-engineering functions are able to use it.
 
 Remember my definition of observability? Here it is, for posterity:

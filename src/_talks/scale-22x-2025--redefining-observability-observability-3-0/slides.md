@@ -261,7 +261,7 @@ layout: quote
 zoom: 0.7
 ---
 
-# You’re paying what? 10-20% of your _entire_ infrastructure budget for something that 5% of the organization is going to use, 10% of that 5% are going to be actually deeply competent in, and 10% of that 10% are going to be an expert in.<br/>That’s the worst possible way to spend 20% of your budget.
+# You’re paying what? 10-20% of your _entire_ infrastructure budget for something that 5% of the organisation is going to use, 10% of that 5% are going to be actually deeply competent in, and 10% of that 10% are going to be an expert in.<br/>That’s the worst possible way to spend 20% of your budget.
 
 -- Hazel _"yes-i-actually-quote-myself_" Weakly
 

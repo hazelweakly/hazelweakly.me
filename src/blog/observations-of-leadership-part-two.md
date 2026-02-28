@@ -53,7 +53,7 @@ If everybody gets aligned immediately and is spontaneously cooperative, it's eit
 As an example, I was at a company and we were doing a proof of concept.
 The team had been rolled out, we were part of a new department, and we were focusing on trying to prove out a very large potential initiative.
 One of the problems that I ran into immediately was that I couldn't quite understand why we were doing things the way that we were doing them; it felt pointless, like we were working at cross-odds with the rest of the firm.
-To illustrate: we had a few different subsections of the project, and the more I dug into them, the more I realized a few quirks.
+To illustrate: we had a few different subsections of the project, and the more I dug into them, the more I realised a few quirks.
 One subsection of the project could be entirely consumed by a separate and existing team in a different part of the organisation.
 Another subsection of the project could have been handled by yet another team who were already subject matter experts.
 A third subset from the project was actually something that was novel and interesting, but was ultimately unlikely to succeed for reasons outside of our control.

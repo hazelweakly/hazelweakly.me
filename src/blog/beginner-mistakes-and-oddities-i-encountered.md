@@ -15,7 +15,7 @@ I had a lot of these; mostly due to my inexperience, but also GHC is a pretty ol
 Unfortunately it’s not really something where comprehensive documentation can easily be written down other than a general "best practices" approach (which I think I’ll write up).
 
 - GHC has a lot of submodules. Before working you should not only pull the master but you should also run `git submodule update`; I had quite a few issues early on with extraneous files in git status before I learned to do that.
-- Git notes is really not that ergonomic at all. If you have any namespaces used in your git notes (which this project does) you’ll need –ref=perf for damn near every command you use. It’s a small thing, but it can sometimes take a while to realize what you missed.
+- Git notes is really not that ergonomic at all. If you have any namespaces used in your git notes (which this project does) you’ll need –ref=perf for damn near every command you use. It’s a small thing, but it can sometimes take a while to realise what you missed.
 - Running the ./validate script is the only way to guarantee a clean anything. Switch a branch and something weird breaks? ./validate; Not quite sure why tests started failing after a git pull and a small innocuous code changes? ./validate. The real bummer here is that ./validate wipes everything and rebuilds the entire damn compiler and all that stuff from scratch and then runs the most extensive version of the testsuite. The exhaustive version of the testsuite alone can take nearly 2 hours on my computer if it’s not run threaded, so it’s definitely a huge time sink if you don’t have this thing optimized.
   - Related pain-point; there’s a lot of things you can do to tweak and fix your setup so that you can build and validate quicker. Unfortunately, this is all something that you just have to kind of learn over time and there’s no real way to intelligently "auto-configure" this nicely. You’ll have to suffer super long build times for GHC and long runtimes for the testsuite or sink quite a few hours into configuring the "quicker options" for your specific usecase.
   - Update: Thanks to a few helpful Reddit comments, I’m now aware that `dist/maintainer clean` instead of ./validate will help you out quite a bit. Unfortunately, this still doesn’t clean out everything.
@@ -41,7 +41,7 @@ Things I really needed and had to learn:
 ## Sanity checks
 
 Programmers need sanity checks for everything, especially when working in a language like python.
-I can’t begin to mention how many times I was working on something only to have everything break for hours before I realized I was implicitly assuming something that wasn’t accurate.
+I can’t begin to mention how many times I was working on something only to have everything break for hours before I realised I was implicitly assuming something that wasn’t accurate.
 Not all tests are performance tests, some tests involve measuring the compiler, some don’t, etc.
 Sanity checks don’t just involve the code, they also involve your environment as well;
 I’ve accidentally ran tests on the wrong commit, used the wrong flags, accidentally wasted 2 hours building the wrong version of a program...
@@ -102,7 +102,7 @@ This applies to everything in my life and it’s why making breakfast takes me a
 So these are just some of the things I’ve learned and struggled with while working on this project. I’d probably summarize this into a few key points:
 
 - Abstraction is the process of communicating more precisely about something. Use it whenever possible and helpful to make code more robust.
-- Be explicit about your assumptions and use implicit behavior as little as possible; ideally document that implicit behavior in a comment whenever you can.
+- Be explicit about your assumptions and use implicit behaviour as little as possible; ideally document that implicit behaviour in a comment whenever you can.
 - Be deliberate and methodical about your sanity checks; write them down so you can verify things consistently and thoroughly.
 - Do _one_ thing at a time, learn your git hygiene, and use it.
 - Write down your thought processes somewhere whenever you’re doing something more intensive than fixing an immediate, small issue.

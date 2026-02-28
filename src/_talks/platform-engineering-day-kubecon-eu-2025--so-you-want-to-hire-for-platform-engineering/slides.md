@@ -37,7 +37,7 @@ We're covering:
 
 - The part of the hiring process engineering leaders have control over
 - One way to view the differences between Platform Engineers, Infrastructure, SREs, etc.
-- How to think about skills your organization needs
+- How to think about skills your organisation needs
 - Hazel's Opinions and Experiences (which have been very successful!)
 
 ::right::

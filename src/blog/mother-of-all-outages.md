@@ -164,7 +164,7 @@ We both underestimated the severity, though. By a *lot*
 
 But we knew it was coming.
 
-The other thing is that the entire thing could've been avoided had we been given time to move our vault over to the managed enterprise vault license.
+The other thing is that the entire thing could've been avoided had we been given time to move our vault over to the managed enterprise vault licence.
 
 That.  
 We.  
@@ -192,5 +192,5 @@ As far as I know, this was never completed.
 
 To this day, The Expert occasionally consults for them here and there, reaping the ghosts of horrors past.
 
-No one really seemed to do the math and realize that this cost the company more than what they saved by laying off 90% of their engineers.
+No one really seemed to do the math and realise that this cost the company more than what they saved by laying off 90% of their engineers.
 Having never once learned their lessons, they weren't about to start now, I suppose.

@@ -11,11 +11,11 @@ What I mean by that is a fairly simple rule that has a very powerful effect, but
 Home rolling the abstraction, to me, means deeply exploring and fleshing out out an abstraction from whole cloth, whether it be an interface, or a mental model, or a collaborative workflow, or a template, or... Anything.
 But to do that effectively requires context from the team, the company, the industry, and what makes you _you_.
 You can't "off the shelf" ship a meaningful abstraction around semantic metadata, for example, but it's invaluable to _have_ one.
-Why? Well, because an abstraction to me is something you use to help shape and articulate the desired emergent behavior of groups and systems; thus, by definition, the emergent behavior is very specific to your current context.
+Why? Well, because an abstraction to me is something you use to help shape and articulate the desired emergent behaviour of groups and systems; thus, by definition, the emergent behaviour is very specific to your current context.
 
 Using a commoditized implementation, on the other hand, has a fairly simple litmus test: is the implementation largely outside of your company, and can it survive the subject matter expert on your team leaving?
 Kubernetes, Jira, Salesforce, Spark, Postgres, etc, are all great examples of commoditized implementations.
-This is all about improving optionality, business continuity, reducing risk, and increasing leverage; while it can help shape your abstraction, it's not really about shaping the emergent behavior of a system, it's about shaping the solution space you use to solve your problems with.
+This is all about improving optionality, business continuity, reducing risk, and increasing leverage; while it can help shape your abstraction, it's not really about shaping the emergent behaviour of a system, it's about shaping the solution space you use to solve your problems with.
 
 Why is it tricky to find the right balance?
 Because doing so requires integrating the implementation into the abstraction, and there's where the glue work and expertise lies.
@@ -33,8 +33,8 @@ Some common examples of this are:
 
 Do you see a trend?
 It's not just a thing that programmers do! (Although I do confess that most of my examples are tech oriented because that's the main audience of my blog posts).
-The trap lies in when you embed the company context so deeply into the tool that the implementation can't ever change and that the emergent behavior becomes uncontrollable.
-You lose all of the optionality of a commoditized solution and all of the power of shaping emergent behavior via hand rolling.
+The trap lies in when you embed the company context so deeply into the tool that the implementation can't ever change and that the emergent behaviour becomes uncontrollable.
+You lose all of the optionality of a commoditized solution and all of the power of shaping emergent behaviour via hand rolling.
 It becomes the worst of both worlds.
 
 ## Abstraction? Product? Project? Glue Code?
@@ -63,9 +63,9 @@ We don't really have a name for that, but I'm going to call it abstraction for n
 ### The Evolution of an Abstraction
 
 Personally, one of the success indicators I use to figure out whether or not I'm building a useful abstraction for others is whether or not people can guess how to solve a problem that doesn't quite fit an existing pattern and then do it correctly in a way that works.
-In other words, I am explicitly thinking about the emergent behavior(s) and trying to craft things that result in the desired emergent outcomes rather than thinking too hard about the first order results.
+In other words, I am explicitly thinking about the emergent behaviour(s) and trying to craft things that result in the desired emergent outcomes rather than thinking too hard about the first order results.
 
-So when thinking about abstractions, think about the emergent behavior, and think about whether or not people can intuitively explore the solution space provided.
+So when thinking about abstractions, think about the emergent behaviour, and think about whether or not people can intuitively explore the solution space provided.
 
 ```
   Desirable Emergent Behavior
@@ -99,13 +99,13 @@ Listening to your emotions now and feeling them will help you regulate yourself 
 
 Second, get a support channel together; this probably won't be your manager, or the team you're working with, although they should ideally be quite supportive and helpful!
 You need to be able to talk to someone (ideally more than one) about the struggles you're facing and get an objective opinion on how you're working with others.
-This is honestly deeply crucial; what you're fundamentally doing here is you're switching from thinking of things in terms of a set of functionality or a list of features or implementation and glue-code into figuring out how to get an entire engineering organization to literally change their language and how they conceptualize and approach an entire problem space.
+This is honestly deeply crucial; what you're fundamentally doing here is you're switching from thinking of things in terms of a set of functionality or a list of features or implementation and glue-code into figuring out how to get an entire engineering organisation to literally change their language and how they conceptualize and approach an entire problem space.
 
 That. is. very. fucking. hard.
 
 And it will burn you the _fuck out_ if you're not prepared.
 
-Finally, realize that this is essentially change agency and so you become effective by learning a bag of tricks and mostly throwing them heuristically at the wall until you find something that works, and then roll with it.
+Finally, realise that this is essentially change agency and so you become effective by learning a bag of tricks and mostly throwing them heuristically at the wall until you find something that works, and then roll with it.
 Here's my bag of tricks.
 
 ### Make Change Easy to Handle, Not Easy to Do
@@ -293,20 +293,20 @@ Here are some concrete ideas you can do to help make this more successful:
 #### Your Leadership
 
 Your leadership are going to be the people who are most directly in charge of everything you do and while they aren't responsible _for_ the creation of the abstraction, they are responsible for the outcomes of that abstraction.
-If an abstraction here helps shape and articulate the emergent behavior of a company and how it navigates the solution space, then it stands to reason that an abstraction is actually one of the most vital things leadership cares about.
-Unlike projects, abstractions here are directly a thing that leadership cares about; your success in being able to create an abstraction that results in emergent behavior that's aligned with the company goals is a direct success criteria for them.
+If an abstraction here helps shape and articulate the emergent behaviour of a company and how it navigates the solution space, then it stands to reason that an abstraction is actually one of the most vital things leadership cares about.
+Unlike projects, abstractions here are directly a thing that leadership cares about; your success in being able to create an abstraction that results in emergent behaviour that's aligned with the company goals is a direct success criteria for them.
 
 Which means, if this goes badly, they're going to behave like they're taking it _awfully_ personally.
 Not in a bad way, necessarily, but this gets to the heart of the "enabling" aspect of leadership in a way that few other things do.
 
-Success here, fundamentally means that you understand how your leadership thinks about those emergent behaviors and what leading indicators they utilize to understand whether or not the right emergent behavior is shaping out.
+Success here, fundamentally means that you understand how your leadership thinks about those emergent behaviours and what leading indicators they utilize to understand whether or not the right emergent behaviour is shaping out.
 Additionally, you're going to be looking for the "unsaid" things that they're concerned about; often when leaders talk about a concern, there's a hidden one underneath it that's more valuable, and you're going to need to extract that one out if you want to be able to help them help you succeed.
 
 Here are some concrete ideas you can do to help make this more successful:
 
-- Create an explicit value stream mapping of the emergent behavior
+- Create an explicit value stream mapping of the emergent behaviour
 - Come up with a list of "[pivot triggers](https://designtom.medium.com/how-to-do-discovery-and-delivery-at-the-same-time-with-pivot-triggers-3dada51c58a3)", and identify what the pivot options are after the pivot trigger trips
-- Identify a list of concrete actions or events that are considered to be manifestations of the ideal emergent behavior. This one is particularly valuable because you're calibrating _both_ of your abilities to predict organizational responses to change, which is invaluable
+- Identify a list of concrete actions or events that are considered to be manifestations of the ideal emergent behaviour. This one is particularly valuable because you're calibrating _both_ of your abilities to predict organisational responses to change, which is invaluable
 - Figure out ways to convert value, cost, and trade-offs from one value system into another (ie currency vs time, headcount vs opportunity cost, whatever works for you)
 
 #### Stakeholders
@@ -314,7 +314,7 @@ Here are some concrete ideas you can do to help make this more successful:
 The stakeholders are are the people that aren't directly in charge of the leadership, and they're also not the direct users, but they're people who are going to be speaking the language of the abstraction and they're going to need to be able to communicate with the users who are going to be using it on a daily basis.
 A huge, yet often not considered, aspect of success in the creation of an abstraction is whether or not the stakeholders involved can learn how to communicate with the abstraction.
 This doesn't mean that they understand it: domain experts often need to build abstractions that don't translate well outside of said domain, but that doesn't mean they can't be used to communicate outside the domain.
-In fact, the ability to communicate the abstraction outside of the domain in which it "belongs" is likely one of the most important success criteria for determining the longevity of the abstraction in the organization.
+In fact, the ability to communicate the abstraction outside of the domain in which it "belongs" is likely one of the most important success criteria for determining the longevity of the abstraction in the organisation.
 As the abstraction goes from being an innovation to a novelty to a product to a commodity, you're going to see the scope of who utilizes it in the company widen over time.
 
 Stepping back for a brief moment, though, what's really happening here is that you have the people who are going to be using the abstraction, and the people that are building the abstraction; importantly, they are two separate groups of people.
@@ -418,7 +418,7 @@ Here's an example of something that I went through at a previous company I worke
 The company context was:
 
 - Culturally
-  - Individual autonomy was prioritized over over realized productivity.
+  - Individual autonomy was prioritized over over realised productivity.
   - There was a hero culture and employees who shoved things through and got it done while burning out doing 80+ hour weeks were idolized.
   - The shared understanding of the product among leadership was "this should be a very simple piece of software, all of our complexity is in the sales and in hitting a critical point for network effects to kick in."
 - Strategically
@@ -499,7 +499,7 @@ Which should be completely expected; abstractions aren't built over time, and la
 That's where alignment work comes in, and it's one of the reasons why it's so valuable, and why technical leadership should be more deeply understood and explicitly developed at companies who are solving technically complex problems.
 
 What I ended up architecting for this was (among other things): a combination of various implementations, some glue code, and a multi-stage plan for migration, simplification, and learning.
-Crucially, this doesn't really start looking like an abstraction until things are sufficiently far along, and that can be demoralizing to realize because sometimes you don't get to see the abstraction take place even though it's supposed to be there.
+Crucially, this doesn't really start looking like an abstraction until things are sufficiently far along, and that can be demoralizing to realise because sometimes you don't get to see the abstraction take place even though it's supposed to be there.
 
 ## Defining the ~~Abstraction~~ MVP
 
@@ -567,7 +567,7 @@ Earlier, we talked about abstractions a little bit, and came up with this concep
 = On the right track
 ```
 
-Digging more into that, let's talk briefly about the desirable emergent behavior we wanted and the indicators of whether or not a solution space is intuitive.
+Digging more into that, let's talk briefly about the desirable emergent behaviour we wanted and the indicators of whether or not a solution space is intuitive.
 
 ### Desirable Emergent Behavior
 
@@ -669,7 +669,7 @@ Take advantage of automatic discovery as much as you can to prevent people from 
 It's also worth noting that this particular design is not great; I'm certainly not advocating for this one, I'm just showing an example of something that should be very familiar to a lot of people who have tried to do this themselves at their own companies.
 
 Also, when you can, try utilizing existing specifications or existing configuration formats to make your life a lot easier.
-The [open application model](https://oam.dev/) is an example of something you could take inspiration from to avoid reinventing the entire thing from scratch; [DevContainers](https://containers.dev/) is another source of inspiration; [Procfile](https://devcenter.heroku.com/articles/procfile) is yet another.
+The [open application model](https://oam.dev/) is an example of something you could take inspiration from to avoid reinventing the entire thing from scratch; [DevContainers](https://containers.dev/) is another source of inspiration; [Procfile](https://devcentre.heroku.com/articles/procfile) is yet another.
 There are plenty out there, but the more you can point at something else and draw inspiration from it, the easier time you'll have onboarding others and focusing on the differentiating value you're providing.
 
 Now, a lot of engineers reading this might be recoiling in horror.
@@ -689,7 +689,7 @@ Before we go off and build an abstraction, we're going to enter a very messy pha
 You need to be able to fuck around and find out.
 It's absolutely necessary, and you can't skip it (I'm serious).
 
-Think of every knowledge revolution that's happened in history and you'll realize there's a fairly predictable pattern that happens.
+Think of every knowledge revolution that's happened in history and you'll realise there's a fairly predictable pattern that happens.
 
 1. A bunch of people discover the revolutionary concept independently all at roughly the same time
 2. Tons of very bad manifestations and articulations of the idea occur, basically all of them fail
@@ -788,7 +788,7 @@ Then, we defined what "done" meant.
 ### Getting to Done... Ish
 
 I'm a big fan of having multiple flavors of done.
-They're extremely crucial for a migration that's also an upgrade, because "identical behavior" isn't possible, and "it mostly runs without errors" isn't sufficient.
+They're extremely crucial for a migration that's also an upgrade, because "identical behaviour" isn't possible, and "it mostly runs without errors" isn't sufficient.
 
 Here were our stages of done
 
@@ -806,7 +806,7 @@ Now, selfishly, here's why I personally did things this way.
 I'm going to take off my "explaining things" hat and put on my "Hazel is going to be vulnerable" hat.
 I have a few weaknesses as an engineering leader, two of which are on major display here:
 
-1. One of my biggest strengths is leveling up people one on one, and I'm excellent at leveling up organizations, but I struggle with leveling up a team of engineers and getting them more effective. Something about that middle zone is just difficult for me to wrap my head around.
+1. One of my biggest strengths is leveling up people one on one, and I'm excellent at leveling up organisations, but I struggle with leveling up a team of engineers and getting them more effective. Something about that middle zone is just difficult for me to wrap my head around.
 2. I have a lot of hesitation to go off and build things, because I'm always worried that I will build a solution so complex and perfectly shaped for a problem that I end up being the only one who can understand it. It's a common failure mode for me, and although I can almost always address it, I didn't have time to get this wrong on this project.
 
 Above anything else, I needed this solution to outlive me, and I needed people to be able to function without me there.
@@ -814,12 +814,12 @@ So the quickest way I could see to make that true was to unleash a team of peopl
 In doing so, I could help write documentation, or help explain things in a way that would hopefully prevent these failure modes.
 
 Candidly, I was only partially successful there.
-One thing I should've done differently is recognize that I needed to write a lot more documentation; I tried to pass the documentation off to people as a learning exercise of taking what I taught them and writing it down, but realized too late that this is a learning mode that basically only works for me.
+One thing I should've done differently is recognize that I needed to write a lot more documentation; I tried to pass the documentation off to people as a learning exercise of taking what I taught them and writing it down, but realised too late that this is a learning mode that basically only works for me.
 I've yet to meet someone else who learns optimally this way (although I'm sure they exist); I needed to sit down and write the notes _while_ I taught people, and then write the documentation from that.
 Another thing I should've done differently is I didn't model my thinking flow well enough; there's a fairly predictable flow chart you can follow to mechanically migrate a service, and while I tried to write it out, it ended up looking like "step one... look at the vibes. step two, pick the right solution. step three, just do the thing".
 
 We did fix that! Mostly.
-The team was successfully able to get on-boarded and I was able to onboard a second team into helping with the migration afterwords as well, but I wasted some time having to onboard the second team because I hadn't realized my deficiencies with the first team.
+The team was successfully able to get on-boarded and I was able to onboard a second team into helping with the migration afterwords as well, but I wasted some time having to onboard the second team because I hadn't realised my deficiencies with the first team.
 More importantly, I didn't set them up to _feel_ successful, and I didn't set them up to have a very objective sense of what level of Done to get to and what that looked like, so they never felt confident in their own skills; that was probably my biggest regret in projects like this.
 It's great to have teams be productive, but it's vastly more important to have them _feel_ productive and capable.
 
@@ -975,7 +975,7 @@ Too many things change around you: company priorities, politics, market concerns
 As often happens, that meant that my time at a company often ended before the abstraction could even be started, or maybe it got started but not finalized, or maybe it got finalized but never got to evolve over time.
 
 If you get to stick around and do this part, though, it's really cool.
-You get to see the fruits of your labor be born and turn into wild and wondrous things, beyond what you could've ever imagined.
+You get to see the fruits of your labour be born and turn into wild and wondrous things, beyond what you could've ever imagined.
 
 Here's part of the abstraction that I wanted to build for this project.
 It was composed of a few properties:
@@ -1032,7 +1032,7 @@ Imagine having three different headers that you can set anywhere in your applica
 
 I had hoped to be able to flesh those concepts out and see what stuck, what worked, and what would've ended up being overkill.
 
-For progressive delivery, [ArgoCD](https://argo-cd.readthedocs.io/), rather than having an ApplicationSet for every single service, would end up sitting at the organization level and picking up repositories that were labeled correctly, and doing a few things:
+For progressive delivery, [ArgoCD](https://argo-cd.readthedocs.io/), rather than having an ApplicationSet for every single service, would end up sitting at the organisation level and picking up repositories that were labeled correctly, and doing a few things:
 
 - For the main branch, deploy the production version of the service in a progressive way, allowing for rollbacks and automatically toggling a feature flag off if the SLOs for it failed. Entire deployments would automatically stop if errors were detected, leaving the service up but isolated for future debugging.
 - For any PRs, deploy an ephemeral version of the service based on labels set on the PR, allowing for any individual PR to iterate on multiple services as needed.

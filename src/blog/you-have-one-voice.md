@@ -8,7 +8,7 @@ Surely, one might think, a programming language can just exist peacefully withou
 Well, clearly not.
 But, that brings to mind for me: why exactly do we care so much? What's the point?
 
-However, I realized there's actually a more important point here, lying underneath the surface.
+However, I realised there's actually a more important point here, lying underneath the surface.
 We're human, which means that we all have one voice, one life, and one source of energy.
 So, why do we spend time tearing others down when we can build them up?
 
@@ -28,7 +28,7 @@ HTML, CSS, XML, YAML, and other "markup/configuration"-esque languages? Absolute
 Yes, HTML counts too; yes, so does Yaml; yes, even CSS; yes to all of them.
 Not only do I think all of these count as real programming languages, I think they're all equally valid and legitimate.
 
-I'm going to go ahead and pause here for a moment so that y'all can get a new cup of coffee, clean up your keyboard, yell at the clouds, touch grass, or otherwise center yourself.
+I'm going to go ahead and pause here for a moment so that y'all can get a new cup of coffee, clean up your keyboard, yell at the clouds, touch grass, or otherwise centre yourself.
 I'll wait.
 
 Ready?
@@ -77,7 +77,7 @@ If you ever catch me saying "this tool is garbage", feel free to call me out, be
 I'm going to get a bit more specific here for a second.
 I've been talking fairly broadly, but now I'd like to zoom into a community that I've been in and adjacent to for the entirety of my tech career, which is the front-end and design community.
 Did y'all know that for years I thought I wanted to be a graphic designer, and I even bought books in grade school and practiced designs and got pretty solidly good at it before I even graduated high school?
-Given that most people on the internet know me for sociotechnical, organizational, and infrastructure related stuff, that might come as a surprise, but I was very much a digital artist vibes kinda person in high school.
+Given that most people on the internet know me for sociotechnical, organisational, and infrastructure related stuff, that might come as a surprise, but I was very much a digital artist vibes kinda person in high school.
 It's one of the reasons I've put _so_ much time into the design of my blog; I care about it a lot!
 
 But I'm going to be real here. In the last decade or so, the trend I've noticed more than anything else in the front end community is two things:
@@ -105,7 +105,7 @@ Likewise, when I noticed the front-end community split into a "respected" engine
 Seeing a community go from uplifting CSS and heralding things such as the [CSS zen garden](https://csszengarden.com/) as a feat of engineering to seeing just about nobody give a single flying fuck about the incredible works of [Jen Simmons](https://labs.jensimmons.com/) is... Surreal.
 I can't even say "this happened in my lifetime" because I'm too fucking young to be saying shit like "this happened in my lifetime."
 
-But we're here now, and it's been very interesting to reflect on how the changing language I've seen utilized, the technological choices people have made, and how engineering organizations and communities approach certain problems has fundamentally shifted public perception of this type of work in such a profound way that it'll take decades to undo the damage.
+But we're here now, and it's been very interesting to reflect on how the changing language I've seen utilized, the technological choices people have made, and how engineering organisations and communities approach certain problems has fundamentally shifted public perception of this type of work in such a profound way that it'll take decades to undo the damage.
 It's breathtaking.
 How the hell did we get here, anyway?
 
@@ -127,7 +127,7 @@ How many people shit on Americans from the south, with their "unrefined" and "un
 How many people grow up having to learn how to lose the accent they were born with in order to be taken seriously in the tech field?
 How many people in developing countries are going to get relegated to being viewed as trash off-shore keyboard monkeys because that's all the "hot and trendy" tech market thinks they're good for?
 
-How many legitimate, wonderful, brilliant people are we going to massacre at the alter of elitism and tech exceptionalism before we realize that we're destroying all of the humanity in world for the sake of nothing?
+How many legitimate, wonderful, brilliant people are we going to massacre at the alter of elitism and tech exceptionalism before we realise that we're destroying all of the humanity in world for the sake of nothing?
 
 **Cut it out, already.**
 People are people, we're all one group, and we're all on the same fucking planet.

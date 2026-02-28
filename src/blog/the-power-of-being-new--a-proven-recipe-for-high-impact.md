@@ -37,8 +37,8 @@ During the onboarding process, make it a habit to take detailed notes.
 If something is weird, take notes.
 If something is confusing, write it down.
 If something goes wrong, make a note!
-Not only will this help you understand the organization's systems and processes, but it will also allow you to identify potential areas for improvement.
-How an organization addresses its shortcomings is often more valuable than how well it gets things right.
+Not only will this help you understand the organisation's systems and processes, but it will also allow you to identify potential areas for improvement.
+How an organisation addresses its shortcomings is often more valuable than how well it gets things right.
 
 Ask "why" a _lot_, and ask people for their opinions as well.
 Then write those down, all of them.

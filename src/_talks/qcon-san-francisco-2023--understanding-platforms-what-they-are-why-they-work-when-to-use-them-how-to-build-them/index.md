@@ -3,7 +3,7 @@ title: "Understanding Platforms: What They Are, Why They Work, When to Use Them,
 description: |
   Technical concepts are something that are thought of, approached, and understood differently across engineers, managers, and executives. Bridging the gaps and providing understanding to a complex and nuanced topic across all three groups can sometimes feel impossible. In this talk, we'll do just that.
 
-  Together, we're going to go over not just platforms and platform engineering, but the very fabric of doing, what it means to learn, and how collective thought scales across a team, an organization and an industry. Utilizing that, we'll go over platform engineering from the perspectives of an engineer, a manager, and an executive. All at the same time.
+  Together, we're going to go over not just platforms and platform engineering, but the very fabric of doing, what it means to learn, and how collective thought scales across a team, an organisation and an industry. Utilizing that, we'll go over platform engineering from the perspectives of an engineer, a manager, and an executive. All at the same time.
 
   Not only will we go over a consistent framework for how each group can think about and understand platform engineering, we'll spend time going over how each group can communicate with other and understand each other in a way that's effective, actionable, and transformative.
 author: Hazel Weakly
@@ -126,7 +126,7 @@ $$ \text{Motivation} + \text{Relationship} + \text{\bf{Context}} = \text{Action}
   ### Vertical
 
   - Specialized Knowledge
-  - Effective action in the organization
+  - Effective action in the organisation
   - Cognitive overhead required for doing
   - Utilizes consensus
 
@@ -136,7 +136,7 @@ $$ \text{Motivation} + \text{Relationship} + \text{\bf{Context}} = \text{Action}
   ### Horizontal
 
   - Collective Knowledge
-  - Effective learning in the organization
+  - Effective learning in the organisation
   - Cognitive overhead required for collaboration
   - Utilizes alignment
 
@@ -295,7 +295,7 @@ SRE
 : A specialist role in resilience engineering that naturally arises when horizontal context becomes too large for any one team
 
 Platform Engineering
-: An empathy-driven approach towards sociotechnical organizational design
+: An empathy-driven approach towards sociotechnical organisational design
 
 ## What is a Platform?
 
@@ -353,7 +353,7 @@ $$ \text{Motivation} + \text{Relationship} + \text{Context} = \text{Action} $$
 ### Vertical
 
 - Specialized Knowledge
-- Effective action in the organization
+- Effective action in the organisation
 - Cognitive overhead required for doing
 - Utilizes consensus
 
@@ -363,7 +363,7 @@ $$ \text{Motivation} + \text{Relationship} + \text{Context} = \text{Action} $$
 ### Horizontal
 
 - Collective Knowledge
-- Effective learning in the organization
+- Effective learning in the organisation
 - Cognitive overhead required for collaboration
 - Utilizes alignment
 
@@ -382,7 +382,7 @@ $$ \text{Motivation} + \text{Relationship} + \text{Context} = \text{Action} $$
 
 <div class="fragmented">
 
-If you "aren't" a matrix organization, but...
+If you "aren't" a matrix organisation, but...
 
 - You have teams that rotate projects
 - "Dynamic" or "rotating" teams are a thing
@@ -536,7 +536,7 @@ Exec
 
 ## When to Platform?
 
-Platforms make sense when the benefits of reducing horizontal context more than offset the overhead of adding a vertical to the organization.
+Platforms make sense when the benefits of reducing horizontal context more than offset the overhead of adding a vertical to the organisation.
 
 $$
 \displaylines{\text{\# verticals in platform's scope} \\ \times \\
@@ -633,7 +633,7 @@ Agglomeration-based development
   2. Look for duplication of workflows, interfaces, process, planning
   3. Compare results
 * ### Exec
-  1. Ask organizational leaders what their pain points are
+  1. Ask organisational leaders what their pain points are
   2. Look for duplications of language, vision, alignment efforts, programs
   3. Compare results
 
@@ -674,7 +674,7 @@ Exec
 
 ## A Platform Is An Abstraction That Platforms Like A Platform
 
-## Platform teams are organizationally empowered to address cross-cutting changes
+## Platform teams are organisationally empowered to address cross-cutting changes
 
 With a combination of technical, procedural, and cultural improvements
 

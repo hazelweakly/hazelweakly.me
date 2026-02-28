@@ -3,14 +3,14 @@ title: "The Trap of Soulless Productivity"
 date: 2024-04-03
 ---
 
-If there's one thing I wish I could burn entirely to the ground and wipe away all traces and remnants of, its the misplaced notion that the productivity of Knowledge Work can be managed, measured, analyzed, and optimized as if all one needed to do was drip feed heroin up the arse of their hapless workers.
+If there's one thing I wish I could burn entirely to the ground and wipe away all traces and remnants of, its the misplaced notion that the productivity of Knowledge Work can be managed, measured, analysed, and optimized as if all one needed to do was drip feed heroin up the arse of their hapless workers.
 
 What is Knowledge Work™, you ask?
 There's two concepts of Knowledge Work that I'm thinking about right now.
 The first is Knowledge Work as Imagined, and the second is Knowledge Work as Done.
 (I'm temporarily ignoring the actual literature definitions of Knowledge Work for the sake of ranting out some frustration. Forgive me pls)
 
-**Knowledge Work as Imagined** is when you take the best of humanity, you embrace it, and you turn the lovely unbridled enthusiasm and exploratory nature of humanity into a powerful self-feeding engine that paints the world with the colors of the human soul itself as it learns to understand the world around it.
+**Knowledge Work as Imagined** is when you take the best of humanity, you embrace it, and you turn the lovely unbridled enthusiasm and exploratory nature of humanity into a powerful self-feeding engine that paints the world with the colours of the human soul itself as it learns to understand the world around it.
 It's art, beauty, love, and life.
 It's this amazing fucking thing that happens when you take a bunch of humans and you stick them in a pile and say "go forth and learn to love the world."
 

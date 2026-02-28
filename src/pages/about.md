@@ -26,7 +26,7 @@ To that end, I am continually working to be better at listening, understanding, 
 I have a focus on underrepresented minorities in tech because that aligns closest with my personal life, but I strive to be an understanding and empathetic advocate in every aspect I can.
 
 When I'm not working or programming, you can find me swing dancing, doing gymnastics, shooting pool, playing board games, playing with makeup, thrift shopping for the perfect dress, drinking coffee, sampling scotch, or playing with my dog, Lupita; I've been told I have too many hobbies, so, naturally, I like to add more over time.
-Research interest wise, I tend to get most into resilience engineering, psychological safety, organizational design, empathetic leadership, systems safety, build systems, distributed systems, programming language theory, type systems, category theory, formal verification, and information geometry.
+Research interest wise, I tend to get most into resilience engineering, psychological safety, organisational design, empathetic leadership, systems safety, build systems, distributed systems, programming language theory, type systems, category theory, formal verification, and information geometry.
 I also read quite a bit, and frequently write about my findings on [mastodon]({{socialMedia.mastodon.url}}), [bluesky]({{socialMedia.bluesky.url}}) and my blog.
 
   </section>
@@ -50,7 +50,7 @@ Hazel currently serves as a Director on the board of the Haskell Foundation, as 
 She also created the first official Haskell "setup" Github Action and helped turn it into an active community-maintained project.
 She enjoys traveling to speak at conferences, appearing on podcasts, mentoring others, and sharing what she's learned with the world.
 
-One of her favorite things is watching someone light up when they understand something for the first time, and a life goal of hers is to help as many people as possible experience that joy.
+One of her favourite things is watching someone light up when they understand something for the first time, and a life goal of hers is to help as many people as possible experience that joy.
 She also loves shooting pool and going swing dancing, both as a leader and a follower.
 
 ## 123 Words / 696 Characters {.text-4}
@@ -59,7 +59,7 @@ Hazel spends her days building out teams of humans as well as the systems and to
 She's worked at a variety of companies and knows that the hardest problems to solve are the social ones.
 Hazel currently serves as a Director of the Haskell Foundation, as a Fellow of the Nivenly Foundation, and is fondly known as the Infrastructure Witch of Hachyderm (a popular Mastodon instance).
 
-One of her favorite things is watching someone light up when they understand something for the first time, and a life goal of hers is to help as many people as possible experience that joy.
+One of her favourite things is watching someone light up when they understand something for the first time, and a life goal of hers is to help as many people as possible experience that joy.
 She also loves shooting pool and going swing dancing, both as a leader and a follower.
 
 ## 81 Words / 480 Characters {.text-4}
@@ -67,7 +67,7 @@ She also loves shooting pool and going swing dancing, both as a leader and a fol
 Hazel spends her days building out teams of humans as well as the systems and tooling to make life better for others.
 She currently serves as a Director of the Haskell Foundation, as a Fellow of the Nivenly Foundation, and is fondly known as the Infrastructure Witch of Hachyderm (a popular Mastodon instance).
 
-One of her favorite joys is the light on someone's face when they understand something for the first time.
+One of her favourite joys is the light on someone's face when they understand something for the first time.
 She also loves shooting pool, swing dancing, and boardgames.
 
 ## Other Information
@@ -97,7 +97,7 @@ As a respected voice in the technology community, Hazel serves on the Board of D
 Hazel's writing is read worldwide and she is an internationally sought after keynote speaker who has spoken at some of the most prominent conferences in the world, including UK's State of Open Con, QCon London, and Kubecon EU.
 Her mission is to help teach the world to build self-organising ecosystems that enable people to learn together and work to build a sense of wholeness in their own communities.
 
-Hazel's vision centres on transforming how humanity approaches knowledge work with a focus on understanding emergent behavior.
+Hazel's vision centres on transforming how humanity approaches knowledge work with a focus on understanding emergent behaviour.
 Systems that enable rapid innovation, maintain stringent compliance standards, and embrace the complexities of humanity, are natural outcomes of that understanding.
 As she guides the industry to push the boundaries of what's possible, she remains determined to continuously make the world better than she finds it.
 

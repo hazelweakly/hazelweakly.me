@@ -51,7 +51,7 @@ Let's go over that.
 
 ## Why Do We Need a New Definition of Observability?
 
-To me, the point of having a good definition of a concept is that when you have one, that definition should be usable both as a way to center understanding of a concept, but also to influence the direction in which you explore said concept, and guide you towards grasping all of the _implications_ of said exploration.
+To me, the point of having a good definition of a concept is that when you have one, that definition should be usable both as a way to centre understanding of a concept, but also to influence the direction in which you explore said concept, and guide you towards grasping all of the _implications_ of said exploration.
 As an example, one of the problems I have with the control theory definition of observability is that it gives you absolutely zero idea of where to start, where you are, or how to get there.
 If your system is fully observable, and you _know_ that it's observable... Cool, awesome, that's neat.
 The rest of us have no idea what the fuck is going on and would like a map of how to get there.
@@ -115,16 +115,16 @@ Let's break up components of "meaning" into things you can combine together to g
 
 - The "vertical" context, in the sense of stream aligned teams
 - The "horizontal" context, in the sense of functional areas.
-- The size of the subgroup in question: the individual, the team, the vertical, the organization, the enterprise, the market, and so on.
+- The size of the subgroup in question: the individual, the team, the vertical, the organisation, the enterprise, the market, and so on.
 - The time period in question: past, present, future, in six months, monthly, "every time we have a board meeting", "if/when our competitor has an IPO", etc
-- The audience in question: a service, a team, an organization, a customer segment, an industry, a group of services, a cluster, a computer, ...
+- The audience in question: a service, a team, an organisation, a customer segment, an industry, a group of services, a cluster, a computer, ...
 - There's a lot more you could add, depending on what you care about, but you get the idea
 
 Let's take the question "are we healthy" and blend that with various composite scopes in order to get a few examples of meaningful questions to illustrate this more concretely.
 
 - I am an Engineer on Team A that is working on service A1. Is service A1's `/health` endpoint returning a successful response 99.9% of the time over a 5 minute interval?
 - I am an Engineering Manager of Team A that works on services A1, A2, and A3; is our team within our stated SLAs with our customers for the quarter?
-- We are the Senior Engineering Manager and Senior Product Manager overseeing teams A, B, and C. Are we communicating effectively with each other, are we understanding each other, and are we building things that are in alignment with both our vertical's OKRs as well as the rest of the organization?
+- We are the Senior Engineering Manager and Senior Product Manager overseeing teams A, B, and C. Are we communicating effectively with each other, are we understanding each other, and are we building things that are in alignment with both our vertical's OKRs as well as the rest of the organisation?
 - I am an Engineering Director of Org ABC, are we making the right trade-offs between feature work and reliability work so that we can maximize value delivery while not compromising on engineering health, employee attrition, customer satisfaction, and fiscal concerns?
 - I am a Product Manager, of these 50 features, which ones have the most synergy with what our GTM research is indicating we need to develop, and which ones can be designed in a way that our engineers have room to bake in reliability work _into_ the product implementation so we can maximize roadmap velocity?
 - I am a Director of Customer Success that oversees customer support for the services of Org ABC, are we building the right internal tools to maximally enable our CSE function while also gaining the ability to understand what classes of customer support to automate or proactively mitigate?
@@ -155,7 +155,7 @@ That's... A lot harder than it looks.
 But luckily we have a saving grace: throw away your desire to have truthful, factual, or correct answers to meaningful questions.
 
 Seriously, I mean it.
-I don't mean it in a "we live in a post truth world" bullshit way, I mean it in the understanding of reality that comes when you realize that because everyone's context and understanding and interpretation of the world is different, there is no way to ever arrive at a definition of "correctness" or "truth" or "fact" that is also useful for a situation that is not absolute and objective.
+I don't mean it in a "we live in a post truth world" bullshit way, I mean it in the understanding of reality that comes when you realise that because everyone's context and understanding and interpretation of the world is different, there is no way to ever arrive at a definition of "correctness" or "truth" or "fact" that is also useful for a situation that is not absolute and objective.
 This might terrify you, but lean into it and let it liberate you.
 Answers are useful if they let you move forward with concrete action: that's it.
 
@@ -239,7 +239,7 @@ We had the Control Theory definition of observability, and the Cognitive Systems
 We also went over what the "meaningful questions" and "useful answers" bit means, and we went over the process of developing an ability.
 When we combine those two, we get something that actually really reminds me of the five levels of expertise in the dreyfus model of skill acquisition (novice, advanced beginner, competent, proficient, expert).
 
-Which, honestly, I love that; you absolutely should be thinking of observability as developing an organizational wide capability of asking meaningful questions and getting useful answers.
+Which, honestly, I love that; you absolutely should be thinking of observability as developing an organisational wide capability of asking meaningful questions and getting useful answers.
 Of course, once you have a useful answer, you have the final part: acting on it.
 
 Learning, without action, isn't learning; it's fundamentally a process.
@@ -247,4 +247,4 @@ And processes? Processes are messy, they require action, they require movement, 
 
 Just like observability.
 
-To put simply, observability is organizational learning.
+To put simply, observability is organisational learning.

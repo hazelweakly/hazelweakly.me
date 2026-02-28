@@ -38,16 +38,16 @@ It's not about failure, it's about learning and growth, but in a different persp
 
 Here's an instance for you, looking back into my time most recently as an Interim Director of Infrastructure.
 To put it kindly, I stepped into this role because there was an urgent need at the company and I was able to address it; in no way was I particularly qualified for it, and I most certainly was not experienced.
-I'm going to lay out the situation briefly, break it down into external factors, internal factors, and then address the part where I realized later (with the help of my SVP) what I could've done differently; in full transparency, I'm still working on the "how did it influence your actions" part myself.
+I'm going to lay out the situation briefly, break it down into external factors, internal factors, and then address the part where I realised later (with the help of my SVP) what I could've done differently; in full transparency, I'm still working on the "how did it influence your actions" part myself.
 
 Getting to the situation in question, as I perceived it: We had a critical under-investment in infrastructure, resulting in a team that was extremely underwater, had far too high work in progress, and was unable to even communicate the problem in a way that external stakeholders could understand.
 When I came in, one of the first things I did was to address this by attempting to increase visibility here.
 By all accounts, I was wildly successful: During my tenure so far, we've gone from 5 ICs and one manager to multiple teams, including a dedicated Data Infrastructure team, dedicated Developer Experience team, a platform team, and infrastructure team.
-We have an amazing SVP now (note: titles are a bit fuzzy here still, my usage of titling here reflects scope more than reality), and we've been able to hire what is the most diverse and welcoming organization in the company.
-I can't stress this enough: I am enormously proud of this organization.
+We have an amazing SVP now (note: titles are a bit fuzzy here still, my usage of titling here reflects scope more than reality), and we've been able to hire what is the most diverse and welcoming organisation in the company.
+I can't stress this enough: I am enormously proud of this organisation.
 
 Now, let's get to the part where I fucked up: to put it directly, I did an _okay_ job at showcasing the severity of the situation, and I could've done much better.
-One of the things that's so difficult about leadership is that you can really only start to realize this type of thing by the nature of the conversations you have months down the road after it's a bit too late to directly address them.
+One of the things that's so difficult about leadership is that you can really only start to realise this type of thing by the nature of the conversations you have months down the road after it's a bit too late to directly address them.
 If I were to break down an ideal scenario for what I could've done, it would be:
 
 - Recognize and position myself as an interim director with the sole focus of preparing for the next change in leadership
@@ -83,7 +83,7 @@ What I mean by interrupt driven work here is work that is primarily driven by as
 Consequently, people ended up specializing in the interruptions they could solve the quickest, and so we had "the person who knows how to do X", and "the person who knows how to do Y" and so on.
 It became _really_ risky to make most changes in infrastructure when that person wasn't available.
 
-That wasn't a situation we could particularly afford, especially as I was trying desperately to prevent people from burning out, healing those who already had burned out, and grow the bus factor of the team while also trying to set up the future organization for success.
+That wasn't a situation we could particularly afford, especially as I was trying desperately to prevent people from burning out, healing those who already had burned out, and grow the bus factor of the team while also trying to set up the future organisation for success.
 I made a few changes to attempt to improve things, but they weren't ultimately particularly successful:
 
 - I setup a support slack channel, so that other teams could reach out to us for any issues, and wired it up into Jira. This was fantastic and worked really well
@@ -133,8 +133,8 @@ Luckily, I have great people I can learn from now, and my org is in such a wonde
 >
 > -- <https://cutlefish.substack.com/i/142017363/patient-divergence>
 
-The situation I want to talk about here is about how we decided as an organization to invest more heavily in developer experience, the process around that, and how we were able to do that quite quickly.
-The initial situation was one that I'm sure quite a few leaders are familiar with, but I want to take this opportunity to lay things out a bit more explicitly for people who might not be familiar with how things generally work in terms of feedback loops at the organization level.
+The situation I want to talk about here is about how we decided as an organisation to invest more heavily in developer experience, the process around that, and how we were able to do that quite quickly.
+The initial situation was one that I'm sure quite a few leaders are familiar with, but I want to take this opportunity to lay things out a bit more explicitly for people who might not be familiar with how things generally work in terms of feedback loops at the organisation level.
 
 How this generally works in tech (and likely most companies, but I can't speak to those) is you have roughly three personas of "experiencing" the company: Executives, Management, and ICs.
 Each have their own goals, strategies, and tools available to them to help steer the company in the right direction (which I'm going to call a "lever"); broadly speaking, Executives have levers of alignment, Management have levers of communication, and ICs have levers of execution.
@@ -157,9 +157,9 @@ In a cheeky sense: "Hey, a lot of our devs complain that our infrastructure and 
 
 While we did settle on the developer experience platform of choice somewhat quickly because I pushed hard for it, I was very careful to lay out that we had a 1-2 quarter plan for procuring the platform, using it, and actually understanding what we needed to do with it.
 One of the additional critical things that I used to help make the choice easier was to use this as an opportunity to communicate from the top-down that the leadership team is investing in figuring out how to understand ICs better.
-That worked so well that we had a noticeable bump in developer trust in leadership within a quarter, before we had even been able to use the platform to make any real changes; I really can't overstate enough the importance of making sure your organization, at every level, feels _heard_ and _respected_.
+That worked so well that we had a noticeable bump in developer trust in leadership within a quarter, before we had even been able to use the platform to make any real changes; I really can't overstate enough the importance of making sure your organisation, at every level, feels _heard_ and _respected_.
 
-Lastly, the path forward here was "building a path to build a path", in a sense, and that was actually also very important; we had recently gone through a lot of turmoil in the organization due to people feeling like the infrastructure team wasn't communicating and being able to setup large multi-quarter initiatives in a way that let us start communicating about them immediately was crucial.
+Lastly, the path forward here was "building a path to build a path", in a sense, and that was actually also very important; we had recently gone through a lot of turmoil in the organisation due to people feeling like the infrastructure team wasn't communicating and being able to setup large multi-quarter initiatives in a way that let us start communicating about them immediately was crucial.
 Communicating early and often was so important to the success of this, and if anything, my only regrets are that I could've communicated earlier and more often; I slowed down a bit after things started "working" and change started happening, but doubling down on the communication would've likely helped some.
 
 However, there's a danger there in over communicating to the point where people don't see change happening at the rate that you're communicating and then it sounds like you're all talk with no action (ironically, this was a frequent piece of feedback for me in the last two months; you can't really win here).
@@ -229,7 +229,7 @@ That simply doesn't scale, and our success ended up feeling more like luck than 
 
 With all that said, there was one pivot point that changed the entire conversation for the rewrite:
 We had just gotten budget for 3 new headcount, and I had just learned about a new regulation requirement that would force us to upgrade our kubernetes clusters within a few months.
-In addition, we had already previously decided that they were not upgradeable at this point and that any forced upgrades would require a rewrite; so, when we got to the point where we realized an upgrade was mandatory, the conversation switched from an "if" to a "how."
+In addition, we had already previously decided that they were not upgradeable at this point and that any forced upgrades would require a rewrite; so, when we got to the point where we realised an upgrade was mandatory, the conversation switched from an "if" to a "how."
 
 What I _am_ proud of, in that moment, is that we had done the work required for that to be an instant and clear conclusion for the entire infrastructure team; everyone understood the trade-offs and alignment was unanimous.
 While that could've been communicated externally better, it's so difficult to have that type of hard decision be straightforward, and I can take a bit of pride in having helped set up the conditions for it to become a straightforward decision.
@@ -287,7 +287,7 @@ Laying them out, you get four categories:
 
 ### Fixable and unworkable
 
-These were the highest priority things to address: they were actively breaking the team or the organization, and we could fix them.
+These were the highest priority things to address: they were actively breaking the team or the organisation, and we could fix them.
 The hard part here is really about _finding_ these and appropriately labeling them: a lot of people want to label things they dislike as "unworkable" but doing so is a surefire way to lose trust in leadership.
 
 ### Fixable and workable
@@ -300,7 +300,7 @@ While you can run the risk of appearing like you're only working on "workable" s
 ### Unfixable and unworkable
 
 This is something to escalate, and this category of problem is the one that keeps me up at night.
-Not only can we not fix this with the current capabilities that we have, it's actively breaking something essential that we need to function as an organization.
+Not only can we not fix this with the current capabilities that we have, it's actively breaking something essential that we need to function as an organisation.
 Identifying these should be your second highest priority after identifying just enough work for the team to have things to do because the consequences of not knowing what these are and being unable to quantify the risk is absolutely massive.
 
 ### Unfixable and workable
@@ -316,12 +316,12 @@ That last bit is important enough that I'm going to repeat it; things that are u
 Now that I've rambled on a bit about the theory of all of this, the situation that we had was one where all four categories each had more work than my team could actually accomplish, so it didn't matter what we did, because before we could finish any of the highest urgency work, more work would escalate into being in that very high urgency state.
 As it was, the only thing I could really do was minimize the amount of work in progress, free up as much bandwidth for the team, and buy them as much time as I could while I addressed the unfixable and unworkable issues with leadership directly.
 The first being headcount, and justifying said headcount in a way that aligned the success of the org with the success of the company; this was a bit difficult because the company was very much in expansion mode, and so _everyone_ urgently needed headcount.
-Us getting that headcount meant that we took it from the rest of the org, which is exactly what happened, but the argument for doing so had to essentially become "this will accelerate everyone else more than hiring more headcount for them will" and one of the key pieces of information there was showing that we had become the blocker to essentially all progress in the organization.
+Us getting that headcount meant that we took it from the rest of the org, which is exactly what happened, but the argument for doing so had to essentially become "this will accelerate everyone else more than hiring more headcount for them will" and one of the key pieces of information there was showing that we had become the blocker to essentially all progress in the organisation.
 
 Which, most leaders would likely immediately tell you, stepping into a leadership role and then immediately identifying the vast majority of all blockers for the entire CTO org as being under you as a direct responsibility is... Beyond risky.
 I'm not saying that you shouldn't own up to the reality of a situation, to be clear.
 This type of thing is far more about the implications of what happens after you do something like that, politically; what's happening is you, in essence, become the responsible "root" cause for every missed goal, target, milestone, etc., in the entire company until you fix the blocking problem.
-You became the highest priority for headcount and resourcing, but you now have to manage the expectations of the entire organization who is going to see a three quarter massive whiplash between "taking the blame and promising to fix it" and anything actually improving.
+You became the highest priority for headcount and resourcing, but you now have to manage the expectations of the entire organisation who is going to see a three quarter massive whiplash between "taking the blame and promising to fix it" and anything actually improving.
 
 If you want to appear ineffective as a leader, this is a stellar strategy, because it gives you no opportunity to actually prove out your worth before people start judging you based on the actions of things that happened before you came on.
 However, being an interim leader, I knew I had essentially zero shot at actually becoming the long term director, and so I wasn't particularly sussed about maximizing the short view in favor of success in the long view; it absolutely tanked me, but it set up my successor for a ton more success than they would've had otherwise, and it helped break the cycle of rotating management that had plagued infrastructure for three years.
@@ -350,31 +350,31 @@ Building that path to a solution is going to get action and alignment actually h
 ### Empathy Goes an Incredibly Long Way
 
 This is something I've talked about a lot on my blog before.
-I love empathy, and it's my secret superpower to getting things done at an organizational level (although the fact that it's a "secret superpower" rather than a basic tool of communication is... Anyway).
+I love empathy, and it's my secret superpower to getting things done at an organisational level (although the fact that it's a "secret superpower" rather than a basic tool of communication is... Anyway).
 However, there is something that was very difficult for me to learn and it was a bit of a bombshell for me when it really started to finally click.
 It turns out that empathy and effectiveness, at the leadership level, is pretty close to the same thing.
 
 There are four parts of empathy: tuning into your feelings, expressing your feelings, tuning into their feelings, and responding to their feelings with understanding.
 Doing that well requires that you're able to connect with something inside of you that has been where they've been.
 The need for us to have _something_ in common with that situation is why we have such a hard time empathizing with people who are on sufficiently different walks of life than us.
-At the individual level, we're talking about individual experiences and individual emotions, but at the organizational level, we're talking about organizational experiences and organizational emotions.
+At the individual level, we're talking about individual experiences and individual emotions, but at the organisational level, we're talking about organisational experiences and organisational emotions.
 
-It should go without saying that organizations express emotions extremely differently than individuals, but don't worry, organizations absolutely do have emotions and do express them, we just call it values and we express those values through culture.
+It should go without saying that organisations express emotions extremely differently than individuals, but don't worry, organisations absolutely do have emotions and do express them, we just call it values and we express those values through culture.
 But, how does one connect with the values in a company in a way that they map their individual emotions to the values of a company? How does that happen in a way that you can map your expression in a way that actually results in the company itself being able to feel that empathy?
-You understand the values, you participate in the culture, and the organization "feels" that through your participation in it... Which is basically your effectiveness as a leader, is it not?
+You understand the values, you participate in the culture, and the organisation "feels" that through your participation in it... Which is basically your effectiveness as a leader, is it not?
 
-Of course, to any one individual, it's going to look completely indecipherable; you're either going to come off as cold and disjointed, or completely unhinged; to the organization, you're going to either be entirely invisible or insignificant or unaligned with the needs of the company.
-You really can't win, and the more you manage to do well at balancing the needs and perception differences of the individual vs the group vs the organization, the more you're going to build up a skill-set that looks suspiciously like narcissism and socipathic behavior.
+Of course, to any one individual, it's going to look completely indecipherable; you're either going to come off as cold and disjointed, or completely unhinged; to the organisation, you're going to either be entirely invisible or insignificant or unaligned with the needs of the company.
+You really can't win, and the more you manage to do well at balancing the needs and perception differences of the individual vs the group vs the organisation, the more you're going to build up a skill-set that looks suspiciously like narcissism and socipathic behaviour.
 It's to the point that any individual leader that tells you they can reliably tell the difference between effectiveness due to empathy and effectiveness due to behaving like a sociopath is lying; if they can tell, it's because of some other reason (but don't worry, there are almost always tells elsewhere).
 
-Anyway, it was a weird trip for me to realize that empathy goes hand in hand with behavior that is, externally, occasionally unsettling; no wonder leadership is often described as being extraordinarily lonely.
+Anyway, it was a weird trip for me to realise that empathy goes hand in hand with behaviour that is, externally, occasionally unsettling; no wonder leadership is often described as being extraordinarily lonely.
 How do you even begin to get good at a skill-set like that? Especially when getting good at that skill-set will make most of the people you love in your life less able to relate to you?
 The cognitive dissonance required to be an effective leader in a capitalistic system is _wild_ and unbelievably damaging to most.
 
 ### Communication is the Whole Job
 
 Well... Communication is the whole job, except for the parts where it's not.
-Communication isn't the same as execution, which isn't the same as strategy, or mission, or values, or objectives, or any of the other myriad of things that we use to build up an organization of effective people and point them in the same general direction and have them build something great together.
+Communication isn't the same as execution, which isn't the same as strategy, or mission, or values, or objectives, or any of the other myriad of things that we use to build up an organisation of effective people and point them in the same general direction and have them build something great together.
 However, it really is sort of the same thing at the same time?
 
 Just because communication isn't strategy doesn't mean that strategy isn't communication, because it absolutely is, and it communicates a great deal of information when you learn how to read into it and interpret it and use that second layer of information to communicate more things when building out your _own_ strategy to compliment someone else's strategy.
@@ -398,7 +398,7 @@ I had a very unusual situation and I made the best of it; while I wasn't as effe
 In the end, I'm really proud of what I was able to accomplish and I'm deeply looking forward to being able to help continue to make this a wonderful place to work.
 
 I feel very fortunate to work somewhere that I can actually look forward to the positive changes that this might actually make to society, and I get to heal trauma and celebrate queerness and grow a diverse workforce?
-I helped build the culture in the platform organization where all of that is possible?
+I helped build the culture in the platform organisation where all of that is possible?
 It legitimately makes me tear up thinking about that sometimes.
 
 Fuck yeah, I did okay.

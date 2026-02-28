@@ -261,7 +261,7 @@ If your idle connections is zero (or very close to zero) pgbouncer is bottleneck
 ### SELECT 'bottle' FROM 'neck' WHERE id = unknown
 
 If you want to find some bottlenecks in your database, according to [@AndresFreundTec@mastodon.social](https://mastodon.social/@AndresFreundTec),
-you can run the below query and analyze its output as a starting point.
+you can run the below query and analyse its output as a starting point.
 
 ```sql
 SELECT backend_type, state, wait_event_type, wait_event, count(*)

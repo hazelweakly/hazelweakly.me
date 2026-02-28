@@ -5,7 +5,7 @@ date: 2025-05-16
 
 I've been reading this week about how humans learn, and effective ways of transferring knowledge.
 In addition, I've also had AI in the back of my mind, and recently I've come to the realization that not only is our industry building AI tools poorly, we're building them backwards.
-Which, honestly, is really depressing to me because there is so much unrealized potential that we have available--is it not enough that we built the LLMs unethically, and that they waste far more energy than they return in value?
+Which, honestly, is really depressing to me because there is so much unrealised potential that we have available--is it not enough that we built the LLMs unethically, and that they waste far more energy than they return in value?
 On top of that, it doesn't take that much extra effort to build the tooling in a way that facilitates how humans work together; the tooling could be built to improve our capabilities by making everybody more effective, rather than by deskilling critical reasoning loops for practitioners.
 Here's how that might look.
 

@@ -7,7 +7,7 @@ tags: [note]
 I thought today about why I do what I do.
 
 When I was a child, I yearned very deeply to be seen and recognized for who I truly was.
-I didn't quite realize the cause of this, or reason.
+I didn't quite realise the cause of this, or reason.
 I couldn't have articulated it had I tried.
 Nevertheless, it was there.
 
