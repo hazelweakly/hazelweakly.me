@@ -105,3 +105,13 @@ status = 200
 from = "/talks/staffplus-ny-2025--coherent-impact-the-art-of-strategy/slides/*"
 to = "/talks/staffplus-ny-2025--coherent-impact-the-art-of-strategy/slides/index.html"
 status = 200
+
+[[redirects]]
+from = "/talks/monki-gras-2026--prepping-hazel-weakly-being-intentional-in-life-and-in-software/slides/*"
+to = "/talks/monki-gras-2026--prepping-hazel-weakly-being-intentional-in-life-and-in-software/slides/index.html"
+status = 200
+
+[[redirects]]
+from = "/talks/platform-engineering-day-kubecon-eu-2026--building-extensible-platforms/slides/*"
+to = "/talks/platform-engineering-day-kubecon-eu-2026--building-extensible-platforms/slides/index.html"
+status = 200

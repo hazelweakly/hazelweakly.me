@@ -307,6 +307,28 @@ importers:
         specifier: ^1.0.5
         version: 1.0.5(prettier@3.4.2)
 
+  src/_talks/monki-gras-2026--prepping-hazel-weakly-being-intentional-in-life-and-in-software:
+    dependencies:
+      '@slidev/cli':
+        specifier: ^51.0.2
+        version: 51.0.2(@babel/parser@7.26.5)(@nuxt/kit@3.15.2(magicast@0.3.5)(rollup@4.31.0))(@types/markdown-it@14.1.2)(@types/node@22.10.7)(@vue/compiler-sfc@3.5.13)(lightningcss@1.29.1)(magicast@0.3.5)(playwright-chromium@1.51.1)(postcss@8.5.1)(react@19.0.0)(rollup@4.31.0)(tsx@4.19.2)
+      '@slidev/theme-default':
+        specifier: ^0.25.0
+        version: 0.25.0
+      '@slidev/theme-seriph':
+        specifier: ^0.25.0
+        version: 0.25.0
+      vue:
+        specifier: ^3.5.13
+        version: 3.5.13(typescript@5.7.3)
+    devDependencies:
+      prettier:
+        specifier: ^3.4.2
+        version: 3.4.2
+      prettier-plugin-slidev:
+        specifier: ^1.0.5
+        version: 1.0.5(prettier@3.4.2)
+
   src/_talks/observability-day-kubecon-eu-2025--operationalizing-observability-the-invisible-parts:
     dependencies:
       '@slidev/cli':
@@ -330,6 +352,50 @@ importers:
         version: 1.0.5(prettier@3.4.2)
 
   src/_talks/platform-engineering-day-kubecon-eu-2025--so-you-want-to-hire-for-platform-engineering:
+    dependencies:
+      '@slidev/cli':
+        specifier: ^51.0.2
+        version: 51.0.2(@babel/parser@7.26.5)(@nuxt/kit@3.15.2(magicast@0.3.5)(rollup@4.31.0))(@types/markdown-it@14.1.2)(@types/node@22.10.7)(@vue/compiler-sfc@3.5.13)(lightningcss@1.29.1)(magicast@0.3.5)(playwright-chromium@1.51.1)(postcss@8.5.1)(react@19.0.0)(rollup@4.31.0)(tsx@4.19.2)
+      '@slidev/theme-default':
+        specifier: ^0.25.0
+        version: 0.25.0
+      '@slidev/theme-seriph':
+        specifier: ^0.25.0
+        version: 0.25.0
+      vue:
+        specifier: ^3.5.13
+        version: 3.5.13(typescript@5.7.3)
+    devDependencies:
+      prettier:
+        specifier: ^3.4.2
+        version: 3.4.2
+      prettier-plugin-slidev:
+        specifier: ^1.0.5
+        version: 1.0.5(prettier@3.4.2)
+
+  src/_talks/platform-engineering-day-kubecon-eu-2026--building-extensible-platforms:
+    dependencies:
+      '@slidev/cli':
+        specifier: ^51.0.2
+        version: 51.0.2(@babel/parser@7.26.5)(@nuxt/kit@3.15.2(magicast@0.3.5)(rollup@4.31.0))(@types/markdown-it@14.1.2)(@types/node@22.10.7)(@vue/compiler-sfc@3.5.13)(lightningcss@1.29.1)(magicast@0.3.5)(playwright-chromium@1.51.1)(postcss@8.5.1)(react@19.0.0)(rollup@4.31.0)(tsx@4.19.2)
+      '@slidev/theme-default':
+        specifier: ^0.25.0
+        version: 0.25.0
+      '@slidev/theme-seriph':
+        specifier: ^0.25.0
+        version: 0.25.0
+      vue:
+        specifier: ^3.5.13
+        version: 3.5.13(typescript@5.7.3)
+    devDependencies:
+      prettier:
+        specifier: ^3.4.2
+        version: 3.4.2
+      prettier-plugin-slidev:
+        specifier: ^1.0.5
+        version: 1.0.5(prettier@3.4.2)
+
+  src/_talks/qcon-london-2026--orienting-understanding-playing-thriving-debugging-your-organisation:
     dependencies:
       '@slidev/cli':
         specifier: ^51.0.2
