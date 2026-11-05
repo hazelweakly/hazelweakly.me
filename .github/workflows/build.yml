@@ -22,11 +22,20 @@ jobs:
         with:
           cache: pnpm
 
+      - uses: actions/cache@v6
+        name: Tectonic Cache
+        with:
+          path: ${{ env.GITHUB_WORKSPACE }}/Tectonic
+          key: ${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
+          restore-keys: |
+            ${{ runner.os }}-tectonic-
+
       - run: nix develop -c pnpm install --frozen-lockfile
       - run: nix develop -c pnpm build
         env:
           URL: https://hazelweakly.me
           ELEVENTY_ENV: prod
+          TECTONIC_CACHE_DIR: ${{ env.GITHUB_WORKSPACE}}/Tectonic
       - run: |
           cmd=''
           if ${{ github.event_name == 'push' }}; then
