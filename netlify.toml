@@ -115,3 +115,13 @@ status = 200
 from = "/talks/platform-engineering-day-kubecon-eu-2026--building-extensible-platforms/slides/*"
 to = "/talks/platform-engineering-day-kubecon-eu-2026--building-extensible-platforms/slides/index.html"
 status = 200
+
+[[redirects]]
+from = "/talks/kcd-uk-2026--coherent-impact-the-art-of-strategy/slides/*"
+to = "/talks/kcd-uk-2026--coherent-impact-the-art-of-strategy/slides/index.html"
+status = 200
+
+[[redirects]]
+from = "/talks/rustweek-2026--programming-languages-as-a-community-of-belonging/slides/*"
+to = "/talks/rustweek-2026--programming-languages-as-a-community-of-belonging/slides/index.html"
+status = 200
