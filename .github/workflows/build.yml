@@ -22,8 +22,9 @@ jobs:
         with:
           cache: pnpm
 
-      - uses: actions/cache@v6
-        name: Tectonic Cache
+      - uses: actions/cache/restore@v5
+        name: Tectonic Cache Restore
+        id: tectonic-cache
         with:
           path: ${{ github.workspace }}/${{ github.repository }}/Tectonic
           key: t-${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
@@ -45,3 +46,10 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+      - uses: actions/cache/save@v5
+        name: Tectonic Cache
+        if: always() && steps.tectonic-cache.outputs.cache-hit != 'true'
+        with:
+          path: ${{ github.workspace }}/${{ github.repository }}/Tectonic
+          key: t-${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
