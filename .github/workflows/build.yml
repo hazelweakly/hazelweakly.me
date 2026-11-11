@@ -52,4 +52,4 @@ jobs:
         if: always() && steps.tectonic-cache.outputs.cache-hit != 'true'
         with:
           path: ${{ github.workspace }}/${{ github.repository }}/Tectonic
-          key: t-${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
+          key: ${{ steps.tectonic-cache.outputs.cache-primary-key }}
