@@ -16,6 +16,7 @@ jobs:
           diagnostic-endpoint: ""
           backtrace: "true"
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          determinate: false
       - run: nix develop -c bash -c "echo \$PATH" | tr ':' '\n' | grep '^/nix/store' >> "$GITHUB_PATH"
       - name: Cache pnpm store
         uses: actions/setup-node@v7
