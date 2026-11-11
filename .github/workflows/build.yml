@@ -49,7 +49,7 @@ jobs:
 
       - uses: actions/cache/save@v5
         name: Tectonic Cache
-        if: always() && steps.tectonic-cache.outputs.cache-hit != 'true'
+        if: always()
         with:
           path: ${{ github.workspace }}/${{ github.repository }}/Tectonic
           key: ${{ steps.tectonic-cache.outputs.cache-primary-key }}
