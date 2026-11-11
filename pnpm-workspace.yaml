@@ -2,3 +2,14 @@ packages:
   - "."
   - "./src/_talks/*"
   - "./slidev-theme"
+allowBuilds:
+  '@parcel/watcher': true
+  esbuild: true
+  netlify-cli: true
+  playwright-chromium: true
+  puppeteer: true
+  sharp: true
+  unix-dgram: true
+  vue-demi: true
+patchedDependencies:
+  "@minify-html/node@0.15.0": "patches/@minify-html__node@0.15.0.patch"

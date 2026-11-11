@@ -5,9 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 patchedDependencies:
-  '@minify-html/node@0.15.0':
-    hash: ozssbxr6mqb3vyjupaurulgjim
-    path: patches/@minify-html__node@0.15.0.patch
+  '@minify-html/node@0.15.0': df5d1791d8f737e6cab1ec5c5232d771f5e4dfbe236faa102d0d1117bba6af6f
 
 importers:
 
@@ -48,7 +46,7 @@ importers:
         version: 11.4.2(puppeteer@23.1.0(typescript@5.7.3))(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3)
       '@minify-html/node':
         specifier: 0.15.0
-        version: 0.15.0(patch_hash=ozssbxr6mqb3vyjupaurulgjim)
+        version: 0.15.0(patch_hash=df5d1791d8f737e6cab1ec5c5232d771f5e4dfbe236faa102d0d1117bba6af6f)
       '@minify-html/node-darwin-aarch64':
         specifier: ^0.15.0
         version: 0.15.0
@@ -10906,7 +10904,7 @@ snapshots:
   '@minify-html/node-win32-x64@0.15.0':
     optional: true
 
-  '@minify-html/node@0.15.0(patch_hash=ozssbxr6mqb3vyjupaurulgjim)':
+  '@minify-html/node@0.15.0(patch_hash=df5d1791d8f737e6cab1ec5c5232d771f5e4dfbe236faa102d0d1117bba6af6f)':
     optionalDependencies:
       '@minify-html/node-darwin-x64': 0.15.0
       '@minify-html/node-linux-x64': 0.15.0
