@@ -9,8 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: DeterminateSystems/nix-installer-action@v20
+      - uses: actions/checkout@v7
+      - uses: DeterminateSystems/nix-installer-action@v23
         with:
           source-url: "${{ format('https://install.lix.systems/lix/lix-installer-{0}', 'x86_64-linux') }}"
           diagnostic-endpoint: ""
@@ -18,24 +18,24 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: nix develop -c bash -c "echo \$PATH" | tr ':' '\n' | grep '^/nix/store' >> "$GITHUB_PATH"
       - name: Cache pnpm store
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           cache: pnpm
 
       - uses: actions/cache@v6
         name: Tectonic Cache
         with:
-          path: ${{ env.GITHUB_WORKSPACE }}/Tectonic
-          key: ${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
+          path: ${{ github.workspace }}/${{ github.repository }}/Tectonic
+          key: t-${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
           restore-keys: |
-            ${{ runner.os }}-tectonic-
+            t-${{ runner.os }}-tectonic-
 
       - run: nix develop -c pnpm install --frozen-lockfile
       - run: nix develop -c pnpm build
         env:
           URL: https://hazelweakly.me
           ELEVENTY_ENV: prod
-          TECTONIC_CACHE_DIR: ${{ env.GITHUB_WORKSPACE}}/Tectonic
+          TECTONIC_CACHE_DIR: ${{ github.workspace }}/${{ github.repository }}/Tectonic
       - run: |
           cmd=''
           if ${{ github.event_name == 'push' }}; then
