@@ -18,7 +18,7 @@
           nativeBuildInputs = with pkgs; [
             eb-garamond
             just
-            nodePackages.pnpm
+            pnpm
             nodejs
             pandoc
             tectonic
